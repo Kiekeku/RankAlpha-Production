@@ -1,0 +1,5888 @@
+symbol,sector,sector_etf
+$COMP,UNKNOWN,SPY
+$DJCBT,UNKNOWN,SPY
+$NDX,UNKNOWN,SPY
+$NDXT,UNKNOWN,SPY
+$NDXTR,UNKNOWN,SPY
+$RUT,UNKNOWN,SPY
+$RUTTR,UNKNOWN,SPY
+$SPBDUSBT,UNKNOWN,SPY
+$SPTSX,UNKNOWN,SPY
+$SPTSX60,UNKNOWN,SPY
+$SPUSAGGT,UNKNOWN,SPY
+$SPX,UNKNOWN,SPY
+$SPXTR,UNKNOWN,SPY
+$W2DOW,UNKNOWN,SPY
+A,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+AA,Materials,XLB
+AACB,UNKNOWN,SPY
+AACG,Consumer Services,XLY
+AACI,UNKNOWN,SPY
+AACT,UNKNOWN,SPY
+AAL,Transportation,XLI
+AAME,Insurance,XLF
+AAMI,Financial Services,XLF
+AAOI,Technology Hardware & Equipment,XLK
+AAON,Capital Goods,XLI
+AAP,Consumer Discretionary Distribution & Retail,XLY
+AAPD,UNKNOWN,SPY
+AAPG,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+AAPL,Technology Hardware & Equipment,XLK
+AARD,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+AAT,Equity Real Estate Investment Trusts (REITs),XLRE
+AAUC,Materials,XLB
+AB,Financial Services,XLF
+ABAT,Materials,XLB
+ABBV,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ABCB,Banks,XLF
+ABCL,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ABEO,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ABEV,Food Beverage & Tobacco,XLP
+ABG,Consumer Discretionary Distribution & Retail,XLY
+ABL,Insurance,XLF
+ABLV,Media & Entertainment,XLC
+ABM,Commercial & Professional Services,XLI
+ABNB,Consumer Services,XLY
+ABOS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ABP,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ABR,Financial Services,XLF
+ABSI,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ABT,Health Care Equipment & Services,XLV
+ABTC,Software & Services,XLK
+ABTS,Software & Services,XLK
+ABUS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ABVC,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ABVE,Food Beverage & Tobacco,XLP
+ABVX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ACA,Capital Goods,XLI
+ACAD,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ACB,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ACCL,Commercial & Professional Services,XLI
+ACCO,Commercial & Professional Services,XLI
+ACDC,Energy,XLE
+ACEL,Consumer Services,XLY
+ACET,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ACFN,Technology Hardware & Equipment,XLK
+ACGL,Insurance,XLF
+ACHC,Health Care Equipment & Services,XLV
+ACHR,Capital Goods,XLI
+ACHV,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ACI,Consumer Staples Distribution & Retail,XLP
+ACIC,Insurance,XLF
+ACIU,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ACIW,Software & Services,XLK
+ACLS,Semiconductors & Semiconductor Equipment,XLK
+ACLX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ACM,Capital Goods,XLI
+ACMR,Semiconductors & Semiconductor Equipment,XLK
+ACN,Software & Services,XLK
+ACNB,Banks,XLF
+ACNT,Materials,XLB
+ACOG,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ACON,Health Care Equipment & Services,XLV
+ACR,Financial Services,XLF
+ACRE,Financial Services,XLF
+ACRS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ACRV,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ACT,Financial Services,XLF
+ACTG,Financial Services,XLF
+ACTU,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ACU,Health Care Equipment & Services,XLV
+ACVA,Commercial & Professional Services,XLI
+ACWI,UNKNOWN,SPY
+ACWV,UNKNOWN,SPY
+ACXP,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+AD,Telecommunication Services,XLC
+ADAG,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ADAM,Financial Services,XLF
+ADAP,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ADBE,Software & Services,XLK
+ADC,Equity Real Estate Investment Trusts (REITs),XLRE
+ADCT,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ADEA,Software & Services,XLK
+ADGM,Health Care Equipment & Services,XLV
+ADI,Semiconductors & Semiconductor Equipment,XLK
+ADIL,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ADM,Food Beverage & Tobacco,XLP
+ADMA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ADN,Capital Goods,XLI
+ADNT,Automobiles & Components,XLY
+ADP,Commercial & Professional Services,XLI
+ADPT,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ADRE-202303,UNKNOWN,SPY
+ADSE,Capital Goods,XLI
+ADSK,Software & Services,XLK
+ADT,Consumer Services,XLY
+ADTN,Technology Hardware & Equipment,XLK
+ADTX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ADUR,Software & Services,XLK
+ADUS,Health Care Equipment & Services,XLV
+ADV,Media & Entertainment,XLC
+ADVB,Health Care Equipment & Services,XLV
+ADVM,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ADXN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+AEAQU,UNKNOWN,SPY
+AEBI,Capital Goods,XLI
+AEC,Energy,XLE
+AEE,Utilities,XLU
+AEG,Insurance,XLF
+AEHL,Media & Entertainment,XLC
+AEHR,Semiconductors & Semiconductor Equipment,XLK
+AEI,Real Estate Management & Development,XLRE
+AEIS,Technology Hardware & Equipment,XLK
+AEM,Materials,XLB
+AEMD,Health Care Equipment & Services,XLV
+AENT,Consumer Discretionary Distribution & Retail,XLY
+AEO,Consumer Discretionary Distribution & Retail,XLY
+AEP,Utilities,XLU
+AER,Capital Goods,XLI
+AERO,Transportation,XLI
+AERT,Commercial & Professional Services,XLI
+AES,Utilities,XLU
+AESI,Energy,XLE
+AEVA,Technology Hardware & Equipment,XLK
+AEXA,UNKNOWN,SPY
+AEYE,Software & Services,XLK
+AFBI,Banks,XLF
+AFCG,Financial Services,XLF
+AFG,Insurance,XLF
+AFJK,UNKNOWN,SPY
+AFL,Insurance,XLF
+AFRI,Food Beverage & Tobacco,XLP
+AFRM,Financial Services,XLF
+AFYA,Consumer Services,XLY
+AG,Materials,XLB
+AGAE,Consumer Services,XLY
+AGCC,Consumer Discretionary Distribution & Retail,XLY
+AGCO,Capital Goods,XLI
+AGD,UNKNOWN,SPY
+AGEN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+AGG,UNKNOWN,SPY
+AGH,Consumer Services,XLY
+AGI,Materials,XLB
+AGIO,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+AGL,Health Care Equipment & Services,XLV
+AGM,Financial Services,XLF
+AGM.A,Financial Services,XLF
+AGMH,Financial Services,XLF
+AGNC,Financial Services,XLF
+AGO,Insurance,XLF
+AGRI,Food Beverage & Tobacco,XLP
+AGRO,Food Beverage & Tobacco,XLP
+AGRZ,Capital Goods,XLI
+AGX,Capital Goods,XLI
+AGYS,Software & Services,XLK
+AHCO,Health Care Equipment & Services,XLV
+AHG,Health Care Equipment & Services,XLV
+AHH,Equity Real Estate Investment Trusts (REITs),XLRE
+AHL,Insurance,XLF
+AHMA,Media & Entertainment,XLC
+AHR,Equity Real Estate Investment Trusts (REITs),XLRE
+AHT,Equity Real Estate Investment Trusts (REITs),XLRE
+AI,Software & Services,XLK
+AIFF,Health Care Equipment & Services,XLV
+AIFU,Insurance,XLF
+AIG,Insurance,XLF
+AIHS,Financial Services,XLF
+AII,Insurance,XLF
+AIIO,Automobiles & Components,XLY
+AIMD,Technology Hardware & Equipment,XLK
+AIN,Capital Goods,XLI
+AIOT,Technology Hardware & Equipment,XLK
+AIP,Software & Services,XLK
+AIR,Capital Goods,XLI
+AIRE,Software & Services,XLK
+AIRG,Technology Hardware & Equipment,XLK
+AIRJ,Capital Goods,XLI
+AIRO,Capital Goods,XLI
+AIRS,Health Care Equipment & Services,XLV
+AIRT,Transportation,XLI
+AISP,Software & Services,XLK
+AIT,Capital Goods,XLI
+AIV,Equity Real Estate Investment Trusts (REITs),XLRE
+AIVL,UNKNOWN,SPY
+AIXC,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+AIXI,Software & Services,XLK
+AIYY,UNKNOWN,SPY
+AIZ,Insurance,XLF
+AJG,Insurance,XLF
+AKA,Consumer Discretionary Distribution & Retail,XLY
+AKAM,Software & Services,XLK
+AKAN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+AKBA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+AKO.A,Food Beverage & Tobacco,XLP
+AKO.B,Food Beverage & Tobacco,XLP
+AKR,Equity Real Estate Investment Trusts (REITs),XLRE
+AKRO,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+AKTX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+AL,Capital Goods,XLI
+ALAB,Semiconductors & Semiconductor Equipment,XLK
+ALAR,Software & Services,XLK
+ALB,Materials,XLB
+ALBT,Real Estate Management & Development,XLRE
+ALC,Health Care Equipment & Services,XLV
+ALCO,Food Beverage & Tobacco,XLP
+ALCY,UNKNOWN,SPY
+ALDF,UNKNOWN,SPY
+ALDX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ALE,Utilities,XLU
+ALEC,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ALEX,Equity Real Estate Investment Trusts (REITs),XLRE
+ALF,UNKNOWN,SPY
+ALG,Capital Goods,XLI
+ALGM,Semiconductors & Semiconductor Equipment,XLK
+ALGN,Health Care Equipment & Services,XLV
+ALGS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ALGT,Transportation,XLI
+ALH,Capital Goods,XLI
+ALHC,Health Care Equipment & Services,XLV
+ALIS,UNKNOWN,SPY
+ALIT,Commercial & Professional Services,XLI
+ALK,Transportation,XLI
+ALKS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ALKT,Software & Services,XLK
+ALL,Insurance,XLF
+ALLE,Capital Goods,XLI
+ALLO,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ALLR,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ALLT,Software & Services,XLK
+ALLY,Financial Services,XLF
+ALM,Materials,XLB
+ALMS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ALMU,Semiconductors & Semiconductor Equipment,XLK
+ALNT,Capital Goods,XLI
+ALNY,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ALOT,Technology Hardware & Equipment,XLK
+ALPS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ALRM,Software & Services,XLK
+ALRS,Financial Services,XLF
+ALSN,Capital Goods,XLI
+ALT,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ALTG,Capital Goods,XLI
+ALTI,Financial Services,XLF
+ALTO,Materials,XLB
+ALTS,Financial Services,XLF
+ALUB-U,UNKNOWN,SPY
+ALUR,Consumer Services,XLY
+ALV,Automobiles & Components,XLY
+ALVO,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ALX,Equity Real Estate Investment Trusts (REITs),XLRE
+ALXO,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ALZN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+AM,Energy,XLE
+AMAL,Banks,XLF
+AMAT,Semiconductors & Semiconductor Equipment,XLK
+AMBA,Semiconductors & Semiconductor Equipment,XLK
+AMBC,Insurance,XLF
+AMBP,Materials,XLB
+AMBQ,Semiconductors & Semiconductor Equipment,XLK
+AMBR,Media & Entertainment,XLC
+AMC,Media & Entertainment,XLC
+AMCR,Materials,XLB
+AMCX,Media & Entertainment,XLC
+AMD,Semiconductors & Semiconductor Equipment,XLK
+AMDD,UNKNOWN,SPY
+AME,Capital Goods,XLI
+AMG,Financial Services,XLF
+AMGN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+AMH,Equity Real Estate Investment Trusts (REITs),XLRE
+AMIX,Health Care Equipment & Services,XLV
+AMKR,Semiconductors & Semiconductor Equipment,XLK
+AMLX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+AMN,Health Care Equipment & Services,XLV
+AMOD,Software & Services,XLK
+AMP,Financial Services,XLF
+AMPG,Technology Hardware & Equipment,XLK
+AMPH,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+AMPL,Software & Services,XLK
+AMPX,Capital Goods,XLI
+AMPY,Energy,XLE
+AMR,Materials,XLB
+AMRC,Capital Goods,XLI
+AMRK,Consumer Discretionary Distribution & Retail,XLY
+AMRN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+AMRX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+AMRZ,Materials,XLB
+AMSC,Capital Goods,XLI
+AMSF,Insurance,XLF
+AMST,Consumer Services,XLY
+AMT,Equity Real Estate Investment Trusts (REITs),XLRE
+AMTB,Banks,XLF
+AMTD,Financial Services,XLF
+AMTM,Commercial & Professional Services,XLI
+AMTX,Energy,XLE
+AMWD,Capital Goods,XLI
+AMWL,Health Care Equipment & Services,XLV
+AMX,Telecommunication Services,XLC
+AMZN,Consumer Discretionary Distribution & Retail,XLY
+AMZU,UNKNOWN,SPY
+AN,Consumer Discretionary Distribution & Retail,XLY
+ANAB,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ANDE,Consumer Staples Distribution & Retail,XLP
+ANEB,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ANET,Technology Hardware & Equipment,XLK
+ANF,Consumer Discretionary Distribution & Retail,XLY
+ANGH,Media & Entertainment,XLC
+ANGI,Media & Entertainment,XLC
+ANGO,Health Care Equipment & Services,XLV
+ANGX,Media & Entertainment,XLC
+ANIK,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ANIP,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ANIX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ANL,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ANNA,Utilities,XLU
+ANNX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ANPA,Commercial & Professional Services,XLI
+ANRO,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ANSC,UNKNOWN,SPY
+ANTA,Financial Services,XLF
+ANTX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ANVS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ANY,Software & Services,XLK
+AOMR,Financial Services,XLF
+AON,Insurance,XLF
+AORT,Health Care Equipment & Services,XLV
+AOS,Capital Goods,XLI
+AOSL,Semiconductors & Semiconductor Equipment,XLK
+AOUT,Consumer Durables & Apparel,XLY
+AP,Materials,XLB
+APA,Energy,XLE
+APAC,UNKNOWN,SPY
+APAD,UNKNOWN,SPY
+APAM,Financial Services,XLF
+APD,Materials,XLB
+APDN,Health Care,XLV
+APEI,Consumer Services,XLY
+APG,Capital Goods,XLI
+APGE,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+APH,Technology Hardware & Equipment,XLK
+API,Software & Services,XLK
+APLD,Software & Services,XLK
+APLE,Equity Real Estate Investment Trusts (REITs),XLRE
+APLM,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+APLS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+APLT,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+APM,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+APO,Financial Services,XLF
+APOG,Capital Goods,XLI
+APP,Software & Services,XLK
+APPF,Software & Services,XLK
+APPN,Software & Services,XLK
+APPS,Software & Services,XLK
+APRE,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+APRH,UNKNOWN,SPY
+APTV,Automobiles & Components,XLY
+APVO,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+APWC,Capital Goods,XLI
+APXT,UNKNOWN,SPY
+APXTU,UNKNOWN,SPY
+APYX,Health Care Equipment & Services,XLV
+AQB,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+AQMS,Commercial & Professional Services,XLI
+AQN,Utilities,XLU
+AQST,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+AR,Energy,XLE
+ARAI,Transportation,XLI
+ARAY,Health Care Equipment & Services,XLV
+ARBB,Software & Services,XLK
+ARBE,Technology Hardware & Equipment,XLK
+ARBK,Software & Services,XLK
+ARCB,Transportation,XLI
+ARCO,Consumer Services,XLY
+ARCT,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ARDC,UNKNOWN,SPY
+ARDT,Health Care Equipment & Services,XLV
+ARDX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ARE,Equity Real Estate Investment Trusts (REITs),XLRE
+AREB,Commercial & Professional Services,XLI
+AREC,Energy,XLE
+AREN,Media & Entertainment,XLC
+ARES,Financial Services,XLF
+ARGX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ARHS,Consumer Discretionary Distribution & Retail,XLY
+ARI,Financial Services,XLF
+ARIS,Energy,XLE
+ARKB,UNKNOWN,SPY
+ARKO,Consumer Discretionary Distribution & Retail,XLY
+ARKR,Consumer Services,XLY
+ARL,Real Estate Management & Development,XLRE
+ARLO,Technology Hardware & Equipment,XLK
+ARLP,Energy,XLE
+ARM,Semiconductors & Semiconductor Equipment,XLK
+ARMK,Consumer Services,XLY
+ARMN,UNKNOWN,SPY
+AROC,Energy,XLE
+AROW,Banks,XLF
+ARQ,Materials,XLB
+ARQQ,Software & Services,XLK
+ARQT,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ARR,Financial Services,XLF
+ARRY,Capital Goods,XLI
+ARTL,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ARTNA,Utilities,XLU
+ARTV,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ARTW,Capital Goods,XLI
+ARVN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ARW,Technology Hardware & Equipment,XLK
+ARWR,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ARX,Insurance,XLF
+AS,Consumer Durables & Apparel,XLY
+ASAN,Software & Services,XLK
+ASB,Banks,XLF
+ASBP,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ASC,Energy,XLE
+ASEA,UNKNOWN,SPY
+ASGN,Software & Services,XLK
+ASH,Materials,XLB
+ASIC,Insurance,XLF
+ASIX,Materials,XLB
+ASLE,Capital Goods,XLI
+ASM,UNKNOWN,SPY
+ASMB,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ASML,Semiconductors & Semiconductor Equipment,XLK
+ASND,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ASNS,Technology Hardware & Equipment,XLK
+ASO,Consumer Discretionary Distribution & Retail,XLY
+ASPC,UNKNOWN,SPY
+ASPI,Materials,XLB
+ASPN,Materials,XLB
+ASPS,Real Estate Management & Development,XLRE
+ASR,Transportation,XLI
+ASRT,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ASRV,Banks,XLF
+ASST,Financial Services,XLF
+ASTC,Technology Hardware & Equipment,XLK
+ASTE,Capital Goods,XLI
+ASTH,Health Care Equipment & Services,XLV
+ASTI,Semiconductors & Semiconductor Equipment,XLK
+ASTL,Materials,XLB
+ASTS,Telecommunication Services,XLC
+ASUR,Commercial & Professional Services,XLI
+ASX,Semiconductors & Semiconductor Equipment,XLK
+ASYS,Semiconductors & Semiconductor Equipment,XLK
+ATAI,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ATAT,Consumer Services,XLY
+ATEC,Health Care Equipment & Services,XLV
+ATEN,Software & Services,XLK
+ATER,Consumer Durables & Apparel,XLY
+ATEX,Telecommunication Services,XLC
+ATGE,Consumer Services,XLY
+ATGL,Software & Services,XLK
+ATHA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ATHE,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ATHM,Media & Entertainment,XLC
+ATHR,Financial Services,XLF
+ATI,Capital Goods,XLI
+ATII,UNKNOWN,SPY
+ATKR,Capital Goods,XLI
+ATLC,Financial Services,XLF
+ATLN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ATLO,Banks,XLF
+ATLX,Materials,XLB
+ATMC,UNKNOWN,SPY
+ATMU,Capital Goods,XLI
+ATMV,UNKNOWN,SPY
+ATNI,Telecommunication Services,XLC
+ATO,Utilities,XLU
+ATOM,Semiconductors & Semiconductor Equipment,XLK
+ATON,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ATOS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ATPC,Health Care Equipment & Services,XLV
+ATR,Materials,XLB
+ATRA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ATRC,Health Care Equipment & Services,XLV
+ATRO,Capital Goods,XLI
+ATS,Capital Goods,XLI
+ATUS,Media & Entertainment,XLC
+ATXG,Transportation,XLI
+ATXS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ATYR,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+AU,Materials,XLB
+AUB,Banks,XLF
+AUBN,Banks,XLF
+AUDC,Technology Hardware & Equipment,XLK
+AUGO,Materials,XLB
+AUID,Software & Services,XLK
+AUNA,Health Care Equipment & Services,XLV
+AUPH,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+AUR,Software & Services,XLK
+AURA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+AURE,Financial Services,XLF
+AUTL,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+AUUD,Software & Services,XLK
+AVA,Utilities,XLU
+AVAH,Health Care Equipment & Services,XLV
+AVAL,Banks,XLF
+AVAV,Capital Goods,XLI
+AVB,Equity Real Estate Investment Trusts (REITs),XLRE
+AVBC,Banks,XLF
+AVBH,Banks,XLF
+AVBP,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+AVD,Materials,XLB
+AVDL,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+AVDX,Financials,XLF
+AVGO,Semiconductors & Semiconductor Equipment,XLK
+AVIR,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+AVNS,Health Care Equipment & Services,XLV
+AVNT,Materials,XLB
+AVNW,Technology Hardware & Equipment,XLK
+AVO,Food Beverage & Tobacco,XLP
+AVPT,Software & Services,XLK
+AVR,Health Care Equipment & Services,XLV
+AVT,Technology Hardware & Equipment,XLK
+AVTR,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+AVTX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+AVX,Food Beverage & Tobacco,XLP
+AVXL,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+AVY,Materials,XLB
+AWI,Capital Goods,XLI
+AWK,Utilities,XLU
+AWR,Utilities,XLU
+AWRE,Software & Services,XLK
+AX,Banks,XLF
+AXG,Financial Services,XLF
+AXGN,Health Care Equipment & Services,XLV
+AXIA,Utilities,XLU
+AXIA-,Utilities,XLU
+AXIN,UNKNOWN,SPY
+AXL,Automobiles & Components,XLY
+AXON,Capital Goods,XLI
+AXP,Financial Services,XLF
+AXR,Real Estate Management & Development,XLRE
+AXS,Insurance,XLF
+AXSM,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+AXTA,Materials,XLB
+AXTI,Semiconductors & Semiconductor Equipment,XLK
+AXUP,UNKNOWN,SPY
+AYI,Capital Goods,XLI
+AYTU,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+AZ,Capital Goods,XLI
+AZI,Consumer Discretionary Distribution & Retail,XLY
+AZN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+AZO,Consumer Discretionary Distribution & Retail,XLY
+AZTA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+AZZ,Capital Goods,XLI
+B,Materials,XLB
+BA,Capital Goods,XLI
+BABA,Consumer Discretionary Distribution & Retail,XLY
+BAC,Banks,XLF
+BACC,UNKNOWN,SPY
+BACQ,UNKNOWN,SPY
+BAER,Commercial & Professional Services,XLI
+BAFN,Banks,XLF
+BAH,Commercial & Professional Services,XLI
+BAK,Materials,XLB
+BALL,Materials,XLB
+BALY,Consumer Services,XLY
+BAM,Financial Services,XLF
+BANC,Banks,XLF
+BAND,Telecommunication Services,XLC
+BANF,Banks,XLF
+BANL,Energy,XLE
+BANR,Banks,XLF
+BAOS,Media & Entertainment,XLC
+BAP,Banks,XLF
+BARK,Consumer Discretionary Distribution & Retail,XLY
+BASE,Information Technology,XLK
+BATRA,Media & Entertainment,XLC
+BATRK,Media & Entertainment,XLC
+BAX,Health Care Equipment & Services,XLV
+BAYA,UNKNOWN,SPY
+BB,Software & Services,XLK
+BBAI,Software & Services,XLK
+BBAR,Banks,XLF
+BBBY,Consumer Discretionary Distribution & Retail,XLY
+BBCP,Capital Goods,XLI
+BBD,Banks,XLF
+BBDO,Banks,XLF
+BBGI,Media & Entertainment,XLC
+BBIO,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+BBLG,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+BBNX,Health Care Equipment & Services,XLV
+BBOT,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+BBSI,Commercial & Professional Services,XLI
+BBT,Banks,XLF
+BBU,Capital Goods,XLI
+BBUC,Capital Goods,XLI
+BBVA,Banks,XLF
+BBW,Consumer Discretionary Distribution & Retail,XLY
+BBWI,Consumer Discretionary Distribution & Retail,XLY
+BBY,Consumer Discretionary Distribution & Retail,XLY
+BC,Consumer Durables & Apparel,XLY
+BCAB,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+BCAL,Banks,XLF
+BCAR,UNKNOWN,SPY
+BCAX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+BCBP,Banks,XLF
+BCC,Capital Goods,XLI
+BCDA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+BCE,Telecommunication Services,XLC
+BCG,Financial Services,XLF
+BCH,Banks,XLF
+BCML,Banks,XLF
+BCO,Commercial & Professional Services,XLI
+BCPC,Materials,XLB
+BCRX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+BCS,Banks,XLF
+BCSS-U,UNKNOWN,SPY
+BCTX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+BCYC,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+BDC,Technology Hardware & Equipment,XLK
+BDCI,UNKNOWN,SPY
+BDCIU,UNKNOWN,SPY
+BDCX,UNKNOWN,SPY
+BDMD,Health Care Equipment & Services,XLV
+BDN,Equity Real Estate Investment Trusts (REITs),XLRE
+BDRX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+BDSX,Health Care Equipment & Services,XLV
+BDTX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+BDX,Health Care Equipment & Services,XLV
+BE,Capital Goods,XLI
+BEAG,UNKNOWN,SPY
+BEAM,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+BEAT,Health Care Equipment & Services,XLV
+BEDU,Consumer Services,XLY
+BEEM,Capital Goods,XLI
+BEEP,Commercial & Professional Services,XLI
+BEKE,Real Estate Management & Development,XLRE
+BELFA,Technology Hardware & Equipment,XLK
+BELFB,Technology Hardware & Equipment,XLK
+BEN,Financial Services,XLF
+BENF,Financial Services,XLF
+BEP,Utilities,XLU
+BEPC,Utilities,XLU
+BETA,Capital Goods,XLI
+BETR,Financial Services,XLF
+BF-B,UNKNOWN,SPY
+BF.A,Food Beverage & Tobacco,XLP
+BF.B,Food Beverage & Tobacco,XLP
+BFAM,Consumer Services,XLY
+BFC,Banks,XLF
+BFH,Financial Services,XLF
+BFIN,Banks,XLF
+BFLY,Health Care Equipment & Services,XLV
+BFRG,Health Care Equipment & Services,XLV
+BFRI,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+BFS,Equity Real Estate Investment Trusts (REITs),XLRE
+BFST,Banks,XLF
+BG,Food Beverage & Tobacco,XLP
+BGC,Financial Services,XLF
+BGFV,Consumer Discretionary,XLY
+BGH,UNKNOWN,SPY
+BGIN,Technology Hardware & Equipment,XLK
+BGL,Materials,XLB
+BGLC,Capital Goods,XLI
+BGM,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+BGMS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+BGS,Food Beverage & Tobacco,XLP
+BGSF,Commercial & Professional Services,XLI
+BGSI,Commercial & Professional Services,XLI
+BH,Consumer Services,XLY
+BH.A,Consumer Services,XLY
+BHAT,Media & Entertainment,XLC
+BHB,Banks,XLF
+BHC,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+BHE,Technology Hardware & Equipment,XLK
+BHF,Insurance,XLF
+BHP,Materials,XLB
+BHR,Equity Real Estate Investment Trusts (REITs),XLRE
+BHRB,Banks,XLF
+BHST,Household & Personal Products,XLP
+BHVN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+BIAF,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+BIDU,Media & Entertainment,XLC
+BIIB,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+BIL,UNKNOWN,SPY
+BILI,Media & Entertainment,XLC
+BILL,Software & Services,XLK
+BINI,Consumer Discretionary,XLY
+BIO,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+BIO.B,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+BIOA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+BIOX,Materials,XLB
+BIP,Utilities,XLU
+BIPC,Utilities,XLU
+BIRD,Consumer Durables & Apparel,XLY
+BIRK,Consumer Durables & Apparel,XLY
+BITB,UNKNOWN,SPY
+BITF,Software & Services,XLK
+BITO,UNKNOWN,SPY
+BITU,UNKNOWN,SPY
+BITX,UNKNOWN,SPY
+BIVI,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+BIYA,Commercial & Professional Services,XLI
+BIZD,UNKNOWN,SPY
+BJ,Consumer Staples Distribution & Retail,XLP
+BJDX,Health Care Equipment & Services,XLV
+BJK,UNKNOWN,SPY
+BJRI,Consumer Services,XLY
+BK,Financial Services,XLF
+BKD,Health Care Equipment & Services,XLV
+BKE,Consumer Discretionary Distribution & Retail,XLY
+BKH,Utilities,XLU
+BKHA,UNKNOWN,SPY
+BKKT,Financial Services,XLF
+BKNG,Consumer Services,XLY
+BKNU,UNKNOWN,SPY
+BKR,Energy,XLE
+BKSY,Commercial & Professional Services,XLI
+BKTI,Technology Hardware & Equipment,XLK
+BKU,Banks,XLF
+BKV,Energy,XLE
+BKYI,Software & Services,XLK
+BL,Software & Services,XLK
+BLBD,Capital Goods,XLI
+BLBX,Software & Services,XLK
+BLCO,Health Care Equipment & Services,XLV
+BLD,Consumer Durables & Apparel,XLY
+BLDP,Capital Goods,XLI
+BLDR,Capital Goods,XLI
+BLFS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+BLFY,Banks,XLF
+BLIN,Software & Services,XLK
+BLIV,Software & Services,XLK
+BLK,Financial Services,XLF
+BLKB,Software & Services,XLK
+BLLN,Health Care Equipment & Services,XLV
+BLMN,Consumer Services,XLY
+BLMZ,Media & Entertainment,XLC
+BLND,Software & Services,XLK
+BLNE,Financial Services,XLF
+BLNK,Capital Goods,XLI
+BLRX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+BLSH,Financial Services,XLF
+BLTE,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+BLUW,UNKNOWN,SPY
+BLV,UNKNOWN,SPY
+BLX,Financial Services,XLF
+BLZE,Software & Services,XLK
+BLZR,UNKNOWN,SPY
+BMA,Banks,XLF
+BMBL,Media & Entertainment,XLC
+BMEA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+BMGL,Health Care Equipment & Services,XLV
+BMHL,Financial Services,XLF
+BMI,Technology Hardware & Equipment,XLK
+BMNR,UNKNOWN,SPY
+BMO,Banks,XLF
+BMR,Software & Services,XLK
+BMRA,Health Care Equipment & Services,XLV
+BMRC,Banks,XLF
+BMRN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+BMY,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+BN,Financial Services,XLF
+BNAI,Software & Services,XLK
+BNBX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+BNC,Capital Goods,XLI
+BND,UNKNOWN,SPY
+BNED,Consumer Discretionary Distribution & Retail,XLY
+BNGO,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+BNKK,Household & Personal Products,XLP
+BNL,Equity Real Estate Investment Trusts (REITs),XLRE
+BNO,UNKNOWN,SPY
+BNR,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+BNRG,Capital Goods,XLI
+BNS,Banks,XLF
+BNT,Insurance,XLF
+BNTC,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+BNTX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+BNZI,Software & Services,XLK
+BOC,Media & Entertainment,XLC
+BODI,Consumer Services,XLY
+BOF,Food Beverage & Tobacco,XLP
+BOH,Banks,XLF
+BOIL,UNKNOWN,SPY
+BOKF,Banks,XLF
+BOLD,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+BOLT,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+BON,Materials,XLB
+BOOM,Energy,XLE
+BOOT,Consumer Discretionary Distribution & Retail,XLY
+BORR,Energy,XLE
+BOSC,Technology Hardware & Equipment,XLK
+BOTJ,Banks,XLF
+BOW,Insurance,XLF
+BOWN,UNKNOWN,SPY
+BOX,Software & Services,XLK
+BOXL,Technology Hardware & Equipment,XLK
+BP,Energy,XLE
+BPOP,Banks,XLF
+BPRN,Banks,XLF
+BR,Commercial & Professional Services,XLI
+BRAG,Consumer Services,XLY
+BRBI,Financial Services,XLF
+BRBR,Household & Personal Products,XLP
+BRBS,Banks,XLF
+BRC,Commercial & Professional Services,XLI
+BRCB,Consumer Services,XLY
+BRCC,Food Beverage & Tobacco,XLP
+BREA,Communication Services,XLC
+BRFH,Food Beverage & Tobacco,XLP
+BRFS,UNKNOWN,SPY
+BRID,Food Beverage & Tobacco,XLP
+BRK-A,UNKNOWN,SPY
+BRK-B,UNKNOWN,SPY
+BRK.A,Financial Services,XLF
+BRK.B,Financial Services,XLF
+BRKR,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+BRLS,Food Beverage & Tobacco,XLP
+BRLT,Consumer Discretionary Distribution & Retail,XLY
+BRNS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+BRO,Insurance,XLF
+BROS,Consumer Services,XLY
+BRR,UNKNOWN,SPY
+BRSL,Consumer Services,XLY
+BRSP,Financial Services,XLF
+BRT,Equity Real Estate Investment Trusts (REITs),XLRE
+BRTX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+BRX,Equity Real Estate Investment Trusts (REITs),XLRE
+BRY,Energy,XLE
+BRZE,Software & Services,XLK
+BSAA,UNKNOWN,SPY
+BSAC,Banks,XLF
+BSBK,Banks,XLF
+BSBR,Banks,XLF
+BSET,Consumer Durables & Apparel,XLY
+BSLK,Materials,XLB
+BSM,Energy,XLE
+BSRR,Banks,XLF
+BSVN,Banks,XLF
+BSX,Health Care Equipment & Services,XLV
+BSY,Software & Services,XLK
+BTAI,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+BTBD,Consumer Services,XLY
+BTBT,Software & Services,XLK
+BTC,UNKNOWN,SPY
+BTCM,Information Technology,XLK
+BTCS,Software & Services,XLK
+BTCT,Software & Services,XLK
+BTDR,Software & Services,XLK
+BTE,Energy,XLE
+BTG,UNKNOWN,SPY
+BTI,Food Beverage & Tobacco,XLP
+BTM,Commercial & Professional Services,XLI
+BTMD,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+BTOC,Transportation,XLI
+BTOG,Software & Services,XLK
+BTQ,Software & Services,XLK
+BTSG,Health Care Equipment & Services,XLV
+BTTC,Software & Services,XLK
+BTU,Energy,XLE
+BUD,Food Beverage & Tobacco,XLP
+BULL,Financial Services,XLF
+BUR,Financial Services,XLF
+BURL,Consumer Discretionary Distribution & Retail,XLY
+BURU,UNKNOWN,SPY
+BUSE,Banks,XLF
+BUUU,Media & Entertainment,XLC
+BV,Commercial & Professional Services,XLI
+BVFL,Banks,XLF
+BVN,Materials,XLB
+BVS,Health Care Equipment & Services,XLV
+BW,Capital Goods,XLI
+BWA,Automobiles & Components,XLY
+BWAY,Health Care Equipment & Services,XLV
+BWB,Banks,XLF
+BWEN,Capital Goods,XLI
+BWFG,Banks,XLF
+BWIN,Insurance,XLF
+BWLP,Energy,XLE
+BWMN,Capital Goods,XLI
+BWMX,Consumer Discretionary Distribution & Retail,XLY
+BWX,UNKNOWN,SPY
+BWXT,Capital Goods,XLI
+BX,Financial Services,XLF
+BXC,Capital Goods,XLI
+BXMT,Financial Services,XLF
+BXP,Equity Real Estate Investment Trusts (REITs),XLRE
+BXSL,UNKNOWN,SPY
+BY,Banks,XLF
+BYAH,Consumer Discretionary Distribution & Retail,XLY
+BYD,Consumer Services,XLY
+BYFC,Banks,XLF
+BYND,Food Beverage & Tobacco,XLP
+BYRN,Capital Goods,XLI
+BYSI,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+BZ,Commercial & Professional Services,XLI
+BZAI,Semiconductors & Semiconductor Equipment,XLK
+BZFD,Media & Entertainment,XLC
+BZH,Consumer Durables & Apparel,XLY
+BZQ,UNKNOWN,SPY
+BZUN,Consumer Discretionary Distribution & Retail,XLY
+C,Banks,XLF
+CAAP,Transportation,XLI
+CAAS,Automobiles & Components,XLY
+CABA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CABO,Media & Entertainment,XLC
+CABR,Household & Personal Products,XLP
+CAC,Banks,XLF
+CACC,Financial Services,XLF
+CACI,Commercial & Professional Services,XLI
+CADE,Banks,XLF
+CADL,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CAE,Capital Goods,XLI
+CAEP,UNKNOWN,SPY
+CAG,Food Beverage & Tobacco,XLP
+CAH,Health Care Equipment & Services,XLV
+CAI,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CAKE,Consumer Services,XLY
+CAL,Consumer Discretionary Distribution & Retail,XLY
+CALC,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CALM,Food Beverage & Tobacco,XLP
+CALX,Technology Hardware & Equipment,XLK
+CAMP,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CAMT,Semiconductors & Semiconductor Equipment,XLK
+CAN,Technology Hardware & Equipment,XLK
+CANG,Consumer Discretionary Distribution & Retail,XLY
+CAPL,Energy,XLE
+CAPN,UNKNOWN,SPY
+CAPR,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CAPS,Capital Goods,XLI
+CAPT,Capital Goods,XLI
+CAR,Transportation,XLI
+CARE,Banks,XLF
+CARG,Media & Entertainment,XLC
+CARL,Health Care Equipment & Services,XLV
+CARM,Health Care,XLV
+CARR,Capital Goods,XLI
+CARS,Media & Entertainment,XLC
+CART,Consumer Staples Distribution & Retail,XLP
+CARV,Banks,XLF
+CARZ,UNKNOWN,SPY
+CASH,Banks,XLF
+CASI,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CASS,Financial Services,XLF
+CASY,Consumer Staples Distribution & Retail,XLP
+CAT,Capital Goods,XLI
+CATO,Consumer Discretionary Distribution & Retail,XLY
+CATX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CATY,Banks,XLF
+CAVA,Consumer Services,XLY
+CB,Insurance,XLF
+CBAN,Banks,XLF
+CBAT,Capital Goods,XLI
+CBC,Banks,XLF
+CBFV,Banks,XLF
+CBIO,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CBK,Banks,XLF
+CBL,Equity Real Estate Investment Trusts (REITs),XLRE
+CBLL,Health Care Equipment & Services,XLV
+CBNA,Banks,XLF
+CBNK,Banks,XLF
+CBOE,Financial Services,XLF
+CBRE,Real Estate Management & Development,XLRE
+CBRL,Consumer Services,XLY
+CBSH,Banks,XLF
+CBT,Materials,XLB
+CBU,Banks,XLF
+CBUS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CBZ,Commercial & Professional Services,XLI
+CC,Materials,XLB
+CCAP,Financial Services,XLF
+CCB,Banks,XLF
+CCBG,Banks,XLF
+CCC,Software & Services,XLK
+CCCC,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CCCS,Software & Services,XLK
+CCCX,UNKNOWN,SPY
+CCEC,Transportation,XLI
+CCEP,Food Beverage & Tobacco,XLP
+CCG,Insurance,XLF
+CCHH,Consumer Services,XLY
+CCI,Equity Real Estate Investment Trusts (REITs),XLRE
+CCII,UNKNOWN,SPY
+CCIX,UNKNOWN,SPY
+CCJ,Energy,XLE
+CCK,Materials,XLB
+CCL,Consumer Services,XLY
+CCLD,Health Care Equipment & Services,XLV
+CCM,Health Care Equipment & Services,XLV
+CCNE,Banks,XLF
+CCO,Media & Entertainment,XLC
+CCOI,Telecommunication Services,XLC
+CCRD,Software & Services,XLK
+CCRN,Health Care Equipment & Services,XLV
+CCS,Consumer Durables & Apparel,XLY
+CCSI,Software & Services,XLK
+CCTG,Technology Hardware & Equipment,XLK
+CCU,Food Beverage & Tobacco,XLP
+CD,Software & Services,XLK
+CDE,Materials,XLB
+CDIO,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CDLR,Capital Goods,XLI
+CDLX,Media & Entertainment,XLC
+CDNA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CDNS,Software & Services,XLK
+CDP,Equity Real Estate Investment Trusts (REITs),XLRE
+CDRE,Capital Goods,XLI
+CDRO,Consumer Services,XLY
+CDT,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CDTG,Commercial & Professional Services,XLI
+CDTX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CDW,Technology Hardware & Equipment,XLK
+CDXS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CDZI,Utilities,XLU
+CE,Materials,XLB
+CECO,Capital Goods,XLI
+CEF,UNKNOWN,SPY
+CEG,Utilities,XLU
+CELC,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CELH,Food Beverage & Tobacco,XLP
+CELU,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CELZ,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CENN,Automobiles & Components,XLY
+CENT,Household & Personal Products,XLP
+CENTA,Household & Personal Products,XLP
+CENX,Materials,XLB
+CEP,UNKNOWN,SPY
+CEPF,UNKNOWN,SPY
+CEPO,UNKNOWN,SPY
+CEPT,UNKNOWN,SPY
+CEPU,Utilities,XLU
+CEPV,UNKNOWN,SPY
+CERO,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CERS,Health Care Equipment & Services,XLV
+CERT,Health Care Equipment & Services,XLV
+CETX,Technology Hardware & Equipment,XLK
+CETY,Energy,XLE
+CEVA,Semiconductors & Semiconductor Equipment,XLK
+CF,Materials,XLB
+CFBK,Banks,XLF
+CFFI,Banks,XLF
+CFFN,Banks,XLF
+CFG,Banks,XLF
+CFLT,Software & Services,XLK
+CFR,Banks,XLF
+CFSB,Banks,XLF
+CG,Financial Services,XLF
+CGAU,Materials,XLB
+CGC,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CGCT,UNKNOWN,SPY
+CGEM,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CGEN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CGNT,Software & Services,XLK
+CGNX,Technology Hardware & Equipment,XLK
+CGON,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CGTL,Technology Hardware & Equipment,XLK
+CGTX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CHA,Consumer Services,XLY
+CHAC,UNKNOWN,SPY
+CHAI,Technology Hardware & Equipment,XLK
+CHAR,UNKNOWN,SPY
+CHCI,Real Estate Management & Development,XLRE
+CHCO,Banks,XLF
+CHCT,Equity Real Estate Investment Trusts (REITs),XLRE
+CHD,Household & Personal Products,XLP
+CHDN,Consumer Services,XLY
+CHE,Health Care Equipment & Services,XLV
+CHEC,UNKNOWN,SPY
+CHEF,Consumer Staples Distribution & Retail,XLP
+CHEK,Health Care Equipment & Services,XLV
+CHGG,Consumer Services,XLY
+CHH,Consumer Services,XLY
+CHIE-202402,UNKNOWN,SPY
+CHII-202402,UNKNOWN,SPY
+CHIM-202402,UNKNOWN,SPY
+CHIQ,UNKNOWN,SPY
+CHIX-202402,UNKNOWN,SPY
+CHKP,Software & Services,XLK
+CHMG,Banks,XLF
+CHMI,Financial Services,XLF
+CHNR,Materials,XLB
+CHOW,UNKNOWN,SPY
+CHPG,UNKNOWN,SPY
+CHPT,Capital Goods,XLI
+CHR,Media & Entertainment,XLC
+CHRD,Energy,XLE
+CHRS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CHRW,Transportation,XLI
+CHSN,Consumer Staples Distribution & Retail,XLP
+CHT,Telecommunication Services,XLC
+CHTR,Media & Entertainment,XLC
+CHWY,Consumer Discretionary Distribution & Retail,XLY
+CHYM,Financial Services,XLF
+CI,Health Care Equipment & Services,XLV
+CIA,Insurance,XLF
+CIB,Banks,XLF
+CIEN,Technology Hardware & Equipment,XLK
+CIFR,Software & Services,XLK
+CIG,Utilities,XLU
+CIG.C,Utilities,XLU
+CIGI,Real Estate Management & Development,XLRE
+CIGL,Commercial & Professional Services,XLI
+CIIT,Transportation,XLI
+CIM,Financial Services,XLF
+CINF,Insurance,XLF
+CING,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CINT,Software & Services,XLK
+CIO,Equity Real Estate Investment Trusts (REITs),XLRE
+CISO,Software & Services,XLK
+CISS,Transportation,XLI
+CIVB,Banks,XLF
+CIVI,Energy,XLE
+CIX,Commercial & Professional Services,XLI
+CJET,Automobiles & Components,XLY
+CJMB,Transportation,XLI
+CL,Household & Personal Products,XLP
+CLAR,Consumer Durables & Apparel,XLY
+CLB,Energy,XLE
+CLBK,Banks,XLF
+CLBT,Software & Services,XLK
+CLCO,Energy,XLE
+CLDT,Equity Real Estate Investment Trusts (REITs),XLRE
+CLDX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CLF,Materials,XLB
+CLFD,Technology Hardware & Equipment,XLK
+CLGN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CLH,Commercial & Professional Services,XLI
+CLIK,Commercial & Professional Services,XLI
+CLIR,Capital Goods,XLI
+CLLS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CLMB,Technology Hardware & Equipment,XLK
+CLMT,Energy,XLE
+CLNE,Energy,XLE
+CLNN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CLOV,Health Care Equipment & Services,XLV
+CLPR,Equity Real Estate Investment Trusts (REITs),XLRE
+CLPS,Software & Services,XLK
+CLPT,Health Care Equipment & Services,XLV
+CLRB,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CLRO,Technology Hardware & Equipment,XLK
+CLS,Technology Hardware & Equipment,XLK
+CLSD,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CLSK,Software & Services,XLK
+CLST,Banks,XLF
+CLVT,Commercial & Professional Services,XLI
+CLW,Materials,XLB
+CLWT,Capital Goods,XLI
+CLX,Household & Personal Products,XLP
+CLYM,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CM,Banks,XLF
+CMA,Banks,XLF
+CMBM,Technology Hardware & Equipment,XLK
+CMBT,Energy,XLE
+CMC,Materials,XLB
+CMCL,Materials,XLB
+CMCM,Software & Services,XLK
+CMCO,Capital Goods,XLI
+CMCSA,Media & Entertainment,XLC
+CMCT,Equity Real Estate Investment Trusts (REITs),XLRE
+CMDB,Transportation,XLI
+CME,Financial Services,XLF
+CMG,Consumer Services,XLY
+CMI,Capital Goods,XLI
+CMMB,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CMND,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CMP,Materials,XLB
+CMPO,Technology Hardware & Equipment,XLK
+CMPR,Commercial & Professional Services,XLI
+CMPS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CMPX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CMRC,Software & Services,XLK
+CMRE,Transportation,XLI
+CMS,Utilities,XLU
+CMT,Materials,XLB
+CMTG,Financial Services,XLF
+CMTL,Technology Hardware & Equipment,XLK
+CNA,Insurance,XLF
+CNC,Health Care Equipment & Services,XLV
+CNCK,Financial Services,XLF
+CNDT,Commercial & Professional Services,XLI
+CNET,Media & Entertainment,XLC
+CNEY,Materials,XLB
+CNF,Financial Services,XLF
+CNFR,Financials,XLF
+CNH,Capital Goods,XLI
+CNI,Transportation,XLI
+CNK,Media & Entertainment,XLC
+CNM,Capital Goods,XLI
+CNMD,Health Care Equipment & Services,XLV
+CNNE,Financial Services,XLF
+CNO,Insurance,XLF
+CNOB,Banks,XLF
+CNP,Utilities,XLU
+CNQ,Energy,XLE
+CNR,Energy,XLE
+CNS,Financial Services,XLF
+CNSP,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CNTA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CNTB,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CNTX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CNTY,Consumer Services,XLY
+CNVS,Media & Entertainment,XLC
+CNX,Energy,XLE
+CNXC,Commercial & Professional Services,XLI
+CNXN,Technology Hardware & Equipment,XLK
+COCH,Health Care Equipment & Services,XLV
+COCO,Food Beverage & Tobacco,XLP
+COCP,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CODA,Technology Hardware & Equipment,XLK
+CODI,Financial Services,XLF
+CODX,Health Care Equipment & Services,XLV
+COEP,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+COF,Financial Services,XLF
+COFS,Banks,XLF
+COGT,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+COHR,Technology Hardware & Equipment,XLK
+COHU,Semiconductors & Semiconductor Equipment,XLK
+COIN,Financial Services,XLF
+COKE,Food Beverage & Tobacco,XLP
+COLA,UNKNOWN,SPY
+COLB,Banks,XLF
+COLD,Equity Real Estate Investment Trusts (REITs),XLRE
+COLL,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+COLM,Consumer Durables & Apparel,XLY
+COMM,Technology Hardware & Equipment,XLK
+COMP,Real Estate Management & Development,XLRE
+CON,Health Care Equipment & Services,XLV
+CONL,UNKNOWN,SPY
+CONY,UNKNOWN,SPY
+COO,Health Care Equipment & Services,XLV
+COOK,Consumer Durables & Apparel,XLY
+COOP,Financials,XLF
+COOT,Food Beverage & Tobacco,XLP
+COP,Energy,XLE
+COR,Health Care Equipment & Services,XLV
+CORN,UNKNOWN,SPY
+CORT,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CORZ,Software & Services,XLK
+COSM,Health Care Equipment & Services,XLV
+COSO,Banks,XLF
+COST,Consumer Staples Distribution & Retail,XLP
+COTY,Household & Personal Products,XLP
+COUR,Consumer Services,XLY
+COWTF-202506,UNKNOWN,SPY
+COYA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CP,Transportation,XLI
+CPA,Transportation,XLI
+CPAC,Materials,XLB
+CPAY,Financial Services,XLF
+CPB,Food Beverage & Tobacco,XLP
+CPBI,Banks,XLF
+CPF,Banks,XLF
+CPHC,Consumer Services,XLY
+CPIX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CPK,Utilities,XLU
+CPNG,Consumer Discretionary Distribution & Retail,XLY
+CPOP,Media & Entertainment,XLC
+CPRI,Consumer Durables & Apparel,XLY
+CPRT,Commercial & Professional Services,XLI
+CPRX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CPS,Automobiles & Components,XLY
+CPSH,Technology Hardware & Equipment,XLK
+CPSS,Financial Services,XLF
+CPT,Equity Real Estate Investment Trusts (REITs),XLRE
+CPZ,UNKNOWN,SPY
+CQP,Energy,XLE
+CQQQ,UNKNOWN,SPY
+CR,Capital Goods,XLI
+CRACU,UNKNOWN,SPY
+CRAI,Commercial & Professional Services,XLI
+CRAQ,UNKNOWN,SPY
+CRBG,Financial Services,XLF
+CRBP,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CRBU,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CRC,Energy,XLE
+CRCA,UNKNOWN,SPY
+CRCG,UNKNOWN,SPY
+CRCL,Software & Services,XLK
+CRCT,Consumer Durables & Apparel,XLY
+CRD.A,Insurance,XLF
+CRD.B,Insurance,XLF
+CRDF,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CRDL,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CRDO,Semiconductors & Semiconductor Equipment,XLK
+CRE,Commercial & Professional Services,XLI
+CREG,Commercial & Professional Services,XLI
+CRESY,Food Beverage & Tobacco,XLP
+CREV,Automobiles & Components,XLY
+CREX,Media & Entertainment,XLC
+CRGO,Transportation,XLI
+CRGY,Energy,XLE
+CRH,Materials,XLB
+CRI,Consumer Durables & Apparel,XLY
+CRIS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CRK,Energy,XLE
+CRL,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CRM,Software & Services,XLK
+CRMD,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CRML,Materials,XLB
+CRMT,Consumer Discretionary Distribution & Retail,XLY
+CRNC,Software & Services,XLK
+CRNT,Technology Hardware & Equipment,XLK
+CRNX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CRON,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CROX,Consumer Durables & Apparel,XLY
+CRS,Capital Goods,XLI
+CRSP,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CRSR,Technology Hardware & Equipment,XLK
+CRT,Energy,XLE
+CRTO,Media & Entertainment,XLC
+CRUS,Semiconductors & Semiconductor Equipment,XLK
+CRVL,Health Care Equipment & Services,XLV
+CRVO,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CRVS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CRWD,Software & Services,XLK
+CRWS,Consumer Durables & Apparel,XLY
+CRWV,Software & Services,XLK
+CSAI,Software & Services,XLK
+CSAN,Consumer Discretionary Distribution & Retail,XLY
+CSBR,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CSCO,Technology Hardware & Equipment,XLK
+CSD,UNKNOWN,SPY
+CSGP,Real Estate Management & Development,XLRE
+CSGS,Commercial & Professional Services,XLI
+CSIQ,Semiconductors & Semiconductor Equipment,XLK
+CSL,Capital Goods,XLI
+CSPI,Software & Services,XLK
+CSR,Equity Real Estate Investment Trusts (REITs),XLRE
+CSTE,Capital Goods,XLI
+CSTL,Health Care Equipment & Services,XLV
+CSTM,Materials,XLB
+CSV,Consumer Services,XLY
+CSW,Capital Goods,XLI
+CSWC,Financial Services,XLF
+CSX,Transportation,XLI
+CTAS,Commercial & Professional Services,XLI
+CTBI,Banks,XLF
+CTEV,Health Care Equipment & Services,XLV
+CTGO,Materials,XLB
+CTKB,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CTLP,Financial Services,XLF
+CTM,UNKNOWN,SPY
+CTMX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CTNM,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CTNT,Consumer Discretionary Distribution & Retail,XLY
+CTO,Equity Real Estate Investment Trusts (REITs),XLRE
+CTOR,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CTOS,Capital Goods,XLI
+CTRA,Energy,XLE
+CTRE,Equity Real Estate Investment Trusts (REITs),XLRE
+CTRI,Capital Goods,XLI
+CTRM,Transportation,XLI
+CTRN,Consumer Discretionary Distribution & Retail,XLY
+CTS,Technology Hardware & Equipment,XLK
+CTSH,Software & Services,XLK
+CTSO,Health Care Equipment & Services,XLV
+CTVA,Materials,XLB
+CTW,Media & Entertainment,XLC
+CTXR,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CUB,UNKNOWN,SPY
+CUBE,Equity Real Estate Investment Trusts (REITs),XLRE
+CUBI,Banks,XLF
+CUE,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CUK,Consumer Services,XLY
+CULP,Consumer Durables & Apparel,XLY
+CUPR,Health Care Equipment & Services,XLV
+CURB,Equity Real Estate Investment Trusts (REITs),XLRE
+CURI,Media & Entertainment,XLC
+CURR,Financial Services,XLF
+CURV,Consumer Discretionary Distribution & Retail,XLY
+CURX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CUZ,Equity Real Estate Investment Trusts (REITs),XLRE
+CV,Health Care Equipment & Services,XLV
+CVAC,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CVBF,Banks,XLF
+CVCO,Consumer Durables & Apparel,XLY
+CVE,Energy,XLE
+CVEO,Commercial & Professional Services,XLI
+CVGI,Capital Goods,XLI
+CVGW,Food Beverage & Tobacco,XLP
+CVI,Energy,XLE
+CVKD,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CVLG,Transportation,XLI
+CVLT,Software & Services,XLK
+CVNA,Consumer Discretionary Distribution & Retail,XLY
+CVRX,Health Care Equipment & Services,XLV
+CVS,Health Care Equipment & Services,XLV
+CVV,Semiconductors & Semiconductor Equipment,XLK
+CVX,Energy,XLE
+CW,Capital Goods,XLI
+CWAN,Software & Services,XLK
+CWBC,Banks,XLF
+CWCO,Utilities,XLU
+CWD,Financial Services,XLF
+CWEN,Utilities,XLU
+CWEN.A,Utilities,XLU
+CWH,Consumer Discretionary Distribution & Retail,XLY
+CWK,Real Estate Management & Development,XLRE
+CWST,Commercial & Professional Services,XLI
+CWT,Utilities,XLU
+CWVX,UNKNOWN,SPY
+CX,Materials,XLB
+CXAI,Software & Services,XLK
+CXDO,Software & Services,XLK
+CXM,Software & Services,XLK
+CXT,Technology Hardware & Equipment,XLK
+CXW,Commercial & Professional Services,XLI
+CYB-202310,UNKNOWN,SPY
+CYBR,Software & Services,XLK
+CYCN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CYCU,Commercial & Professional Services,XLI
+CYD,Capital Goods,XLI
+CYH,Health Care Equipment & Services,XLV
+CYN,Software & Services,XLK
+CYPH,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CYRX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CYTK,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+CZFS,Banks,XLF
+CZNC,Banks,XLF
+CZR,Consumer Services,XLY
+CZWI,Banks,XLF
+D,Utilities,XLU
+DAAQ,UNKNOWN,SPY
+DAC,Transportation,XLI
+DAIC,Software & Services,XLK
+DAIO,Technology Hardware & Equipment,XLK
+DAKT,Technology Hardware & Equipment,XLK
+DAL,Transportation,XLI
+DALN,Communication Services,XLC
+DAN,Automobiles & Components,XLY
+DAO,Consumer Services,XLY
+DAR,Food Beverage & Tobacco,XLP
+DARE,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+DASH,Consumer Services,XLY
+DAVA,Software & Services,XLK
+DAVE,Financial Services,XLF
+DAWN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+DAY,Commercial & Professional Services,XLI
+DB,Financial Services,XLF
+DBA,UNKNOWN,SPY
+DBB,UNKNOWN,SPY
+DBC,UNKNOWN,SPY
+DBD,Technology Hardware & Equipment,XLK
+DBE,UNKNOWN,SPY
+DBGI,Consumer Discretionary Distribution & Retail,XLY
+DBI,Consumer Discretionary Distribution & Retail,XLY
+DBO,UNKNOWN,SPY
+DBRG,Financial Services,XLF
+DBV-202303,UNKNOWN,SPY
+DBVT,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+DBX,Software & Services,XLK
+DC,Materials,XLB
+DCBO,Software & Services,XLK
+DCGO,Health Care Equipment & Services,XLV
+DCI,Capital Goods,XLI
+DCO,Capital Goods,XLI
+DCOM,Banks,XLF
+DCTH,Health Care Equipment & Services,XLV
+DD,Materials,XLB
+DDD,Capital Goods,XLI
+DDI,Media & Entertainment,XLC
+DDL,Consumer Staples Distribution & Retail,XLP
+DDOG,Software & Services,XLK
+DDS,Consumer Discretionary Distribution & Retail,XLY
+DE,Capital Goods,XLI
+DEA,Equity Real Estate Investment Trusts (REITs),XLRE
+DEC,Energy,XLE
+DECK,Consumer Durables & Apparel,XLY
+DEFT,Financial Services,XLF
+DEI,Equity Real Estate Investment Trusts (REITs),XLRE
+DELL,Technology Hardware & Equipment,XLK
+DEM,UNKNOWN,SPY
+DENN,Consumer Services,XLY
+DEO,Food Beverage & Tobacco,XLP
+DERM,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+DES,UNKNOWN,SPY
+DEVS,Commercial & Professional Services,XLI
+DFDV,Financial Services,XLF
+DFE,UNKNOWN,SPY
+DFH,Consumer Durables & Apparel,XLY
+DFIN,Financial Services,XLF
+DFJ,UNKNOWN,SPY
+DFLI,Capital Goods,XLI
+DFSC,Capital Goods,XLI
+DG,Consumer Staples Distribution & Retail,XLP
+DGICA,Insurance,XLF
+DGICB,Insurance,XLF
+DGII,Technology Hardware & Equipment,XLK
+DGLY,Technology Hardware & Equipment,XLK
+DGNX,Software & Services,XLK
+DGS,UNKNOWN,SPY
+DGX,Health Care Equipment & Services,XLV
+DGXX,Software & Services,XLK
+DH,Health Care Equipment & Services,XLV
+DHAI,Health Care Equipment & Services,XLV
+DHC,Equity Real Estate Investment Trusts (REITs),XLRE
+DHI,Consumer Durables & Apparel,XLY
+DHIL,Financial Services,XLF
+DHR,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+DHT,Energy,XLE
+DHX,Media & Entertainment,XLC
+DIA,UNKNOWN,SPY
+DIBS,Consumer Discretionary Distribution & Retail,XLY
+DIM,UNKNOWN,SPY
+DIN,Consumer Services,XLY
+DINO,Energy,XLE
+DIOD,Semiconductors & Semiconductor Equipment,XLK
+DIS,Media & Entertainment,XLC
+DJCO,Software & Services,XLK
+DJP,UNKNOWN,SPY
+DJT,Media & Entertainment,XLC
+DK,Energy,XLE
+DKI,Media & Entertainment,XLC
+DKL,Energy,XLE
+DKNG,Consumer Services,XLY
+DKNX,UNKNOWN,SPY
+DKS,Consumer Discretionary Distribution & Retail,XLY
+DKUP,UNKNOWN,SPY
+DLB,Software & Services,XLK
+DLHC,Commercial & Professional Services,XLI
+DLN,UNKNOWN,SPY
+DLNG,Energy,XLE
+DLO,Financial Services,XLF
+DLPN,Media & Entertainment,XLC
+DLR,Equity Real Estate Investment Trusts (REITs),XLRE
+DLS,UNKNOWN,SPY
+DLTH,Consumer Discretionary Distribution & Retail,XLY
+DLTR,Consumer Staples Distribution & Retail,XLP
+DLX,Commercial & Professional Services,XLI
+DLXY,Energy,XLE
+DMAA,UNKNOWN,SPY
+DMAC,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+DMII,UNKNOWN,SPY
+DMIIU,UNKNOWN,SPY
+DMLP,Energy,XLE
+DMRC,Software & Services,XLK
+DNA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+DNLI,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+DNMX,UNKNOWN,SPY
+DNMXU,UNKNOWN,SPY
+DNOW,Capital Goods,XLI
+DNTH,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+DNUT,Consumer Services,XLY
+DOC,Equity Real Estate Investment Trusts (REITs),XLRE
+DOCN,Software & Services,XLK
+DOCS,Health Care Equipment & Services,XLV
+DOCU,Software & Services,XLK
+DODXF-202211,UNKNOWN,SPY
+DOG,UNKNOWN,SPY
+DOGZ,Consumer Durables & Apparel,XLY
+DOLE,Food Beverage & Tobacco,XLP
+DOMH,Financial Services,XLF
+DOMO,Software & Services,XLK
+DOO,Consumer Durables & Apparel,XLY
+DOOO,Consumer Durables & Apparel,XLY
+DORM,Automobiles & Components,XLY
+DOUG,Real Estate Management & Development,XLRE
+DOV,Capital Goods,XLI
+DOW,Materials,XLB
+DOX,Software & Services,XLK
+DOYU,Media & Entertainment,XLC
+DPRO,Capital Goods,XLI
+DPZ,Consumer Services,XLY
+DQ,Semiconductors & Semiconductor Equipment,XLK
+DRCT,Media & Entertainment,XLC
+DRD,Materials,XLB
+DRDB,UNKNOWN,SPY
+DRH,Equity Real Estate Investment Trusts (REITs),XLRE
+DRI,Consumer Services,XLY
+DRIO,Health Care Equipment & Services,XLV
+DRIP,UNKNOWN,SPY
+DRMA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+DRS,Capital Goods,XLI
+DRTS,Health Care Equipment & Services,XLV
+DRUG,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+DRVN,Consumer Services,XLY
+DSGN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+DSGR,Capital Goods,XLI
+DSGX,Software & Services,XLK
+DSI,UNKNOWN,SPY
+DSP,Software & Services,XLK
+DSWL,Technology Hardware & Equipment,XLK
+DSX,Transportation,XLI
+DSY,Household & Personal Products,XLP
+DT,Software & Services,XLK
+DTCK,Consumer Staples Distribution & Retail,XLP
+DTD,UNKNOWN,SPY
+DTE,Utilities,XLU
+DTH,UNKNOWN,SPY
+DTI,Energy,XLE
+DTIL,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+DTM,Energy,XLE
+DTSQ,UNKNOWN,SPY
+DTSS,Software & Services,XLK
+DTST,Software & Services,XLK
+DUK,Utilities,XLU
+DUO,Media & Entertainment,XLC
+DUOL,Consumer Services,XLY
+DUOT,Software & Services,XLK
+DUST,UNKNOWN,SPY
+DV,Media & Entertainment,XLC
+DVA,Health Care Equipment & Services,XLV
+DVAX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+DVLT,Semiconductors & Semiconductor Equipment,XLK
+DVN,Energy,XLE
+DWAS,UNKNOWN,SPY
+DWSN,Energy,XLE
+DWTX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+DX,Financial Services,XLF
+DXC,Software & Services,XLK
+DXCM,Health Care Equipment & Services,XLV
+DXD,UNKNOWN,SPY
+DXJ,UNKNOWN,SPY
+DXLG,Consumer Discretionary Distribution & Retail,XLY
+DXPE,Capital Goods,XLI
+DXST,Commercial & Professional Services,XLI
+DXYZ,UNKNOWN,SPY
+DY,Capital Goods,XLI
+DYAI,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+DYCQ,UNKNOWN,SPY
+DYN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+DYOR,UNKNOWN,SPY
+DYORU,UNKNOWN,SPY
+E,Energy,XLE
+EA,Media & Entertainment,XLC
+EAF,Capital Goods,XLI
+EAT,Consumer Services,XLY
+EB,Media & Entertainment,XLC
+EBAY,Consumer Discretionary Distribution & Retail,XLY
+EBC,Banks,XLF
+EBF,Commercial & Professional Services,XLI
+EBMT,Banks,XLF
+EBON,Technology Hardware & Equipment,XLK
+EBR,Utilities,XLU
+EBR.B,Utilities,XLU
+EBS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+EC,Energy,XLE
+ECBK,Banks,XLF
+ECDA,Automobiles & Components,XLY
+ECG,Capital Goods,XLI
+ECL,Materials,XLB
+ECO,Energy,XLE
+ECOR,Health Care Equipment & Services,XLV
+ECPG,Financial Services,XLF
+ECVT,Materials,XLB
+ECX,Automobiles & Components,XLY
+ED,Utilities,XLU
+EDAP,Health Care Equipment & Services,XLV
+EDBL,Food Beverage & Tobacco,XLP
+EDHL,Media & Entertainment,XLC
+EDIT,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+EDN,Utilities,XLU
+EDRY,Transportation,XLI
+EDSA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+EDTK,Consumer Services,XLY
+EDU,Consumer Services,XLY
+EDUC,Consumer Discretionary Distribution & Retail,XLY
+EE,Energy,XLE
+EEFT,Financial Services,XLF
+EEIQ,Consumer Services,XLY
+EELV,UNKNOWN,SPY
+EEM,UNKNOWN,SPY
+EES,UNKNOWN,SPY
+EEV,UNKNOWN,SPY
+EEX,Media & Entertainment,XLC
+EFA,UNKNOWN,SPY
+EFC,Financial Services,XLF
+EFG,UNKNOWN,SPY
+EFOI,Capital Goods,XLI
+EFR,UNKNOWN,SPY
+EFSC,Banks,XLF
+EFSI,Banks,XLF
+EFTY,Media & Entertainment,XLC
+EFV,UNKNOWN,SPY
+EFX,Commercial & Professional Services,XLI
+EFXT,Energy,XLE
+EG,Insurance,XLF
+EGAN,Software & Services,XLK
+EGBN,Banks,XLF
+EGHA,UNKNOWN,SPY
+EGHT,Software & Services,XLK
+EGO,Materials,XLB
+EGP,Equity Real Estate Investment Trusts (REITs),XLRE
+EGY,Energy,XLE
+EH,Capital Goods,XLI
+EHAB,Health Care Equipment & Services,XLV
+EHC,Health Care Equipment & Services,XLV
+EHGO,Commercial & Professional Services,XLI
+EHLD,Transportation,XLI
+EHTH,Insurance,XLF
+EIG,Insurance,XLF
+EIX,Utilities,XLU
+EJH,Consumer Services,XLY
+EKSO,Health Care Equipment & Services,XLV
+EL,Household & Personal Products,XLP
+ELA,Consumer Discretionary Distribution & Retail,XLY
+ELAB,Household & Personal Products,XLP
+ELAN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ELBM,Materials,XLB
+ELDN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ELE,Materials,XLB
+ELF,Household & Personal Products,XLP
+ELMD,Health Care Equipment & Services,XLV
+ELME,Equity Real Estate Investment Trusts (REITs),XLRE
+ELOG,Transportation,XLI
+ELP,Utilities,XLU
+ELPC,Utilities,XLU
+ELPW,Capital Goods,XLI
+ELS,Equity Real Estate Investment Trusts (REITs),XLRE
+ELSE,Technology Hardware & Equipment,XLK
+ELTK,Technology Hardware & Equipment,XLK
+ELTX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ELUT,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ELV,Health Care Equipment & Services,XLV
+ELVA,Capital Goods,XLI
+ELVN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ELVR,Materials,XLB
+ELWS,Commercial & Professional Services,XLI
+ELWT,Telecommunication Services,XLC
+EM,Consumer Discretionary Distribution & Retail,XLY
+EMA,Utilities,XLU
+EMBC,Health Care Equipment & Services,XLV
+EMBJ,Capital Goods,XLI
+EME,Capital Goods,XLI
+EMIS,UNKNOWN,SPY
+EML,Capital Goods,XLI
+EMN,Materials,XLB
+EMPD,Automobiles & Components,XLY
+EMPG,Household & Personal Products,XLP
+EMR,Capital Goods,XLI
+EMX,UNKNOWN,SPY
+ENB,Energy,XLE
+ENFY,Materials,XLB
+ENGN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ENGS,Capital Goods,XLI
+ENIC,Utilities,XLU
+ENLT,Utilities,XLU
+ENLV,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ENOV,Health Care Equipment & Services,XLV
+ENPH,Semiconductors & Semiconductor Equipment,XLK
+ENR,Household & Personal Products,XLP
+ENS,Capital Goods,XLI
+ENSC,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ENSG,Health Care Equipment & Services,XLV
+ENTA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ENTG,Semiconductors & Semiconductor Equipment,XLK
+ENTO,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ENTX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ENVA,Financial Services,XLF
+ENVB,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ENVX,Capital Goods,XLI
+EOG,Energy,XLE
+EOLS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+EOSE,Capital Goods,XLI
+EP,Energy,XLE
+EPAC,Capital Goods,XLI
+EPAM,Software & Services,XLK
+EPC,Household & Personal Products,XLP
+EPD,Energy,XLE
+EPIX,Health Care,XLV
+EPM,Energy,XLE
+EPOW,Commercial & Professional Services,XLI
+EPR,Equity Real Estate Investment Trusts (REITs),XLRE
+EPRT,Equity Real Estate Investment Trusts (REITs),XLRE
+EPRX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+EPS,UNKNOWN,SPY
+EPSM,Consumer Discretionary Distribution & Retail,XLY
+EPSN,Energy,XLE
+EPWK,Media & Entertainment,XLC
+EQ,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+EQAL,UNKNOWN,SPY
+EQBK,Banks,XLF
+EQH,Financial Services,XLF
+EQIX,Equity Real Estate Investment Trusts (REITs),XLRE
+EQNR,Energy,XLE
+EQR,Equity Real Estate Investment Trusts (REITs),XLRE
+EQT,Energy,XLE
+EQWL,UNKNOWN,SPY
+EQX,UNKNOWN,SPY
+ERAS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ERIC,Technology Hardware & Equipment,XLK
+ERIE,Insurance,XLF
+ERII,Capital Goods,XLI
+ERJ,Capital Goods,XLI
+ERNA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ERO,Materials,XLB
+ES,Utilities,XLU
+ESAB,Capital Goods,XLI
+ESCA,Consumer Durables & Apparel,XLY
+ESE,Capital Goods,XLI
+ESEA,Transportation,XLI
+ESGL,Commercial & Professional Services,XLI
+ESHA,UNKNOWN,SPY
+ESI,Materials,XLB
+ESLA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ESLT,Capital Goods,XLI
+ESNT,Financial Services,XLF
+ESOA,Energy,XLE
+ESPR,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ESQ,Banks,XLF
+ESRT,Equity Real Estate Investment Trusts (REITs),XLRE
+ESS,Equity Real Estate Investment Trusts (REITs),XLRE
+ESTA,Health Care Equipment & Services,XLV
+ESTC,Software & Services,XLK
+ET,Energy,XLE
+ETD,Consumer Durables & Apparel,XLY
+ETHD,UNKNOWN,SPY
+ETHM,UNKNOWN,SPY
+ETHZ,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ETN,Capital Goods,XLI
+ETNB,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ETON,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ETOR,Financial Services,XLF
+ETQ,UNKNOWN,SPY
+ETR,Utilities,XLU
+ETS,Transportation,XLI
+ETSY,Consumer Discretionary Distribution & Retail,XLY
+EU,Energy,XLE
+EUDA,Health Care Equipment & Services,XLV
+EURK,UNKNOWN,SPY
+EVAX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+EVC,Media & Entertainment,XLC
+EVCM,Software & Services,XLK
+EVER,Media & Entertainment,XLC
+EVEX,Capital Goods,XLI
+EVGN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+EVGO,Consumer Discretionary Distribution & Retail,XLY
+EVH,Health Care Equipment & Services,XLV
+EVI,Capital Goods,XLI
+EVLV,Technology Hardware & Equipment,XLK
+EVMN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+EVO,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+EVOK,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+EVOX,UNKNOWN,SPY
+EVR,Financial Services,XLF
+EVRG,Utilities,XLU
+EVTC,Financial Services,XLF
+EVTL,Capital Goods,XLI
+EVTV,Automobiles & Components,XLY
+EVX,UNKNOWN,SPY
+EW,Health Care Equipment & Services,XLV
+EWA,UNKNOWN,SPY
+EWBC,Banks,XLF
+EWC,UNKNOWN,SPY
+EWCZ,Consumer Services,XLY
+EWD,UNKNOWN,SPY
+EWG,UNKNOWN,SPY
+EWGS-202310,UNKNOWN,SPY
+EWH,UNKNOWN,SPY
+EWI,UNKNOWN,SPY
+EWJ,UNKNOWN,SPY
+EWP,UNKNOWN,SPY
+EWQ,UNKNOWN,SPY
+EWS,UNKNOWN,SPY
+EWT,UNKNOWN,SPY
+EWTX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+EWU,UNKNOWN,SPY
+EWUS,UNKNOWN,SPY
+EWW,UNKNOWN,SPY
+EWX,UNKNOWN,SPY
+EWY,UNKNOWN,SPY
+EWZ,UNKNOWN,SPY
+EXAS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+EXC,Utilities,XLU
+EXE,Energy,XLE
+EXEL,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+EXFY,Software & Services,XLK
+EXI,UNKNOWN,SPY
+EXK,Materials,XLB
+EXLS,Commercial & Professional Services,XLI
+EXOZ,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+EXP,Materials,XLB
+EXPD,Transportation,XLI
+EXPE,Consumer Services,XLY
+EXPI,Real Estate Management & Development,XLRE
+EXPO,Commercial & Professional Services,XLI
+EXR,Equity Real Estate Investment Trusts (REITs),XLRE
+EXTR,Technology Hardware & Equipment,XLK
+EYE,Consumer Discretionary Distribution & Retail,XLY
+EYPT,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+EZGO,Automobiles & Components,XLY
+EZM,UNKNOWN,SPY
+EZPW,Financial Services,XLF
+F,Automobiles & Components,XLY
+FA,Commercial & Professional Services,XLI
+FACT,UNKNOWN,SPY
+FAF,Insurance,XLF
+FAMI,Food Beverage & Tobacco,XLP
+FAN,UNKNOWN,SPY
+FANG,Energy,XLE
+FARM,Food Beverage & Tobacco,XLP
+FAST,Capital Goods,XLI
+FAT,Consumer Services,XLY
+FATBB,Consumer Services,XLY
+FATE,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+FATN,Software & Services,XLK
+FBGL,Capital Goods,XLI
+FBIN,Capital Goods,XLI
+FBIO,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+FBIZ,Banks,XLF
+FBK,Banks,XLF
+FBLA,Banks,XLF
+FBLG,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+FBNC,Banks,XLF
+FBP,Banks,XLF
+FBRT,Financial Services,XLF
+FBRX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+FBTC,UNKNOWN,SPY
+FBYD,Commercial & Professional Services,XLI
+FC,Commercial & Professional Services,XLI
+FCAP,Banks,XLF
+FCBC,Banks,XLF
+FCCO,Banks,XLF
+FCEL,Capital Goods,XLI
+FCF,Banks,XLF
+FCFS,Financial Services,XLF
+FCHL,Consumer Services,XLY
+FCN,Commercial & Professional Services,XLI
+FCNCA,Banks,XLF
+FCPT,Equity Real Estate Investment Trusts (REITs),XLRE
+FCRS-U,UNKNOWN,SPY
+FCUV,Technology Hardware & Equipment,XLK
+FCX,Materials,XLB
+FDBC,Banks,XLF
+FDD,UNKNOWN,SPY
+FDM,UNKNOWN,SPY
+FDMT,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+FDP,Food Beverage & Tobacco,XLP
+FDS,Financial Services,XLF
+FDSB,Banks,XLF
+FDX,Transportation,XLI
+FE,Utilities,XLU
+FEAM,Materials,XLB
+FEBO,Consumer Durables & Apparel,XLY
+FEDU,Consumer Services,XLY
+FEIM,Technology Hardware & Equipment,XLK
+FELE,Capital Goods,XLI
+FEMY,Health Care Equipment & Services,XLV
+FENC,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+FENG,Media & Entertainment,XLC
+FER,Capital Goods,XLI
+FERA,UNKNOWN,SPY
+FERG,Capital Goods,XLI
+FET,Energy,XLE
+FF,Energy,XLE
+FFAI,Automobiles & Components,XLY
+FFBC,Banks,XLF
+FFIC,Banks,XLF
+FFIN,Banks,XLF
+FFIV,Technology Hardware & Equipment,XLK
+FFLS,UNKNOWN,SPY
+FFTY,UNKNOWN,SPY
+FFWM,Banks,XLF
+FG,Insurance,XLF
+FGBI,Banks,XLF
+FGEN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+FGI,Capital Goods,XLI
+FGL,Capital Goods,XLI
+FGMC,UNKNOWN,SPY
+FGNX,Insurance,XLF
+FHB,Banks,XLF
+FHI,Financial Services,XLF
+FHN,Banks,XLF
+FHTX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+FI,Financial Services,XLF
+FIBK,Banks,XLF
+FICO,Software & Services,XLK
+FIEE,Technology Hardware & Equipment,XLK
+FIG,Software & Services,XLK
+FIGR,Financial Services,XLF
+FIGS,Consumer Durables & Apparel,XLY
+FIGX,UNKNOWN,SPY
+FIHL,Insurance,XLF
+FINV,Financial Services,XLF
+FINW,Banks,XLF
+FIP,Transportation,XLI
+FIS,Financial Services,XLF
+FISI,Banks,XLF
+FISV,Financial Services,XLF
+FITB,Banks,XLF
+FIVE,Consumer Discretionary Distribution & Retail,XLY
+FIVN,Software & Services,XLK
+FIX,Capital Goods,XLI
+FIZZ,Food Beverage & Tobacco,XLP
+FKWL,Technology Hardware & Equipment,XLK
+FLD,Financial Services,XLF
+FLEX,Technology Hardware & Equipment,XLK
+FLG,Banks,XLF
+FLGC,Household & Personal Products,XLP
+FLGT,Health Care Equipment & Services,XLV
+FLL,Consumer Services,XLY
+FLNC,Capital Goods,XLI
+FLNG,Energy,XLE
+FLNT,Media & Entertainment,XLC
+FLO,Food Beverage & Tobacco,XLP
+FLOC,Energy,XLE
+FLR,Capital Goods,XLI
+FLS,Capital Goods,XLI
+FLUT,Consumer Services,XLY
+FLUX,Capital Goods,XLI
+FLWS,Consumer Discretionary Distribution & Retail,XLY
+FLX,Transportation,XLI
+FLXS,Consumer Durables & Apparel,XLY
+FLY,Capital Goods,XLI
+FLYE,Automobiles & Components,XLY
+FLYW,Financial Services,XLF
+FLYX,Transportation,XLI
+FM-202501,UNKNOWN,SPY
+FMAO,Banks,XLF
+FMBH,Banks,XLF
+FMC,Materials,XLB
+FMFC,Consumer Durables & Apparel,XLY
+FMNB,Banks,XLF
+FMS,Health Care Equipment & Services,XLV
+FMST,Materials,XLB
+FMX,Food Beverage & Tobacco,XLP
+FN,Technology Hardware & Equipment,XLK
+FNB,Banks,XLF
+FND,Consumer Discretionary Distribution & Retail,XLY
+FNDB,UNKNOWN,SPY
+FNF,Insurance,XLF
+FNGD,UNKNOWN,SPY
+FNGR,Telecommunication Services,XLC
+FNKO,Consumer Durables & Apparel,XLY
+FNLC,Banks,XLF
+FNV,Materials,XLB
+FNWB,Banks,XLF
+FNWD,Banks,XLF
+FOA,Financial Services,XLF
+FOFO,Commercial & Professional Services,XLI
+FOLD,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+FONR,Health Care Equipment & Services,XLV
+FOR,Real Estate Management & Development,XLRE
+FORA,Health Care Equipment & Services,XLV
+FORD,Technology Hardware & Equipment,XLK
+FORL,UNKNOWN,SPY
+FORM,Semiconductors & Semiconductor Equipment,XLK
+FORR,Commercial & Professional Services,XLI
+FORTY,Software & Services,XLK
+FOSL,Consumer Durables & Apparel,XLY
+FOUR,Financial Services,XLF
+FOX,Media & Entertainment,XLC
+FOXA,Media & Entertainment,XLC
+FOXF,Automobiles & Components,XLY
+FOXX,Technology Hardware & Equipment,XLK
+FPAY,Financial Services,XLF
+FPH,Real Estate Management & Development,XLRE
+FPI,Equity Real Estate Investment Trusts (REITs),XLRE
+FPX,UNKNOWN,SPY
+FR,Equity Real Estate Investment Trusts (REITs),XLRE
+FRAF,Banks,XLF
+FRAK-202110,UNKNOWN,SPY
+FRBA,Banks,XLF
+FRD,Materials,XLB
+FRGE,Financial Services,XLF
+FRGT,Transportation,XLI
+FRHC,Financial Services,XLF
+FRME,Banks,XLF
+FRMI,Equity Real Estate Investment Trusts (REITs),XLRE
+FRO,Energy,XLE
+FROG,Software & Services,XLK
+FRPH,Real Estate Management & Development,XLRE
+FRPT,Food Beverage & Tobacco,XLP
+FRSH,Software & Services,XLK
+FRST,Banks,XLF
+FRSX,Automobiles & Components,XLY
+FRT,Equity Real Estate Investment Trusts (REITs),XLRE
+FSBC,Banks,XLF
+FSBW,Banks,XLF
+FSCO,UNKNOWN,SPY
+FSEA,Banks,XLF
+FSFG,Banks,XLF
+FSHP,UNKNOWN,SPY
+FSK,UNKNOWN,SPY
+FSLR,Semiconductors & Semiconductor Equipment,XLK
+FSLY,Software & Services,XLK
+FSM,Materials,XLB
+FSP,Equity Real Estate Investment Trusts (REITs),XLRE
+FSS,Capital Goods,XLI
+FSTR,Capital Goods,XLI
+FSUN,Banks,XLF
+FSV,Real Estate Management & Development,XLRE
+FTAI,Capital Goods,XLI
+FTCI,Capital Goods,XLI
+FTDR,Consumer Services,XLY
+FTEK,Commercial & Professional Services,XLI
+FTEL,Consumer Discretionary Distribution & Retail,XLY
+FTFT,Financial Services,XLF
+FTHM,Real Estate Management & Development,XLRE
+FTHY,UNKNOWN,SPY
+FTI,Energy,XLE
+FTK,Materials,XLB
+FTLF,Household & Personal Products,XLP
+FTNT,Software & Services,XLK
+FTRE,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+FTRK,Media & Entertainment,XLC
+FTS,Utilities,XLU
+FTV,Capital Goods,XLI
+FUBO,Media & Entertainment,XLC
+FUFU,Software & Services,XLK
+FUL,Materials,XLB
+FULC,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+FULT,Banks,XLF
+FUN,Consumer Services,XLY
+FUNC,Banks,XLF
+FUSB,Banks,XLF
+FUSE,Software & Services,XLK
+FUTU,Financial Services,XLF
+FVCB,Banks,XLF
+FVD,UNKNOWN,SPY
+FVN,UNKNOWN,SPY
+FVR,Equity Real Estate Investment Trusts (REITs),XLRE
+FVRR,Commercial & Professional Services,XLI
+FWDI,Technology Hardware & Equipment,XLK
+FWONA,Media & Entertainment,XLC
+FWONK,Media & Entertainment,XLC
+FWRD,Transportation,XLI
+FWRG,Consumer Services,XLY
+FXA,UNKNOWN,SPY
+FXB,UNKNOWN,SPY
+FXC,UNKNOWN,SPY
+FXE,UNKNOWN,SPY
+FXF,UNKNOWN,SPY
+FXNC,Banks,XLF
+FXY,UNKNOWN,SPY
+FYBR,Telecommunication Services,XLC
+G,Commercial & Professional Services,XLI
+GABC,Banks,XLF
+GAIA,Media & Entertainment,XLC
+GALT,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+GAMB,Media & Entertainment,XLC
+GAME,Media & Entertainment,XLC
+GANX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+GAP,Consumer Discretionary Distribution & Retail,XLY
+GASS,Energy,XLE
+GATX,Capital Goods,XLI
+GAU,UNKNOWN,SPY
+GAUZ,Technology Hardware & Equipment,XLK
+GBCI,Banks,XLF
+GBDC,UNKNOWN,SPY
+GBFH,Banks,XLF
+GBIO,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+GBLI,Insurance,XLF
+GBTC,UNKNOWN,SPY
+GBTG,Consumer Services,XLY
+GBX,Capital Goods,XLI
+GCBC,Banks,XLF
+GCI,Media & Entertainment,XLC
+GCL,Media & Entertainment,XLC
+GCMG,Financial Services,XLF
+GCO,Consumer Discretionary Distribution & Retail,XLY
+GCT,Consumer Discretionary Distribution & Retail,XLY
+GCTK,Health Care Equipment & Services,XLV
+GCTS,Semiconductors & Semiconductor Equipment,XLK
+GD,Capital Goods,XLI
+GDC,Media & Entertainment,XLC
+GDDY,Software & Services,XLK
+GDEN,Consumer Services,XLY
+GDEV,Media & Entertainment,XLC
+GDHG,Consumer Services,XLY
+GDOT,Financial Services,XLF
+GDRX,Health Care Equipment & Services,XLV
+GDS,Software & Services,XLK
+GDTC,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+GDX,UNKNOWN,SPY
+GDXJ,UNKNOWN,SPY
+GDYN,Software & Services,XLK
+GE,Capital Goods,XLI
+GECC,UNKNOWN,SPY
+GEF,Materials,XLB
+GEF.B,Materials,XLB
+GEG,Financial Services,XLF
+GEHC,Health Care Equipment & Services,XLV
+GEL,Energy,XLE
+GELS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+GEMI,Financial Services,XLF
+GEN,Software & Services,XLK
+GENC,Capital Goods,XLI
+GENI,Consumer Services,XLY
+GENK,Consumer Services,XLY
+GEO,Commercial & Professional Services,XLI
+GEOS,Energy,XLE
+GERN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+GES,Consumer Discretionary Distribution & Retail,XLY
+GETY,Media & Entertainment,XLC
+GEV,Capital Goods,XLI
+GEVO,Energy,XLE
+GFAI,Commercial & Professional Services,XLI
+GFF,Capital Goods,XLI
+GFI,Materials,XLB
+GFL,Commercial & Professional Services,XLI
+GFR,Energy,XLE
+GFS,Semiconductors & Semiconductor Equipment,XLK
+GGAL,Banks,XLF
+GGB,Materials,XLB
+GGG,Capital Goods,XLI
+GGLS,UNKNOWN,SPY
+GGME,UNKNOWN,SPY
+GGR,Automobiles & Components,XLY
+GH,Health Care Equipment & Services,XLV
+GHC,Consumer Services,XLY
+GHG,Consumer Services,XLY
+GHI,Financial Services,XLF
+GHLD,Financial Services,XLF
+GHM,Capital Goods,XLI
+GHRS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+GIB,Software & Services,XLK
+GIBO,Media & Entertainment,XLC
+GIC,Capital Goods,XLI
+GIFI,Energy,XLE
+GIFT,Media & Entertainment,XLC
+GIG,UNKNOWN,SPY
+GIGM,Media & Entertainment,XLC
+GII,UNKNOWN,SPY
+GIII,Consumer Durables & Apparel,XLY
+GIL,Consumer Durables & Apparel,XLY
+GILD,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+GILT,Technology Hardware & Equipment,XLK
+GIPR,Equity Real Estate Investment Trusts (REITs),XLRE
+GIS,Food Beverage & Tobacco,XLP
+GITS,Media & Entertainment,XLC
+GIW,UNKNOWN,SPY
+GIWWU,UNKNOWN,SPY
+GKOS,Health Care Equipment & Services,XLV
+GL,Insurance,XLF
+GLBE,Consumer Discretionary Distribution & Retail,XLY
+GLBS,Transportation,XLI
+GLBZ,Banks,XLF
+GLD,UNKNOWN,SPY
+GLDD,Capital Goods,XLI
+GLE,Software & Services,XLK
+GLIBA,Telecommunication Services,XLC
+GLIBK,Telecommunication Services,XLC
+GLL,UNKNOWN,SPY
+GLMD,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+GLNG,Energy,XLE
+GLOB,Software & Services,XLK
+GLOO,Software & Services,XLK
+GLP,Energy,XLE
+GLPG,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+GLPI,Equity Real Estate Investment Trusts (REITs),XLRE
+GLRE,Insurance,XLF
+GLSI,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+GLTO,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+GLUE,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+GLW,Technology Hardware & Equipment,XLK
+GLXG,Commercial & Professional Services,XLI
+GLXY,Financial Services,XLF
+GM,Automobiles & Components,XLY
+GMAB,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+GME,Consumer Discretionary Distribution & Retail,XLY
+GMED,Health Care Equipment & Services,XLV
+GMF,UNKNOWN,SPY
+GMGI,Media & Entertainment,XLC
+GMHS,Media & Entertainment,XLC
+GMM,Media & Entertainment,XLC
+GMRE,Equity Real Estate Investment Trusts (REITs),XLRE
+GNE,Utilities,XLU
+GNFT,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+GNK,Transportation,XLI
+GNL,Equity Real Estate Investment Trusts (REITs),XLRE
+GNLN,Consumer Discretionary Distribution & Retail,XLY
+GNLX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+GNPX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+GNRC,Capital Goods,XLI
+GNSS,Technology Hardware & Equipment,XLK
+GNTA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+GNTX,Automobiles & Components,XLY
+GNTY,Financials,XLF
+GNW,Insurance,XLF
+GO,Consumer Staples Distribution & Retail,XLP
+GOCO,Insurance,XLF
+GOGO,Telecommunication Services,XLC
+GOLD,Consumer Discretionary Distribution & Retail,XLY
+GOLF,Consumer Durables & Apparel,XLY
+GOOD,Equity Real Estate Investment Trusts (REITs),XLRE
+GOOG,Media & Entertainment,XLC
+GOOGL,Media & Entertainment,XLC
+GOOS,Consumer Durables & Apparel,XLY
+GORV,Consumer Discretionary Distribution & Retail,XLY
+GOSS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+GOTU,Consumer Services,XLY
+GOVX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+GP,Capital Goods,XLI
+GPAT,UNKNOWN,SPY
+GPC,Consumer Discretionary Distribution & Retail,XLY
+GPCR,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+GPI,Consumer Discretionary Distribution & Retail,XLY
+GPK,Materials,XLB
+GPMT,Financial Services,XLF
+GPN,Financial Services,XLF
+GPOR,Energy,XLE
+GPRE,Energy,XLE
+GPRK,Energy,XLE
+GPRO,Consumer Durables & Apparel,XLY
+GPUS,UNKNOWN,SPY
+GRAB,Transportation,XLI
+GRAL,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+GRAN,Financial Services,XLF
+GRBK,Consumer Durables & Apparel,XLY
+GRC,Capital Goods,XLI
+GRCE,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+GRDN,Health Care Equipment & Services,XLV
+GRDX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+GREE,Software & Services,XLK
+GRFS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+GRI,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+GRID,UNKNOWN,SPY
+GRMN,Consumer Durables & Apparel,XLY
+GRND,Media & Entertainment,XLC
+GRNQ,Financial Services,XLF
+GRNT,Energy,XLE
+GROV,Consumer Discretionary Distribution & Retail,XLY
+GROW,Financial Services,XLF
+GRP.U,Equity Real Estate Investment Trusts (REITs),XLRE
+GRPN,Consumer Discretionary Distribution & Retail,XLY
+GRRR,Software & Services,XLK
+GRVY,Media & Entertainment,XLC
+GRWG,Consumer Discretionary Distribution & Retail,XLY
+GS,Financial Services,XLF
+GSAT,Telecommunication Services,XLC
+GSBC,Banks,XLF
+GSBD,UNKNOWN,SPY
+GSHD,Insurance,XLF
+GSHR,UNKNOWN,SPY
+GSIT,Semiconductors & Semiconductor Equipment,XLK
+GSIW,Financial Services,XLF
+GSK,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+GSL,Transportation,XLI
+GSM,Materials,XLB
+GSRF,UNKNOWN,SPY
+GSRT,UNKNOWN,SPY
+GSUN,Consumer Services,XLY
+GT,Automobiles & Components,XLY
+GTBP,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+GTEC,Capital Goods,XLI
+GTEN,UNKNOWN,SPY
+GTERA,UNKNOWN,SPY
+GTES,Capital Goods,XLI
+GTI,Capital Goods,XLI
+GTIM,Consumer Services,XLY
+GTLB,Software & Services,XLK
+GTLS,Capital Goods,XLI
+GTM,Media & Entertainment,XLC
+GTN,Media & Entertainment,XLC
+GTN.A,Media & Entertainment,XLC
+GTX,Automobiles & Components,XLY
+GTY,Equity Real Estate Investment Trusts (REITs),XLRE
+GURE,Materials,XLB
+GUTS,Health Care Equipment & Services,XLV
+GV,Consumer Services,XLY
+GVA,Capital Goods,XLI
+GVH,Transportation,XLI
+GWAV,Commercial & Professional Services,XLI
+GWH,Capital Goods,XLI
+GWRE,Software & Services,XLK
+GWRS,Utilities,XLU
+GWW,Capital Goods,XLI
+GWX,UNKNOWN,SPY
+GXAI,Media & Entertainment,XLC
+GXC,UNKNOWN,SPY
+GXO,Transportation,XLI
+GYRE,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+GYRO,Real Estate Management & Development,XLRE
+H,Consumer Services,XLY
+HAE,Health Care Equipment & Services,XLV
+HAFC,Banks,XLF
+HAFN,Energy,XLE
+HAIN,Food Beverage & Tobacco,XLP
+HAL,Energy,XLE
+HALO,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+HAO,Media & Entertainment,XLC
+HAP,UNKNOWN,SPY
+HAS,Consumer Durables & Apparel,XLY
+HASI,Financial Services,XLF
+HAYW,Capital Goods,XLI
+HBAN,Banks,XLF
+HBB,Consumer Durables & Apparel,XLY
+HBCP,Banks,XLF
+HBI,Consumer Durables & Apparel,XLY
+HBIO,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+HBM,Materials,XLB
+HBNB,Capital Goods,XLI
+HBNC,Banks,XLF
+HBT,Banks,XLF
+HCA,Health Care Equipment & Services,XLV
+HCAI,Capital Goods,XLI
+HCAT,Health Care Equipment & Services,XLV
+HCC,Materials,XLB
+HCHL,Consumer Services,XLY
+HCI,Insurance,XLF
+HCKT,Software & Services,XLK
+HCM,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+HCMA,UNKNOWN,SPY
+HCSG,Commercial & Professional Services,XLI
+HCTI,Health Care Equipment & Services,XLV
+HCWB,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+HD,Consumer Discretionary Distribution & Retail,XLY
+HDB,Banks,XLF
+HDL,Consumer Services,XLY
+HDSN,Capital Goods,XLI
+HE,Utilities,XLU
+HEDJ,UNKNOWN,SPY
+HEI,Capital Goods,XLI
+HEI-A,UNKNOWN,SPY
+HEI.A,Capital Goods,XLI
+HELE,Consumer Durables & Apparel,XLY
+HEPS,Consumer Discretionary Distribution & Retail,XLY
+HERE,Consumer Services,XLY
+HESM,Energy,XLE
+HFBL,Banks,XLF
+HFFG,Consumer Staples Distribution & Retail,XLP
+HFWA,Banks,XLF
+HG,Insurance,XLF
+HGBL,Financial Services,XLF
+HGTY,Insurance,XLF
+HGV,Consumer Services,XLY
+HHH,Real Estate Management & Development,XLRE
+HHS,Media & Entertainment,XLC
+HI,Capital Goods,XLI
+HIBS,UNKNOWN,SPY
+HIFS,Banks,XLF
+HIG,Insurance,XLF
+HIHO,Capital Goods,XLI
+HII,Capital Goods,XLI
+HIMS,Health Care Equipment & Services,XLV
+HIMX,Semiconductors & Semiconductor Equipment,XLK
+HIMZ,UNKNOWN,SPY
+HIND,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+HIPO,Insurance,XLF
+HIT,Insurance,XLF
+HITI,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+HIVE,Software & Services,XLK
+HIW,Equity Real Estate Investment Trusts (REITs),XLRE
+HKD,Software & Services,XLK
+HKIT,Software & Services,XLK
+HKPD,Transportation,XLI
+HL,Materials,XLB
+HLF,Household & Personal Products,XLP
+HLI,Financial Services,XLF
+HLIO,Capital Goods,XLI
+HLIT,Technology Hardware & Equipment,XLK
+HLLY,Automobiles & Components,XLY
+HLMN,Capital Goods,XLI
+HLN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+HLNE,Financial Services,XLF
+HLP,Materials,XLB
+HLT,Consumer Services,XLY
+HLX,Energy,XLE
+HMC,Automobiles & Components,XLY
+HMN,Insurance,XLF
+HMR,Energy,XLE
+HMY,Materials,XLB
+HNGE,Health Care Equipment & Services,XLV
+HNI,Commercial & Professional Services,XLI
+HNNA,Financial Services,XLF
+HNRG,Utilities,XLU
+HNST,Household & Personal Products,XLP
+HNVR,Banks,XLF
+HOFT,Consumer Durables & Apparel,XLY
+HOG,Automobiles & Components,XLY
+HOLO,Software & Services,XLK
+HOLX,Health Care Equipment & Services,XLV
+HOMB,Banks,XLF
+HON,Capital Goods,XLI
+HOND,UNKNOWN,SPY
+HONE,Banks,XLF
+HOOD,Financial Services,XLF
+HOPE,Banks,XLF
+HOTH,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+HOUR,Consumer Discretionary Distribution & Retail,XLY
+HOUS,Real Estate Management & Development,XLRE
+HOV,Consumer Durables & Apparel,XLY
+HOVR,Capital Goods,XLI
+HOWL,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+HP,Energy,XLE
+HPAI,Software & Services,XLK
+HPE,Technology Hardware & Equipment,XLK
+HPK,Energy,XLE
+HPP,Equity Real Estate Investment Trusts (REITs),XLRE
+HPQ,Technology Hardware & Equipment,XLK
+HQI,Commercial & Professional Services,XLI
+HQY,Health Care Equipment & Services,XLV
+HR,Equity Real Estate Investment Trusts (REITs),XLRE
+HRB,Consumer Services,XLY
+HRI,Capital Goods,XLI
+HRL,Food Beverage & Tobacco,XLP
+HRMY,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+HROW,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+HRTG,Insurance,XLF
+HRTX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+HRZN,Financial Services,XLF
+HSAI,Automobiles & Components,XLY
+HSBC,Banks,XLF
+HSCS,Health Care Equipment & Services,XLV
+HSDT,Health Care Equipment & Services,XLV
+HSHP,Transportation,XLI
+HSIC,Health Care Equipment & Services,XLV
+HSII,Commercial & Professional Services,XLI
+HSPO,UNKNOWN,SPY
+HSPT,UNKNOWN,SPY
+HST,Equity Real Estate Investment Trusts (REITs),XLRE
+HSTM,Health Care Equipment & Services,XLV
+HSY,Food Beverage & Tobacco,XLP
+HTB,Banks,XLF
+HTBK,Banks,XLF
+HTCO,Transportation,XLI
+HTCR,Software & Services,XLK
+HTFL,Health Care Equipment & Services,XLV
+HTH,Banks,XLF
+HTHT,Consumer Services,XLY
+HTLD,Transportation,XLI
+HTLM,Consumer Discretionary Distribution & Retail,XLY
+HTO,Utilities,XLU
+HTOO,Capital Goods,XLI
+HTZ,Transportation,XLI
+HUBB,Capital Goods,XLI
+HUBC,Software & Services,XLK
+HUBG,Transportation,XLI
+HUBS,Software & Services,XLK
+HUDI,Materials,XLB
+HUHU,Capital Goods,XLI
+HUIZ,Insurance,XLF
+HUM,Health Care Equipment & Services,XLV
+HUMA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+HUN,Materials,XLB
+HURA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+HURC,Capital Goods,XLI
+HURN,Commercial & Professional Services,XLI
+HUT,Software & Services,XLK
+HUYA,Media & Entertainment,XLC
+HVII,UNKNOWN,SPY
+HVMC,UNKNOWN,SPY
+HVT,Consumer Discretionary Distribution & Retail,XLY
+HVT.A,Consumer Discretionary Distribution & Retail,XLY
+HWBK,Banks,XLF
+HWC,Banks,XLF
+HWH,Media & Entertainment,XLC
+HWKN,Materials,XLB
+HWM,Capital Goods,XLI
+HXHX,Transportation,XLI
+HXL,Capital Goods,XLI
+HY,Capital Goods,XLI
+HYFM,Capital Goods,XLI
+HYFT,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+HYG,UNKNOWN,SPY
+HYLN,Capital Goods,XLI
+HYMC,Materials,XLB
+HYNE,UNKNOWN,SPY
+HYPD,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+HYPR,Health Care Equipment & Services,XLV
+HZO,Consumer Discretionary Distribution & Retail,XLY
+IAC,Media & Entertainment,XLC
+IAG,Materials,XLB
+IART,Health Care Equipment & Services,XLV
+IAS,Media & Entertainment,XLC
+IBAC,UNKNOWN,SPY
+IBB,UNKNOWN,SPY
+IBCP,Banks,XLF
+IBEX,Commercial & Professional Services,XLI
+IBG,Food Beverage & Tobacco,XLP
+IBIB,UNKNOWN,SPY
+IBIC,UNKNOWN,SPY
+IBIF,UNKNOWN,SPY
+IBIO,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+IBIT,UNKNOWN,SPY
+IBKR,Financial Services,XLF
+IBM,Software & Services,XLK
+IBN,Banks,XLF
+IBOC,Banks,XLF
+IBP,Consumer Durables & Apparel,XLY
+IBRX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+IBTA,Media & Entertainment,XLC
+ICCC,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ICCM,Health Care Equipment & Services,XLV
+ICE,Financial Services,XLF
+ICFI,Commercial & Professional Services,XLI
+ICG,Semiconductors & Semiconductor Equipment,XLK
+ICHR,Semiconductors & Semiconductor Equipment,XLK
+ICL,Materials,XLB
+ICLR,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ICMB,Financial Services,XLF
+ICON,Transportation,XLI
+ICU,Health Care Equipment & Services,XLV
+ICUI,Health Care Equipment & Services,XLV
+IDA,Utilities,XLU
+IDAI,Software & Services,XLK
+IDCC,Software & Services,XLK
+IDLV,UNKNOWN,SPY
+IDN,Software & Services,XLK
+IDR,Materials,XLB
+IDT,Telecommunication Services,XLC
+IDX,UNKNOWN,SPY
+IDXX,Health Care Equipment & Services,XLV
+IDYA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+IE,Materials,XLB
+IEF,UNKNOWN,SPY
+IEFA,UNKNOWN,SPY
+IEI,UNKNOWN,SPY
+IEP,Capital Goods,XLI
+IESC,Capital Goods,XLI
+IEX,Capital Goods,XLI
+IFBD,Software & Services,XLK
+IFF,Materials,XLB
+IFRX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+IFS,Banks,XLF
+IGACU,UNKNOWN,SPY
+IGIC,Insurance,XLF
+IGPT,UNKNOWN,SPY
+IGR,UNKNOWN,SPY
+IGV,UNKNOWN,SPY
+IH,Media & Entertainment,XLC
+IHF,UNKNOWN,SPY
+IHG,Consumer Services,XLY
+IHI,UNKNOWN,SPY
+IHRT,Media & Entertainment,XLC
+IHS,Telecommunication Services,XLC
+III,Software & Services,XLK
+IIIN,Capital Goods,XLI
+IIIV,Software & Services,XLK
+IINN,Health Care Equipment & Services,XLV
+IIPR,Equity Real Estate Investment Trusts (REITs),XLRE
+IJR,UNKNOWN,SPY
+IKT,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ILAG,Capital Goods,XLI
+ILCB,UNKNOWN,SPY
+ILCG,UNKNOWN,SPY
+ILCV,UNKNOWN,SPY
+ILF,UNKNOWN,SPY
+ILLR,Financial Services,XLF
+ILMN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ILPT,Equity Real Estate Investment Trusts (REITs),XLRE
+IMA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+IMAB,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+IMAX,Media & Entertainment,XLC
+IMCB,UNKNOWN,SPY
+IMCC,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+IMCG,UNKNOWN,SPY
+IMCR,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+IMCV,UNKNOWN,SPY
+IMDX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+IMG,Food Beverage & Tobacco,XLP
+IMKTA,Consumer Staples Distribution & Retail,XLP
+IMMP,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+IMMR,Technology Hardware & Equipment,XLK
+IMMX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+IMNM,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+IMNN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+IMO,UNKNOWN,SPY
+IMOS,Semiconductors & Semiconductor Equipment,XLK
+IMPP,Energy,XLE
+IMRN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+IMRX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+IMSR,Capital Goods,XLI
+IMTE,Technology Hardware & Equipment,XLK
+IMTX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+IMUX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+IMVT,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+IMXI,Financial Services,XLF
+INAB,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+INAC,UNKNOWN,SPY
+INBK,Banks,XLF
+INBS,Health Care Equipment & Services,XLV
+INBX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+INCR,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+INCY,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+INDB,Banks,XLF
+INDI,Semiconductors & Semiconductor Equipment,XLK
+INDP,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+INDV,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+INEO,Consumer Discretionary Distribution & Retail,XLY
+INFA,Software & Services,XLK
+INFY,Software & Services,XLK
+ING,Banks,XLF
+INGM,Technology Hardware & Equipment,XLK
+INGN,Health Care Equipment & Services,XLV
+INGR,Food Beverage & Tobacco,XLP
+INHD,Materials,XLB
+INKT,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+INLF,Capital Goods,XLI
+INM,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+INMB,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+INMD,Health Care Equipment & Services,XLV
+INN,Equity Real Estate Investment Trusts (REITs),XLRE
+INNV,Health Care Equipment & Services,XLV
+INO,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+INOD,Commercial & Professional Services,XLI
+INR,Energy,XLE
+INSE,Consumer Services,XLY
+INSG,Technology Hardware & Equipment,XLK
+INSM,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+INSP,Health Care Equipment & Services,XLV
+INSW,Energy,XLE
+INTA,Software & Services,XLK
+INTC,Semiconductors & Semiconductor Equipment,XLK
+INTG,Real Estate Management & Development,XLRE
+INTJ,Media & Entertainment,XLC
+INTR,Banks,XLF
+INTS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+INTU,Software & Services,XLK
+INTZ,Software & Services,XLK
+INV,Financial Services,XLF
+INVA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+INVE,Technology Hardware & Equipment,XLK
+INVH,Equity Real Estate Investment Trusts (REITs),XLRE
+INVX,Energy,XLE
+INVZ,Technology Hardware & Equipment,XLK
+IOBT,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+IONQ,Technology Hardware & Equipment,XLK
+IONR,Materials,XLB
+IONS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+IONZ,UNKNOWN,SPY
+IOSP,Materials,XLB
+IOT,Software & Services,XLK
+IOTR,Telecommunication Services,XLC
+IOVA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+IP,Materials,XLB
+IPAR,Household & Personal Products,XLP
+IPCX,UNKNOWN,SPY
+IPDN,Commercial & Professional Services,XLI
+IPEX,UNKNOWN,SPY
+IPG,Media & Entertainment,XLC
+IPGP,Technology Hardware & Equipment,XLK
+IPHA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+IPI,Materials,XLB
+IPM,Media & Entertainment,XLC
+IPOD,UNKNOWN,SPY
+IPSC,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+IPST,Food Beverage & Tobacco,XLP
+IPW,Capital Goods,XLI
+IPWR,Capital Goods,XLI
+IPX,Materials,XLB
+IQ,Media & Entertainment,XLC
+IQDF,UNKNOWN,SPY
+IQLT,UNKNOWN,SPY
+IQST,Telecommunication Services,XLC
+IQV,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+IR,Capital Goods,XLI
+IRBT,Consumer Durables & Apparel,XLY
+IRD,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+IRDM,Telecommunication Services,XLC
+IREN,Software & Services,XLK
+IRIX,Health Care Equipment & Services,XLV
+IRM,Equity Real Estate Investment Trusts (REITs),XLRE
+IRMD,Health Care Equipment & Services,XLV
+IROH,UNKNOWN,SPY
+IRON,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+IROQ,Banks,XLF
+IRS,Real Estate Management & Development,XLRE
+IRT,Equity Real Estate Investment Trusts (REITs),XLRE
+IRTC,Health Care Equipment & Services,XLV
+IRWD,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ISBA,Banks,XLF
+ISCB,UNKNOWN,SPY
+ISCG,UNKNOWN,SPY
+ISCV,UNKNOWN,SPY
+ISPC,Health Care Equipment & Services,XLV
+ISPO,Consumer Services,XLY
+ISPR,Food Beverage & Tobacco,XLP
+ISRG,Health Care Equipment & Services,XLV
+ISRL,UNKNOWN,SPY
+ISSC,Capital Goods,XLI
+ISTR,Banks,XLF
+IT,Software & Services,XLK
+ITA,UNKNOWN,SPY
+ITGR,Health Care Equipment & Services,XLV
+ITIC,Insurance,XLF
+ITRI,Technology Hardware & Equipment,XLK
+ITRM,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ITRN,Technology Hardware & Equipment,XLK
+ITT,Capital Goods,XLI
+ITUB,Banks,XLF
+ITW,Capital Goods,XLI
+IUSG,UNKNOWN,SPY
+IUSV,UNKNOWN,SPY
+IVA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+IVDA,Software & Services,XLK
+IVF,Health Care Equipment & Services,XLV
+IVP,Health Care Equipment & Services,XLV
+IVR,Financial Services,XLF
+IVT,Equity Real Estate Investment Trusts (REITs),XLRE
+IVV,UNKNOWN,SPY
+IVVD,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+IVW,UNKNOWN,SPY
+IVZ,Financial Services,XLF
+IWB,UNKNOWN,SPY
+IWC,UNKNOWN,SPY
+IWD,UNKNOWN,SPY
+IWF,UNKNOWN,SPY
+IWM,UNKNOWN,SPY
+IWO,UNKNOWN,SPY
+IWP,UNKNOWN,SPY
+IWR,UNKNOWN,SPY
+IWS,UNKNOWN,SPY
+IWV,UNKNOWN,SPY
+IX,Financial Services,XLF
+IXC,UNKNOWN,SPY
+IXG,UNKNOWN,SPY
+IXHL,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+IXJ,UNKNOWN,SPY
+IXN,UNKNOWN,SPY
+IXP,UNKNOWN,SPY
+IYR,UNKNOWN,SPY
+IYT,UNKNOWN,SPY
+IZEA,Media & Entertainment,XLC
+IZM,Technology Hardware & Equipment,XLK
+J,Commercial & Professional Services,XLI
+JACK,Consumer Services,XLY
+JAGX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+JAKK,Consumer Durables & Apparel,XLY
+JAMF,Software & Services,XLK
+JANH,UNKNOWN,SPY
+JANX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+JAZZ,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+JBBB,UNKNOWN,SPY
+JBDI,Materials,XLB
+JBGS,Equity Real Estate Investment Trusts (REITs),XLRE
+JBHT,Transportation,XLI
+JBI,Capital Goods,XLI
+JBIO,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+JBL,Technology Hardware & Equipment,XLK
+JBLU,Transportation,XLI
+JBS,Food Beverage & Tobacco,XLP
+JBSS,Food Beverage & Tobacco,XLP
+JBTM,Capital Goods,XLI
+JCAP,Financial Services,XLF
+JCI,Capital Goods,XLI
+JCSE,Capital Goods,XLI
+JCTC,Capital Goods,XLI
+JD,Consumer Discretionary Distribution & Retail,XLY
+JDST,UNKNOWN,SPY
+JDZG,Consumer Services,XLY
+JEF,Financial Services,XLF
+JELD,Capital Goods,XLI
+JEM,Consumer Discretionary Distribution & Retail,XLY
+JFB,Capital Goods,XLI
+JFBR,Consumer Discretionary Distribution & Retail,XLY
+JFIN,Financial Services,XLF
+JFR,UNKNOWN,SPY
+JFU,Media & Entertainment,XLC
+JG,Software & Services,XLK
+JHG,Financial Services,XLF
+JHX,Materials,XLB
+JILL,Consumer Discretionary Distribution & Retail,XLY
+JJCTF-202506,UNKNOWN,SPY
+JJGTF-202506,UNKNOWN,SPY
+JJNTF-202406,UNKNOWN,SPY
+JJOFF-202406,UNKNOWN,SPY
+JJSF,Food Beverage & Tobacco,XLP
+JJTFF-202406,UNKNOWN,SPY
+JJUFF-202404,UNKNOWN,SPY
+JKHY,Financial Services,XLF
+JKS,Semiconductors & Semiconductor Equipment,XLK
+JL,Consumer Discretionary Distribution & Retail,XLY
+JLHL,Capital Goods,XLI
+JLL,Real Estate Management & Development,XLRE
+JMIA,Consumer Discretionary Distribution & Retail,XLY
+JMSB,Banks,XLF
+JNJ,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+JOBY,Transportation,XLI
+JOE,Real Estate Management & Development,XLRE
+JOUT,Consumer Durables & Apparel,XLY
+JOYY,Media & Entertainment,XLC
+JPM,Banks,XLF
+JRSH,Consumer Durables & Apparel,XLY
+JRVR,Insurance,XLF
+JSPR,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+JTAI,Transportation,XLI
+JUNS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+JVA,Food Beverage & Tobacco,XLP
+JWEL,Consumer Discretionary Distribution & Retail,XLY
+JXG,Consumer Durables & Apparel,XLY
+JXI,UNKNOWN,SPY
+JXN,Financial Services,XLF
+JYD,Transportation,XLI
+JYNT,Health Care Equipment & Services,XLV
+JZ,Consumer Services,XLY
+JZXN,Consumer Discretionary Distribution & Retail,XLY
+K,Food Beverage & Tobacco,XLP
+KAI,Capital Goods,XLI
+KALA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+KALU,Materials,XLB
+KALV,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+KAR,Commercial & Professional Services,XLI
+KARO,Software & Services,XLK
+KAVL,Consumer Discretionary Distribution & Retail,XLY
+KB,Banks,XLF
+KBH,Consumer Durables & Apparel,XLY
+KBR,Commercial & Professional Services,XLI
+KBSX,Consumer Durables & Apparel,XLY
+KBWB,UNKNOWN,SPY
+KBWR,UNKNOWN,SPY
+KC,Software & Services,XLK
+KCHV,UNKNOWN,SPY
+KD,Software & Services,XLK
+KDK,Automobiles & Components,XLY
+KDP,Food Beverage & Tobacco,XLP
+KE,Technology Hardware & Equipment,XLK
+KELYA,Commercial & Professional Services,XLI
+KELYB,Commercial & Professional Services,XLI
+KEN,Utilities,XLU
+KEP,Utilities,XLU
+KEQU,Health Care Equipment & Services,XLV
+KEX,Transportation,XLI
+KEY,Banks,XLF
+KEYS,Technology Hardware & Equipment,XLK
+KFFB,Banks,XLF
+KFII,UNKNOWN,SPY
+KFRC,Commercial & Professional Services,XLI
+KFS,Insurance,XLF
+KFY,Commercial & Professional Services,XLI
+KFYP-202310,UNKNOWN,SPY
+KG,Insurance,XLF
+KGC,Materials,XLB
+KGEI,Energy,XLE
+KGS,Energy,XLE
+KHC,Food Beverage & Tobacco,XLP
+KIDS,Health Care Equipment & Services,XLV
+KIDZ,Consumer Services,XLY
+KIM,Equity Real Estate Investment Trusts (REITs),XLRE
+KINS,Insurance,XLF
+KIO,UNKNOWN,SPY
+KITT,Capital Goods,XLI
+KKR,Financial Services,XLF
+KLAC,Semiconductors & Semiconductor Equipment,XLK
+KLAR,Financial Services,XLF
+KLC,Consumer Services,XLY
+KLG,Consumer Staples,XLP
+KLIC,Semiconductors & Semiconductor Equipment,XLK
+KLRS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+KLTO,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+KLTR,Software & Services,XLK
+KLXE,Energy,XLE
+KMB,Household & Personal Products,XLP
+KMDA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+KMI,Energy,XLE
+KMPR,Insurance,XLF
+KMRK,Consumer Durables & Apparel,XLY
+KMT,Capital Goods,XLI
+KMTS,Health Care Equipment & Services,XLV
+KMX,Consumer Discretionary Distribution & Retail,XLY
+KN,Technology Hardware & Equipment,XLK
+KNCT,UNKNOWN,SPY
+KNDI,Automobiles & Components,XLY
+KNF,Materials,XLB
+KNOP,Energy,XLE
+KNSA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+KNSL,Insurance,XLF
+KNTK,Energy,XLE
+KNX,Transportation,XLI
+KO,Food Beverage & Tobacco,XLP
+KOD,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+KODK,Technology Hardware & Equipment,XLK
+KOF,Food Beverage & Tobacco,XLP
+KOP,Materials,XLB
+KOPN,Semiconductors & Semiconductor Equipment,XLK
+KORE,Telecommunication Services,XLC
+KOS,Energy,XLE
+KOSS,Consumer Durables & Apparel,XLY
+KOYN,UNKNOWN,SPY
+KPLT,Financial Services,XLF
+KPRX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+KPTI,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+KR,Consumer Staples Distribution & Retail,XLP
+KRC,Equity Real Estate Investment Trusts (REITs),XLRE
+KREF,Financial Services,XLF
+KRG,Equity Real Estate Investment Trusts (REITs),XLRE
+KRKR,Media & Entertainment,XLC
+KRMD,Health Care Equipment & Services,XLV
+KRMN,Capital Goods,XLI
+KRNT,Capital Goods,XLI
+KRNY,Banks,XLF
+KRO,Materials,XLB
+KROS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+KRP,Energy,XLE
+KRRO,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+KRT,Capital Goods,XLI
+KRUS,Consumer Services,XLY
+KRYS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+KSCP,Commercial & Professional Services,XLI
+KSPI,Financial Services,XLF
+KSS,Consumer Discretionary Distribution & Retail,XLY
+KT,Telecommunication Services,XLC
+KTB,Consumer Durables & Apparel,XLY
+KTCC,Technology Hardware & Equipment,XLK
+KTOS,Capital Goods,XLI
+KTTA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+KUKE,Communication Services,XLC
+KULR,Capital Goods,XLI
+KURA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+KVAC,UNKNOWN,SPY
+KVHI,Technology Hardware & Equipment,XLK
+KVUE,Household & Personal Products,XLP
+KVYO,Software & Services,XLK
+KW,Real Estate Management & Development,XLRE
+KWEB,UNKNOWN,SPY
+KWM,Media & Entertainment,XLC
+KWR,Materials,XLB
+KXI,UNKNOWN,SPY
+KXIN,Consumer Discretionary Distribution & Retail,XLY
+KYIV,Telecommunication Services,XLC
+KYMR,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+KYTX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+KZIA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+KZR,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+L,Insurance,XLF
+LAB,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+LABD,UNKNOWN,SPY
+LAC,Materials,XLB
+LAD,Consumer Discretionary Distribution & Retail,XLY
+LADR,Financial Services,XLF
+LAES,Semiconductors & Semiconductor Equipment,XLK
+LAFA,UNKNOWN,SPY
+LAFAU,UNKNOWN,SPY
+LAKE,Consumer Durables & Apparel,XLY
+LAMR,Equity Real Estate Investment Trusts (REITs),XLRE
+LAND,Equity Real Estate Investment Trusts (REITs),XLRE
+LANV,Consumer Durables & Apparel,XLY
+LAR,Materials,XLB
+LARK,Banks,XLF
+LASE,Capital Goods,XLI
+LASR,Technology Hardware & Equipment,XLK
+LATA,UNKNOWN,SPY
+LAUR,Consumer Services,XLY
+LAW,Software & Services,XLK
+LAWR,Software & Services,XLK
+LAZ,Financial Services,XLF
+LAZR,Automobiles & Components,XLY
+LB,Real Estate Management & Development,XLRE
+LBGJ,Capital Goods,XLI
+LBRDA,Media & Entertainment,XLC
+LBRDK,Media & Entertainment,XLC
+LBRT,Energy,XLE
+LBRX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+LBTYA,Telecommunication Services,XLC
+LBTYB,Telecommunication Services,XLC
+LBTYK,Telecommunication Services,XLC
+LC,Financial Services,XLF
+LCCC,UNKNOWN,SPY
+LCFY,Software & Services,XLK
+LCID,Automobiles & Components,XLY
+LCII,Automobiles & Components,XLY
+LCNB,Banks,XLF
+LCUT,Consumer Durables & Apparel,XLY
+LD-202306,UNKNOWN,SPY
+LDI,Financial Services,XLF
+LDOS,Commercial & Professional Services,XLI
+LDWY,Media & Entertainment,XLC
+LE,Consumer Discretionary Distribution & Retail,XLY
+LEA,Automobiles & Components,XLY
+LECO,Capital Goods,XLI
+LEDS,Semiconductors & Semiconductor Equipment,XLK
+LEE,Media & Entertainment,XLC
+LEG,Consumer Durables & Apparel,XLY
+LEGH,Consumer Durables & Apparel,XLY
+LEGN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+LEN,Consumer Durables & Apparel,XLY
+LEN.B,Consumer Durables & Apparel,XLY
+LENZ,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+LESL,Consumer Discretionary Distribution & Retail,XLY
+LEU,Energy,XLE
+LEVI,Consumer Durables & Apparel,XLY
+LEXX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+LFACU,UNKNOWN,SPY
+LFCR,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+LFMD,Health Care Equipment & Services,XLV
+LFS,Consumer Services,XLY
+LFST,Health Care Equipment & Services,XLV
+LFT,Financial Services,XLF
+LFUS,Technology Hardware & Equipment,XLK
+LFVN,Household & Personal Products,XLP
+LFWD,Health Care Equipment & Services,XLV
+LGCB,Consumer Discretionary Distribution & Retail,XLY
+LGCL,Commercial & Professional Services,XLI
+LGCY,UNKNOWN,SPY
+LGHL,Financial Services,XLF
+LGIH,Consumer Durables & Apparel,XLY
+LGLV,UNKNOWN,SPY
+LGN,Capital Goods,XLI
+LGND,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+LGO,Materials,XLB
+LGVN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+LH,Health Care Equipment & Services,XLV
+LHAI,Real Estate Management & Development,XLRE
+LHSW,Technology Hardware & Equipment,XLK
+LHX,Capital Goods,XLI
+LI,Automobiles & Components,XLY
+LICN,Commercial & Professional Services,XLI
+LIDR,Technology Hardware & Equipment,XLK
+LIEN,Financial Services,XLF
+LIF,Software & Services,XLK
+LIFT,UNKNOWN,SPY
+LII,Capital Goods,XLI
+LILA,Telecommunication Services,XLC
+LILAK,Telecommunication Services,XLC
+LIMN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+LIN,Materials,XLB
+LINC,Consumer Services,XLY
+LIND,Consumer Services,XLY
+LINE,Equity Real Estate Investment Trusts (REITs),XLRE
+LINK,Technology Hardware & Equipment,XLK
+LION,Media & Entertainment,XLC
+LIQT,Capital Goods,XLI
+LITB,Consumer Discretionary Distribution & Retail,XLY
+LITE,Technology Hardware & Equipment,XLK
+LITM,Materials,XLB
+LITS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+LIVE,Consumer Durables & Apparel,XLY
+LIVN,Health Care Equipment & Services,XLV
+LIXT,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+LKFN,Banks,XLF
+LKQ,Consumer Discretionary Distribution & Retail,XLY
+LKSP,UNKNOWN,SPY
+LLY,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+LLYVA,Media & Entertainment,XLC
+LLYVK,Media & Entertainment,XLC
+LLYZ,UNKNOWN,SPY
+LMAT,Health Care Equipment & Services,XLV
+LMB,Capital Goods,XLI
+LMFA,Software & Services,XLK
+LMND,Insurance,XLF
+LMNR,Food Beverage & Tobacco,XLP
+LMT,Capital Goods,XLI
+LMTS,UNKNOWN,SPY
+LNAI,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+LNC,Insurance,XLF
+LND,Food Beverage & Tobacco,XLP
+LNG,Energy,XLE
+LNKB,Banks,XLF
+LNKS,Capital Goods,XLI
+LNN,Capital Goods,XLI
+LNSR,Health Care Equipment & Services,XLV
+LNT,Utilities,XLU
+LNTH,Health Care Equipment & Services,XLV
+LNW,Consumer Services,XLY
+LNZA,Commercial & Professional Services,XLI
+LOAN,Financial Services,XLF
+LOAR,Capital Goods,XLI
+LOB,Banks,XLF
+LOBO,Automobiles & Components,XLY
+LOCL,Food Beverage & Tobacco,XLP
+LOCO,Consumer Services,XLY
+LOGI,Technology Hardware & Equipment,XLK
+LOKV,UNKNOWN,SPY
+LOMA,Materials,XLB
+LOOP,Materials,XLB
+LOPE,Consumer Services,XLY
+LOT,Automobiles & Components,XLY
+LOVE,Consumer Durables & Apparel,XLY
+LOW,Consumer Discretionary Distribution & Retail,XLY
+LPA,Real Estate Management & Development,XLRE
+LPAA,UNKNOWN,SPY
+LPBB,UNKNOWN,SPY
+LPCN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+LPG,Energy,XLE
+LPL,Technology Hardware & Equipment,XLK
+LPLA,Financial Services,XLF
+LPRO,Financial Services,XLF
+LPSN,Software & Services,XLK
+LPTH,Technology Hardware & Equipment,XLK
+LPTX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+LPX,Materials,XLB
+LQD,UNKNOWN,SPY
+LQDA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+LQDT,Commercial & Professional Services,XLI
+LRCX,Semiconductors & Semiconductor Equipment,XLK
+LRE,Consumer Durables & Apparel,XLY
+LRHC,Real Estate Management & Development,XLRE
+LRMR,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+LRN,Consumer Services,XLY
+LSAK,Financial Services,XLF
+LSBK,Banks,XLF
+LSCC,Semiconductors & Semiconductor Equipment,XLK
+LSE,Energy,XLE
+LSH,Transportation,XLI
+LSPD,Software & Services,XLK
+LSTA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+LSTR,Transportation,XLI
+LTBR,Energy,XLE
+LTC,Equity Real Estate Investment Trusts (REITs),XLRE
+LTH,Consumer Services,XLY
+LTM,Transportation,XLI
+LTRN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+LTRX,Technology Hardware & Equipment,XLK
+LU,Financial Services,XLF
+LUCD,Health Care Equipment & Services,XLV
+LUCK,Consumer Services,XLY
+LUCY,Health Care Equipment & Services,XLV
+LULU,Consumer Durables & Apparel,XLY
+LUMN,Telecommunication Services,XLC
+LUNG,Health Care Equipment & Services,XLV
+LUNR,Capital Goods,XLI
+LUV,Transportation,XLI
+LUXE,Consumer Discretionary Distribution & Retail,XLY
+LVLU,Consumer Discretionary Distribution & Retail,XLY
+LVO,Media & Entertainment,XLC
+LVRO,Capital Goods,XLI
+LVS,Consumer Services,XLY
+LVTX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+LVWR,Automobiles & Components,XLY
+LW,Food Beverage & Tobacco,XLP
+LWAC,UNKNOWN,SPY
+LWAY,Food Beverage & Tobacco,XLP
+LWLG,Technology Hardware & Equipment,XLK
+LX,Financial Services,XLF
+LXEH,Consumer Services,XLY
+LXEO,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+LXFR,Capital Goods,XLI
+LXP,Equity Real Estate Investment Trusts (REITs),XLRE
+LXRX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+LXU,Materials,XLB
+LYB,Materials,XLB
+LYEL,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+LYFT,Transportation,XLI
+LYG,Banks,XLF
+LYRA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+LYTS,Capital Goods,XLI
+LYV,Media & Entertainment,XLC
+LZ,Commercial & Professional Services,XLI
+LZB,Consumer Durables & Apparel,XLY
+LZM,Materials,XLB
+LZMH,Media & Entertainment,XLC
+M,Consumer Discretionary Distribution & Retail,XLY
+MA,Financial Services,XLF
+MAA,Equity Real Estate Investment Trusts (REITs),XLRE
+MAAS,Insurance,XLF
+MAC,Equity Real Estate Investment Trusts (REITs),XLRE
+MACI,UNKNOWN,SPY
+MAGH,Capital Goods,XLI
+MAGN,Materials,XLB
+MAIN,UNKNOWN,SPY
+MAMA,Food Beverage & Tobacco,XLP
+MAMK,Consumer Durables & Apparel,XLY
+MAMO,Automobiles & Components,XLY
+MAN,Commercial & Professional Services,XLI
+MANH,Software & Services,XLK
+MANU,Media & Entertainment,XLC
+MAPS,Software & Services,XLK
+MAR,Consumer Services,XLY
+MARA,Software & Services,XLK
+MARPS,Energy,XLE
+MAS,Capital Goods,XLI
+MASI,Health Care Equipment & Services,XLV
+MASK,Software & Services,XLK
+MASS,Technology Hardware & Equipment,XLK
+MAT,Consumer Durables & Apparel,XLY
+MATH,Financial Services,XLF
+MATV,Materials,XLB
+MATW,Consumer Services,XLY
+MATX,Transportation,XLI
+MAX,Media & Entertainment,XLC
+MAXN,Semiconductors & Semiconductor Equipment,XLK
+MAYA,UNKNOWN,SPY
+MAYS,Real Estate Management & Development,XLRE
+MAZE,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+MB,Consumer Services,XLY
+MBAI,Health Care Equipment & Services,XLV
+MBAV,UNKNOWN,SPY
+MBBC,Banks,XLF
+MBC,Capital Goods,XLI
+MBCN,Banks,XLF
+MBI,Insurance,XLF
+MBIN,Financial Services,XLF
+MBIO,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+MBLY,Automobiles & Components,XLY
+MBOT,Health Care Equipment & Services,XLV
+MBRX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+MBUU,Consumer Durables & Apparel,XLY
+MBVI,UNKNOWN,SPY
+MBWM,Banks,XLF
+MBX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+MC,Financial Services,XLF
+MCB,Banks,XLF
+MCBS,Banks,XLF
+MCD,Consumer Services,XLY
+MCFT,Consumer Durables & Apparel,XLY
+MCGA,UNKNOWN,SPY
+MCHB,Banks,XLF
+MCHP,Semiconductors & Semiconductor Equipment,XLK
+MCHX,Media & Entertainment,XLC
+MCK,Health Care Equipment & Services,XLV
+MCO,Financial Services,XLF
+MCRB,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+MCRI,Consumer Services,XLY
+MCS,Media & Entertainment,XLC
+MCTA,Consumer Services,XLY
+MCTR,Media & Entertainment,XLC
+MCW,Consumer Services,XLY
+MCY,Insurance,XLF
+MD,Health Care Equipment & Services,XLV
+MDAI,Health Care Equipment & Services,XLV
+MDB,Software & Services,XLK
+MDBH,Financial Services,XLF
+MDCX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+MDGL,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+MDIA,Media & Entertainment,XLC
+MDLZ,Food Beverage & Tobacco,XLP
+MDRR,Equity Real Estate Investment Trusts (REITs),XLRE
+MDT,Health Care Equipment & Services,XLV
+MDU,Utilities,XLU
+MDV,Equity Real Estate Investment Trusts (REITs),XLRE
+MDWD,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+MDXG,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+MDXH,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+MDY,UNKNOWN,SPY
+MDYG,UNKNOWN,SPY
+MDYV,UNKNOWN,SPY
+MEC,Capital Goods,XLI
+MED,Household & Personal Products,XLP
+MEDP,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+MEG,Commercial & Professional Services,XLI
+MEGL,Financial Services,XLF
+MEHA,Household & Personal Products,XLP
+MEI,Technology Hardware & Equipment,XLK
+MELI,Consumer Discretionary Distribution & Retail,XLY
+MENS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+MEOH,Materials,XLB
+MERC,Materials,XLB
+MESA,Transportation,XLI
+MESO,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+MET,Insurance,XLF
+META,Media & Entertainment,XLC
+METC,Materials,XLB
+METCB,Materials,XLB
+MFA,Financial Services,XLF
+MFC,Insurance,XLF
+MFG,Banks,XLF
+MFH,Software & Services,XLK
+MFI,Financial Services,XLF
+MFIN,Financial Services,XLF
+MG,Commercial & Professional Services,XLI
+MGA,Automobiles & Components,XLY
+MGEE,Utilities,XLU
+MGIC,Software & Services,XLK
+MGIH,Materials,XLB
+MGM,Consumer Services,XLY
+MGN,Capital Goods,XLI
+MGNI,Media & Entertainment,XLC
+MGNX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+MGPI,Food Beverage & Tobacco,XLP
+MGRC,Capital Goods,XLI
+MGRM,Health Care,XLV
+MGRT,Software & Services,XLK
+MGRX,Consumer Staples Distribution & Retail,XLP
+MGTX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+MGX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+MGY,Energy,XLE
+MGYR,Banks,XLF
+MH,Consumer Services,XLY
+MHK,Consumer Durables & Apparel,XLY
+MHO,Consumer Durables & Apparel,XLY
+MHUA,Health Care Equipment & Services,XLV
+MIAX,Financial Services,XLF
+MIDD,Capital Goods,XLI
+MIGI,Software & Services,XLK
+MIMI,Commercial & Professional Services,XLI
+MIND,Energy,XLE
+MIR,Technology Hardware & Equipment,XLK
+MIRA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+MIRM,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+MIST,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+MITK,Software & Services,XLK
+MITT,Financial Services,XLF
+MJID,Consumer Discretionary,XLY
+MKC,Food Beverage & Tobacco,XLP
+MKC.V,Food Beverage & Tobacco,XLP
+MKDW,Automobiles & Components,XLY
+MKL,Insurance,XLF
+MKLY,UNKNOWN,SPY
+MKSI,Semiconductors & Semiconductor Equipment,XLK
+MKTW,Financial Services,XLF
+MKTX,Financial Services,XLF
+MKZR,Equity Real Estate Investment Trusts (REITs),XLRE
+MLAB,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+MLAC,UNKNOWN,SPY
+MLCI,Financial Services,XLF
+MLCO,Consumer Services,XLY
+MLEC,Food Beverage & Tobacco,XLP
+MLGO,Software & Services,XLK
+MLI,Capital Goods,XLI
+MLKN,Commercial & Professional Services,XLI
+MLM,Materials,XLB
+MLNK,Software & Services,XLK
+MLP,Real Estate Management & Development,XLRE
+MLR,Capital Goods,XLI
+MLTX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+MLYS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+MMC,Insurance,XLF
+MMI,Real Estate Management & Development,XLRE
+MMLP,Energy,XLE
+MMM,Capital Goods,XLI
+MMS,Commercial & Professional Services,XLI
+MMSI,Health Care Equipment & Services,XLV
+MMTM,UNKNOWN,SPY
+MMYT,Consumer Services,XLY
+MNDO,Software & Services,XLK
+MNDR,Health Care Equipment & Services,XLV
+MNDY,Software & Services,XLK
+MNKD,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+MNMD,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+MNOV,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+MNPR,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+MNR,Energy,XLE
+MNRO,Consumer Discretionary Distribution & Retail,XLY
+MNSB,Banks,XLF
+MNSO,Consumer Discretionary Distribution & Retail,XLY
+MNST,Food Beverage & Tobacco,XLP
+MNTK,Utilities,XLU
+MNTN,Media & Entertainment,XLC
+MNTS,Capital Goods,XLI
+MNY,Media & Entertainment,XLC
+MO,Food Beverage & Tobacco,XLP
+MOB,Technology Hardware & Equipment,XLK
+MOBX,Semiconductors & Semiconductor Equipment,XLK
+MOD,Capital Goods,XLI
+MODD,Health Care Equipment & Services,XLV
+MODG,Consumer Durables & Apparel,XLY
+MOFG,Banks,XLF
+MOG.A,Capital Goods,XLI
+MOG.B,Capital Goods,XLI
+MOGO,Financial Services,XLF
+MOGU,Consumer Discretionary Distribution & Retail,XLY
+MOH,Health Care Equipment & Services,XLV
+MOLN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+MOMO,Media & Entertainment,XLC
+MORN,Financial Services,XLF
+MOS,Materials,XLB
+MOV,Consumer Durables & Apparel,XLY
+MOVE,Technology Hardware & Equipment,XLK
+MP,Materials,XLB
+MPAA,Automobiles & Components,XLY
+MPB,Banks,XLF
+MPC,Energy,XLE
+MPLT,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+MPLX,Energy,XLE
+MPTI,Technology Hardware & Equipment,XLK
+MPW,Equity Real Estate Investment Trusts (REITs),XLRE
+MPWR,Semiconductors & Semiconductor Equipment,XLK
+MPX,Consumer Durables & Apparel,XLY
+MQ,Financial Services,XLF
+MRAM,Semiconductors & Semiconductor Equipment,XLK
+MRBK,Banks,XLF
+MRC,Capital Goods,XLI
+MRCY,Capital Goods,XLI
+MREO,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+MRK,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+MRKR,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+MRM,Consumer Services,XLY
+MRNA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+MRNO,Real Estate Management & Development,XLRE
+MRP,Equity Real Estate Investment Trusts (REITs),XLRE
+MRSN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+MRTN,Transportation,XLI
+MRUS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+MRVI,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+MRVL,Semiconductors & Semiconductor Equipment,XLK
+MRX,Financial Services,XLF
+MS,Financial Services,XLF
+MSA,Commercial & Professional Services,XLI
+MSAI,Technology Hardware & Equipment,XLK
+MSB,Materials,XLB
+MSBI,Banks,XLF
+MSC,Consumer Services,XLY
+MSCI,Financial Services,XLF
+MSDL,Financial Services,XLF
+MSEX,Utilities,XLU
+MSFT,Software & Services,XLK
+MSGE,Media & Entertainment,XLC
+MSGM,Media & Entertainment,XLC
+MSGS,Media & Entertainment,XLC
+MSGY,Capital Goods,XLI
+MSI,Technology Hardware & Equipment,XLK
+MSIF,Financial Services,XLF
+MSM,Capital Goods,XLI
+MSPR,Health Care Equipment & Services,XLV
+MSS,Consumer Staples Distribution & Retail,XLP
+MSTR,Software & Services,XLK
+MSTU,UNKNOWN,SPY
+MSTX,UNKNOWN,SPY
+MSW,Capital Goods,XLI
+MT,Materials,XLB
+MTAL,Materials,XLB
+MTB,Banks,XLF
+MTC,Software & Services,XLK
+MTCH,Media & Entertainment,XLC
+MTD,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+MTDR,Energy,XLE
+MTEK,Technology Hardware & Equipment,XLK
+MTEN,Automobiles & Components,XLY
+MTEX,Household & Personal Products,XLP
+MTG,Financial Services,XLF
+MTH,Consumer Durables & Apparel,XLY
+MTLS,Software & Services,XLK
+MTN,Consumer Services,XLY
+MTR,Energy,XLE
+MTRN,Materials,XLB
+MTRX,Capital Goods,XLI
+MTSI,Semiconductors & Semiconductor Equipment,XLK
+MTSR,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+MTUM,UNKNOWN,SPY
+MTUS,Materials,XLB
+MTVA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+MTW,Capital Goods,XLI
+MTX,Materials,XLB
+MTZ,Capital Goods,XLI
+MU,Semiconductors & Semiconductor Equipment,XLK
+MUD,UNKNOWN,SPY
+MUFG,Banks,XLF
+MUR,Energy,XLE
+MURA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+MUSA,Consumer Discretionary Distribution & Retail,XLY
+MUX,Materials,XLB
+MVBF,Banks,XLF
+MVIS,Technology Hardware & Equipment,XLK
+MVO,Energy,XLE
+MVST,Capital Goods,XLI
+MWA,Capital Goods,XLI
+MWYN,Capital Goods,XLI
+MX,Semiconductors & Semiconductor Equipment,XLK
+MXCT,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+MXI,UNKNOWN,SPY
+MXL,Semiconductors & Semiconductor Equipment,XLK
+MYE,Materials,XLB
+MYFW,Banks,XLF
+MYGN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+MYNZ,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+MYO,Health Care Equipment & Services,XLV
+MYPS,Media & Entertainment,XLC
+MYRG,Capital Goods,XLI
+MYSE,Software & Services,XLK
+MYSZ,Software & Services,XLK
+MZTI,Food Beverage & Tobacco,XLP
+NA,Semiconductors & Semiconductor Equipment,XLK
+NAAS,Consumer Discretionary Distribution & Retail,XLY
+NABL,Software & Services,XLK
+NAGE,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+NAII,Household & Personal Products,XLP
+NAKA,Health Care Equipment & Services,XLV
+NAMI,Consumer Services,XLY
+NAMM,Materials,XLB
+NAMS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+NAOV,Health Care Equipment & Services,XLV
+NAT,Energy,XLE
+NATH,Consumer Services,XLY
+NATL,Financial Services,XLF
+NATR,Household & Personal Products,XLP
+NAUT,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+NAVI,Financial Services,XLF
+NAVN,Consumer Services,XLY
+NB,Materials,XLB
+NBBK,Banks,XLF
+NBHC,Banks,XLF
+NBIS,Software & Services,XLK
+NBIX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+NBN,Banks,XLF
+NBP,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+NBR,Energy,XLE
+NBTB,Banks,XLF
+NBTX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+NC,Energy,XLE
+NCDL,UNKNOWN,SPY
+NCEL,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+NCEW,Transportation,XLI
+NCI,Consumer Durables & Apparel,XLY
+NCLH,Consumer Services,XLY
+NCMI,Media & Entertainment,XLC
+NCNA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+NCNO,Software & Services,XLK
+NCPL,Financial Services,XLF
+NCRA,Capital Goods,XLI
+NCSM,Energy,XLE
+NCT,Transportation,XLI
+NCTY,Software & Services,XLK
+NDAQ,Financial Services,XLF
+NDLS,Consumer Services,XLY
+NDRA,Health Care Equipment & Services,XLV
+NDSN,Capital Goods,XLI
+NE,Energy,XLE
+NECB,Banks,XLF
+NEE,Utilities,XLU
+NEGG,Consumer Discretionary Distribution & Retail,XLY
+NEM,Materials,XLB
+NEO,Health Care Equipment & Services,XLV
+NEOG,Health Care Equipment & Services,XLV
+NEON,Technology Hardware & Equipment,XLK
+NEOV,Capital Goods,XLI
+NEPH,Capital Goods,XLI
+NERV,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+NESR,Energy,XLE
+NET,Software & Services,XLK
+NETD,UNKNOWN,SPY
+NEU,Materials,XLB
+NEUE,Health Care,XLV
+NEUP,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+NEWP,UNKNOWN,SPY
+NEWT,Financial Services,XLF
+NEXA,Materials,XLB
+NEXM,Materials,XLB
+NEXN,Media & Entertainment,XLC
+NEXT,Energy,XLE
+NFBK,Banks,XLF
+NFE,Energy,XLE
+NFG,Utilities,XLU
+NFLX,Media & Entertainment,XLC
+NG,Materials,XLB
+NGD,UNKNOWN,SPY
+NGG,Utilities,XLU
+NGL,Energy,XLE
+NGNE,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+NGS,Energy,XLE
+NGVC,Consumer Staples Distribution & Retail,XLP
+NGVT,Materials,XLB
+NHC,Health Care Equipment & Services,XLV
+NHI,Equity Real Estate Investment Trusts (REITs),XLRE
+NHIC,UNKNOWN,SPY
+NHTC,Household & Personal Products,XLP
+NI,Utilities,XLU
+NIB-202306,UNKNOWN,SPY
+NIC,Banks,XLF
+NICE,Software & Services,XLK
+NINE,Energy,XLE
+NIO,Automobiles & Components,XLY
+NIPG,Media & Entertainment,XLC
+NIQ,UNKNOWN,SPY
+NISN,Software & Services,XLK
+NITO,Materials,XLB
+NIU,Automobiles & Components,XLY
+NIVF,Health Care Equipment & Services,XLV
+NIXX,Commercial & Professional Services,XLI
+NJR,Utilities,XLU
+NKE,Consumer Durables & Apparel,XLY
+NKLR,UNKNOWN,SPY
+NKSH,Banks,XLF
+NKTR,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+NKTX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+NL,Commercial & Professional Services,XLI
+NLOP,Equity Real Estate Investment Trusts (REITs),XLRE
+NLSP,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+NLY,Financial Services,XLF
+NMAX,Media & Entertainment,XLC
+NMFC,Financial Services,XLF
+NMG,Materials,XLB
+NMIH,Financial Services,XLF
+NMM,Transportation,XLI
+NMP,UNKNOWN,SPY
+NMR,Financial Services,XLF
+NMRA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+NMRK,Real Estate Management & Development,XLRE
+NMTC,Health Care Equipment & Services,XLV
+NN,Software & Services,XLK
+NNBR,Capital Goods,XLI
+NNDM,Capital Goods,XLI
+NNE,Capital Goods,XLI
+NNI,Financial Services,XLF
+NNN,Equity Real Estate Investment Trusts (REITs),XLRE
+NNNN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+NNOX,Health Care Equipment & Services,XLV
+NOA,Energy,XLE
+NOAH,Financial Services,XLF
+NOC,Capital Goods,XLI
+NODK,Insurance,XLF
+NOEM,UNKNOWN,SPY
+NOG,Energy,XLE
+NOK,Technology Hardware & Equipment,XLK
+NOMA,Media & Entertainment,XLC
+NOMD,Food Beverage & Tobacco,XLP
+NOTE,Commercial & Professional Services,XLI
+NOTV,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+NOV,Energy,XLE
+NOVT,Technology Hardware & Equipment,XLK
+NOW,Software & Services,XLK
+NP,Insurance,XLF
+NPAC,UNKNOWN,SPY
+NPB,Banks,XLF
+NPCE,Health Care Equipment & Services,XLV
+NPK,Capital Goods,XLI
+NPKI,Capital Goods,XLI
+NPO,Capital Goods,XLI
+NPT,Capital Goods,XLI
+NPWR,Capital Goods,XLI
+NRC,Health Care Equipment & Services,XLV
+NRDS,Financial Services,XLF
+NRDY,Consumer Services,XLY
+NREF,Financial Services,XLF
+NRG,Utilities,XLU
+NRGV,Capital Goods,XLI
+NRIM,Banks,XLF
+NRIX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+NRP,Energy,XLE
+NRSN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+NRT,Energy,XLE
+NRXP,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+NSA,Equity Real Estate Investment Trusts (REITs),XLRE
+NSC,Transportation,XLI
+NSIT,Technology Hardware & Equipment,XLK
+NSP,Commercial & Professional Services,XLI
+NSPR,Health Care Equipment & Services,XLV
+NSSC,Technology Hardware & Equipment,XLK
+NSTS,Banks,XLF
+NSYS,Technology Hardware & Equipment,XLK
+NTAP,Technology Hardware & Equipment,XLK
+NTB,Banks,XLF
+NTCL,Consumer Services,XLY
+NTCT,Technology Hardware & Equipment,XLK
+NTES,Media & Entertainment,XLC
+NTGR,Technology Hardware & Equipment,XLK
+NTHI,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+NTIC,Materials,XLB
+NTLA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+NTNX,Software & Services,XLK
+NTR,Materials,XLB
+NTRA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+NTRB,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+NTRP,Software & Services,XLK
+NTRS,Financial Services,XLF
+NTSK,Software & Services,XLK
+NTST,Equity Real Estate Investment Trusts (REITs),XLRE
+NTWK,Software & Services,XLK
+NTWO,UNKNOWN,SPY
+NTZ,Consumer Durables & Apparel,XLY
+NU,Banks,XLF
+NUAI,Energy,XLE
+NUE,Materials,XLB
+NUKK,Software & Services,XLK
+NUS,Household & Personal Products,XLP
+NUTR,Consumer Services,XLY
+NUTX,Health Care Equipment & Services,XLV
+NUVB,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+NUVL,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+NUWE,Health Care Equipment & Services,XLV
+NVA,Materials,XLB
+NVAX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+NVCR,Health Care Equipment & Services,XLV
+NVCT,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+NVD,UNKNOWN,SPY
+NVDA,Semiconductors & Semiconductor Equipment,XLK
+NVDL,UNKNOWN,SPY
+NVDQ,UNKNOWN,SPY
+NVDS,UNKNOWN,SPY
+NVDY,UNKNOWN,SPY
+NVEC,Semiconductors & Semiconductor Equipment,XLK
+NVFY,Consumer Durables & Apparel,XLY
+NVGS,Energy,XLE
+NVMI,Semiconductors & Semiconductor Equipment,XLK
+NVNI,Software & Services,XLK
+NVNO,Health Care Equipment & Services,XLV
+NVO,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+NVOX,UNKNOWN,SPY
+NVR,Consumer Durables & Apparel,XLY
+NVRI,Commercial & Professional Services,XLI
+NVS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+NVST,Health Care Equipment & Services,XLV
+NVT,Capital Goods,XLI
+NVTS,Semiconductors & Semiconductor Equipment,XLK
+NVVE,Capital Goods,XLI
+NVX,Technology Hardware & Equipment,XLK
+NWBI,Banks,XLF
+NWE,Utilities,XLU
+NWFL,Banks,XLF
+NWG,Banks,XLF
+NWGL,Materials,XLB
+NWL,Consumer Durables & Apparel,XLY
+NWN,Utilities,XLU
+NWPX,Capital Goods,XLI
+NWS,Media & Entertainment,XLC
+NWSA,Media & Entertainment,XLC
+NWTG,Consumer Durables & Apparel,XLY
+NX,Capital Goods,XLI
+NXDR,Media & Entertainment,XLC
+NXDT,Equity Real Estate Investment Trusts (REITs),XLRE
+NXE,Energy,XLE
+NXGL,Health Care Equipment & Services,XLV
+NXL,Health Care Equipment & Services,XLV
+NXPI,Semiconductors & Semiconductor Equipment,XLK
+NXPL,Telecommunication Services,XLC
+NXRT,Equity Real Estate Investment Trusts (REITs),XLRE
+NXST,Media & Entertainment,XLC
+NXT,Capital Goods,XLI
+NXTC,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+NXTG,UNKNOWN,SPY
+NXTT,Software & Services,XLK
+NXXT,Energy,XLE
+NYAX,Technology Hardware & Equipment,XLK
+NYC,Real Estate Management & Development,XLRE
+NYT,Media & Entertainment,XLC
+NYXH,Health Care Equipment & Services,XLV
+O,Equity Real Estate Investment Trusts (REITs),XLRE
+OABI,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+OACC,UNKNOWN,SPY
+OAKU,UNKNOWN,SPY
+OBA,UNKNOWN,SPY
+OBDC,UNKNOWN,SPY
+OBE,UNKNOWN,SPY
+OBIO,Health Care Equipment & Services,XLV
+OBK,Banks,XLF
+OBLG,Software & Services,XLK
+OBT,Banks,XLF
+OC,Capital Goods,XLI
+OCC,Technology Hardware & Equipment,XLK
+OCFC,Banks,XLF
+OCFT,Software & Services,XLK
+OCG,Media & Entertainment,XLC
+OCGN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+OCS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+OCUL,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ODC,Household & Personal Products,XLP
+ODD,Household & Personal Products,XLP
+ODFL,Transportation,XLI
+ODP,Consumer Discretionary Distribution & Retail,XLY
+ODV,Materials,XLB
+ODYS,Health Care Equipment & Services,XLV
+OEC,Materials,XLB
+OESX,Capital Goods,XLI
+OFAL,Commercial & Professional Services,XLI
+OFG,Banks,XLF
+OFIX,Health Care Equipment & Services,XLV
+OFLX,Capital Goods,XLI
+OFS,UNKNOWN,SPY
+OGE,Utilities,XLU
+OGI,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+OGN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+OGS,Utilities,XLU
+OHI,Equity Real Estate Investment Trusts (REITs),XLRE
+OI,Materials,XLB
+OII,Energy,XLE
+OIS,Energy,XLE
+OKE,Energy,XLE
+OKLO,Utilities,XLU
+OKTA,Software & Services,XLK
+OKUR,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+OKYO,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+OLB,Financial Services,XLF
+OLED,Semiconductors & Semiconductor Equipment,XLK
+OLLI,Consumer Discretionary Distribution & Retail,XLY
+OLMA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+OLN,Materials,XLB
+OLO,Unknown,SPY
+OLP,Equity Real Estate Investment Trusts (REITs),XLRE
+OLPX,Household & Personal Products,XLP
+OM,Health Care Equipment & Services,XLV
+OMAB,Transportation,XLI
+OMC,Media & Entertainment,XLC
+OMCC,Financial Services,XLF
+OMCL,Health Care Equipment & Services,XLV
+OMDA,Health Care Equipment & Services,XLV
+OMER,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+OMEX,Commercial & Professional Services,XLI
+OMF,Financial Services,XLF
+OMH,Real Estate Management & Development,XLRE
+OMI,Health Care Equipment & Services,XLV
+OMSE,Energy,XLE
+ON,Semiconductors & Semiconductor Equipment,XLK
+ONB,Banks,XLF
+ONC,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ONCH,UNKNOWN,SPY
+ONCO,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ONCY,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ONDS,Technology Hardware & Equipment,XLK
+ONEG,Capital Goods,XLI
+ONEW,Consumer Discretionary Distribution & Retail,XLY
+ONFO,Media & Entertainment,XLC
+ONIT,Financial Services,XLF
+ONL,Equity Real Estate Investment Trusts (REITs),XLRE
+ONMD,Health Care Equipment & Services,XLV
+ONON,Consumer Durables & Apparel,XLY
+ONTF,Software & Services,XLK
+ONTO,Semiconductors & Semiconductor Equipment,XLK
+OOMA,Software & Services,XLK
+OP,Transportation,XLI
+OPAD,Real Estate Management & Development,XLRE
+OPAL,Energy,XLE
+OPBK,Banks,XLF
+OPCH,Health Care Equipment & Services,XLV
+OPEN,Real Estate Management & Development,XLRE
+OPFI,Financial Services,XLF
+OPI,Real Estate,XLRE
+OPK,Health Care Equipment & Services,XLV
+OPRA,Software & Services,XLK
+OPRT,Financial Services,XLF
+OPRX,Health Care Equipment & Services,XLV
+OPT,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+OPTT,UNKNOWN,SPY
+OPTU,Media & Entertainment,XLC
+OPTX,Technology Hardware & Equipment,XLK
+OPXS,Capital Goods,XLI
+OPY,Financial Services,XLF
+OR,Materials,XLB
+ORA,Utilities,XLU
+ORBS,Materials,XLB
+ORC,Financial Services,XLF
+ORCL,Software & Services,XLK
+ORGN,Materials,XLB
+ORGO,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ORI,Insurance,XLF
+ORIC,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ORIQ,UNKNOWN,SPY
+ORIS,Food Beverage & Tobacco,XLP
+ORKA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ORKT,Software & Services,XLK
+ORLA,UNKNOWN,SPY
+ORLY,Consumer Discretionary Distribution & Retail,XLY
+ORMP,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ORN,Capital Goods,XLI
+ORRF,Banks,XLF
+OS,Software & Services,XLK
+OSBC,Banks,XLF
+OSCR,Insurance,XLF
+OSG,Insurance,XLF
+OSIS,Technology Hardware & Equipment,XLK
+OSK,Capital Goods,XLI
+OSPN,Software & Services,XLK
+OSRH,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+OSS,Technology Hardware & Equipment,XLK
+OST,Technology Hardware & Equipment,XLK
+OSUR,Health Care Equipment & Services,XLV
+OSW,Consumer Services,XLY
+OTEX,Software & Services,XLK
+OTF,Financial Services,XLF
+OTGA,UNKNOWN,SPY
+OTGAU,UNKNOWN,SPY
+OTIS,Capital Goods,XLI
+OTLK,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+OTLY,Food Beverage & Tobacco,XLP
+OTTR,Utilities,XLU
+OUST,Technology Hardware & Equipment,XLK
+OUT,Equity Real Estate Investment Trusts (REITs),XLRE
+OVBC,Banks,XLF
+OVID,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+OVLY,Banks,XLF
+OVV,Energy,XLE
+OWL,Financial Services,XLF
+OWLS,Financial Services,XLF
+OWLT,Health Care Equipment & Services,XLV
+OXBR,Insurance,XLF
+OXM,Consumer Durables & Apparel,XLY
+OXSQ,UNKNOWN,SPY
+OXY,Energy,XLE
+OYSE,UNKNOWN,SPY
+OZK,Banks,XLF
+PAA,Energy,XLE
+PAAS,Materials,XLB
+PAC,Transportation,XLI
+PACB,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+PACH,UNKNOWN,SPY
+PACK,Materials,XLB
+PACS,Health Care Equipment & Services,XLV
+PAG,Consumer Discretionary Distribution & Retail,XLY
+PAGP,Energy,XLE
+PAGS,Financial Services,XLF
+PAHC,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+PAL,Transportation,XLI
+PALI,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+PALL,UNKNOWN,SPY
+PAM,Utilities,XLU
+PAMT,Transportation,XLI
+PANL,Transportation,XLI
+PANW,Software & Services,XLK
+PAR,Software & Services,XLK
+PARK,UNKNOWN,SPY
+PARR,Energy,XLE
+PASG,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+PASW,Consumer Discretionary Distribution & Retail,XLY
+PATH,Software & Services,XLK
+PATK,Automobiles & Components,XLY
+PAVM,Health Care Equipment & Services,XLV
+PAVS,Household & Personal Products,XLP
+PAX,Financial Services,XLF
+PAY,Financial Services,XLF
+PAYC,Commercial & Professional Services,XLI
+PAYO,Financial Services,XLF
+PAYS,Financial Services,XLF
+PAYX,Commercial & Professional Services,XLI
+PB,Banks,XLF
+PBA,Energy,XLE
+PBBK,Banks,XLF
+PBD,UNKNOWN,SPY
+PBE,UNKNOWN,SPY
+PBF,Energy,XLE
+PBFS,Banks,XLF
+PBH,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+PBHC,Banks,XLF
+PBI,Commercial & Professional Services,XLI
+PBJ,UNKNOWN,SPY
+PBM,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+PBPB,Consumer Services,XLY
+PBR,Energy,XLE
+PBR-A,UNKNOWN,SPY
+PBR.A,Energy,XLE
+PBT,Energy,XLE
+PBYI,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+PC,Consumer Services,XLY
+PCAP,UNKNOWN,SPY
+PCAR,Capital Goods,XLI
+PCB,Banks,XLF
+PCG,Utilities,XLU
+PCH,Equity Real Estate Investment Trusts (REITs),XLRE
+PCLA,Technology Hardware & Equipment,XLK
+PCOR,Software & Services,XLK
+PCRX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+PCSA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+PCSC,UNKNOWN,SPY
+PCT,Materials,XLB
+PCTY,Commercial & Professional Services,XLI
+PCVX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+PCYO,Utilities,XLU
+PD,Software & Services,XLK
+PDCC,UNKNOWN,SPY
+PDD,Consumer Discretionary Distribution & Retail,XLY
+PDEX,Health Care Equipment & Services,XLV
+PDFS,Semiconductors & Semiconductor Equipment,XLK
+PDLB,Banks,XLF
+PDM,Equity Real Estate Investment Trusts (REITs),XLRE
+PDP,UNKNOWN,SPY
+PDS,Energy,XLE
+PDSB,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+PDYN,Capital Goods,XLI
+PEB,Equity Real Estate Investment Trusts (REITs),XLRE
+PEBK,Banks,XLF
+PEBO,Banks,XLF
+PECO,Equity Real Estate Investment Trusts (REITs),XLRE
+PEG,Utilities,XLU
+PEGA,Software & Services,XLK
+PEJ,UNKNOWN,SPY
+PELI,UNKNOWN,SPY
+PEN,Health Care Equipment & Services,XLV
+PENG,Semiconductors & Semiconductor Equipment,XLK
+PENN,Consumer Services,XLY
+PEP,Food Beverage & Tobacco,XLP
+PEPG,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+PERF,Software & Services,XLK
+PERI,Media & Entertainment,XLC
+PESI,Commercial & Professional Services,XLI
+PETS,Consumer Discretionary Distribution & Retail,XLY
+PETZ,Food Beverage & Tobacco,XLP
+PEW,Consumer Discretionary Distribution & Retail,XLY
+PEX,UNKNOWN,SPY
+PFAI,Capital Goods,XLI
+PFBC,Banks,XLF
+PFE,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+PFF,UNKNOWN,SPY
+PFG,Insurance,XLF
+PFGC,Consumer Staples Distribution & Retail,XLP
+PFIS,Banks,XLF
+PFM,UNKNOWN,SPY
+PFRL,UNKNOWN,SPY
+PFS,Banks,XLF
+PFSA,Health Care Equipment & Services,XLV
+PFSI,Financial Services,XLF
+PFX,Financial Services,XLF
+PG,Household & Personal Products,XLP
+PGAC,UNKNOWN,SPY
+PGC,Banks,XLF
+PGEN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+PGF,UNKNOWN,SPY
+PGNY,Health Care Equipment & Services,XLV
+PGR,Insurance,XLF
+PGRE,Equity Real Estate Investment Trusts (REITs),XLRE
+PGY,Software & Services,XLK
+PH,Capital Goods,XLI
+PHAR,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+PHAT,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+PHB,UNKNOWN,SPY
+PHDG,UNKNOWN,SPY
+PHG,Health Care Equipment & Services,XLV
+PHH,Consumer Discretionary Distribution & Retail,XLY
+PHI,Telecommunication Services,XLC
+PHIN,Automobiles & Components,XLY
+PHIO,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+PHLT,Health Care,XLV
+PHM,Consumer Durables & Apparel,XLY
+PHOE,Capital Goods,XLI
+PHR,Health Care Equipment & Services,XLV
+PHUN,Software & Services,XLK
+PHVS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+PHYS,UNKNOWN,SPY
+PI,Semiconductors & Semiconductor Equipment,XLK
+PID,UNKNOWN,SPY
+PIE,UNKNOWN,SPY
+PII,Consumer Durables & Apparel,XLY
+PIII,Health Care Equipment & Services,XLV
+PIN,UNKNOWN,SPY
+PINC,Health Care Equipment & Services,XLV
+PINE,Equity Real Estate Investment Trusts (REITs),XLRE
+PINS,Media & Entertainment,XLC
+PIO,UNKNOWN,SPY
+PIPR,Financial Services,XLF
+PIZ,UNKNOWN,SPY
+PJP,UNKNOWN,SPY
+PJT,Financial Services,XLF
+PK,Equity Real Estate Investment Trusts (REITs),XLRE
+PKBK,Banks,XLF
+PKE,Capital Goods,XLI
+PKG,Materials,XLB
+PKOH,Capital Goods,XLI
+PKST,Equity Real Estate Investment Trusts (REITs),XLRE
+PKX,Materials,XLB
+PL,Commercial & Professional Services,XLI
+PLAB,Semiconductors & Semiconductor Equipment,XLK
+PLAY,Consumer Services,XLY
+PLBC,Banks,XLF
+PLBL,Consumer Discretionary Distribution & Retail,XLY
+PLBY,Consumer Durables & Apparel,XLY
+PLCE,Consumer Discretionary Distribution & Retail,XLY
+PLD,Equity Real Estate Investment Trusts (REITs),XLRE
+PLG,UNKNOWN,SPY
+PLMK,UNKNOWN,SPY
+PLMR,Insurance,XLF
+PLNT,Consumer Services,XLY
+PLOW,Capital Goods,XLI
+PLPC,Capital Goods,XLI
+PLRX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+PLRZ,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+PLSE,Health Care Equipment & Services,XLV
+PLTD,UNKNOWN,SPY
+PLTK,Media & Entertainment,XLC
+PLTR,Software & Services,XLK
+PLTS,Software & Services,XLK
+PLTZ,UNKNOWN,SPY
+PLUG,Capital Goods,XLI
+PLUR,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+PLUS,Technology Hardware & Equipment,XLK
+PLUT,Financial Services,XLF
+PLX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+PLXS,Technology Hardware & Equipment,XLK
+PLYM,Equity Real Estate Investment Trusts (REITs),XLRE
+PM,Food Beverage & Tobacco,XLP
+PMAX,Financial Services,XLF
+PMCB,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+PMEC,Commercial & Professional Services,XLI
+PMI,UNKNOWN,SPY
+PMN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+PMT,Financial Services,XLF
+PMTR,UNKNOWN,SPY
+PMTS,Technology Hardware & Equipment,XLK
+PMVP,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+PN,Capital Goods,XLI
+PNBK,Banks,XLF
+PNC,Banks,XLF
+PNFP,Banks,XLF
+PNQI,UNKNOWN,SPY
+PNR,Capital Goods,XLI
+PNRG,Energy,XLE
+PNTG,Health Care Equipment & Services,XLV
+PNW,Utilities,XLU
+POAI,Health Care Equipment & Services,XLV
+POCI,Health Care Equipment & Services,XLV
+PODC,Media & Entertainment,XLC
+PODD,Health Care Equipment & Services,XLV
+POET,Semiconductors & Semiconductor Equipment,XLK
+POLA,Capital Goods,XLI
+POLE,UNKNOWN,SPY
+POM,Health Care Equipment & Services,XLV
+PONY,Software & Services,XLK
+POOL,Consumer Discretionary Distribution & Retail,XLY
+POR,Utilities,XLU
+POST,Food Beverage & Tobacco,XLP
+POWI,Semiconductors & Semiconductor Equipment,XLK
+POWL,Capital Goods,XLI
+POWW,Consumer Discretionary Distribution & Retail,XLY
+PPA,UNKNOWN,SPY
+PPBT,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+PPC,Food Beverage & Tobacco,XLP
+PPCB,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+PPG,Materials,XLB
+PPIH,Capital Goods,XLI
+PPL,Utilities,XLU
+PPLT,UNKNOWN,SPY
+PPSI,Capital Goods,XLI
+PPTA,Materials,XLB
+PR,Energy,XLE
+PRA,Insurance,XLF
+PRAA,Financial Services,XLF
+PRAX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+PRCH,Software & Services,XLK
+PRCT,Health Care Equipment & Services,XLV
+PRDO,Consumer Services,XLY
+PRE,Health Care Equipment & Services,XLV
+PRFX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+PRFZ,UNKNOWN,SPY
+PRG,Financial Services,XLF
+PRGO,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+PRGS,Software & Services,XLK
+PRHI,Insurance,XLF
+PRI,Insurance,XLF
+PRIM,Capital Goods,XLI
+PRK,Banks,XLF
+PRKS,Consumer Services,XLY
+PRLB,Capital Goods,XLI
+PRLD,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+PRM,Materials,XLB
+PRMB,Food Beverage & Tobacco,XLP
+PRME,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+PRO,Software & Services,XLK
+PROF,Health Care Equipment & Services,XLV
+PROK,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+PROP,Energy,XLE
+PROV,Banks,XLF
+PRPH,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+PRPL,Consumer Durables & Apparel,XLY
+PRPO,Health Care Equipment & Services,XLV
+PRQR,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+PRSO,Semiconductors & Semiconductor Equipment,XLK
+PRSU,Consumer Services,XLY
+PRT,Energy,XLE
+PRTA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+PRTC,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+PRTH,Financial Services,XLF
+PRTS,Consumer Discretionary Distribution & Retail,XLY
+PRU,Insurance,XLF
+PRVA,Health Care Equipment & Services,XLV
+PRZO,Technology Hardware & Equipment,XLK
+PSA,Equity Real Estate Investment Trusts (REITs),XLRE
+PSCC,UNKNOWN,SPY
+PSCD,UNKNOWN,SPY
+PSCE,UNKNOWN,SPY
+PSCF,UNKNOWN,SPY
+PSCH,UNKNOWN,SPY
+PSCI,UNKNOWN,SPY
+PSCM,UNKNOWN,SPY
+PSCT,UNKNOWN,SPY
+PSCU,UNKNOWN,SPY
+PSEC,UNKNOWN,SPY
+PSFE,Financial Services,XLF
+PSHG,Transportation,XLI
+PSI,UNKNOWN,SPY
+PSIG,Transportation,XLI
+PSIX,Capital Goods,XLI
+PSKY,Media & Entertainment,XLC
+PSLV,UNKNOWN,SPY
+PSMT,Consumer Staples Distribution & Retail,XLP
+PSN,Commercial & Professional Services,XLI
+PSNL,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+PSNY,Automobiles & Components,XLY
+PSO,Consumer Services,XLY
+PSP,UNKNOWN,SPY
+PSQ,UNKNOWN,SPY
+PSQH,Media & Entertainment,XLC
+PSR,UNKNOWN,SPY
+PSTG,Technology Hardware & Equipment,XLK
+PSTL,Equity Real Estate Investment Trusts (REITs),XLRE
+PSTV,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+PSX,Energy,XLE
+PT,Financial Services,XLF
+PTC,Software & Services,XLK
+PTCT,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+PTEN,Energy,XLE
+PTGX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+PTHL,Health Care Equipment & Services,XLV
+PTIX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+PTLE,Energy,XLE
+PTLO,Consumer Services,XLY
+PTNM,Consumer Discretionary Distribution & Retail,XLY
+PTON,Consumer Durables & Apparel,XLY
+PTRN,Consumer Discretionary Distribution & Retail,XLY
+PUBM,Media & Entertainment,XLC
+PUK,Insurance,XLF
+PULM,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+PUMP,Energy,XLE
+PURR,UNKNOWN,SPY
+PVBC,Banks,XLF
+PVH,Consumer Durables & Apparel,XLY
+PVL,Energy,XLE
+PVLA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+PWM,Financials,XLF
+PWP,Financial Services,XLF
+PWR,Capital Goods,XLI
+PX,Financial Services,XLF
+PXE,UNKNOWN,SPY
+PXED,Consumer Services,XLY
+PXF,UNKNOWN,SPY
+PXH,UNKNOWN,SPY
+PXJ,UNKNOWN,SPY
+PXLW,Semiconductors & Semiconductor Equipment,XLK
+PXS,Transportation,XLI
+PYPD,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+PYPL,Financial Services,XLF
+PYXS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+PZZA,Consumer Services,XLY
+Q,UNKNOWN,SPY
+QBTS,Software & Services,XLK
+QCLS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+QCOM,Semiconductors & Semiconductor Equipment,XLK
+QCRH,Banks,XLF
+QD,Financial Services,XLF
+QDEL,Health Care Equipment & Services,XLV
+QETA,UNKNOWN,SPY
+QFIN,Financial Services,XLF
+QGEN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+QH,Commercial & Professional Services,XLI
+QID,UNKNOWN,SPY
+QIPT,Health Care Equipment & Services,XLV
+QLD,UNKNOWN,SPY
+QLGN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+QLYS,Software & Services,XLK
+QMCO,Technology Hardware & Equipment,XLK
+QMMM,Media & Entertainment,XLC
+QNCX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+QNRX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+QNST,Media & Entertainment,XLC
+QNTM,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+QQEW,UNKNOWN,SPY
+QQQ,UNKNOWN,SPY
+QRHC,Commercial & Professional Services,XLI
+QRVO,Semiconductors & Semiconductor Equipment,XLK
+QS,Automobiles & Components,XLY
+QSEA,UNKNOWN,SPY
+QSG,Consumer Services,XLY
+QSI,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+QSR,Consumer Services,XLY
+QTRX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+QTTB,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+QTWO,Software & Services,XLK
+QUAD,Commercial & Professional Services,XLI
+QUAL,UNKNOWN,SPY
+QUBT,Technology Hardware & Equipment,XLK
+QUIK,Semiconductors & Semiconductor Equipment,XLK
+QUMS,UNKNOWN,SPY
+QURE,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+QVCGA,Consumer Discretionary Distribution & Retail,XLY
+QXO,Capital Goods,XLI
+R,Transportation,XLI
+RAAQ,UNKNOWN,SPY
+RACE,Automobiles & Components,XLY
+RADX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+RAIL,Capital Goods,XLI
+RAIN,Capital Goods,XLI
+RAL,UNKNOWN,SPY
+RAMP,Software & Services,XLK
+RANG,UNKNOWN,SPY
+RANI,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+RAPP,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+RAPT,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+RARE,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+RAVE,Consumer Services,XLY
+RAY,Consumer Discretionary Distribution & Retail,XLY
+RAYA,Capital Goods,XLI
+RBA,Commercial & Professional Services,XLI
+RBB,Banks,XLF
+RBBN,Technology Hardware & Equipment,XLK
+RBC,Capital Goods,XLI
+RBCAA,Banks,XLF
+RBKB,Banks,XLF
+RBLX,Media & Entertainment,XLC
+RBNE,Transportation,XLI
+RBOT,Health Care Equipment & Services,XLV
+RBRK,Software & Services,XLK
+RC,Financial Services,XLF
+RCAT,Technology Hardware & Equipment,XLK
+RCEL,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+RCI,Telecommunication Services,XLC
+RCKT,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+RCKY,Consumer Durables & Apparel,XLY
+RCL,Consumer Services,XLY
+RCMT,Commercial & Professional Services,XLI
+RCON,Energy,XLE
+RCT,Consumer Discretionary Distribution & Retail,XLY
+RCUS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+RDAC,UNKNOWN,SPY
+RDAG,UNKNOWN,SPY
+RDCM,Software & Services,XLK
+RDDT,Media & Entertainment,XLC
+RDGT,Consumer Staples Distribution & Retail,XLP
+RDHL,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+RDI,Media & Entertainment,XLC
+RDIB,Media & Entertainment,XLC
+RDN,Financial Services,XLF
+RDNT,Health Care Equipment & Services,XLV
+RDNW,Consumer Discretionary Distribution & Retail,XLY
+RDVT,Software & Services,XLK
+RDW,Capital Goods,XLI
+RDWR,Software & Services,XLK
+RDY,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+RDZN,Software & Services,XLK
+REAL,Consumer Discretionary Distribution & Retail,XLY
+REAX,Real Estate Management & Development,XLRE
+REBN,Consumer Staples Distribution & Retail,XLP
+RECT,Commercial & Professional Services,XLI
+REE,Automobiles & Components,XLY
+REFI,Financial Services,XLF
+REFR,Technology Hardware & Equipment,XLK
+REG,Equity Real Estate Investment Trusts (REITs),XLRE
+REGN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+REKR,Software & Services,XLK
+RELI,Insurance,XLF
+RELL,Technology Hardware & Equipment,XLK
+RELX,Commercial & Professional Services,XLI
+RELY,Financial Services,XLF
+REM,UNKNOWN,SPY
+RENB,Health Care,XLV
+RENT,Consumer Discretionary Distribution & Retail,XLY
+REPL,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+REPX,Energy,XLE
+RERE,Consumer Discretionary Distribution & Retail,XLY
+RES,Energy,XLE
+RESP-202401,UNKNOWN,SPY
+RETO,Materials,XLB
+REVB,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+REVG,Capital Goods,XLI
+REW,UNKNOWN,SPY
+REX,Energy,XLE
+REXR,Equity Real Estate Investment Trusts (REITs),XLRE
+REYN,Household & Personal Products,XLP
+REZI,Capital Goods,XLI
+RF,Banks,XLF
+RFAI,UNKNOWN,SPY
+RFIL,Technology Hardware & Equipment,XLK
+RFL,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+RGA,Insurance,XLF
+RGC,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+RGCO,Utilities,XLU
+RGEN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+RGLD,Materials,XLB
+RGNX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+RGP,Commercial & Professional Services,XLI
+RGR,Consumer Durables & Apparel,XLY
+RGS,Consumer Services,XLY
+RGTI,Semiconductors & Semiconductor Equipment,XLK
+RH,Consumer Discretionary Distribution & Retail,XLY
+RHI,Commercial & Professional Services,XLI
+RHLD,Commercial & Professional Services,XLI
+RHP,Equity Real Estate Investment Trusts (REITs),XLRE
+RIBB,UNKNOWN,SPY
+RICK,Consumer Services,XLY
+RIG,Energy,XLE
+RIGL,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+RILY,Financial Services,XLF
+RIME,Consumer Durables & Apparel,XLY
+RIO,Materials,XLB
+RIOT,Software & Services,XLK
+RITM,Financial Services,XLF
+RITR,Real Estate Management & Development,XLRE
+RIVN,Automobiles & Components,XLY
+RJET,Transportation,XLI
+RJF,Financial Services,XLF
+RKDA,Food Beverage & Tobacco,XLP
+RKLB,Capital Goods,XLI
+RKT,Financial Services,XLF
+RL,Consumer Durables & Apparel,XLY
+RLAY,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+RLGT,Transportation,XLI
+RLI,Insurance,XLF
+RLJ,Equity Real Estate Investment Trusts (REITs),XLRE
+RLMD,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+RLX,Food Beverage & Tobacco,XLP
+RLYB,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+RM,Financial Services,XLF
+RMAX,Real Estate Management & Development,XLRE
+RMBI,Banks,XLF
+RMBS,Semiconductors & Semiconductor Equipment,XLK
+RMCF,Food Beverage & Tobacco,XLP
+RMCO,Commercial & Professional Services,XLI
+RMD,Health Care Equipment & Services,XLV
+RMNI,Software & Services,XLK
+RMR,Real Estate Management & Development,XLRE
+RMSG,Real Estate Management & Development,XLRE
+RMTI,Health Care Equipment & Services,XLV
+RNA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+RNAC,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+RNAZ,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+RNG,Software & Services,XLK
+RNGR,Energy,XLE
+RNGT,UNKNOWN,SPY
+RNGTU,UNKNOWN,SPY
+RNR,Insurance,XLF
+RNST,Banks,XLF
+RNTX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+RNW,Utilities,XLU
+RNXT,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ROAD,Capital Goods,XLI
+ROBO,UNKNOWN,SPY
+ROCK,Capital Goods,XLI
+ROG,Technology Hardware & Equipment,XLK
+ROIV,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ROK,Capital Goods,XLI
+ROKU,Media & Entertainment,XLC
+ROL,Commercial & Professional Services,XLI
+ROMA,Commercial & Professional Services,XLI
+ROOT,Insurance,XLF
+ROP,Software & Services,XLK
+ROST,Consumer Discretionary Distribution & Retail,XLY
+RPAY,Financial Services,XLF
+RPD,Software & Services,XLK
+RPGL,Software & Services,XLK
+RPID,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+RPM,Materials,XLB
+RPRX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+RPT,Financial Services,XLF
+RPTX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+RR,Capital Goods,XLI
+RRBI,Banks,XLF
+RRC,Energy,XLE
+RRGB,Consumer Services,XLY
+RRR,Consumer Services,XLY
+RRX,Capital Goods,XLI
+RS,Materials,XLB
+RSG,Commercial & Professional Services,XLI
+RSI,Consumer Services,XLY
+RSKD,Software & Services,XLK
+RSP,UNKNOWN,SPY
+RSPT,UNKNOWN,SPY
+RSSS,Software & Services,XLK
+RSVR,Media & Entertainment,XLC
+RSXJ-202209,UNKNOWN,SPY
+RTAC,UNKNOWN,SPY
+RTO,Commercial & Professional Services,XLI
+RTX,Capital Goods,XLI
+RUBI,Energy,XLE
+RUM,Media & Entertainment,XLC
+RUN,Capital Goods,XLI
+RUSHA,Capital Goods,XLI
+RUSHB,Capital Goods,XLI
+RVLV,Consumer Discretionary Distribution & Retail,XLY
+RVMD,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+RVPH,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+RVSB,Banks,XLF
+RVSN,Technology Hardware & Equipment,XLK
+RVTY,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+RVYL,Financial Services,XLF
+RWAY,Financial Services,XLF
+RWJ,UNKNOWN,SPY
+RWK,UNKNOWN,SPY
+RWL,UNKNOWN,SPY
+RWM,UNKNOWN,SPY
+RWO,UNKNOWN,SPY
+RWT,Financial Services,XLF
+RWX,UNKNOWN,SPY
+RXI,UNKNOWN,SPY
+RXO,Transportation,XLI
+RXRX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+RXST,Health Care Equipment & Services,XLV
+RXT,Software & Services,XLK
+RY,Banks,XLF
+RYAAY,Transportation,XLI
+RYAM,Materials,XLB
+RYAN,Insurance,XLF
+RYDE,UNKNOWN,SPY
+RYET,Consumer Services,XLY
+RYI,Materials,XLB
+RYM,Capital Goods,XLI
+RYN,Equity Real Estate Investment Trusts (REITs),XLRE
+RYOJ,UNKNOWN,SPY
+RYTM,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+RZLT,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+RZLV,Software & Services,XLK
+RZV,UNKNOWN,SPY
+S,Software & Services,XLK
+SA,Materials,XLB
+SABR,Consumer Services,XLY
+SABS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+SAC-U,UNKNOWN,SPY
+SAFE,Equity Real Estate Investment Trusts (REITs),XLRE
+SAFT,Insurance,XLF
+SAFX,Energy,XLE
+SAGT,Software & Services,XLK
+SAH,Consumer Discretionary Distribution & Retail,XLY
+SAIA,Transportation,XLI
+SAIC,Commercial & Professional Services,XLI
+SAIH,Software & Services,XLK
+SAIL,Software & Services,XLK
+SAM,Food Beverage & Tobacco,XLP
+SAMG,Financial Services,XLF
+SAN,Banks,XLF
+SANA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+SAND,Materials,XLB
+SANG,Technology Hardware & Equipment,XLK
+SANM,Technology Hardware & Equipment,XLK
+SAP,Software & Services,XLK
+SARO,Capital Goods,XLI
+SATL,Capital Goods,XLI
+SATS,Media & Entertainment,XLC
+SAVA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+SB,Transportation,XLI
+SBAC,Equity Real Estate Investment Trusts (REITs),XLRE
+SBC,Health Care Equipment & Services,XLV
+SBCF,Banks,XLF
+SBDS,Consumer Durables & Apparel,XLY
+SBET,Consumer Services,XLY
+SBFG,Banks,XLF
+SBFM,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+SBGI,Media & Entertainment,XLC
+SBH,Consumer Discretionary Distribution & Retail,XLY
+SBLK,Transportation,XLI
+SBLX,Automobiles & Components,XLY
+SBR,Energy,XLE
+SBRA,Equity Real Estate Investment Trusts (REITs),XLRE
+SBS,Utilities,XLU
+SBSI,Banks,XLF
+SBSW,Materials,XLB
+SBUX,Consumer Services,XLY
+SBXE-U,UNKNOWN,SPY
+SCAG,Capital Goods,XLI
+SCCO,Materials,XLB
+SCHA,UNKNOWN,SPY
+SCHL,Media & Entertainment,XLC
+SCHM,UNKNOWN,SPY
+SCHW,Financial Services,XLF
+SCHX,UNKNOWN,SPY
+SCI,Consumer Services,XLY
+SCIIU,UNKNOWN,SPY
+SCJ,UNKNOWN,SPY
+SCKT,Technology Hardware & Equipment,XLK
+SCL,Materials,XLB
+SCLX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+SCNI,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+SCNX,Health Care Equipment & Services,XLV
+SCOR,Media & Entertainment,XLC
+SCPH,Health Care,XLV
+SCS,Commercial & Professional Services,XLI
+SCSC,Technology Hardware & Equipment,XLK
+SCVL,Consumer Discretionary Distribution & Retail,XLY
+SCWO,Capital Goods,XLI
+SCYX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+SCZ,UNKNOWN,SPY
+SD,Energy,XLE
+SDA,Consumer Services,XLY
+SDGR,Health Care Equipment & Services,XLV
+SDHC,Consumer Durables & Apparel,XLY
+SDHI,UNKNOWN,SPY
+SDM,Media & Entertainment,XLC
+SDOT,Food Beverage & Tobacco,XLP
+SDOW,UNKNOWN,SPY
+SDRL,Energy,XLE
+SDS,UNKNOWN,SPY
+SDST,Capital Goods,XLI
+SDY,UNKNOWN,SPY
+SE,Consumer Discretionary Distribution & Retail,XLY
+SEAT,Media & Entertainment,XLC
+SEB,Food Beverage & Tobacco,XLP
+SEDG,Semiconductors & Semiconductor Equipment,XLK
+SEE,Materials,XLB
+SEED,Food Beverage & Tobacco,XLP
+SEER,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+SEG,Real Estate Management & Development,XLRE
+SEGG,Consumer Services,XLY
+SEI,Energy,XLE
+SEIC,Financial Services,XLF
+SELF,Equity Real Estate Investment Trusts (REITs),XLRE
+SELX,Semiconductors & Semiconductor Equipment,XLK
+SEM,Health Care Equipment & Services,XLV
+SEMR,Software & Services,XLK
+SENEA,Food Beverage & Tobacco,XLP
+SENEB,Food Beverage & Tobacco,XLP
+SENS,Health Care Equipment & Services,XLV
+SEPN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+SERA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+SERV,Consumer Services,XLY
+SES,Capital Goods,XLI
+SEV,Automobiles & Components,XLY
+SEVN,Financial Services,XLF
+SEZL,Financial Services,XLF
+SF,Financial Services,XLF
+SFBC,Banks,XLF
+SFBS,Banks,XLF
+SFD,Food Beverage & Tobacco,XLP
+SFHG,Commercial & Professional Services,XLI
+SFIX,Consumer Discretionary Distribution & Retail,XLY
+SFL,Energy,XLE
+SFM,Consumer Staples Distribution & Retail,XLP
+SFNC,Banks,XLF
+SFST,Banks,XLF
+SFWL,Transportation,XLI
+SG,Consumer Services,XLY
+SGA,Media & Entertainment,XLC
+SGBX,Capital Goods,XLI
+SGC,Consumer Durables & Apparel,XLY
+SGD,Real Estate Management & Development,XLRE
+SGHC,Consumer Services,XLY
+SGHT,Health Care Equipment & Services,XLV
+SGI,Consumer Durables & Apparel,XLY
+SGLY,Transportation,XLI
+SGML,Materials,XLB
+SGMO,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+SGMT,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+SGRP,Media & Entertainment,XLC
+SGRY,Health Care Equipment & Services,XLV
+SGU,Utilities,XLU
+SH,UNKNOWN,SPY
+SHAK,Consumer Services,XLY
+SHBI,Banks,XLF
+SHC,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+SHCO,Consumer Services,XLY
+SHEL,Energy,XLE
+SHEN,Telecommunication Services,XLC
+SHFS,Financial Services,XLF
+SHG,Banks,XLF
+SHIM,Capital Goods,XLI
+SHIP,Transportation,XLI
+SHLS,Capital Goods,XLI
+SHMD,Technology Hardware & Equipment,XLK
+SHO,Equity Real Estate Investment Trusts (REITs),XLRE
+SHOO,Consumer Durables & Apparel,XLY
+SHOP,Software & Services,XLK
+SHOT,Consumer Staples,XLP
+SHPH,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+SHW,Materials,XLB
+SHY,UNKNOWN,SPY
+SI,Health Care Equipment & Services,XLV
+SIBN,Health Care Equipment & Services,XLV
+SID,Materials,XLB
+SIDU,Capital Goods,XLI
+SIEB,Financial Services,XLF
+SIFY,Telecommunication Services,XLC
+SIG,Consumer Discretionary Distribution & Retail,XLY
+SIGA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+SIGI,Insurance,XLF
+SII,Financial Services,XLF
+SILA,Equity Real Estate Investment Trusts (REITs),XLRE
+SILC,Technology Hardware & Equipment,XLK
+SILO,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+SIMA,UNKNOWN,SPY
+SIMO,Semiconductors & Semiconductor Equipment,XLK
+SINT,Health Care Equipment & Services,XLV
+SION,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+SIRI,Media & Entertainment,XLC
+SISI,Consumer Staples,XLP
+SITC,Equity Real Estate Investment Trusts (REITs),XLRE
+SITE,Capital Goods,XLI
+SITM,Semiconductors & Semiconductor Equipment,XLK
+SJ,Media & Entertainment,XLC
+SJM,Food Beverage & Tobacco,XLP
+SJT,Energy,XLE
+SKBL,Capital Goods,XLI
+SKE,Materials,XLB
+SKIL,Commercial & Professional Services,XLI
+SKIN,Household & Personal Products,XLP
+SKK,Capital Goods,XLI
+SKLZ,Media & Entertainment,XLC
+SKM,Telecommunication Services,XLC
+SKT,Equity Real Estate Investment Trusts (REITs),XLRE
+SKWD,Insurance,XLF
+SKX,Unknown,SPY
+SKY,Consumer Durables & Apparel,XLY
+SKYE,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+SKYH,Transportation,XLI
+SKYQ,Energy,XLE
+SKYT,Semiconductors & Semiconductor Equipment,XLK
+SKYW,Transportation,XLI
+SKYX,Capital Goods,XLI
+SKYY,UNKNOWN,SPY
+SLAB,Semiconductors & Semiconductor Equipment,XLK
+SLAI,Software & Services,XLK
+SLB,Energy,XLE
+SLDB,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+SLDE,Insurance,XLF
+SLDP,Automobiles & Components,XLY
+SLE,Media & Entertainment,XLC
+SLF,Insurance,XLF
+SLG,Equity Real Estate Investment Trusts (REITs),XLRE
+SLGB,Transportation,XLI
+SLGL,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+SLGN,Materials,XLB
+SLI,UNKNOWN,SPY
+SLM,Financial Services,XLF
+SLMT,Media & Entertainment,XLC
+SLN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+SLND,Capital Goods,XLI
+SLNG,Energy,XLE
+SLNH,Software & Services,XLK
+SLNO,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+SLP,Health Care Equipment & Services,XLV
+SLQT,Insurance,XLF
+SLRC,UNKNOWN,SPY
+SLRX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+SLS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+SLSN,Materials,XLB
+SLV,UNKNOWN,SPY
+SLVM,Materials,XLB
+SLX,UNKNOWN,SPY
+SLXN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+SLYG,UNKNOWN,SPY
+SLYV,UNKNOWN,SPY
+SM,Energy,XLE
+SMA,Equity Real Estate Investment Trusts (REITs),XLRE
+SMBC,Banks,XLF
+SMBK,Banks,XLF
+SMC,Energy,XLE
+SMCI,Technology Hardware & Equipment,XLK
+SMCL,UNKNOWN,SPY
+SMCX,UNKNOWN,SPY
+SMCY,UNKNOWN,SPY
+SMFG,Banks,XLF
+SMG,Materials,XLB
+SMHI,Energy,XLE
+SMID,Materials,XLB
+SMLR,Health Care Equipment & Services,XLV
+SMLV,UNKNOWN,SPY
+SMMT,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+SMP,Automobiles & Components,XLY
+SMPL,Food Beverage & Tobacco,XLP
+SMR,Capital Goods,XLI
+SMRT,Technology Hardware & Equipment,XLK
+SMSI,Software & Services,XLK
+SMTC,Semiconductors & Semiconductor Equipment,XLK
+SMTI,Health Care Equipment & Services,XLV
+SMTK,Semiconductors & Semiconductor Equipment,XLK
+SMU,UNKNOWN,SPY
+SMWB,Software & Services,XLK
+SMX,Technology Hardware & Equipment,XLK
+SMXT,Capital Goods,XLI
+SN,Consumer Durables & Apparel,XLY
+SNA,Capital Goods,XLI
+SNAL,Media & Entertainment,XLC
+SNAP,Media & Entertainment,XLC
+SNBR,Consumer Discretionary Distribution & Retail,XLY
+SNCR,Software & Services,XLK
+SNCY,Transportation,XLI
+SND,Energy,XLE
+SNDA,Health Care Equipment & Services,XLV
+SNDK,Technology Hardware & Equipment,XLK
+SNDL,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+SNDR,Transportation,XLI
+SNDX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+SNES,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+SNEX,Financial Services,XLF
+SNFCA,Financial Services,XLF
+SNGX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+SNN,Health Care Equipment & Services,XLV
+SNOA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+SNOW,Software & Services,XLK
+SNPS,Software & Services,XLK
+SNSE,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+SNT,Technology Hardware & Equipment,XLK
+SNTG,Commercial & Professional Services,XLI
+SNTI,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+SNV,Banks,XLF
+SNWV,Health Care Equipment & Services,XLV
+SNX,Technology Hardware & Equipment,XLK
+SNY,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+SNYR,Household & Personal Products,XLP
+SO,Utilities,XLU
+SOBO,Energy,XLE
+SOBR,Technology Hardware & Equipment,XLK
+SOC,Energy,XLE
+SOCA,UNKNOWN,SPY
+SOCL,UNKNOWN,SPY
+SOFI,Financial Services,XLF
+SOGP,Media & Entertainment,XLC
+SOHO,Equity Real Estate Investment Trusts (REITs),XLRE
+SOHU,Media & Entertainment,XLC
+SOL,Capital Goods,XLI
+SOLS,Materials,XLB
+SOLV,Health Care Equipment & Services,XLV
+SOMN,UNKNOWN,SPY
+SON,Materials,XLB
+SOND,Consumer Services,XLY
+SONM,Technology Hardware & Equipment,XLK
+SONN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+SONO,Consumer Durables & Apparel,XLY
+SONY,Consumer Durables & Apparel,XLY
+SOPA,Media & Entertainment,XLC
+SOPH,Health Care Equipment & Services,XLV
+SORA,Consumer Discretionary Distribution & Retail,XLY
+SOS,Commercial & Professional Services,XLI
+SOTK,Technology Hardware & Equipment,XLK
+SOUN,Software & Services,XLK
+SOWG,Food Beverage & Tobacco,XLP
+SPAI,Capital Goods,XLI
+SPB,Household & Personal Products,XLP
+SPCB,Technology Hardware & Equipment,XLK
+SPCE,Capital Goods,XLI
+SPDN,UNKNOWN,SPY
+SPDW,UNKNOWN,SPY
+SPEG,UNKNOWN,SPY
+SPFI,Banks,XLF
+SPG,Equity Real Estate Investment Trusts (REITs),XLRE
+SPGI,Financial Services,XLF
+SPH,Utilities,XLU
+SPHB,UNKNOWN,SPY
+SPHL,Consumer Durables & Apparel,XLY
+SPHQ,UNKNOWN,SPY
+SPHR,Media & Entertainment,XLC
+SPIR,Commercial & Professional Services,XLI
+SPKL,UNKNOWN,SPY
+SPLV,UNKNOWN,SPY
+SPMC,Financial Services,XLF
+SPNS,Software & Services,XLK
+SPNT,Insurance,XLF
+SPOK,Telecommunication Services,XLC
+SPOT,Media & Entertainment,XLC
+SPPL,Capital Goods,XLI
+SPPP,UNKNOWN,SPY
+SPR,Capital Goods,XLI
+SPRB,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+SPRC,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+SPRO,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+SPRU,Utilities,XLU
+SPRY,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+SPSC,Software & Services,XLK
+SPT,Software & Services,XLK
+SPTN,Consumer Staples,XLP
+SPWH,Consumer Discretionary Distribution & Retail,XLY
+SPWR,Capital Goods,XLI
+SPXC,Capital Goods,XLI
+SPXS,UNKNOWN,SPY
+SPXU,UNKNOWN,SPY
+SPY,UNKNOWN,SPY
+SPYG,UNKNOWN,SPY
+SPYV,UNKNOWN,SPY
+SQFT,Equity Real Estate Investment Trusts (REITs),XLRE
+SQM,Materials,XLB
+SQNS,Semiconductors & Semiconductor Equipment,XLK
+SQQQ,UNKNOWN,SPY
+SR,Utilities,XLU
+SRAD,Consumer Services,XLY
+SRBK,Banks,XLF
+SRCE,Banks,XLF
+SRDX,Health Care Equipment & Services,XLV
+SRE,Utilities,XLU
+SRFM,Transportation,XLI
+SRG,Real Estate Management & Development,XLRE
+SRI,Automobiles & Components,XLY
+SRL,Materials,XLB
+SRPT,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+SRRK,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+SRTA,Health Care Equipment & Services,XLV
+SRTS,Health Care Equipment & Services,XLV
+SRTY,UNKNOWN,SPY
+SRZN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+SSB,Banks,XLF
+SSBI,Banks,XLF
+SSD,Capital Goods,XLI
+SSEA,UNKNOWN,SPY
+SSII,Health Care Equipment & Services,XLV
+SSKN,Health Care Equipment & Services,XLV
+SSL,Materials,XLB
+SSM,Automobiles & Components,XLY
+SSNC,Commercial & Professional Services,XLI
+SSO,UNKNOWN,SPY
+SSP,Media & Entertainment,XLC
+SSRM,Materials,XLB
+SSSS,UNKNOWN,SPY
+SST,Media & Entertainment,XLC
+SSTI,Software & Services,XLK
+SSTK,Media & Entertainment,XLC
+SSYS,Capital Goods,XLI
+ST,Capital Goods,XLI
+STAA,Health Care Equipment & Services,XLV
+STAG,Equity Real Estate Investment Trusts (REITs),XLRE
+STAI,Technology Hardware & Equipment,XLK
+STAK,Energy,XLE
+STBA,Banks,XLF
+STC,Insurance,XLF
+STE,Health Care Equipment & Services,XLV
+STEC,Financial Services,XLF
+STEL,Banks,XLF
+STEM,Capital Goods,XLI
+STEP,Financial Services,XLF
+STEX,Health Care Equipment & Services,XLV
+STFS,Media & Entertainment,XLC
+STG,Consumer Services,XLY
+STGW,Media & Entertainment,XLC
+STHO,Real Estate Management & Development,XLRE
+STI,Capital Goods,XLI
+STIM,Health Care Equipment & Services,XLV
+STKE,Financial Services,XLF
+STKH,Food Beverage & Tobacco,XLP
+STKL,Food Beverage & Tobacco,XLP
+STKS,Consumer Services,XLY
+STLA,Automobiles & Components,XLY
+STLD,Materials,XLB
+STM,Semiconductors & Semiconductor Equipment,XLK
+STN,Capital Goods,XLI
+STNE,Financial Services,XLF
+STNG,Energy,XLE
+STOK,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+STRA,Consumer Services,XLY
+STRC,UNKNOWN,SPY
+STRL,Capital Goods,XLI
+STRO,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+STRR,Commercial & Professional Services,XLI
+STRS,Real Estate Management & Development,XLRE
+STRT,Automobiles & Components,XLY
+STRW,Equity Real Estate Investment Trusts (REITs),XLRE
+STRZ,Media & Entertainment,XLC
+STSS,Health Care Equipment & Services,XLV
+STT,Financial Services,XLF
+STTK,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+STUB,Media & Entertainment,XLC
+STVN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+STWD,Financial Services,XLF
+STX,Technology Hardware & Equipment,XLK
+STXS,Health Care Equipment & Services,XLV
+STZ,Food Beverage & Tobacco,XLP
+SU,Energy,XLE
+SUGP,Commercial & Professional Services,XLI
+SUI,Equity Real Estate Investment Trusts (REITs),XLRE
+SUIG,Financial Services,XLF
+SUN,Energy,XLE
+SUNC,Energy,XLE
+SUNE,Capital Goods,XLI
+SUNS,Financial Services,XLF
+SUPN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+SUPV,Banks,XLF
+SUPX,Consumer Services,XLY
+SURG,Telecommunication Services,XLC
+SUSA,UNKNOWN,SPY
+SUUN,Capital Goods,XLI
+SUZ,Materials,XLB
+SVA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+SVAC,UNKNOWN,SPY
+SVC,Equity Real Estate Investment Trusts (REITs),XLRE
+SVCC,UNKNOWN,SPY
+SVCO,Software & Services,XLK
+SVII,UNKNOWN,SPY
+SVRA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+SVRE,Technology Hardware & Equipment,XLK
+SVRN,Transportation,XLI
+SVV,Consumer Discretionary Distribution & Retail,XLY
+SVXY,UNKNOWN,SPY
+SW,Materials,XLB
+SWAG,Media & Entertainment,XLC
+SWBI,Consumer Durables & Apparel,XLY
+SWIM,Consumer Durables & Apparel,XLY
+SWIN,Financials,XLF
+SWK,Capital Goods,XLI
+SWKH,Financial Services,XLF
+SWKS,Semiconductors & Semiconductor Equipment,XLK
+SWVL,Transportation,XLI
+SWX,Utilities,XLU
+SXC,Materials,XLB
+SXI,Capital Goods,XLI
+SXT,Materials,XLB
+SXTC,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+SXTP,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+SY,Media & Entertainment,XLC
+SYBT,Banks,XLF
+SYBX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+SYF,Financial Services,XLF
+SYK,Health Care Equipment & Services,XLV
+SYM,Capital Goods,XLI
+SYNA,Semiconductors & Semiconductor Equipment,XLK
+SYPR,Automobiles & Components,XLY
+SYRE,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+SYTA,Information Technology,XLK
+SYY,Consumer Staples Distribution & Retail,XLP
+SZZL,UNKNOWN,SPY
+T,Telecommunication Services,XLC
+TAC,Utilities,XLU
+TACH,UNKNOWN,SPY
+TACO,UNKNOWN,SPY
+TACT,Technology Hardware & Equipment,XLK
+TAIT,Technology Hardware & Equipment,XLK
+TAK,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+TAL,Consumer Services,XLY
+TALK,Health Care Equipment & Services,XLV
+TALO,Energy,XLE
+TAN,UNKNOWN,SPY
+TANH,Materials,XLB
+TAOP,Software & Services,XLK
+TAOX,Software & Services,XLK
+TAP,Food Beverage & Tobacco,XLP
+TAP.A,Food Beverage & Tobacco,XLP
+TARA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+TARS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+TASK,Commercial & Professional Services,XLI
+TATT,Capital Goods,XLI
+TAVI,UNKNOWN,SPY
+TAYD,Capital Goods,XLI
+TBBB,Consumer Staples Distribution & Retail,XLP
+TBBK,Banks,XLF
+TBCH,Technology Hardware & Equipment,XLK
+TBH,Media & Entertainment,XLC
+TBHC,Consumer Discretionary Distribution & Retail,XLY
+TBI,Commercial & Professional Services,XLI
+TBLA,Media & Entertainment,XLC
+TBMC,UNKNOWN,SPY
+TBN,Energy,XLE
+TBPH,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+TBRG,Health Care Equipment & Services,XLV
+TC,Media & Entertainment,XLC
+TCBI,Banks,XLF
+TCBK,Banks,XLF
+TCBS,Banks,XLF
+TCBX,Banks,XLF
+TCI,Real Estate Management & Development,XLRE
+TCMD,Health Care Equipment & Services,XLV
+TCOM,Consumer Services,XLY
+TCRT,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+TCRX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+TCX,Software & Services,XLK
+TD,Banks,XLF
+TDAC,UNKNOWN,SPY
+TDAY,Media & Entertainment,XLC
+TDC,Software & Services,XLK
+TDG,Capital Goods,XLI
+TDIC,Media & Entertainment,XLC
+TDOC,Health Care Equipment & Services,XLV
+TDS,Telecommunication Services,XLC
+TDTH,Software & Services,XLK
+TDUP,Consumer Discretionary Distribution & Retail,XLY
+TDW,Energy,XLE
+TDWD,UNKNOWN,SPY
+TDY,Technology Hardware & Equipment,XLK
+TE,Capital Goods,XLI
+TEAD,Media & Entertainment,XLC
+TEAM,Software & Services,XLK
+TECH,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+TECK,Materials,XLB
+TECS,UNKNOWN,SPY
+TECX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+TEF,Telecommunication Services,XLC
+TEL,Technology Hardware & Equipment,XLK
+TELA,Health Care Equipment & Services,XLV
+TELO,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+TEM,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+TEN,Energy,XLE
+TENB,Software & Services,XLK
+TENX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+TEO,Telecommunication Services,XLC
+TER,Semiconductors & Semiconductor Equipment,XLK
+TERN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+TEVA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+TEX,Capital Goods,XLI
+TFC,Banks,XLF
+TFII,Transportation,XLI
+TFIN,Banks,XLF
+TFPM,Materials,XLB
+TFSL,Banks,XLF
+TFX,Health Care Equipment & Services,XLV
+TG,Materials,XLB
+TGE,Capital Goods,XLI
+TGHL,Software & Services,XLK
+TGL,Media & Entertainment,XLC
+TGLS,Capital Goods,XLI
+TGNA,Media & Entertainment,XLC
+TGS,Energy,XLE
+TGT,Consumer Staples Distribution & Retail,XLP
+TGTX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+TH,Consumer Services,XLY
+THAR,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+THC,Health Care Equipment & Services,XLV
+THCH,Consumer Services,XLY
+THD,UNKNOWN,SPY
+THFF,Banks,XLF
+THG,Insurance,XLF
+THH,Media & Entertainment,XLC
+THO,Automobiles & Components,XLY
+THR,Capital Goods,XLI
+THRM,Automobiles & Components,XLY
+THRY,Media & Entertainment,XLC
+THS,Food Beverage & Tobacco,XLP
+THTX,Health Care,XLV
+TIC,Commercial & Professional Services,XLI
+TIGO,Telecommunication Services,XLC
+TIGR,Financial Services,XLF
+TIL,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+TILE,Commercial & Professional Services,XLI
+TIMB,Telecommunication Services,XLC
+TIP,UNKNOWN,SPY
+TIPT,Insurance,XLF
+TIRX,Insurance,XLF
+TISI,Commercial & Professional Services,XLI
+TITN,Capital Goods,XLI
+TIVC,Health Care Equipment & Services,XLV
+TIXT,Commercial & Professional Services,XLI
+TJX,Consumer Discretionary Distribution & Retail,XLY
+TK,Energy,XLE
+TKC,Telecommunication Services,XLC
+TKLF,Consumer Discretionary Distribution & Retail,XLY
+TKNO,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+TKO,Media & Entertainment,XLC
+TKR,Capital Goods,XLI
+TLF,Consumer Discretionary Distribution & Retail,XLY
+TLIH,Capital Goods,XLI
+TLK,Telecommunication Services,XLC
+TLN,Utilities,XLU
+TLNC,UNKNOWN,SPY
+TLPH,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+TLRY,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+TLS,Software & Services,XLK
+TLSA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+TLSI,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+TLT,UNKNOWN,SPY
+TLX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+TLYS,Consumer Discretionary Distribution & Retail,XLY
+TM,Automobiles & Components,XLY
+TMC,Materials,XLB
+TMCI,Health Care Equipment & Services,XLV
+TMDX,Health Care Equipment & Services,XLV
+TME,Media & Entertainment,XLC
+TMHC,Consumer Durables & Apparel,XLY
+TMO,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+TMP,Banks,XLF
+TMQ,UNKNOWN,SPY
+TMUS,Telecommunication Services,XLC
+TNC,Capital Goods,XLI
+TNDM,Health Care Equipment & Services,XLV
+TNET,Commercial & Professional Services,XLI
+TNFA,Health Care,XLV
+TNGX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+TNK,Energy,XLE
+TNL,Consumer Services,XLY
+TNMG,Media & Entertainment,XLC
+TNON,Health Care Equipment & Services,XLV
+TNXP,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+TNYA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+TOI,Health Care Equipment & Services,XLV
+TOL,Consumer Durables & Apparel,XLY
+TOMZ,Commercial & Professional Services,XLI
+TONX,Software & Services,XLK
+TOP,Financial Services,XLF
+TORO,Transportation,XLI
+TOST,Financial Services,XLF
+TOUR,Consumer Services,XLY
+TOWN,Banks,XLF
+TOYO,Semiconductors & Semiconductor Equipment,XLK
+TPB,Food Beverage & Tobacco,XLP
+TPC,Capital Goods,XLI
+TPCS,Capital Goods,XLI
+TPG,Financial Services,XLF
+TPH,Consumer Durables & Apparel,XLY
+TPL,Energy,XLE
+TPR,Consumer Durables & Apparel,XLY
+TPST,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+TR,Food Beverage & Tobacco,XLP
+TRAK,Software & Services,XLK
+TRAW,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+TRC,Real Estate Management & Development,XLRE
+TRDA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+TREE,Financial Services,XLF
+TREX,Capital Goods,XLI
+TRGP,Energy,XLE
+TRI,Commercial & Professional Services,XLI
+TRIB,Health Care Equipment & Services,XLV
+TRIN,Financial Services,XLF
+TRIP,Media & Entertainment,XLC
+TRMB,Technology Hardware & Equipment,XLK
+TRMD,Energy,XLE
+TRMK,Banks,XLF
+TRML,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+TRN,Capital Goods,XLI
+TRNO,Equity Real Estate Investment Trusts (REITs),XLRE
+TRNR,Consumer Durables & Apparel,XLY
+TRNS,Capital Goods,XLI
+TRON,Consumer Durables & Apparel,XLY
+TROO,Technology Hardware & Equipment,XLK
+TROW,Financial Services,XLF
+TROX,Materials,XLB
+TRP,Energy,XLE
+TRS,Materials,XLB
+TRSG,Technology Hardware & Equipment,XLK
+TRST,Banks,XLF
+TRTX,Financial Services,XLF
+TRU,Commercial & Professional Services,XLI
+TRUE,Media & Entertainment,XLC
+TRUG,Media & Entertainment,XLC
+TRUP,Insurance,XLF
+TRV,Insurance,XLF
+TRVG,Media & Entertainment,XLC
+TRVI,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+TS,Energy,XLE
+TSAT,Telecommunication Services,XLC
+TSBK,Banks,XLF
+TSCO,Consumer Discretionary Distribution & Retail,XLY
+TSDD,UNKNOWN,SPY
+TSE,Materials,XLB
+TSEM,Semiconductors & Semiconductor Equipment,XLK
+TSHA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+TSLA,Automobiles & Components,XLY
+TSLQ,UNKNOWN,SPY
+TSLS,UNKNOWN,SPY
+TSLZ,UNKNOWN,SPY
+TSM,Semiconductors & Semiconductor Equipment,XLK
+TSMZ,UNKNOWN,SPY
+TSN,Food Beverage & Tobacco,XLP
+TSQ,Media & Entertainment,XLC
+TSSI,Software & Services,XLK
+TSYY,UNKNOWN,SPY
+TT,Capital Goods,XLI
+TTAM,Materials,XLB
+TTAN,Software & Services,XLK
+TTC,Capital Goods,XLI
+TTD,Media & Entertainment,XLC
+TTE,Energy,XLE
+TTEC,Commercial & Professional Services,XLI
+TTEK,Commercial & Professional Services,XLI
+TTGT,Media & Entertainment,XLC
+TTI,Energy,XLE
+TTMI,Technology Hardware & Equipment,XLK
+TTNP,Health Care,XLV
+TTRX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+TTSH,Consumer Discretionary Distribution & Retail,XLY
+TTWO,Media & Entertainment,XLC
+TU,Telecommunication Services,XLC
+TUR,UNKNOWN,SPY
+TURB,Capital Goods,XLI
+TUSK,Energy,XLE
+TUYA,Software & Services,XLK
+TV,Media & Entertainment,XLC
+TVA,UNKNOWN,SPY
+TVAI,UNKNOWN,SPY
+TVGN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+TVRD,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+TVTX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+TW,Financial Services,XLF
+TWFG,Insurance,XLF
+TWG,Food Beverage & Tobacco,XLP
+TWI,Capital Goods,XLI
+TWIN,Capital Goods,XLI
+TWLO,Software & Services,XLK
+TWNP,Consumer Services,XLY
+TWO,Financial Services,XLF
+TWST,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+TX,Materials,XLB
+TXG,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+TXMD,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+TXN,Semiconductors & Semiconductor Equipment,XLK
+TXNM,Utilities,XLU
+TXO,Energy,XLE
+TXRH,Consumer Services,XLY
+TXT,Capital Goods,XLI
+TYGO,Capital Goods,XLI
+TYL,Software & Services,XLK
+TYRA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+TZA,UNKNOWN,SPY
+TZOO,Media & Entertainment,XLC
+TZUP,Software & Services,XLK
+U,Software & Services,XLK
+UA,Consumer Durables & Apparel,XLY
+UAA,Consumer Durables & Apparel,XLY
+UAE,UNKNOWN,SPY
+UAL,Transportation,XLI
+UAMY,Materials,XLB
+UAN,Materials,XLB
+UBCP,Banks,XLF
+UBER,Transportation,XLI
+UBFO,Banks,XLF
+UBS,Financial Services,XLF
+UBSI,Banks,XLF
+UBXG,Software & Services,XLK
+UCAR,Consumer Discretionary Distribution & Retail,XLY
+UCB,Banks,XLF
+UCFI,Food Beverage & Tobacco,XLP
+UCL,Telecommunication Services,XLC
+UCTT,Semiconductors & Semiconductor Equipment,XLK
+UDMY,Consumer Services,XLY
+UDN,UNKNOWN,SPY
+UDR,Equity Real Estate Investment Trusts (REITs),XLRE
+UE,Equity Real Estate Investment Trusts (REITs),XLRE
+UEC,Energy,XLE
+UEIC,Consumer Durables & Apparel,XLY
+UFCS,Insurance,XLF
+UFG,Energy,XLE
+UFI,Consumer Durables & Apparel,XLY
+UFPI,Capital Goods,XLI
+UFPT,Health Care Equipment & Services,XLV
+UG,Household & Personal Products,XLP
+UGA,UNKNOWN,SPY
+UGI,Utilities,XLU
+UGP,Consumer Discretionary Distribution & Retail,XLY
+UGRO,Capital Goods,XLI
+UHAL,Transportation,XLI
+UHAL.B,Transportation,XLI
+UHG,Consumer Durables & Apparel,XLY
+UHN-201809,UNKNOWN,SPY
+UHS,Health Care Equipment & Services,XLV
+UHT,Equity Real Estate Investment Trusts (REITs),XLRE
+UI,Technology Hardware & Equipment,XLK
+UIS,Software & Services,XLK
+UK,Real Estate Management & Development,XLRE
+UL,Household & Personal Products,XLP
+ULBI,Capital Goods,XLI
+ULCC,Transportation,XLI
+ULH,Transportation,XLI
+ULS,Commercial & Professional Services,XLI
+ULTA,Consumer Discretionary Distribution & Retail,XLY
+ULTY,UNKNOWN,SPY
+ULVM,UNKNOWN,SPY
+ULY,Software & Services,XLK
+UMAC,UNKNOWN,SPY
+UMBF,Banks,XLF
+UMC,Semiconductors & Semiconductor Equipment,XLK
+UMH,Equity Real Estate Investment Trusts (REITs),XLRE
+UNB,Banks,XLF
+UNCY,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+UNF,Commercial & Professional Services,XLI
+UNFI,Consumer Staples Distribution & Retail,XLP
+UNG,UNKNOWN,SPY
+UNH,Health Care Equipment & Services,XLV
+UNIT,Telecommunication Services,XLC
+UNM,Insurance,XLF
+UNP,Transportation,XLI
+UNTY,Banks,XLF
+UNX,UNKNOWN,SPY
+UOKA,Real Estate Management & Development,XLRE
+UONE,Media & Entertainment,XLC
+UONEK,Media & Entertainment,XLC
+UP,Transportation,XLI
+UPB,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+UPBD,Consumer Discretionary Distribution & Retail,XLY
+UPC,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+UPLD,Software & Services,XLK
+UPS,Transportation,XLI
+UPST,Financial Services,XLF
+UPWK,Commercial & Professional Services,XLI
+UPXI,Household & Personal Products,XLP
+URBN,Consumer Discretionary Distribution & Retail,XLY
+URGN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+URI,Capital Goods,XLI
+UROY,Energy,XLE
+USAC,Energy,XLE
+USAR,Materials,XLB
+USAS,UNKNOWN,SPY
+USAU,Materials,XLB
+USB,Banks,XLF
+USBC,UNKNOWN,SPY
+USCB,Banks,XLF
+USEA,Transportation,XLI
+USEG,Energy,XLE
+USFD,Consumer Staples Distribution & Retail,XLP
+USFR,UNKNOWN,SPY
+USGO,Materials,XLB
+USIO,Financial Services,XLF
+USLM,Materials,XLB
+USMV,UNKNOWN,SPY
+USNA,Household & Personal Products,XLP
+USO,UNKNOWN,SPY
+USPH,Health Care Equipment & Services,XLV
+UTF,UNKNOWN,SPY
+UTHR,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+UTI,Consumer Services,XLY
+UTL,Utilities,XLU
+UTMD,Health Care Equipment & Services,XLV
+UTSI,Technology Hardware & Equipment,XLK
+UTZ,Food Beverage & Tobacco,XLP
+UUP,UNKNOWN,SPY
+UUUU,Energy,XLE
+UVE,Insurance,XLF
+UVIX,UNKNOWN,SPY
+UVSP,Banks,XLF
+UVV,Food Beverage & Tobacco,XLP
+UVXY,UNKNOWN,SPY
+UWM,UNKNOWN,SPY
+UWMC,Financial Services,XLF
+UXIN,Consumer Discretionary Distribution & Retail,XLY
+UYSC,UNKNOWN,SPY
+V,Financial Services,XLF
+VABK,Banks,XLF
+VAC,Consumer Services,XLY
+VACH,UNKNOWN,SPY
+VACI-U,UNKNOWN,SPY
+VAL,Energy,XLE
+VALE,Materials,XLB
+VALN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+VALU,Financial Services,XLF
+VANI,Health Care Equipment & Services,XLV
+VATE,Capital Goods,XLI
+VB,UNKNOWN,SPY
+VBIX,Media & Entertainment,XLC
+VBK,UNKNOWN,SPY
+VBNK,Banks,XLF
+VBR,UNKNOWN,SPY
+VBTX,Financials,XLF
+VC,Automobiles & Components,XLY
+VCEL,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+VCIC,UNKNOWN,SPY
+VCIG,Commercial & Professional Services,XLI
+VCTR,Financial Services,XLF
+VCYT,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+VEA,UNKNOWN,SPY
+VECO,Semiconductors & Semiconductor Equipment,XLK
+VEEA,Software & Services,XLK
+VEEE,Consumer Durables & Apparel,XLY
+VEEV,Health Care Equipment & Services,XLV
+VEL,Financial Services,XLF
+VELO,Capital Goods,XLI
+VEON,Telecommunication Services,XLC
+VERA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+VERI,Software & Services,XLK
+VERO,Health Care Equipment & Services,XLV
+VERU,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+VERX,Software & Services,XLK
+VET,Energy,XLE
+VEU,UNKNOWN,SPY
+VFC,Consumer Durables & Apparel,XLY
+VFF,Food Beverage & Tobacco,XLP
+VFS,Automobiles & Components,XLY
+VG,Energy,XLE
+VGAS,Energy,XLE
+VGK,UNKNOWN,SPY
+VGT,UNKNOWN,SPY
+VHC,Software & Services,XLK
+VHI,Materials,XLB
+VIA,Software & Services,XLK
+VIAV,Technology Hardware & Equipment,XLK
+VICI,Equity Real Estate Investment Trusts (REITs),XLRE
+VICR,Capital Goods,XLI
+VIG,UNKNOWN,SPY
+VIK,Consumer Services,XLY
+VINP,Financial Services,XLF
+VIOT,Consumer Durables & Apparel,XLY
+VIPS,Consumer Discretionary Distribution & Retail,XLY
+VIR,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+VIRC,Commercial & Professional Services,XLI
+VIRT,Financial Services,XLF
+VIST,Energy,XLE
+VITL,Food Beverage & Tobacco,XLP
+VIV,Telecommunication Services,XLC
+VIVK,Energy,XLE
+VIVS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+VIXM,UNKNOWN,SPY
+VIXY,UNKNOWN,SPY
+VKTX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+VLGEA,Consumer Staples Distribution & Retail,XLP
+VLN,Semiconductors & Semiconductor Equipment,XLK
+VLO,Energy,XLE
+VLRS,Transportation,XLI
+VLTO,Commercial & Professional Services,XLI
+VLY,Banks,XLF
+VMAR,Consumer Durables & Apparel,XLY
+VMC,Materials,XLB
+VMD,Health Care Equipment & Services,XLV
+VMEO,Media & Entertainment,XLC
+VMI,Capital Goods,XLI
+VNCE,Consumer Durables & Apparel,XLY
+VNDA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+VNET,Software & Services,XLK
+VNM,UNKNOWN,SPY
+VNME,UNKNOWN,SPY
+VNO,Equity Real Estate Investment Trusts (REITs),XLRE
+VNOM,Energy,XLE
+VNQ,UNKNOWN,SPY
+VNT,Technology Hardware & Equipment,XLK
+VO,UNKNOWN,SPY
+VOC,Energy,XLE
+VOD,Telecommunication Services,XLC
+VOE,UNKNOWN,SPY
+VOR,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+VOXR,Materials,XLB
+VOYA,Financial Services,XLF
+VOYG,Capital Goods,XLI
+VPG,Technology Hardware & Equipment,XLK
+VPL,UNKNOWN,SPY
+VRA,Consumer Durables & Apparel,XLY
+VRAR,Software & Services,XLK
+VRAX,Health Care Equipment & Services,XLV
+VRCA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+VRDN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+VRE,Equity Real Estate Investment Trusts (REITs),XLRE
+VREX,Health Care Equipment & Services,XLV
+VRM,Financial Services,XLF
+VRME,Technology Hardware & Equipment,XLK
+VRNA,Health Care,XLV
+VRNS,Software & Services,XLK
+VRNT,Software & Services,XLK
+VRRM,Commercial & Professional Services,XLI
+VRSK,Commercial & Professional Services,XLI
+VRSN,Software & Services,XLK
+VRT,Capital Goods,XLI
+VRTS,Financial Services,XLF
+VRTX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+VS,Media & Entertainment,XLC
+VSA,Consumer Services,XLY
+VSAT,Technology Hardware & Equipment,XLK
+VSCO,Consumer Discretionary Distribution & Retail,XLY
+VSEC,Capital Goods,XLI
+VSEE,Health Care Equipment & Services,XLV
+VSH,Technology Hardware & Equipment,XLK
+VSME,Media & Entertainment,XLC
+VST,Utilities,XLU
+VSTA,Consumer Services,XLY
+VSTD,Consumer Services,XLY
+VSTM,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+VSTS,Commercial & Professional Services,XLI
+VTEX,Software & Services,XLK
+VTGN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+VTIP,UNKNOWN,SPY
+VTLE,Energy,XLE
+VTMX,Real Estate Management & Development,XLRE
+VTOL,Energy,XLE
+VTR,Equity Real Estate Investment Trusts (REITs),XLRE
+VTRS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+VTS,Energy,XLE
+VTSI,Capital Goods,XLI
+VTV,UNKNOWN,SPY
+VTVT,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+VTYX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+VUG,UNKNOWN,SPY
+VUZI,Technology Hardware & Equipment,XLK
+VVOS,Health Care Equipment & Services,XLV
+VVPR,Utilities,XLU
+VVV,Consumer Discretionary Distribution & Retail,XLY
+VVX,Capital Goods,XLI
+VWAV,Capital Goods,XLI
+VWO,UNKNOWN,SPY
+VXX,UNKNOWN,SPY
+VYGR,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+VYM,UNKNOWN,SPY
+VYNE,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+VYX,Software & Services,XLK
+VZ,Telecommunication Services,XLC
+W,Consumer Discretionary Distribution & Retail,XLY
+WAB,Capital Goods,XLI
+WABC,Banks,XLF
+WAFD,Banks,XLF
+WAFU,Consumer Services,XLY
+WAI,Financial Services,XLF
+WAL,Banks,XLF
+WALD,Household & Personal Products,XLP
+WASH,Banks,XLF
+WAT,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+WATT,Capital Goods,XLI
+WAVE,Utilities,XLU
+WAY,Health Care Equipment & Services,XLV
+WB,Media & Entertainment,XLC
+WBD,Media & Entertainment,XLC
+WBI,Energy,XLE
+WBS,Banks,XLF
+WBTN,Media & Entertainment,XLC
+WBUY,Consumer Staples Distribution & Retail,XLP
+WBX,Capital Goods,XLI
+WCC,Capital Goods,XLI
+WCN,Commercial & Professional Services,XLI
+WCT,Software & Services,XLK
+WD,Financial Services,XLF
+WDAY,Software & Services,XLK
+WDC,Technology Hardware & Equipment,XLK
+WDFC,Household & Personal Products,XLP
+WDH,Insurance,XLF
+WDS,Energy,XLE
+WEAV,Software & Services,XLK
+WEC,Utilities,XLU
+WEEL,UNKNOWN,SPY
+WELL,Equity Real Estate Investment Trusts (REITs),XLRE
+WEN,Consumer Services,XLY
+WENN,UNKNOWN,SPY
+WERN,Transportation,XLI
+WES,Energy,XLE
+WEST,Food Beverage & Tobacco,XLP
+WETH,Technology Hardware & Equipment,XLK
+WETO,Transportation,XLI
+WEX,Financial Services,XLF
+WEYS,Consumer Discretionary Distribution & Retail,XLY
+WF,Banks,XLF
+WFC,Banks,XLF
+WFCF,Commercial & Professional Services,XLI
+WFF,Capital Goods,XLI
+WFG,Materials,XLB
+WFRD,Energy,XLE
+WGO,Automobiles & Components,XLY
+WGRX,Health Care Equipment & Services,XLV
+WGS,Health Care Equipment & Services,XLV
+WH,Consumer Services,XLY
+WHD,Energy,XLE
+WHF,UNKNOWN,SPY
+WHG,Financial Services,XLF
+WHLR,Equity Real Estate Investment Trusts (REITs),XLRE
+WHR,Consumer Durables & Apparel,XLY
+WHWK,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+WILC,Consumer Staples Distribution & Retail,XLP
+WIMI,Media & Entertainment,XLC
+WINA,Consumer Discretionary Distribution & Retail,XLY
+WING,Consumer Services,XLY
+WIT,Software & Services,XLK
+WIX,Software & Services,XLK
+WK,Software & Services,XLK
+WKC,Energy,XLE
+WKEY,Semiconductors & Semiconductor Equipment,XLK
+WKHS,Automobiles & Components,XLY
+WKSP,Automobiles & Components,XLY
+WLAC,UNKNOWN,SPY
+WLDN,Commercial & Professional Services,XLI
+WLDS,Technology Hardware & Equipment,XLK
+WLFC,Capital Goods,XLI
+WLK,Materials,XLB
+WLKP,Materials,XLB
+WLY,Media & Entertainment,XLC
+WLYB,Media & Entertainment,XLC
+WM,Commercial & Professional Services,XLI
+WMB,Energy,XLE
+WMG,Media & Entertainment,XLC
+WMK,Consumer Staples Distribution & Retail,XLP
+WMS,Capital Goods,XLI
+WMT,Consumer Staples Distribution & Retail,XLP
+WNC,Capital Goods,XLI
+WNEB,Banks,XLF
+WNS,Industrials,XLI
+WNW,Consumer Staples Distribution & Retail,XLP
+WOK,Health Care Equipment & Services,XLV
+WOLF,Semiconductors & Semiconductor Equipment,XLK
+WOOF,Consumer Discretionary Distribution & Retail,XLY
+WOR,Capital Goods,XLI
+WORX,Health Care Equipment & Services,XLV
+WOW,Media & Entertainment,XLC
+WPC,Equity Real Estate Investment Trusts (REITs),XLRE
+WPM,Materials,XLB
+WPP,Media & Entertainment,XLC
+WPRT,Capital Goods,XLI
+WRAP,Technology Hardware & Equipment,XLK
+WRB,Insurance,XLF
+WRBY,Consumer Discretionary Distribution & Retail,XLY
+WRD,Automobiles & Components,XLY
+WRLD,Financial Services,XLF
+WRN,UNKNOWN,SPY
+WS,Materials,XLB
+WSBC,Banks,XLF
+WSBF,Financial Services,XLF
+WSBK,Banks,XLF
+WSC,Capital Goods,XLI
+WSFS,Banks,XLF
+WSHP,Media & Entertainment,XLC
+WSM,Consumer Discretionary Distribution & Retail,XLY
+WSO,Capital Goods,XLI
+WSO.B,Capital Goods,XLI
+WSR,Equity Real Estate Investment Trusts (REITs),XLRE
+WST,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+WT,Financial Services,XLF
+WTBA,Banks,XLF
+WTF,Financial Services,XLF
+WTFC,Banks,XLF
+WTG,UNKNOWN,SPY
+WTI,Energy,XLE
+WTM,Insurance,XLF
+WTO,Technology Hardware & Equipment,XLK
+WTRG,Utilities,XLU
+WTS,Capital Goods,XLI
+WTTR,Energy,XLE
+WTW,Insurance,XLF
+WU,Financial Services,XLF
+WULF,Software & Services,XLK
+WVE,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+WVVI,Food Beverage & Tobacco,XLP
+WW,Consumer Services,XLY
+WWD,Capital Goods,XLI
+WWW,Consumer Durables & Apparel,XLY
+WXM,Capital Goods,XLI
+WY,Equity Real Estate Investment Trusts (REITs),XLRE
+WYFI,Software & Services,XLK
+WYHG,Food Beverage & Tobacco,XLP
+WYNN,Consumer Services,XLY
+XAIR,Health Care Equipment & Services,XLV
+XBI,UNKNOWN,SPY
+XBIO,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+XBIT,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+XBP,Financial Services,XLF
+XCH,Capital Goods,XLI
+XCUR,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+XEL,Utilities,XLU
+XELB,Consumer Discretionary Distribution & Retail,XLY
+XENE,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+XERS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+XFOR,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+XGN,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+XHB,UNKNOWN,SPY
+XHG,Insurance,XLF
+XHLD,Media & Entertainment,XLC
+XHR,Equity Real Estate Investment Trusts (REITs),XLRE
+XIFR,Utilities,XLU
+XLB,UNKNOWN,SPY
+XLC,UNKNOWN,SPY
+XLE,UNKNOWN,SPY
+XLF,UNKNOWN,SPY
+XLI,UNKNOWN,SPY
+XLK,UNKNOWN,SPY
+XLO,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+XLP,UNKNOWN,SPY
+XLRE,UNKNOWN,SPY
+XLU,UNKNOWN,SPY
+XLV,UNKNOWN,SPY
+XLY,UNKNOWN,SPY
+XME,UNKNOWN,SPY
+XMLV,UNKNOWN,SPY
+XMTR,Capital Goods,XLI
+XNCR,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+XNET,Software & Services,XLK
+XOM,Energy,XLE
+XOMA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+XOS,Capital Goods,XLI
+XP,Financial Services,XLF
+XPEL,Automobiles & Components,XLY
+XPER,Software & Services,XLK
+XPEV,Automobiles & Components,XLY
+XPH,UNKNOWN,SPY
+XPO,Transportation,XLI
+XPOF,Consumer Services,XLY
+XPON,Capital Goods,XLI
+XPRO,Energy,XLE
+XRAY,Health Care Equipment & Services,XLV
+XRPN,UNKNOWN,SPY
+XRT,UNKNOWN,SPY
+XRTX,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+XRX,Technology Hardware & Equipment,XLK
+XSD,UNKNOWN,SPY
+XSLV,UNKNOWN,SPY
+XTIA,Software & Services,XLK
+XTKG,Software & Services,XLK
+XTLB,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+XTN,UNKNOWN,SPY
+XWEL,Consumer Services,XLY
+XWIN,Consumer Durables & Apparel,XLY
+XXII,Food Beverage & Tobacco,XLP
+XYF,Financial Services,XLF
+XYL,Capital Goods,XLI
+XYZ,Financial Services,XLF
+XZO,UNKNOWN,SPY
+YAAS,Software & Services,XLK
+YALA,Media & Entertainment,XLC
+YANG,UNKNOWN,SPY
+YB,Insurance,XLF
+YDDL,Materials,XLB
+YDES,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+YDKG,Media & Entertainment,XLC
+YELP,Media & Entertainment,XLC
+YETI,Consumer Durables & Apparel,XLY
+YEXT,Software & Services,XLK
+YGMZ,Transportation,XLI
+YHC,Media & Entertainment,XLC
+YHGJ,Consumer Durables & Apparel,XLY
+YHNA,UNKNOWN,SPY
+YI,Consumer Staples Distribution & Retail,XLP
+YIBO,Commercial & Professional Services,XLI
+YJ,Consumer Discretionary Distribution & Retail,XLY
+YMAB,UNKNOWN,SPY
+YMAT,Consumer Durables & Apparel,XLY
+YMAX,UNKNOWN,SPY
+YMM,Transportation,XLI
+YMT,Media & Entertainment,XLC
+YORW,Utilities,XLU
+YOU,Software & Services,XLK
+YOUL,UNKNOWN,SPY
+YPF,Energy,XLE
+YQ,Consumer Services,XLY
+YRD,Financial Services,XLF
+YSG,Household & Personal Products,XLP
+YSXT,Consumer Services,XLY
+YTRA,Consumer Services,XLY
+YUM,Consumer Services,XLY
+YUMC,Consumer Services,XLY
+YXT,Software & Services,XLK
+YYAI,Consumer Durables & Apparel,XLY
+YYGH,Commercial & Professional Services,XLI
+Z,Real Estate Management & Development,XLRE
+ZBAI,Commercial & Professional Services,XLI
+ZBAO,Insurance,XLF
+ZBH,Health Care Equipment & Services,XLV
+ZBIO,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ZBRA,Technology Hardware & Equipment,XLK
+ZCMD,Consumer Services,XLY
+ZD,Media & Entertainment,XLC
+ZDAI,Transportation,XLI
+ZENA,Software & Services,XLK
+ZENV,Software & Services,XLK
+ZEO,Capital Goods,XLI
+ZEPP,Technology Hardware & Equipment,XLK
+ZETA,Software & Services,XLK
+ZEUS,Materials,XLB
+ZG,Real Estate Management & Development,XLRE
+ZGM,Commercial & Professional Services,XLI
+ZGN,Consumer Durables & Apparel,XLY
+ZH,Media & Entertainment,XLC
+ZIM,Transportation,XLI
+ZIMV,Health Care,XLV
+ZION,Banks,XLF
+ZIP,Media & Entertainment,XLC
+ZJK,Capital Goods,XLI
+ZJYL,Health Care Equipment & Services,XLV
+ZK,Automobiles & Components,XLY
+ZKH,Capital Goods,XLI
+ZKIN,Materials,XLB
+ZLAB,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ZM,Software & Services,XLK
+ZNB,Consumer Services,XLY
+ZNTL,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ZOOZ,Capital Goods,XLI
+ZS,Software & Services,XLK
+ZSL,UNKNOWN,SPY
+ZSPC,Consumer Services,XLY
+ZTEK,Health Care Equipment & Services,XLV
+ZTO,Transportation,XLI
+ZTS,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ZUMZ,Consumer Discretionary Distribution & Retail,XLY
+ZURA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ZVIA,Food Beverage & Tobacco,XLP
+ZVRA,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ZWS,Capital Goods,XLI
+ZYBT,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ZYME,"Pharmaceuticals, Biotechnology & Life Sciences",XLV
+ZYXI,Health Care Equipment & Services,XLV

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<Task version="1.4" xmlns="http://schemas.microsoft.com/windows/2004/02/mit/task">
+  <RegistrationInfo>
+    <Description>TradeExec Daily Report (Mon–Fri)</Description>
+  </RegistrationInfo>
+  <Triggers>
+    <WeeklyTrigger>
+      <StartBoundary>2025-01-01T07:00:00</StartBoundary>
+      <Enabled>true</Enabled>
+      <DaysOfWeek>
+        <Monday/>
+        <Tuesday/>
+        <Wednesday/>
+        <Thursday/>
+        <Friday/>
+      </DaysOfWeek>
+      <WeeksInterval>1</WeeksInterval>
+    </WeeklyTrigger>
+  </Triggers>
+  <Principals>
+    <Principal id="Author">
+      <LogonType>InteractiveToken</LogonType>
+      <RunLevel>LeastPrivilege</RunLevel>
+    </Principal>
+  </Principals>
+  <Settings>
+    <MultipleInstancesPolicy>IgnoreNew</MultipleInstancesPolicy>
+    <DisallowStartIfOnBatteries>false</DisallowStartIfOnBatteries>
+    <StopIfGoingOnBatteries>false</StopIfGoingOnBatteries>
+    <AllowHardTerminate>false</AllowHardTerminate>
+    <StartWhenAvailable>true</StartWhenAvailable>
+    <RunOnlyIfNetworkAvailable>true</RunOnlyIfNetworkAvailable>
+    <IdleSettings>
+      <StopOnIdleEnd>false</StopOnIdleEnd>
+      <RestartOnIdle>false</RestartOnIdle>
+    </IdleSettings>
+    <Enabled>true</Enabled>
+    <Hidden>false</Hidden>
+    <RunOnlyIfIdle>false</RunOnlyIfIdle>
+    <WakeToRun>false</WakeToRun>
+    <ExecutionTimeLimit>PT1H</ExecutionTimeLimit>
+    <Priority>7</Priority>
+  </Settings>
+  <Actions Context="Author">
+    <Exec>
+      <Command>cmd.exe</Command>
+      <Arguments>/c cd /d C:\path\to\rankalpha\apps\broker &amp;&amp; uv run -m tradeexec.reports.daily</Arguments>
+      <WorkingDirectory>C:\path\to\rankalpha\apps\broker</WorkingDirectory>
+    </Exec>
+  </Actions>
+</Task>

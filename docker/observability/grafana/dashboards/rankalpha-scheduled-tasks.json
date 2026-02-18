@@ -1,0 +1,376 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": "-- Grafana --",
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "id": null,
+  "links": [],
+  "panels": [
+    {
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "fieldConfig": {
+        "defaults": { "unit": "short", "color": { "mode": "palette-classic" } },
+        "overrides": []
+      },
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 0 },
+      "id": 1,
+      "options": {
+        "legend": { "displayMode": "table", "placement": "bottom", "calcs": ["lastNotNull"] },
+        "tooltip": { "mode": "single", "sort": "none" }
+      },
+      "targets": [
+        {
+          "expr": "sum by (status) (increase(rankalpha_ingestion_runs_total[1d]))",
+          "legendFormat": "Ingestion {{status}} (daily)",
+          "refId": "A"
+        }
+      ],
+      "title": "Ingestion Runs By Status",
+      "type": "timeseries"
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "fieldConfig": {
+        "defaults": { "unit": "short", "color": { "mode": "palette-classic" } },
+        "overrides": []
+      },
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 0 },
+      "id": 2,
+      "options": {
+        "legend": { "displayMode": "table", "placement": "bottom", "calcs": ["lastNotNull"] },
+        "tooltip": { "mode": "single", "sort": "none" }
+      },
+      "targets": [
+        {
+          "expr": "sum by (status) (increase(rankalpha_scorer_runs_total[1d]))",
+          "legendFormat": "Scorer {{status}} (daily)",
+          "refId": "A"
+        }
+      ],
+      "title": "Scorer Runs By Status",
+      "type": "timeseries"
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "fieldConfig": {
+        "defaults": { "unit": "s", "color": { "mode": "palette-classic" } },
+        "overrides": []
+      },
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 8 },
+      "id": 3,
+      "options": {
+        "legend": { "displayMode": "table", "placement": "bottom", "calcs": ["lastNotNull"] },
+        "tooltip": { "mode": "single", "sort": "none" }
+      },
+      "targets": [
+        {
+          "expr": "(sum(increase(rankalpha_ingestion_run_seconds_sum[24h])) / sum(increase(rankalpha_ingestion_run_seconds_count[24h]))) or vector(0)",
+          "legendFormat": "Ingestion avg duration (24h)",
+          "refId": "A"
+        },
+        {
+          "expr": "histogram_quantile(0.95, sum(increase(rankalpha_ingestion_run_seconds_bucket[24h])) by (le)) or vector(0)",
+          "legendFormat": "Ingestion p95 (24h)",
+          "refId": "B"
+        }
+      ],
+      "title": "Ingestion Durations",
+      "type": "timeseries"
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "fieldConfig": {
+        "defaults": { "unit": "s", "color": { "mode": "palette-classic" } },
+        "overrides": []
+      },
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 8 },
+      "id": 4,
+      "options": {
+        "legend": { "displayMode": "table", "placement": "bottom", "calcs": ["lastNotNull"] },
+        "tooltip": { "mode": "single", "sort": "none" }
+      },
+      "targets": [
+        {
+          "expr": "(sum(increase(rankalpha_scorer_run_seconds_sum[24h])) / sum(increase(rankalpha_scorer_run_seconds_count[24h]))) or vector(0)",
+          "legendFormat": "Scorer avg duration (24h)",
+          "refId": "A"
+        },
+        {
+          "expr": "histogram_quantile(0.95, sum(increase(rankalpha_scorer_run_seconds_bucket[24h])) by (le)) or vector(0)",
+          "legendFormat": "Scorer p95 (24h)",
+          "refId": "B"
+        }
+      ],
+      "title": "Scorer Durations",
+      "type": "timeseries"
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "fieldConfig": {
+        "defaults": { "unit": "percentunit", "min": 0, "max": 1, "color": { "mode": "palette-classic" } },
+        "overrides": []
+      },
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 16 },
+      "id": 5,
+      "options": {
+        "legend": { "displayMode": "table", "placement": "bottom", "calcs": ["lastNotNull"] },
+        "tooltip": { "mode": "single", "sort": "none" }
+      },
+      "targets": [
+        {
+          "expr": "max_over_time(rankalpha_ingestion_symbol_coverage_ratio[24h])",
+          "legendFormat": "Coverage ratio",
+          "refId": "A"
+        },
+        {
+          "expr": "max_over_time(rankalpha_ingestion_stale_symbol_ratio[24h])",
+          "legendFormat": "Stale ratio",
+          "refId": "B"
+        },
+        {
+          "expr": "max_over_time(rankalpha_ingestion_unexpected_stale_symbol_ratio[24h])",
+          "legendFormat": "Unexpected stale ratio",
+          "refId": "C"
+        },
+        {
+          "expr": "max_over_time(rankalpha_ingestion_symbol_drift_ratio[24h])",
+          "legendFormat": "Drift ratio",
+          "refId": "D"
+        }
+      ],
+      "title": "Ingestion Coverage/Staleness/Drift Ratios",
+      "type": "timeseries"
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "fieldConfig": {
+        "defaults": { "unit": "percentunit", "min": 0, "max": 1, "color": { "mode": "palette-classic" } },
+        "overrides": []
+      },
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 16 },
+      "id": 6,
+      "options": {
+        "legend": { "displayMode": "table", "placement": "bottom", "calcs": ["lastNotNull"] },
+        "tooltip": { "mode": "single", "sort": "none" }
+      },
+      "targets": [
+        {
+          "expr": "max_over_time(rankalpha_scorer_asof_pass_ratio[24h])",
+          "legendFormat": "As-of pass ratio",
+          "refId": "A"
+        },
+        {
+          "expr": "max_over_time(rankalpha_scorer_momentum_valid_ratio[24h])",
+          "legendFormat": "Momentum valid ratio",
+          "refId": "B"
+        },
+        {
+          "expr": "max_over_time(rankalpha_scorer_required_score_coverage_ratio[24h])",
+          "legendFormat": "Required coverage ratio",
+          "refId": "C"
+        },
+        {
+          "expr": "max_over_time(rankalpha_scorer_required_score_missing_ratio[24h])",
+          "legendFormat": "Required missing ratio",
+          "refId": "D"
+        },
+        {
+          "expr": "max_over_time(rankalpha_scorer_parquet_to_momentum_ratio[24h])",
+          "legendFormat": "Parquet to momentum ratio",
+          "refId": "E"
+        }
+      ],
+      "title": "Scorer Coverage/Quality Ratios",
+      "type": "timeseries"
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "fieldConfig": {
+        "defaults": { "unit": "short", "color": { "mode": "palette-classic" } },
+        "overrides": []
+      },
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 24 },
+      "id": 7,
+      "options": {
+        "legend": { "displayMode": "table", "placement": "bottom", "calcs": ["lastNotNull"] },
+        "tooltip": { "mode": "single", "sort": "none" }
+      },
+      "targets": [
+        {
+          "expr": "max_over_time(rankalpha_ingestion_active_symbols[24h])",
+          "legendFormat": "Active symbols",
+          "refId": "A"
+        },
+        {
+          "expr": "max_over_time(rankalpha_ingestion_symbols_with_price[24h])",
+          "legendFormat": "Symbols with price",
+          "refId": "B"
+        },
+        {
+          "expr": "max_over_time(rankalpha_ingestion_expected_missing_symbols[24h])",
+          "legendFormat": "Expected missing symbols",
+          "refId": "C"
+        },
+        {
+          "expr": "max_over_time(rankalpha_ingestion_stale_symbols[24h])",
+          "legendFormat": "Stale symbols",
+          "refId": "D"
+        }
+      ],
+      "title": "Ingestion Symbol Counts",
+      "type": "timeseries"
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "fieldConfig": {
+        "defaults": { "unit": "short", "color": { "mode": "palette-classic" } },
+        "overrides": []
+      },
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 24 },
+      "id": 8,
+      "options": {
+        "legend": { "displayMode": "table", "placement": "bottom", "calcs": ["lastNotNull"] },
+        "tooltip": { "mode": "single", "sort": "none" }
+      },
+      "targets": [
+        {
+          "expr": "max_over_time(rankalpha_scorer_eligible_symbols[24h])",
+          "legendFormat": "Eligible symbols",
+          "refId": "A"
+        },
+        {
+          "expr": "max_over_time(rankalpha_scorer_asof_pass_symbols[24h])",
+          "legendFormat": "As-of pass symbols",
+          "refId": "B"
+        },
+        {
+          "expr": "max_over_time(rankalpha_scorer_momentum_valid_symbols[24h])",
+          "legendFormat": "Momentum valid symbols",
+          "refId": "C"
+        },
+        {
+          "expr": "max_over_time(rankalpha_scorer_required_score_missing_symbols[24h])",
+          "legendFormat": "Required missing symbols",
+          "refId": "D"
+        }
+      ],
+      "title": "Scorer Symbol Counts",
+      "type": "timeseries"
+    },
+    {
+      "datasource": { "type": "loki", "uid": "loki" },
+      "fieldConfig": {
+        "defaults": { "unit": "short", "color": { "mode": "palette-classic" } },
+        "overrides": []
+      },
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 32 },
+      "id": 9,
+      "options": {
+        "legend": { "displayMode": "table", "placement": "bottom", "calcs": ["lastNotNull"] },
+        "tooltip": { "mode": "single", "sort": "none" }
+      },
+      "targets": [
+        {
+          "expr": "sum(count_over_time({job=\"docker\"} |~ \"^202[0-9]-\" |= \"apps.ingestion.src\" |= \" - WARNING - \" [1h]))",
+          "legendFormat": "Warnings (rolling 1h)",
+          "refId": "A"
+        },
+        {
+          "expr": "sum(count_over_time({job=\"docker\"} |~ \"^202[0-9]-\" |= \"apps.ingestion.src\" |= \" - ERROR - \" [1h]))",
+          "legendFormat": "Errors (rolling 1h)",
+          "refId": "B"
+        }
+      ],
+      "title": "Ingestion Warning/Error Logs",
+      "type": "timeseries"
+    },
+    {
+      "datasource": { "type": "loki", "uid": "loki" },
+      "fieldConfig": {
+        "defaults": { "unit": "short", "color": { "mode": "palette-classic" } },
+        "overrides": []
+      },
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 32 },
+      "id": 10,
+      "options": {
+        "legend": { "displayMode": "table", "placement": "bottom", "calcs": ["lastNotNull"] },
+        "tooltip": { "mode": "single", "sort": "none" }
+      },
+      "targets": [
+        {
+          "expr": "sum(count_over_time({job=\"docker\"} |~ \"^202[0-9]-\" |= \"apps.scorer.src\" |= \" - WARNING - \" [1h]))",
+          "legendFormat": "Warnings (rolling 1h)",
+          "refId": "A"
+        },
+        {
+          "expr": "sum(count_over_time({job=\"docker\"} |~ \"^202[0-9]-\" |= \"apps.scorer.src\" |= \" - ERROR - \" [1h]))",
+          "legendFormat": "Errors (rolling 1h)",
+          "refId": "B"
+        }
+      ],
+      "title": "Scorer Warning/Error Logs",
+      "type": "timeseries"
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "fieldConfig": {
+        "defaults": { "unit": "short", "color": { "mode": "palette-classic" } },
+        "overrides": []
+      },
+      "gridPos": { "h": 8, "w": 24, "x": 0, "y": 40 },
+      "id": 11,
+      "options": {
+        "legend": { "displayMode": "table", "placement": "bottom", "calcs": ["lastNotNull"] },
+        "tooltip": { "mode": "single", "sort": "none" }
+      },
+      "targets": [
+        {
+          "expr": "sum(increase(rankalpha_ingestion_drift_violations_total[7d])) or vector(0)",
+          "legendFormat": "Ingestion drift violations (7d)",
+          "refId": "A"
+        },
+        {
+          "expr": "sum(increase(rankalpha_scorer_drift_violations_total[7d])) or vector(0)",
+          "legendFormat": "Scorer drift violations (7d)",
+          "refId": "B"
+        },
+        {
+          "expr": "sum(increase(rankalpha_ingestion_runs_total{status=\"error\"}[7d])) or vector(0)",
+          "legendFormat": "Ingestion error runs (7d)",
+          "refId": "C"
+        },
+        {
+          "expr": "sum(increase(rankalpha_scorer_runs_total{status=\"error\"}[7d])) or vector(0)",
+          "legendFormat": "Scorer error runs (7d)",
+          "refId": "D"
+        }
+      ],
+      "title": "Run Errors & Drift Violations",
+      "type": "timeseries"
+    }
+  ],
+  "refresh": "30s",
+  "schemaVersion": 39,
+  "style": "dark",
+  "tags": ["rankalpha", "scheduled", "ingestion", "scorer"],
+  "templating": { "list": [] },
+  "time": { "from": "now-14d", "to": "now" },
+  "timepicker": {},
+  "timezone": "",
+  "title": "RankAlpha Scheduled Tasks",
+  "uid": "rankalpha-scheduled-tasks",
+  "version": 1,
+  "weekStart": ""
+}

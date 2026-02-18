@@ -1,0 +1,15 @@
+[project]
+name = "rankalpha-airflow"
+version = "0.1.0"
+description = "Airflow DAG tooling and provider deps for local/tests"
+readme = "../README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "apache-airflow>=3.0.0",
+  "apache-airflow-providers-docker>=4.0.0",
+]
+
+[dependency-groups]
+dev = [
+  "pytest>=8.4.0",
+]

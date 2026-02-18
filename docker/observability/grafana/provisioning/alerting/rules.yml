@@ -1,0 +1,430 @@
+apiVersion: 1
+
+groups:
+  - orgId: 1
+    name: rankalpha-infra
+    folder: RankAlpha Alerts
+    interval: 60s
+    rules:
+      - uid: host_disk_free_lt_20
+        title: Host disk free < 20%
+        condition: A
+        data:
+          - refId: A
+            datasourceUid: prometheus
+            relativeTimeRange:
+              from: 600
+              to: 0
+            model:
+              datasource:
+                type: prometheus
+                uid: prometheus
+              expr: 100 * (node_filesystem_avail_bytes{job="node",mountpoint="/",fstype!~"tmpfs|overlay|squashfs"} / node_filesystem_size_bytes{job="node",mountpoint="/",fstype!~"tmpfs|overlay|squashfs"}) < 20
+              instant: true
+              intervalMs: 60000
+              maxDataPoints: 43200
+              refId: A
+        noDataState: OK
+        execErrState: Error
+        for: 10m
+        annotations:
+          summary: Host disk free space is below 20%.
+        labels:
+          category: infra
+          severity: critical
+        notification_settings:
+          receiver: rankalpha-email
+
+      - uid: host_cpu_gt_70
+        title: Host CPU usage > 70%
+        condition: A
+        data:
+          - refId: A
+            datasourceUid: prometheus
+            relativeTimeRange:
+              from: 600
+              to: 0
+            model:
+              datasource:
+                type: prometheus
+                uid: prometheus
+              expr: 100 * (1 - avg(rate(node_cpu_seconds_total{job="node",mode="idle"}[5m]))) > 70
+              instant: true
+              intervalMs: 60000
+              maxDataPoints: 43200
+              refId: A
+        noDataState: OK
+        execErrState: Error
+        for: 10m
+        annotations:
+          summary: Host CPU usage is above 70%.
+        labels:
+          category: infra
+          severity: warning
+        notification_settings:
+          receiver: rankalpha-email
+
+      - uid: host_ram_gt_70
+        title: Host RAM usage > 70%
+        condition: A
+        data:
+          - refId: A
+            datasourceUid: prometheus
+            relativeTimeRange:
+              from: 600
+              to: 0
+            model:
+              datasource:
+                type: prometheus
+                uid: prometheus
+              expr: 100 * (1 - (node_memory_MemAvailable_bytes{job="node"} / node_memory_MemTotal_bytes{job="node"})) > 70
+              instant: true
+              intervalMs: 60000
+              maxDataPoints: 43200
+              refId: A
+        noDataState: OK
+        execErrState: Error
+        for: 10m
+        annotations:
+          summary: Host RAM usage is above 70%.
+        labels:
+          category: infra
+          severity: warning
+        notification_settings:
+          receiver: rankalpha-email
+
+  - orgId: 1
+    name: rankalpha-api
+    folder: RankAlpha Alerts
+    interval: 60s
+    rules:
+      - uid: api_latency_p95_gt_5s
+        title: API latency p95 > 5s
+        condition: A
+        data:
+          - refId: A
+            datasourceUid: prometheus
+            relativeTimeRange:
+              from: 600
+              to: 0
+            model:
+              datasource:
+                type: prometheus
+                uid: prometheus
+              expr: histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket{job="api",handler!="/metrics"}[5m])) by (le)) > 5
+              instant: true
+              intervalMs: 60000
+              maxDataPoints: 43200
+              refId: A
+        noDataState: OK
+        execErrState: Error
+        for: 10m
+        annotations:
+          summary: API p95 latency is above 5 seconds.
+        labels:
+          category: api
+          severity: critical
+        notification_settings:
+          receiver: rankalpha-email
+
+      - uid: api_5xx_ratio_gt_10pct_6h
+        title: API 5xx ratio > 10% (6h)
+        condition: A
+        data:
+          - refId: A
+            datasourceUid: prometheus
+            relativeTimeRange:
+              from: 600
+              to: 0
+            model:
+              datasource:
+                type: prometheus
+                uid: prometheus
+              expr: sum(increase(rankalpha_api_requests_total{job="api",status_code=~"5.."}[6h])) / clamp_min(sum(increase(rankalpha_api_requests_total{job="api"}[6h])), 1) > 0.10
+              instant: true
+              intervalMs: 60000
+              maxDataPoints: 43200
+              refId: A
+        noDataState: OK
+        execErrState: Error
+        for: 5m
+        annotations:
+          summary: API 5xx ratio exceeded 10% over the last 6 hours.
+        labels:
+          category: api
+          severity: critical
+        notification_settings:
+          receiver: rankalpha-email
+
+  - orgId: 1
+    name: rankalpha-pipeline
+    folder: RankAlpha Alerts
+    interval: 60s
+    rules:
+      - uid: ingestion_failures_gt_0_24h
+        title: Ingestion failures detected (24h)
+        condition: A
+        data:
+          - refId: A
+            datasourceUid: prometheus
+            relativeTimeRange:
+              from: 600
+              to: 0
+            model:
+              datasource:
+                type: prometheus
+                uid: prometheus
+              expr: increase(rankalpha_ingestion_runs_total{job="ingestion",status="error"}[24h]) > 0
+              instant: true
+              intervalMs: 60000
+              maxDataPoints: 43200
+              refId: A
+        noDataState: OK
+        execErrState: Error
+        for: 0s
+        annotations:
+          summary: One or more ingestion runs failed in the last 24 hours.
+        labels:
+          category: pipeline
+          severity: critical
+        notification_settings:
+          receiver: rankalpha-email
+
+      - uid: scorer_failures_gt_0_24h
+        title: Scorer failures detected (24h)
+        condition: A
+        data:
+          - refId: A
+            datasourceUid: prometheus
+            relativeTimeRange:
+              from: 600
+              to: 0
+            model:
+              datasource:
+                type: prometheus
+                uid: prometheus
+              expr: increase(rankalpha_scorer_runs_total{job="scorer",status="error"}[24h]) > 0
+              instant: true
+              intervalMs: 60000
+              maxDataPoints: 43200
+              refId: A
+        noDataState: OK
+        execErrState: Error
+        for: 0s
+        annotations:
+          summary: One or more scorer runs failed in the last 24 hours.
+        labels:
+          category: pipeline
+          severity: critical
+        notification_settings:
+          receiver: rankalpha-email
+
+      - uid: ingestion_symbol_drift_gt_15pct
+        title: Ingestion symbol drift ratio > 15%
+        condition: A
+        data:
+          - refId: A
+            datasourceUid: prometheus
+            relativeTimeRange:
+              from: 1800
+              to: 0
+            model:
+              datasource:
+                type: prometheus
+                uid: prometheus
+              expr: max_over_time(rankalpha_ingestion_symbol_drift_ratio{job="ingestion"}[15m]) > 0.15
+              instant: true
+              intervalMs: 60000
+              maxDataPoints: 43200
+              refId: A
+        noDataState: OK
+        execErrState: Error
+        for: 5m
+        annotations:
+          summary: Ingestion symbol drift stayed above 15% (parquet universe coverage degraded).
+        labels:
+          category: pipeline
+          severity: warning
+        notification_settings:
+          receiver: rankalpha-email
+
+      - uid: ingestion_drift_guard_violation
+        title: Ingestion drift guard violation (24h)
+        condition: A
+        data:
+          - refId: A
+            datasourceUid: prometheus
+            relativeTimeRange:
+              from: 600
+              to: 0
+            model:
+              datasource:
+                type: prometheus
+                uid: prometheus
+              expr: increase(rankalpha_ingestion_drift_violations_total{job="ingestion",check="symbol_coverage"}[24h]) > 0
+              instant: true
+              intervalMs: 60000
+              maxDataPoints: 43200
+              refId: A
+        noDataState: OK
+        execErrState: Error
+        for: 0s
+        annotations:
+          summary: Ingestion drift guard triggered in the last 24 hours.
+        labels:
+          category: pipeline
+          severity: critical
+        notification_settings:
+          receiver: rankalpha-email
+
+      - uid: scorer_asof_pass_ratio_lt_65pct
+        title: Scorer as-of pass ratio < 65%
+        condition: A
+        data:
+          - refId: A
+            datasourceUid: prometheus
+            relativeTimeRange:
+              from: 1800
+              to: 0
+            model:
+              datasource:
+                type: prometheus
+                uid: prometheus
+              expr: min_over_time(rankalpha_scorer_asof_pass_ratio{job="scorer"}[15m]) < 0.65
+              instant: true
+              intervalMs: 60000
+              maxDataPoints: 43200
+              refId: A
+        noDataState: OK
+        execErrState: Error
+        for: 5m
+        annotations:
+          summary: Scorer as-of pass ratio stayed below 65% (eligible symbols are being skipped as stale/missing).
+        labels:
+          category: pipeline
+          severity: warning
+        notification_settings:
+          receiver: rankalpha-email
+
+      - uid: scorer_momentum_valid_ratio_lt_65pct
+        title: Scorer momentum-valid ratio < 65%
+        condition: A
+        data:
+          - refId: A
+            datasourceUid: prometheus
+            relativeTimeRange:
+              from: 1800
+              to: 0
+            model:
+              datasource:
+                type: prometheus
+                uid: prometheus
+              expr: min_over_time(rankalpha_scorer_momentum_valid_ratio{job="scorer"}[15m]) < 0.65
+              instant: true
+              intervalMs: 60000
+              maxDataPoints: 43200
+              refId: A
+        noDataState: OK
+        execErrState: Error
+        for: 5m
+        annotations:
+          summary: Scorer momentum-valid ratio stayed below 65% among as-of-passing symbols.
+        labels:
+          category: pipeline
+          severity: warning
+        notification_settings:
+          receiver: rankalpha-email
+
+      - uid: scorer_drift_guard_violation
+        title: Scorer drift guard violation (24h)
+        condition: A
+        data:
+          - refId: A
+            datasourceUid: prometheus
+            relativeTimeRange:
+              from: 600
+              to: 0
+            model:
+              datasource:
+                type: prometheus
+                uid: prometheus
+              expr: sum(increase(rankalpha_scorer_drift_violations_total{job="scorer"}[24h])) > 0
+              instant: true
+              intervalMs: 60000
+              maxDataPoints: 43200
+              refId: A
+        noDataState: OK
+        execErrState: Error
+        for: 0s
+        annotations:
+          summary: Scorer drift guard triggered in the last 24 hours.
+        labels:
+          category: pipeline
+          severity: critical
+        notification_settings:
+          receiver: rankalpha-email
+
+      - uid: airflow_rankalpha_pipeline_task_failure
+        title: Airflow task failure (rankalpha_pipeline)
+        condition: A
+        data:
+          - refId: A
+            datasourceUid: prometheus
+            relativeTimeRange:
+              from: 600
+              to: 0
+            model:
+              datasource:
+                type: prometheus
+                uid: prometheus
+              expr: rankalpha_airflow_task_failures_last_hour_value{job="airflow-metadata",dag_id="rankalpha_pipeline"} > 0
+              instant: true
+              intervalMs: 60000
+              maxDataPoints: 43200
+              refId: A
+        noDataState: OK
+        execErrState: Error
+        for: 0s
+        annotations:
+          summary: One or more Airflow task instances failed in rankalpha_pipeline within the last hour.
+        labels:
+          category: pipeline
+          severity: critical
+          service: airflow
+        notification_settings:
+          receiver: rankalpha-email
+
+  - orgId: 1
+    name: rankalpha-sentiment
+    folder: RankAlpha Alerts
+    interval: 60s
+    rules:
+      - uid: sentiment_llm_cost_usage_gt_80pct
+        title: Sentiment LLM daily cost usage > 80%
+        condition: A
+        data:
+          - refId: A
+            datasourceUid: prometheus
+            relativeTimeRange:
+              from: 600
+              to: 0
+            model:
+              datasource:
+                type: prometheus
+                uid: prometheus
+              expr: max_over_time(rankalpha_ai_budget_usage_ratio{job="sentiment",service="sentiment_llm",metric="cost"}[5m]) > 0.80
+              instant: true
+              intervalMs: 60000
+              maxDataPoints: 43200
+              refId: A
+        noDataState: OK
+        execErrState: Error
+        for: 5m
+        annotations:
+          summary: Sentiment LLM daily cost budget exceeded 80%.
+        labels:
+          category: sentiment
+          severity: warning
+          service: sentiment_llm
+        notification_settings:
+          receiver: rankalpha-email

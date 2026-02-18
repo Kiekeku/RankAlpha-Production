@@ -1,0 +1,22 @@
+# Prevent secrets / environment profiles from entering Docker build context
+env/**
+
+# Python virtualenvs / caches
+.venv/
+.venv-tools/
+.uv-cache/
+__pycache__/
+**/__pycache__/
+**/*.pyc
+
+# Node / Next.js
+**/node_modules/
+**/.next/
+**/tsconfig.tsbuildinfo
+
+# VCS / editor noise
+.git/
+.github/
+.vscode/
+.pytest_cache/
+repomix-output.xml

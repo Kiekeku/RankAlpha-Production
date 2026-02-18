@@ -1,0 +1,872 @@
+x-restart-policy: &restart_unless_stopped
+  restart: unless-stopped
+
+services:
+  api:
+    <<: *restart_unless_stopped
+    build: 
+      context: ./../
+      dockerfile: apps/api/Dockerfile
+    depends_on:
+      database:
+        condition: service_started
+      cache:
+        condition: service_started
+      broker:
+        condition: service_healthy
+    env_file:
+      - ../env/${ENV:-local}/shared.env
+      - ../env/${ENV:-local}/api.env
+    environment:
+      - RANKALPHA_ENV=${ENV:-local}
+      - PORT=${API_PORT:-6080}
+      - OTEL_EXPORTER_OTLP_ENDPOINT=http://otel-collector:4317
+      - OTEL_EXPORTER_OTLP_INSECURE=true
+      - OTEL_RESOURCE_ATTRIBUTES=deployment.environment=${ENV:-local}
+      - OTEL_SERVICE_NAME=rankalpha-api
+    ports:
+      - "${API_PORT:-6080}:${API_PORT:-6080}"
+    networks:
+      - rankalpha_backend_network
+    volumes:
+      - ../env:/app/env:ro  
+     
+    healthcheck:
+      # Use compose-time substitution of API_PORT so the correct internal port is checked
+      test: ["CMD-SHELL", "curl -sf http://localhost:${API_PORT:-6080}/health || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  newswire:
+    image: rankalpha_newswire
+    build:
+      context: ./../
+      dockerfile: apps/newswire/Dockerfile
+    depends_on:
+      - database
+      - cache
+    env_file:
+      - ../env/${ENV:-local}/shared.env
+      - ../env/${ENV:-local}/newswire.env
+    environment:
+      - RANKALPHA_ENV=${ENV:-local}
+    networks:
+      - rankalpha_backend_network
+    restart: unless-stopped
+    volumes:
+      - analysis_schedule:/data/analysis_schedule
+      - ../env:/app/env:ro
+        
+  database:
+    <<: *restart_unless_stopped
+    build:
+      context: ../docker/database
+      dockerfile: Dockerfile
+    env_file:
+      - ../env/${ENV:-local}/database.env
+    command:
+      - postgres
+      - -c
+      - port=${DB_PORT_CONTAINER:-5432}
+      - -c
+      - shared_preload_libraries=pg_stat_statements
+      - -c
+      - pg_stat_statements.track=all
+      - -c
+      - pg_stat_statements.max=10000
+      - -c
+      - pg_stat_statements.save=on
+      - -c
+      - track_io_timing=on
+    ports:
+      - "${DB_PORT_HOST:-6543}:${DB_PORT_CONTAINER:-5432}"  
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    # - ../docker/database/init:/docker-entrypoint-initdb.d
+    networks:
+      - airflow_net
+      - rankalpha_backend_network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -h 127.0.0.1 -p ${DB_PORT_CONTAINER:-5432} -U $$POSTGRES_USER 2>/dev/null || pg_isready -h 127.0.0.1 -p ${DB_PORT_CONTAINER:-5432} -U rankalpha"]
+      interval: 20s
+      timeout: 5s
+      retries: 5
+
+  postgres-exporter:
+    image: prometheuscommunity/postgres-exporter:v0.17.0
+    restart: unless-stopped
+    depends_on:
+      - database
+    env_file:
+      - ../env/${ENV:-local}/database.env
+    command:
+      - --no-collector.stat_statements
+      - --extend.query-path=/etc/postgres_exporter/queries.yml
+    volumes:
+      - ../docker/observability/postgres-exporter/queries.yml:/etc/postgres_exporter/queries.yml:ro
+    expose:
+      - "9187"
+    networks:
+      - rankalpha_backend_network
+
+  airflow-postgres-exporter:
+    image: prometheuscommunity/postgres-exporter:v0.17.0
+    restart: unless-stopped
+    depends_on:
+      - database
+    environment:
+      - DATA_SOURCE_NAME=postgresql://rankalpha:rankalpha@database:5432/airflow?sslmode=disable
+    command:
+      - --web.listen-address=:9188
+      - --extend.query-path=/etc/postgres_exporter/queries.yml
+    volumes:
+      - ../docker/observability/postgres-exporter/airflow-queries.yml:/etc/postgres_exporter/queries.yml:ro
+    expose:
+      - "9188"
+    networks:
+      - rankalpha_backend_network
+
+  node-exporter:
+    image: prom/node-exporter:v1.8.1
+    restart: unless-stopped
+    command:
+      - --path.procfs=/host/proc
+      - --path.sysfs=/host/sys
+      - --path.rootfs=/rootfs
+    volumes:
+      - /proc:/host/proc:ro
+      - /sys:/host/sys:ro
+      - /:/rootfs:ro
+    expose:
+      - "9100"
+    networks:
+      - rankalpha_backend_network
+
+  cache:
+    build:
+      context: ./../docker/cache
+      dockerfile: Dockerfile
+    env_file:
+      - ../env/${ENV:-local}/cache.env
+    environment:
+      - REDIS_PORT=${REDIS_PORT_HOST:-6379}
+    ports:
+      - "${REDIS_PORT_HOST:-6379}:${REDIS_PORT_HOST:-6379}"
+    command: ["/usr/local/bin/redis-start.sh"]
+    volumes:
+      - rankalpha_data:/data
+    restart: always
+    networks:
+      - rankalpha_backend_network
+      - airflow_net
+    healthcheck:
+      test: ["CMD-SHELL", "redis-cli -h 127.0.0.1 -p ${REDIS_PORT_HOST:-6379} ping | grep -q PONG"]
+      interval: 20s
+      timeout: 5s
+      retries: 5
+
+  flyway:
+    build:
+      context: ..
+      dockerfile: docker/database/Dockerfile.flyway
+    depends_on: [database]
+    env_file: 
+      - ../env/${ENV:-local}/flyway.env
+    command: migrate
+    networks:
+      - rankalpha_backend_network
+    # command: >
+    #   -url=jdbc:postgresql://database:5432/rankalpha
+    #   -connectRetries=10
+    #   -user=rankalpha
+    #   -password=<change_me>
+    #   -schemas=rankalpha
+    #   -cleanDisabled=false      
+    #   clean
+
+  rabbitmq:
+    <<: *restart_unless_stopped
+    image: rabbitmq:3-management
+    entrypoint:
+      - /bin/sh
+      - -c
+      - "chmod 400 /var/lib/rabbitmq/.erlang.cookie 2>/dev/null || true; exec /usr/local/bin/docker-entrypoint.sh rabbitmq-server"
+    environment:
+      - RABBITMQ_NODE_PORT=${RABBITMQ_PORT_HOST:-5672}
+      - RABBITMQ_MANAGEMENT_PORT=${RABBITMQ_MGMT_PORT_HOST:-15672}
+      # Allow long-running Celery tasks (default 6h consumer timeout; override via RABBITMQ_CONSUMER_TIMEOUT_MS)
+      - RABBITMQ_SERVER_ADDITIONAL_ERL_ARGS=-rabbit consumer_timeout ${RABBITMQ_CONSUMER_TIMEOUT_MS:-21600000}
+    ports:
+      - "${RABBITMQ_PORT_HOST:-5672}:${RABBITMQ_PORT_HOST:-5672}"
+      - "${RABBITMQ_MGMT_PORT_HOST:-15672}:${RABBITMQ_MGMT_PORT_HOST:-15672}"
+    networks:
+      - airflow_net
+      - rankalpha_backend_network
+    healthcheck:
+      test: ["CMD-SHELL", "rabbitmq-diagnostics -q ping"]
+      interval: 20s
+      timeout: 10s
+      retries: 5
+  
+  airflow-web:
+    <<: *restart_unless_stopped
+    build:
+      context: ../
+      dockerfile: infra/airflow/Dockerfile
+    # container_name removed to allow multi-stack deployments
+    env_file:
+      - ../env/${ENV:-local}/airflow.env
+    environment:
+      AIRFLOW__WEBSERVER__WEB_SERVER_PORT: "${AIRFLOW_WEB_PORT:-8080}"
+      AIRFLOW__WEBSERVER__BASE_URL: "http://airflow-web:${AIRFLOW_WEB_PORT:-8080}"
+      AIRFLOW__LOGGING__BASE_URL: "http://airflow-web:${AIRFLOW_WEB_PORT:-8080}"
+      API_URL: "http://api:${API_PORT:-6080}"
+      # Provide project-scoped network/volume names for DockerOperator
+      DOCKER_NETWORK: "${COMPOSE_PROJECT_NAME:-rankalpha-local}_rankalpha_backend_network"
+      PRICES_DATA_VOLUME: "${COMPOSE_PROJECT_NAME:-rankalpha-local}_prices_data"
+      COMPANY_REPORTS_VOLUME: "${COMPOSE_PROJECT_NAME:-rankalpha-local}_company_reports"
+      ANALYSIS_SCHEDULE_VOLUME: "${COMPOSE_PROJECT_NAME:-rankalpha-local}_analysis_schedule"
+      SENTIMENT_LOGS_VOLUME: "${COMPOSE_PROJECT_NAME:-rankalpha-local}_sentiment_logs"
+      FRONTEND_SERVICE_PORT: "${FRONTEND_PORT:-3000}"
+    entrypoint: >
+      bash -c "
+        /opt/wait-for-it.sh database:${DB_PORT_CONTAINER:-5432} --timeout=60 --strict &&
+        airflow webserver
+      "
+    depends_on:
+      - airflow-scheduler
+      - database
+      - cache
+    ports:
+      - "${AIRFLOW_WEB_PORT:-8080}:${AIRFLOW_WEB_PORT:-8080}"
+    volumes:
+      # Share logs with scheduler/worker so web can read logs from disk
+      - airflow_logs:/opt/airflow/logs
+      # Provide env profiles for DAG runtime (read by /opt/rankalpha/env/<ENV>/*.env)
+      - ../env:/opt/rankalpha/env:ro
+      # Optional developer mounts (keep commented for CI/CD)
+      # - ../infra/airflow/dags:/opt/airflow/dags
+      # - ../infra/airflow/scripts/airflow_pw.json:/opt/airflow/scripts/airflow_pw.json
+    networks:
+      - airflow_net
+      - rankalpha_backend_network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "curl -sf http://localhost:${AIRFLOW_WEB_PORT:-8080}/"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  airflow-scheduler:
+    build:
+      context: ../
+      dockerfile: infra/airflow/Dockerfile
+    # container_name removed to allow multi-stack deployments
+    ports:
+      - "${AIRFLOW_SCHEDULER_HEALTH_PORT:-8974}:${AIRFLOW_SCHEDULER_HEALTH_PORT_INTERNAL:-8974}"
+    restart: always
+    entrypoint: >
+      bash -c '
+        /opt/wait-for-it.sh database:${DB_PORT_CONTAINER:-5432} --timeout=60 --strict &&
+        /opt/wait-for-it.sh cache:${CACHE_SERVICE_PORT:-6379} --timeout=60 --strict &&
+        airflow db migrate &&
+        airflow users create --username "${AIRFLOW_ADMIN_USERNAME:-rankalpha}" --firstname "${AIRFLOW_ADMIN_FIRSTNAME:-Rank}" --lastname "${AIRFLOW_ADMIN_LASTNAME:-Alpha}" --role Admin --email "${AIRFLOW_ADMIN_EMAIL:-rankalpha@example.com}" --password "${AIRFLOW_ADMIN_PASSWORD:-rankalpha}" || true &&
+        airflow scheduler
+      '
+    depends_on:
+      - database
+      - cache
+    env_file:
+      - ../env/${ENV:-local}/airflow.env
+    environment:
+      AIRFLOW__WEBSERVER__BASE_URL: "http://airflow-web:${AIRFLOW_WEB_PORT:-8080}"
+      AIRFLOW__LOGGING__BASE_URL: "http://airflow-web:${AIRFLOW_WEB_PORT:-8080}"
+      AIRFLOW__WEBSERVER__WEB_SERVER_PORT: "${AIRFLOW_WEB_PORT:-8080}"
+      AIRFLOW__SCHEDULER__HEALTH_CHECK_SERVER_PORT: "${AIRFLOW_SCHEDULER_HEALTH_PORT_INTERNAL:-8974}"
+      API_URL: "http://api:${API_PORT:-6080}"
+      DOCKER_NETWORK: "${COMPOSE_PROJECT_NAME:-rankalpha-local}_rankalpha_backend_network"
+      PRICES_DATA_VOLUME: "${COMPOSE_PROJECT_NAME:-rankalpha-local}_prices_data"
+      COMPANY_REPORTS_VOLUME: "${COMPOSE_PROJECT_NAME:-rankalpha-local}_company_reports"
+      ANALYSIS_SCHEDULE_VOLUME: "${COMPOSE_PROJECT_NAME:-rankalpha-local}_analysis_schedule"
+      SENTIMENT_LOGS_VOLUME: "${COMPOSE_PROJECT_NAME:-rankalpha-local}_sentiment_logs"
+      FRONTEND_SERVICE_PORT: "${FRONTEND_PORT:-3000}"
+      CACHE_SERVICE_PORT: "${REDIS_PORT_HOST:-6379}"
+      RABBITMQ_SERVICE_PORT: "${RABBITMQ_PORT_HOST:-5672}"
+    volumes:
+      # Share logs with web/worker
+      - airflow_logs:/opt/airflow/logs
+      - ../env:/opt/rankalpha/env:ro
+      # Optional developer mounts (keep commented for CI/CD)
+      # - ../infra/airflow/dags:/opt/airflow/dags
+      # - ../apps:/app/apps
+    networks:
+      - airflow_net
+      - rankalpha_backend_network
+    healthcheck:
+      test: ["CMD-SHELL", "curl -sf http://localhost:${AIRFLOW_SCHEDULER_HEALTH_PORT_INTERNAL:-8974}/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 10
+
+  airflow-worker:
+    <<: *restart_unless_stopped
+    build:
+      context: ../
+      dockerfile: infra/airflow/Dockerfile
+    # container_name removed to allow multi-stack deployments
+    hostname: airflow-worker
+    user: "0:0"
+    env_file:
+      - ../env/${ENV:-local}/airflow.env
+    environment:
+      AIRFLOW__WEBSERVER__BASE_URL: "http://airflow-web:${AIRFLOW_WEB_PORT:-8080}"
+      AIRFLOW__LOGGING__BASE_URL: "http://airflow-web:${AIRFLOW_WEB_PORT:-8080}"
+      AIRFLOW__WEBSERVER__WEB_SERVER_PORT: "${AIRFLOW_WEB_PORT:-8080}"
+      API_URL: "http://api:${API_PORT:-6080}"
+      DOCKER_NETWORK: "${COMPOSE_PROJECT_NAME:-rankalpha-local}_rankalpha_backend_network"
+      PRICES_DATA_VOLUME: "${COMPOSE_PROJECT_NAME:-rankalpha-local}_prices_data"
+      COMPANY_REPORTS_VOLUME: "${COMPOSE_PROJECT_NAME:-rankalpha-local}_company_reports"
+      ANALYSIS_SCHEDULE_VOLUME: "${COMPOSE_PROJECT_NAME:-rankalpha-local}_analysis_schedule"
+      SENTIMENT_LOGS_VOLUME: "${COMPOSE_PROJECT_NAME:-rankalpha-local}_sentiment_logs"
+      FRONTEND_SERVICE_PORT: "${FRONTEND_PORT:-3000}"
+      RABBITMQ_SERVICE_PORT: "${RABBITMQ_PORT_HOST:-5672}"
+    entrypoint: >
+      bash -c "
+        set -e
+        /opt/airflow/scripts/ensure-docker-sock-perms.sh &&
+        echo 'BROKER from ENV: $$AIRFLOW__CELERY__BROKER_URL' &&
+        env | grep BROKER &&
+        /opt/wait-for-it.sh database:${DB_PORT_CONTAINER:-5432} --timeout=60 --strict &&
+        /opt/wait-for-it.sh rabbitmq:${RABBITMQ_SERVICE_PORT:-5672} --timeout=60 --strict &&
+        exec gosu airflow airflow celery worker
+      "
+    depends_on:
+      - database
+      - airflow-web
+      - airflow-scheduler
+    volumes:
+      # Allow DockerOperator to talk to the host Docker daemon
+      - /var/run/docker.sock:/var/run/docker.sock
+      # Share logs with web/scheduler
+      - airflow_logs:/opt/airflow/logs
+      - ../env:/opt/rankalpha/env:ro
+      # Optional developer mounts (keep commented for CI/CD)
+      # - ../infra/airflow/dags:/opt/airflow/dags
+      # - ../apps:/app/apps
+    networks:
+      - airflow_net
+      - rankalpha_backend_network
+    restart: unless-stopped
+    # Ensure the container can access /var/run/docker.sock if the socket group is non-root
+    group_add:
+      - "${DOCKER_GID:-0}"
+    healthcheck:
+      test: ["CMD-SHELL", "gosu airflow /home/airflow/.local/bin/celery --app airflow.providers.celery.executors.celery_executor.app inspect ping >/dev/null 2>&1"]
+      interval: 30s
+      timeout: 10s
+      retries: 10
+
+  airflow-triggerer:
+    <<: *restart_unless_stopped
+    build:
+      context: ../
+      dockerfile: infra/airflow/Dockerfile
+    # container_name removed to allow multi-stack deployments
+    depends_on:
+      - database
+      - rabbitmq
+      - cache
+    env_file:
+      - ../env/${ENV:-local}/airflow.env
+    environment:
+      AIRFLOW__WEBSERVER__BASE_URL: "http://airflow-web:${AIRFLOW_WEB_PORT:-8080}"
+      AIRFLOW__LOGGING__BASE_URL: "http://airflow-web:${AIRFLOW_WEB_PORT:-8080}"
+      AIRFLOW__WEBSERVER__WEB_SERVER_PORT: "${AIRFLOW_WEB_PORT:-8080}"
+      API_URL: "http://api:${API_PORT:-6080}"
+      DOCKER_NETWORK: "${COMPOSE_PROJECT_NAME:-rankalpha-local}_rankalpha_backend_network"
+      PRICES_DATA_VOLUME: "${COMPOSE_PROJECT_NAME:-rankalpha-local}_prices_data"
+      COMPANY_REPORTS_VOLUME: "${COMPOSE_PROJECT_NAME:-rankalpha-local}_company_reports"
+      ANALYSIS_SCHEDULE_VOLUME: "${COMPOSE_PROJECT_NAME:-rankalpha-local}_analysis_schedule"
+      SENTIMENT_LOGS_VOLUME: "${COMPOSE_PROJECT_NAME:-rankalpha-local}_sentiment_logs"
+      FRONTEND_SERVICE_PORT: "${FRONTEND_PORT:-3000}"
+      CACHE_SERVICE_PORT: "${REDIS_PORT_HOST:-6379}"
+      RABBITMQ_SERVICE_PORT: "${RABBITMQ_PORT_HOST:-5672}"
+    volumes:
+      - ../env:/opt/rankalpha/env:ro
+    entrypoint: >
+      bash -c '
+        /opt/wait-for-it.sh database:${DB_PORT_CONTAINER:-5432} --timeout=60 --strict &&
+        /opt/wait-for-it.sh rabbitmq:${RABBITMQ_SERVICE_PORT:-5672} --timeout=60 --strict &&
+        /opt/wait-for-it.sh cache:${CACHE_SERVICE_PORT:-6379} --timeout=60 --strict &&
+        airflow triggerer
+      '
+    networks:
+      - airflow_net
+      - rankalpha_backend_network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "airflow jobs check --job-type TriggererJob --hostname $$(hostname)"]
+      interval: 30s
+      timeout: 10s
+      retries: 10
+
+  airflow-init-dag:
+    build:
+      context: ../
+      dockerfile: infra/airflow/Dockerfile
+    # container_name removed to allow multi-stack deployments
+    depends_on:
+      - airflow-scheduler
+      - airflow-web
+      - airflow-worker
+    env_file:
+      - ../env/${ENV:-local}/airflow.env
+    # volumes:
+    #   - ../infra/airflow/scripts:/opt/airflow/scripts
+    #   - ../infra/airflow/dags:/opt/airflow/dags
+    entrypoint: >
+      bash -c "
+        echo 'Waiting for Airflow to be ready...' &&
+        sleep 60 &&
+        echo 'Triggering initial DAG run...' &&
+        airflow dags trigger rankalpha_pipeline --run-id startup_$(date +%Y%m%d_%H%M%S) || true &&
+        echo 'Initial DAG triggered successfully'
+      "
+    networks:
+      - airflow_net
+      - rankalpha_backend_network
+    restart: "no"
+
+  ingestion:
+    build:
+      context: ..
+      dockerfile: apps/ingestion/Dockerfile
+    image: rankalpha_ingestion
+    working_dir: /app
+    command: ["python", "apps/ingestion/main.py"]
+    depends_on:
+      - database
+    env_file:
+      - ../env/${ENV:-local}/shared.env
+      - ../env/${ENV:-local}/ingestion.env
+    environment:
+      - RANKALPHA_ENV=${ENV:-local}
+      - OTEL_EXPORTER_OTLP_ENDPOINT=http://otel-collector:4317
+      - OTEL_EXPORTER_OTLP_INSECURE=true
+      - OTEL_RESOURCE_ATTRIBUTES=deployment.environment=${ENV:-local}
+      - OTEL_SERVICE_NAME=rankalpha-ingestion
+      # Keep the internal scrape port stable for Prometheus; override host ports instead.
+      - OBSERVABILITY_METRICS_PORT=9100
+      - OBSERVABILITY_METRICS_FLUSH_SECONDS=${BATCH_METRICS_FLUSH_SECONDS:-20}
+    volumes:
+      - prices_data:/data/prices
+      - ../env:/app/env:ro
+    expose:
+      - "9100"
+    labels:
+      - rankalpha.prometheus.scrape=true
+      - rankalpha.prometheus.job=ingestion
+      - rankalpha.prometheus.port=9100
+      - rankalpha.prometheus.path=/metrics
+    networks:
+      - rankalpha_backend_network
+    restart: "no"
+
+  scorer:
+    build:
+      context: ..
+      dockerfile: apps/scorer/Dockerfile
+    image: rankalpha_scorer
+    working_dir: /app
+    command: ["python", "apps/scorer/main.py"]
+    depends_on:
+      - database
+      - ingestion
+    env_file:
+      - ../env/${ENV:-local}/shared.env
+      - ../env/${ENV:-local}/scorer.env
+    environment:
+      - RANKALPHA_ENV=${ENV:-local}
+      - OTEL_EXPORTER_OTLP_ENDPOINT=http://otel-collector:4317
+      - OTEL_EXPORTER_OTLP_INSECURE=true
+      - OTEL_RESOURCE_ATTRIBUTES=deployment.environment=${ENV:-local}
+      - OTEL_SERVICE_NAME=rankalpha-scorer
+      # Keep the internal scrape port stable for Prometheus; override host ports instead.
+      - OBSERVABILITY_METRICS_PORT=9101
+      - OBSERVABILITY_METRICS_FLUSH_SECONDS=${BATCH_METRICS_FLUSH_SECONDS:-20}
+    volumes:
+      - prices_data:/data/prices
+      - ../env:/app/env:ro
+    expose:
+      - "9101"
+    labels:
+      - rankalpha.prometheus.scrape=true
+      - rankalpha.prometheus.job=scorer
+      - rankalpha.prometheus.port=9101
+      - rankalpha.prometheus.path=/metrics
+    networks:
+      - rankalpha_backend_network
+    restart: "no"
+
+  portfolio:
+    build:
+      context: ..
+      dockerfile: apps/portfolio/Dockerfile
+    image: rankalpha_portfolio
+    working_dir: /app
+    command: ["python", "apps/portfolio/main.py", "sync-nav"]
+    depends_on:
+      - database
+    env_file:
+      - ../env/${ENV:-local}/shared.env
+      - ../env/${ENV:-local}/portfolio.env
+    environment:
+      - RANKALPHA_ENV=${ENV:-local}
+      - OTEL_EXPORTER_OTLP_ENDPOINT=http://otel-collector:4317
+      - OTEL_EXPORTER_OTLP_INSECURE=true
+      - OTEL_RESOURCE_ATTRIBUTES=deployment.environment=${ENV:-local}
+      - OTEL_SERVICE_NAME=rankalpha-portfolio
+    volumes:
+      - ../env:/app/env:ro
+    networks:
+      - rankalpha_backend_network
+    restart: "no"
+
+  sftp:
+    <<: *restart_unless_stopped
+    build:
+      context: ..
+      dockerfile: infra/sftp/Dockerfile
+    command: ${SFTP_USER:-foo}:${SFTP_PASS:-secret}:1001:1001:upload
+    environment:
+      - SFTP_PORT=${SFTP_PORT_HOST:-2222}
+    ports:
+      - "${SFTP_PORT_HOST:-2222}:${SFTP_PORT_HOST:-2222}"
+    volumes:
+      - prices_data:/home/foo/upload
+    healthcheck:
+      test: ["CMD-SHELL", "nc -z 127.0.0.1 ${SFTP_PORT_HOST:-2222}"]
+      interval: 30s
+      timeout: 5s
+      retries: 10
+    restart: unless-stopped
+
+
+  sentiment:
+    # <<: *restart_unless_stopped
+    build:
+      context: ..
+      dockerfile: apps/sentiment/Dockerfile
+    image: rankalpha_sentiment
+    # container_name removed to allow multi-stack deployments
+    env_file: 
+      - ../env/${ENV:-local}/shared.env
+      - ../env/${ENV:-local}/sentiment.env
+    environment:
+      # Ensure apps/common Settings resolves to the same profile inside the container
+      - RANKALPHA_ENV=${ENV:-local}
+      - OTEL_EXPORTER_OTLP_ENDPOINT=http://otel-collector:4317
+      - OTEL_EXPORTER_OTLP_INSECURE=true
+      - OTEL_RESOURCE_ATTRIBUTES=deployment.environment=${ENV:-local}
+      - OTEL_SERVICE_NAME=rankalpha-sentiment
+      # Keep the internal scrape port stable for Prometheus; override host ports instead.
+      - OBSERVABILITY_METRICS_PORT=9102
+    depends_on:
+      - database
+      - cache
+    volumes: 
+      - company_reports:/data/company_reports
+      - analysis_schedule:/data/analysis_schedule
+      - sentiment_logs:/data/logs
+      # Provide env files inside container for Settings(model_config.env_file) discovery
+      - ../env:/app/env:ro
+    expose:
+      - "9102"
+    networks:
+      - rankalpha_backend_network
+    restart: unless-stopped
+    working_dir: /app/apps/sentiment
+    command: ["uv", "run", "main.py"]
+    # Allow containers to reach services running on the host via 'host.docker.internal'
+    # On Linux this requires Docker 20.10+; harmless on Mac/Windows where the alias already exists.
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  frontend:
+    <<: *restart_unless_stopped
+    build:
+      context: ../apps/frontend
+      dockerfile: Dockerfile
+      args:
+        # NOTE: `env_file:` below affects runtime only. Build args come from Compose interpolation
+        # (shell env / `--env-file` / project .env). Put these in your `.compose.env` for CI/prod builds.
+        NEXT_PUBLIC_API_URL: http://api:${API_PORT:-6080}
+        NEXTAUTH_URL: ${NEXTAUTH_URL:-http://localhost:3000}
+        NEXT_PUBLIC_SITE_URL: ${NEXT_PUBLIC_SITE_URL:-http://localhost:3000}
+        NEXT_PUBLIC_GTM_ID: ${NEXT_PUBLIC_GTM_ID:-}
+        NEXT_PUBLIC_SHOW_RAW_DATA: ${NEXT_PUBLIC_SHOW_RAW_DATA:-true}
+    # container_name removed to allow multi-stack deployments
+    env_file:
+      - ../env/${ENV:-local}/frontend.env
+    environment:
+      - NEXT_PUBLIC_API_URL=http://api:${API_PORT:-6080}
+      - INTERNAL_API_URL=http://api:${API_PORT:-6080}
+      - NEXT_PUBLIC_GTM_ID=${NEXT_PUBLIC_GTM_ID:-}
+      - NEXT_PUBLIC_SHOW_RAW_DATA=${NEXT_PUBLIC_SHOW_RAW_DATA:-true}
+      # Token for /api/refresh-data protection (required; see apps/frontend/README.md)
+      - FRONTEND_REFRESH_TOKEN=${FRONTEND_REFRESH_TOKEN:-}
+      # Cloudflare Turnstile (optional; enable by setting values via --env-file or environment)
+      - NEXT_PUBLIC_TURNSTILE_SITE_KEY=${NEXT_PUBLIC_TURNSTILE_SITE_KEY:-}
+      - TURNSTILE_SECRET_KEY=${TURNSTILE_SECRET_KEY:-}
+      # Resend (preferred email provider)
+      - RESEND_API_KEY=${RESEND_API_KEY:-}
+      - RESEND_FROM=${RESEND_FROM:-}
+      - RESEND_TO=${RESEND_TO:-}
+      # Optional overrides (take precedence over RESEND_*)
+      - CONTACT_FROM=${CONTACT_FROM:-}
+      - CONTACT_TO=${CONTACT_TO:-}
+      # SMTP (optional; used by contact form if RESEND_API_KEY is not set)
+      - SMTP_HOST=${SMTP_HOST:-}
+      - SMTP_PORT=${SMTP_PORT:-587}
+      - SMTP_USER=${SMTP_USER:-}
+      - SMTP_PASS=${SMTP_PASS:-}
+      - SMTP_SECURE=${SMTP_SECURE:-false}
+      - SMTP_DEBUG=${SMTP_DEBUG:-false}
+      - PORT=${FRONTEND_PORT:-3000}
+    depends_on:
+      api:
+        condition: service_healthy
+    ports:
+      - "${FRONTEND_PORT:-3000}:${FRONTEND_PORT:-3000}"
+    networks:
+      - rankalpha_backend_network
+    restart: unless-stopped
+    healthcheck:
+      # Use compose-time substitution of FRONTEND_PORT so the correct internal port is checked
+      test: ["CMD-SHELL", "curl -f http://localhost:${FRONTEND_PORT:-3000}"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  broker:
+    <<: *restart_unless_stopped
+    build:
+      context: ..
+      dockerfile: apps/broker/Dockerfile
+    image: rankalpha_broker
+    depends_on:
+      - database
+      - cache
+    env_file:
+      # Shared settings (DB/Gmail/OpenAI/etc) and broker-specific secrets
+      - ../env/${ENV:-local}/shared.env
+      - ../env/${ENV:-local}/broker.env
+    environment:
+      - RANKALPHA_ENV=${ENV:-local}
+      # Service port inside the container
+      - PORT=${BROKER_PORT:-8000}
+      - OTEL_EXPORTER_OTLP_ENDPOINT=http://otel-collector:4317
+      - OTEL_EXPORTER_OTLP_INSECURE=true
+      - OTEL_RESOURCE_ATTRIBUTES=deployment.environment=${ENV:-local}
+      - OTEL_SERVICE_NAME=rankalpha-broker
+    ports:
+      - "${BROKER_PORT:-8000}:${BROKER_PORT:-8000}"
+    networks:
+      - rankalpha_backend_network
+    # Provide env profiles (and broker keys) at runtime (not baked into the image)
+    volumes:
+      - ../env:/app/env:ro
+    healthcheck:
+      test: ["CMD-SHELL", "curl -sf http://localhost:${BROKER_PORT:-8000}/health || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
+    logging:
+      driver: json-file
+      options:
+        max-size: "50m"
+        max-file: "10"
+
+  broker-runner:
+    <<: *restart_unless_stopped
+    build:
+      context: ..
+      dockerfile: apps/broker/Dockerfile
+    image: rankalpha_broker
+    depends_on:
+      - database
+      - cache
+    env_file:
+      - ../env/${ENV:-local}/shared.env
+      - ../env/${ENV:-local}/broker.env
+    environment:
+      - RANKALPHA_ENV=${ENV:-local}
+      - ACCOUNT_NUMBER=${BROKER_ACCOUNT:-DU-changeme}
+      - BROKER_RUNNER_HEALTH_PORT=${BROKER_RUNNER_HEALTH_PORT:-8795}
+    # Run a dedicated per-account executor (no HTTP service)
+    command: ["uv", "run", "-m", "tradeexec.trade_execution", "${BROKER_ACCOUNT:-DU-changeme}"]
+    volumes:
+      - ../env:/app/env:ro
+    ports:
+      - "${BROKER_RUNNER_HEALTH_PORT_HOST:-8795}:${BROKER_RUNNER_HEALTH_PORT:-8795}"
+    healthcheck:
+      test: ["CMD-SHELL", "curl -sf http://localhost:${BROKER_RUNNER_HEALTH_PORT:-8795}/health || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    networks:
+      - rankalpha_backend_network
+    restart: unless-stopped
+
+  tempo:
+    <<: *restart_unless_stopped
+    image: grafana/tempo:2.5.0
+    command: ["-config.file=/etc/tempo/tempo.yaml"]
+    volumes:
+      - tempo_data:/var/tempo
+      - ../docker/observability/tempo/tempo.yaml:/etc/tempo/tempo.yaml:ro
+    networks:
+      - rankalpha_backend_network
+    restart: unless-stopped
+
+  otel-collector:
+    <<: *restart_unless_stopped
+    image: otel/opentelemetry-collector-contrib:0.107.0
+    command: ["--config=/etc/otelcol/config.yaml"]
+    depends_on:
+      - tempo
+    volumes:
+      - ../docker/observability/otel-collector/config.yaml:/etc/otelcol/config.yaml:ro
+    ports:
+      - "${OTEL_COLLECTOR_GRPC_PORT:-4317}:4317"
+      - "${OTEL_COLLECTOR_HTTP_PORT:-4318}:4318"
+      - "${OTEL_COLLECTOR_PROM_PORT:-9464}:9464"
+    networks:
+      - rankalpha_backend_network
+    restart: unless-stopped
+
+  loki:
+    <<: *restart_unless_stopped
+    image: grafana/loki:3.0.0
+    command: ["-config.file=/etc/loki/config.yaml"]
+    volumes:
+      - loki_data:/loki
+      - ../docker/observability/loki/loki-config.yaml:/etc/loki/config.yaml:ro
+    ports:
+      - "${LOKI_PORT:-3100}:3100"
+    networks:
+      - rankalpha_backend_network
+    restart: unless-stopped
+
+  promtail:
+    <<: *restart_unless_stopped
+    image: grafana/promtail:3.0.0
+    command: ["-config.file=/etc/promtail/config.yml"]
+    depends_on:
+      - loki
+    volumes:
+      - ../docker/observability/promtail/config.yml:/etc/promtail/config.yml:ro
+      - /var/log:/var/log:ro
+      - /var/lib/docker/containers:/var/lib/docker/containers:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    networks:
+      - rankalpha_backend_network
+    restart: unless-stopped
+
+  cadvisor:
+    image: gcr.io/cadvisor/cadvisor:v0.49.1
+    privileged: true
+    restart: unless-stopped
+    ports:
+      - "${CADVISOR_PORT:-8085}:8080"
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:rw
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+    networks:
+      - rankalpha_backend_network
+
+  prometheus:
+    image: prom/prometheus:v2.54.0
+    restart: unless-stopped
+    user: "0:0"
+    depends_on:
+      - otel-collector
+      - cadvisor
+      - api
+    command:
+      - "--config.file=/etc/prometheus/prometheus.yml"
+      - "--storage.tsdb.retention.time=${PROMETHEUS_RETENTION_TIME:-15d}"
+      - "--storage.tsdb.retention.size=${PROMETHEUS_RETENTION_SIZE:-0}"
+      - "--web.enable-lifecycle"
+    volumes:
+      - prometheus_data:/prometheus
+      - ../docker/observability/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    ports:
+      - "${PROMETHEUS_PORT:-9090}:9090"
+    networks:
+      - rankalpha_backend_network
+
+  grafana:
+    image: grafana/grafana:11.2.0
+    restart: unless-stopped
+    depends_on:
+      - prometheus
+      - loki
+      - tempo
+    env_file:
+      # Reuse shared SMTP_* settings (Gmail, etc.) for Grafana alerting.
+      - ../env/${ENV:-local}/shared.env
+    environment:
+      - GF_SECURITY_ADMIN_USER=${GRAFANA_ADMIN_USER:-admin}
+      - GF_SECURITY_ADMIN_PASSWORD=${GRAFANA_ADMIN_PASSWORD:-<change_me>}
+      - GF_PATHS_PROVISIONING=/etc/grafana/provisioning
+    entrypoint: ["/bin/sh", "/opt/rankalpha/grafana-entrypoint.sh"]
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ../docker/observability/grafana/provisioning:/etc/grafana/provisioning:ro
+      - ../docker/observability/grafana/dashboards:/var/lib/grafana/dashboards:ro
+      - ../docker/observability/grafana/entrypoint.sh:/opt/rankalpha/grafana-entrypoint.sh:ro
+    ports:
+      - "${GRAFANA_PORT:-3101}:3000"
+    networks:
+      - rankalpha_backend_network
+
+
+volumes:
+  rankalpha_data:
+    driver: local
+  postgres_data:
+    driver: local
+  prices_data:
+    driver: local
+  company_reports:
+    driver: local
+  analysis_schedule:
+    driver: local
+  sentiment_logs:
+    driver: local
+  airflow_logs:
+    driver: local
+  prometheus_data:
+    driver: local
+  grafana_data:
+    driver: local
+  loki_data:
+    driver: local
+  tempo_data:
+    driver: local
+
+networks:
+  airflow_net:
+    driver: bridge
+  rankalpha_backend_network:
+    driver: bridge
+    # external: true
+
+      
+  

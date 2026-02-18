@@ -1,0 +1,319 @@
+import json
+import os
+import logging
+from logging.handlers import RotatingFileHandler
+from typing import Any, List, Optional, Type, Union
+
+from openai import AsyncOpenAI
+from mcp_agent.workflows.llm.augmented_llm import (
+    AugmentedLLM,
+    MessageParamT,
+    ModelT,
+    RequestParams,
+)
+from mcp.types import CallToolRequest, CallToolRequestParams
+from mcp_agent.logging.logger import get_logger
+
+
+def _map_rating_to_numeric(rating: str) -> int:
+    """Map rating string to numeric value expected by the model."""
+    rating_map = {
+        "EXCELLENT": 0,
+        "GOOD": 1,
+        "FAIR": 2,
+        "POOR": 3,
+    }
+    return rating_map.get(rating.upper(), 3)  # Default to 'POOR' (3) if invalid
+
+
+class Gpt5ResponsesPlannerLLM(AugmentedLLM[MessageParamT, str]):
+    provider: str | None = "OpenAI"
+    logger = get_logger(__name__)
+
+    @staticmethod
+    def _to_snake(s: str) -> str:
+        s2 = s.replace("-", " ").replace("/", " ").replace(".", " ")
+        parts = [p for p in s2.strip().lower().split() if p]
+        return "_".join(parts) if parts else s.strip()
+
+    @classmethod
+    def _normalize_plan_data(cls, data: dict) -> dict:
+        """Normalize common planner JSON variants to match Orchestrator schema."""
+        if not isinstance(data, dict):
+            return {"steps": [], "is_complete": False}
+        out = dict(data)
+        steps = out.get("steps")
+        if not isinstance(steps, list):
+            steps = []
+        normalized_steps: list[dict] = []
+        for st in steps:
+            if not isinstance(st, dict):
+                continue
+            desc = st.get("description")
+            tasks = st.get("tasks")
+            if tasks is None and isinstance(st.get("subtasks"), list):
+                tasks = st.get("subtasks")
+            if not isinstance(tasks, list):
+                tasks = []
+            normalized_tasks: list[dict] = []
+            for t in tasks:
+                if not isinstance(t, dict):
+                    continue
+                tdesc = t.get("description")
+                agent = t.get("agent")
+                if isinstance(agent, str):
+                    agen_lower = agent.lower()
+                    snake = cls._to_snake(agent)
+                    if ("evaluatoroptimizerllm" in agen_lower) or ("research_quality" in agen_lower):
+                        agent_fixed = "research_quality_controller"
+                    elif ("financial" in agen_lower and "analyst" in agen_lower):
+                        agent_fixed = "financial_analyst"
+                    elif ("report" in agen_lower and "writer" in agen_lower):
+                        agent_fixed = "report_writer"
+                    else:
+                        agent_fixed = snake
+                else:
+                    agent_fixed = "research_quality_controller"
+                normalized_tasks.append({"description": tdesc, "agent": agent_fixed})
+            normalized_steps.append({"description": desc, "tasks": normalized_tasks})
+        out["steps"] = normalized_steps
+        is_complete = out.get("is_complete", False)
+        if isinstance(is_complete, str):
+            is_complete = is_complete.strip().lower() in {"true", "1", "yes", "on"}
+        out["is_complete"] = bool(is_complete)
+        return out
+
+    async def _call_openai(
+        self,
+        message: Union[str, MessageParamT, List[MessageParamT]],
+        request_params: RequestParams,
+        response_model: Optional[Type[ModelT]] = None,
+    ) -> str:
+        log_prompts = str(os.getenv("SENTIMENT_LOG_PROMPTS", "")).lower() in {"1", "true", "yes", "on"}
+        if log_prompts:
+            try:
+                self.logger.setLevel(logging.DEBUG)
+            except Exception:
+                pass
+        prompt_logger = logging.getLogger("sentiment.prompts")
+        if log_prompts:
+            prompt_logger.setLevel(logging.DEBUG)
+            try:
+                log_path = os.getenv("SENTIMENT_LOG_FILE")
+                if log_path:
+                    for h in prompt_logger.handlers:
+                        if isinstance(h, RotatingFileHandler) and getattr(h, "baseFilename", None) == log_path:
+                            break
+                    else:
+                        fh = RotatingFileHandler(log_path, maxBytes=10 * 1024 * 1024, backupCount=5, encoding="utf-8")
+                        fh.setLevel(logging.DEBUG)
+                        fh.setFormatter(logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s"))
+                        prompt_logger.addHandler(fh)
+                        prompt_logger.propagate = False
+            except Exception:
+                pass
+
+        # Collect messages as Responses API input
+        messages: List[dict[str, Any]] = []
+        if self.instruction:
+            messages.append({
+                "role": "developer",
+                "content": [{"type": "input_text", "text": self.instruction}],
+            })
+
+        if isinstance(message, str):
+            messages.append({
+                "role": "user",
+                "content": [{"type": "input_text", "text": message}],
+            })
+        elif isinstance(message, list):
+            joined = "\n".join(str(m) for m in message)
+            messages.append({
+                "role": "user",
+                "content": [{"type": "input_text", "text": joined}],
+            })
+        else:
+            messages.append({
+                "role": "user",
+                "content": [{"type": "input_text", "text": str(message)}],
+            })
+
+        model = request_params.model or (self.default_request_params.model if self.default_request_params else None)
+        if not model:
+            raise ValueError("Planner model not specified")
+
+        kwargs: dict[str, Any] = {"model": model, "input": messages, "stream": False}
+        if hasattr(request_params, "maxTokens") and request_params.maxTokens:
+            kwargs["max_output_tokens"] = int(request_params.maxTokens)
+        else:
+            kwargs["max_output_tokens"] = 2048
+
+        # Reasoning effort from context.openai if present
+        try:
+            effort = getattr(self.context.config.openai, "reasoning_effort", None)
+            if effort:
+                kwargs["reasoning"] = {"effort": effort}
+        except Exception:
+            pass
+
+        # Prefer JSON-only responses when a structured model is requested
+        if response_model is not None:
+            try:
+                schema = response_model.model_json_schema()
+                _disallow_additional_props(schema)
+                kwargs["response_format"] = {
+                    "type": "json_schema",
+                    "json_schema": {
+                        "name": response_model.__name__,
+                        "strict": True,
+                        "schema": schema,
+                    },
+                }
+                kwargs["temperature"] = 0.0
+            except Exception:
+                kwargs["response_format"] = {"type": "json_object"}
+
+        # Build client from context config
+        config = getattr(self.context, "config", None)
+        api_key = getattr(getattr(config, "openai", None), "api_key", None)
+        base_url = getattr(getattr(config, "openai", None), "base_url", None)
+        client = AsyncOpenAI(api_key=api_key, base_url=base_url) if base_url else AsyncOpenAI(api_key=api_key)
+
+        try:
+            safe_kwargs = {k: (v if k not in {"input"} else f"messages[{len(v)}]") for k, v in kwargs.items()}
+            agent_name = getattr(self.agent, "name", "unknown")
+            self.logger.debug(
+                "BEGIN OAI Responses.create",
+                data={
+                    "agent": agent_name,
+                    "model": kwargs.get("model"),
+                    "max_output_tokens": kwargs.get("max_output_tokens"),
+                    "reasoning": kwargs.get("reasoning"),
+                    "messages_count": len(messages),
+                    "response_format": kwargs.get("response_format"),
+                },
+            )
+            self.logger.debug("Responses.create kwargs:", data=safe_kwargs)
+            if log_prompts:
+                try:
+                    msgs_json = json.dumps(messages, ensure_ascii=False)
+                except Exception:
+                    msgs_json = str(messages)
+                self.logger.debug(
+                    "PROMPT messages",
+                    data={
+                        "agent": agent_name,
+                        "model": kwargs.get("model"),
+                        "messages_json": msgs_json,
+                    },
+                )
+        except Exception:
+            pass
+
+        try:
+            resp = await client.responses.create(**kwargs)  # type: ignore[arg-type]
+        except TypeError as e:
+            if "response_format" in str(e):
+                try:
+                    _ = kwargs.pop("response_format", None)
+                    self.logger.debug(
+                        "Responses.create: retrying without response_format (unsupported by SDK)",
+                        data={"had_response_format": True},
+                    )
+                except Exception:
+                    pass
+                resp = await client.responses.create(**kwargs)  # type: ignore[arg-type]
+            else:
+                raise
+
+        # Extract text output
+        try:
+            text = resp.output_text  # type: ignore[attr-defined]
+            try:
+                preview = (str(text)[:500] + "…") if text and len(str(text)) > 500 else (str(text) if text else "")
+                usage = getattr(resp, "usage", None)
+                self.logger.debug(
+                    "END OAI Responses.create",
+                    data={
+                        "agent": getattr(self.agent, "name", "unknown"),
+                        "id": getattr(resp, "id", None),
+                        "status": getattr(resp, "status", None),
+                        "usage": getattr(usage, "model_dump", lambda: None)(),
+                        "output_preview": preview,
+                    },
+                )
+            except Exception:
+                pass
+            if text:
+                return str(text)
+        except Exception:
+            pass
+
+        # Fallback extraction
+        try:
+            parts = []
+            for item in getattr(resp, "output", []) or []:
+                role = getattr(item, "role", None)
+                for c in getattr(item, "content", []) or []:
+                    ctype = getattr(c, "type", None)
+                    if ctype == "output_text" and (role in (None, "assistant")):
+                        t = getattr(getattr(c, "text", None), "value", None)
+                        if t:
+                            parts.append(t)
+            try:
+                joined = "\n".join(parts)
+                preview = (joined[:500] + "…") if len(joined) > 500 else joined
+                self.logger.debug(
+                    "END OAI Responses.create (assembled)",
+                    data={
+                        "agent": getattr(self.agent, "name", "unknown"),
+                        "output_preview": preview,
+                    },
+                )
+                return joined
+            except Exception:
+                return "\n".join(parts)
+        except Exception:
+            return ""
+
+    async def generate(
+        self,
+        message: Union[str, MessageParamT, List[MessageParamT]],
+        request_params: RequestParams | None = None,
+    ) -> List[str]:
+        response = await self._call_openai(message, request_params)
+        return [response] if response else []
+
+    async def generate_str(
+        self,
+        message: Union[str, MessageParamT, List[MessageParamT]],
+        request_params: RequestParams | None = None,
+    ) -> str:
+        result = await self.generate(message, request_params)
+        return result[0] if result else ""
+
+    async def generate_structured(
+        self,
+        message: Union[str, MessageParamT, List[MessageParamT]],
+        response_model: Type[ModelT],
+        request_params: RequestParams | None = None,
+    ) -> ModelT:
+        result = await self.generate(message, request_params)
+        if result:
+            try:
+                data = json.loads(result[0])
+
+                # Map the rating field if it exists
+                if 'rating' in data:
+                    data['rating'] = _map_rating_to_numeric(data['rating'])  # Ensure rating is numeric
+
+                # Now pass the processed data to the model for validation
+                return response_model.model_validate(data)  # type: ignore[attr-defined]
+            except json.JSONDecodeError as e:
+                self.logger.error(f"Error decoding JSON response: {result[0]}")
+                raise ValueError("Failed to decode the response into a valid dictionary")
+            except Exception as e:
+                self.logger.error(f"Error validating structured response: {e}")
+                raise ValueError("Validation failed for the structured response")
+        else:
+            raise ValueError("No result returned from the generate method")

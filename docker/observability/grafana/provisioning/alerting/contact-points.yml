@@ -1,0 +1,13 @@
+apiVersion: 1
+
+contactPoints:
+  - orgId: 1
+    name: rankalpha-email
+    receivers:
+      - uid: rankalpha-email
+        type: email
+        disableResolveMessage: false
+        settings:
+          addresses: ${SMTP_TO_ALERTS}
+          singleEmail: true
+

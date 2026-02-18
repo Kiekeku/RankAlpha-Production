@@ -1,0 +1,231 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": "-- Grafana --",
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "id": null,
+  "links": [],
+  "panels": [
+    {
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "fieldConfig": {
+        "defaults": { "unit": "percentunit", "min": 0, "max": 1 },
+        "overrides": []
+      },
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 0 },
+      "id": 1,
+      "options": {
+        "legend": { "displayMode": "list", "placement": "bottom" },
+        "tooltip": { "mode": "single", "sort": "none" }
+      },
+      "targets": [
+        {
+          "expr": "rankalpha_ingestion_stale_symbol_ratio",
+          "legendFormat": "Ingestion stale ratio",
+          "refId": "A"
+        }
+      ],
+      "title": "Ingestion Stale Prices",
+      "type": "timeseries"
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "fieldConfig": {
+        "defaults": { "unit": "percentunit", "min": 0, "max": 1 },
+        "overrides": []
+      },
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 0 },
+      "id": 2,
+      "options": {
+        "legend": { "displayMode": "list", "placement": "bottom" },
+        "tooltip": { "mode": "single", "sort": "none" }
+      },
+      "targets": [
+        {
+          "expr": "rankalpha_scorer_required_score_missing_ratio",
+          "legendFormat": "Scorer missing required ratio",
+          "refId": "A"
+        }
+      ],
+      "title": "Scorer Missing Required Scores (Momentum + Value)",
+      "type": "timeseries"
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "fieldConfig": { "defaults": { "unit": "ops" }, "overrides": [] },
+      "gridPos": { "h": 10, "w": 12, "x": 0, "y": 8 },
+      "id": 3,
+      "options": {
+        "legend": { "displayMode": "list", "placement": "bottom" },
+        "tooltip": { "mode": "single", "sort": "none" }
+      },
+      "targets": [
+        {
+          "expr": "sum by (tool) (rate(rankalpha_sentiment_tool_calls_total{outcome=\"error\"}[10m]))",
+          "legendFormat": "{{tool}}",
+          "refId": "A"
+        }
+      ],
+      "title": "Sentiment Tool Errors (rate, 10m)",
+      "type": "timeseries"
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "fieldConfig": { "defaults": { "unit": "short" }, "overrides": [] },
+      "gridPos": { "h": 10, "w": 12, "x": 12, "y": 8 },
+      "id": 4,
+      "options": {
+        "legend": { "displayMode": "list", "placement": "bottom" },
+        "tooltip": { "mode": "single", "sort": "none" }
+      },
+      "targets": [
+        {
+          "expr": "sum(increase(rankalpha_sentiment_reports_total{status=\"error\"}[1h]))",
+          "legendFormat": "Failures (1h)",
+          "refId": "A"
+        }
+      ],
+      "title": "Sentiment Report Failures",
+      "type": "timeseries"
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "fieldConfig": { "defaults": { "unit": "short" }, "overrides": [] },
+      "gridPos": { "h": 10, "w": 12, "x": 0, "y": 18 },
+      "id": 5,
+      "options": {
+        "legend": { "displayMode": "list", "placement": "bottom" },
+        "tooltip": { "mode": "single", "sort": "none" }
+      },
+      "targets": [
+        {
+          "expr": "sum(increase(rankalpha_broker_price_snapshot_errors_total{kind=\"no_contracts\"}[1h]))",
+          "legendFormat": "Broker /price no_contracts (1h)",
+          "refId": "A"
+        },
+        {
+          "expr": "sum(increase(rankalpha_broker_prev_close_errors_total{kind=\"no_contracts\"}[1h]))",
+          "legendFormat": "Broker /price/prev-close no_contracts (1h)",
+          "refId": "B"
+        }
+      ],
+      "title": "Broker Delisted/No-Contract Errors (audited; not Sentry)",
+      "type": "timeseries"
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "fieldConfig": { "defaults": { "unit": "short" }, "overrides": [] },
+      "gridPos": { "h": 10, "w": 12, "x": 12, "y": 18 },
+      "id": 6,
+      "options": {
+        "legend": { "displayMode": "list", "placement": "bottom" },
+        "tooltip": { "mode": "single", "sort": "none" }
+      },
+      "targets": [
+        {
+          "expr": "sum(increase(rankalpha_broker_price_snapshot_errors_total{kind=\"no_contracts\", suppressed=\"true\"}[24h]))",
+          "legendFormat": "Snapshot suppressed (24h)",
+          "refId": "A"
+        },
+        {
+          "expr": "sum(increase(rankalpha_broker_prev_close_errors_total{kind=\"no_contracts\", suppressed=\"true\"}[24h]))",
+          "legendFormat": "Prev-close suppressed (24h)",
+          "refId": "B"
+        }
+      ],
+      "title": "Broker No-Contracts Suppressed Totals (24h)",
+      "type": "timeseries"
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "fieldConfig": { "defaults": { "unit": "short" }, "overrides": [] },
+      "gridPos": { "h": 10, "w": 24, "x": 0, "y": 28 },
+      "id": 8,
+      "options": {
+        "legend": { "displayMode": "list", "placement": "bottom" },
+        "tooltip": { "mode": "single", "sort": "none" }
+      },
+      "targets": [
+        {
+          "expr": "sum by (kind) (increase(rankalpha_broker_price_snapshot_errors_total{suppressed=\"true\"}[1h]))",
+          "legendFormat": "Snapshot suppressed {{kind}} (1h)",
+          "refId": "A"
+        },
+        {
+          "expr": "sum by (kind) (increase(rankalpha_broker_prev_close_errors_total{suppressed=\"true\"}[1h]))",
+          "legendFormat": "Prev-close suppressed {{kind}} (1h)",
+          "refId": "B"
+        }
+      ],
+      "title": "Broker Maintenance/Network Errors (suppressed; not Sentry)",
+      "type": "timeseries"
+    },
+    {
+      "datasource": { "type": "loki", "uid": "loki" },
+      "fieldConfig": { "defaults": {}, "overrides": [] },
+      "gridPos": { "h": 12, "w": 24, "x": 0, "y": 38 },
+      "id": 7,
+      "options": {
+        "dedupStrategy": "none",
+        "enableLogDetails": true,
+        "prettifyLogMessage": false,
+        "showCommonLabels": false,
+        "showLabels": false,
+        "showTime": true,
+        "sortOrder": "Descending",
+        "wrapLogMessage": true
+      },
+      "targets": [
+        {
+          "expr": "{job=\"docker\",cluster=\"rankalpha\"} |~ \"(Snapshot quote missing contract|Prev-close fetch failed \\\\((no contracts)\\\\)|Snapshot quote failed during quiet hours|Prev-close fetch failed during quiet hours|Remote end closed connection without response)\"",
+          "refId": "A"
+        }
+      ],
+      "title": "Broker No-Contracts Logs (Loki)",
+      "type": "logs"
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "fieldConfig": { "defaults": { "unit": "short" }, "overrides": [] },
+      "gridPos": { "h": 8, "w": 24, "x": 0, "y": 50 },
+      "id": 9,
+      "options": {
+        "legend": { "displayMode": "list", "placement": "bottom" },
+        "tooltip": { "mode": "single", "sort": "none" }
+      },
+      "targets": [
+        {
+          "expr": "sum by (provider, kind) (increase(rankalpha_ingestion_expected_missing_total[1h]))",
+          "legendFormat": "{{provider}} {{kind}} (1h)",
+          "refId": "A"
+        }
+      ],
+      "title": "Ingestion Expected Missing (yfinance delisted/etc)",
+      "type": "timeseries"
+    }
+  ],
+  "refresh": "30s",
+  "schemaVersion": 39,
+  "style": "dark",
+  "tags": ["rankalpha", "errors"],
+  "templating": { "list": [] },
+  "time": { "from": "now-24h", "to": "now" },
+  "timepicker": {},
+  "timezone": "",
+  "title": "RankAlpha Errors & Data Quality",
+  "uid": "rankalpha-errors",
+  "version": 1,
+  "weekStart": ""
+}

@@ -1,0 +1,2 @@
+FROM flyway/flyway:11.16
+COPY docker/database/sql/migrations /flyway/sql

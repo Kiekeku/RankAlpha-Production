@@ -1,0 +1,10 @@
+{
+    "python.analysis.extraPaths": [
+        "./apps/common/src"
+    ],
+    "python.defaultInterpreterPath": "./apps/common/.venv/Scripts/python.exe",  
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.diagnosticSeverityOverrides": {
+    "reportOperatorNotSupported": "none"
+    }
+}

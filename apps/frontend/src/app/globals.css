@@ -1,0 +1,178 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Finance‑oriented light theme */
+    --background: 0 0% 100%; /* white */
+    --foreground: 222 47% 11%; /* near‑black */
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    --primary: 152 76% 35%; /* emerald 600 */
+    --primary-foreground: 0 0% 100%; /* white */
+    --secondary: 210 28% 97%; /* slate-50 */
+    --secondary-foreground: 222 47% 11%;
+    --muted: 210 28% 96%; /* subtle panels */
+    --muted-foreground: 215 16% 47%;
+    --accent: 210 40% 96%;
+    --accent-foreground: 222 47% 11%;
+    --destructive: 0 84% 55%; /* red 500 */
+    --destructive-foreground: 0 0% 100%;
+    --border: 214 32% 91%; /* slate‑200 */
+    --input: 214 32% 91%;
+    --ring: 152 76% 35%;
+    --radius: 0.5rem;
+
+    /* Finance semantic tokens */
+    --gain: 152 76% 35%;        /* emerald 600 */
+    --gain-soft: 152 76% 90%;   /* tint */
+    --loss: 0 84% 55%;          /* red 500 */
+    --loss-soft: 0 84% 95%;
+    --neutral-soft: 210 28% 97%;
+    --outline: 222 47% 11%;
+
+    /* Design system: semantic status tokens */
+    --status-success: var(--gain);
+    --status-success-soft: var(--gain-soft);
+    --status-success-foreground: var(--gain);
+
+    --status-danger: var(--loss);
+    --status-danger-soft: var(--loss-soft);
+    --status-danger-foreground: var(--loss);
+
+    --status-warning: 38 92% 50%;
+    --status-warning-soft: 38 92% 95%;
+    --status-warning-foreground: 25 95% 20%;
+
+    --status-info: 199 89% 48%;
+    --status-info-soft: 199 89% 95%;
+    --status-info-foreground: 204 80% 25%;
+
+    --status-model: 270 91% 65%;
+    --status-model-soft: 270 91% 95%;
+    --status-model-foreground: 270 80% 28%;
+  }
+
+  .dark {
+    /* Finance‑oriented dark theme (flat, high-legibility canvas) */
+    --background: 218 36% 3%;   /* slightly darker canvas */
+    --foreground: 210 40% 96%;  /* slate‑100 */
+    --card: 222 45% 10%;       /* slightly lighter surfaces */
+    --card-foreground: 210 40% 96%;
+    --popover: 222 45% 9%;
+    --popover-foreground: 210 40% 96%;
+    --primary: 152 76% 45%;     /* emerald 500 (brighter for contrast) */
+    --primary-foreground: 222 47% 10%;
+    --secondary: 219 46% 15%;   /* elevated surface */
+    --secondary-foreground: 210 40% 96%;
+    --muted: 219 46% 15%;
+    --muted-foreground: 215 20% 72%;
+    --accent: 219 46% 15%;
+    --accent-foreground: 210 40% 96%;
+    --destructive: 0 63% 40%;
+    --destructive-foreground: 210 40% 96%;
+    --border: 218 24% 22%;      /* clearer separation */
+    --input: 218 24% 22%;
+    --ring: 152 76% 50%;
+
+    --gain: 152 76% 45%;
+    --gain-soft: 152 76% 14%;
+    --loss: 0 84% 60%;
+    --loss-soft: 0 84% 20%;
+    --neutral-soft: 219 46% 12%;
+    --outline: 0 0% 100%;
+
+    /* Dark-mode status bases (avoid overly bright solid fills) */
+    --status-warning: 38 92% 45%;
+    --status-info: 199 89% 42%;
+    --status-model: 270 91% 58%;
+
+    --status-warning-soft: 38 92% 18%;
+    --status-warning-foreground: 45 96% 80%;
+
+    --status-info-soft: 199 89% 16%;
+    --status-info-foreground: 199 96% 80%;
+
+    --status-model-soft: 270 91% 18%;
+    --status-model-foreground: 270 95% 85%;
+  }
+}
+
+@layer components {
+  .tab-nav {
+    @apply flex flex-wrap items-center gap-2 text-xs;
+  }
+
+  .tab-pill {
+    @apply rounded-full border border-outline/10 bg-card px-3 py-1 text-xs font-semibold text-muted-foreground transition;
+    @apply shadow-[inset_0_0_0_1px_transparent];
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background;
+  }
+
+  .tab-pill:hover {
+    @apply border-outline/30 text-foreground;
+  }
+
+  .tab-pill.is-active {
+    @apply border-outline/30 bg-secondary/60 text-foreground;
+    @apply shadow-none;
+  }
+
+  .data-table--sticky thead th {
+    @apply sticky top-0 z-10 bg-card;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  :focus-visible {
+    outline: 2px solid hsl(var(--ring));
+    outline-offset: 2px;
+  }
+  /* Normalize native form controls to theme tokens */
+  select, input, textarea {
+    @apply bg-background text-foreground border border-border;
+  }
+  select:focus, input:focus, textarea:focus {
+    @apply outline-none ring-2 ring-ring;
+  }
+  /* Style dropdown option lists for better legibility in dark mode */
+  select option {
+    background-color: hsl(var(--popover));
+    color: hsl(var(--popover-foreground));
+  }
+  main {
+    position: relative;
+    z-index: 0;
+  }
+  a {
+    color: hsl(var(--primary));
+    text-decoration-color: hsl(var(--primary) / 0.2);
+    text-decoration-thickness: 0.1em;
+    text-underline-offset: 0.2em;
+  }
+  a:hover {
+    text-decoration-color: hsl(var(--primary));
+  }
+  button {
+    @apply transition-all duration-150;
+  }
+  h1, h2, h3 {
+    @apply tracking-tight;
+  }
+  ::selection {
+    background-color: hsl(var(--primary) / 0.35);
+    color: hsl(var(--primary-foreground));
+  }
+}

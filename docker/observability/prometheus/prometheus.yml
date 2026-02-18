@@ -1,0 +1,71 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+scrape_configs:
+  - job_name: prometheus
+    static_configs:
+      - targets: ["prometheus:9090"]
+
+  - job_name: otel-collector
+    static_configs:
+      - targets: ["otel-collector:9464"]
+
+  - job_name: api
+    metrics_path: /metrics
+    static_configs:
+      - targets: ["api:6080"]
+
+  - job_name: broker
+    metrics_path: /metrics
+    static_configs:
+      # Broker may be configured to listen on 8000 (default) or 9000 (rankalpha-prod .compose.env).
+      - targets: ["broker:8000", "broker:9000"]
+
+  - job_name: batch-services
+    docker_sd_configs:
+      - host: unix:///var/run/docker.sock
+        refresh_interval: 15s
+    relabel_configs:
+      - source_labels: [__meta_docker_container_label_rankalpha_prometheus_scrape]
+        regex: "true"
+        action: keep
+      - source_labels: [__meta_docker_network_name]
+        regex: "(?:.*_)?rankalpha_backend_network"
+        action: keep
+      - source_labels: [__meta_docker_network_ip, __meta_docker_container_label_rankalpha_prometheus_port]
+        regex: "(.+);(.+)"
+        target_label: __address__
+        replacement: "$1:$2"
+      - source_labels: [__meta_docker_container_label_rankalpha_prometheus_path]
+        regex: "(.+)"
+        target_label: __metrics_path__
+        replacement: "$1"
+      - source_labels: [__meta_docker_container_label_rankalpha_prometheus_job]
+        regex: "(.+)"
+        target_label: job
+        replacement: "$1"
+      - source_labels: [__meta_docker_container_name]
+        regex: "/(.+)"
+        target_label: container
+        replacement: "$1"
+
+  - job_name: sentiment
+    static_configs:
+      - targets: ["sentiment:9102"]
+
+  - job_name: postgres
+    static_configs:
+      - targets: ["postgres-exporter:9187"]
+
+  - job_name: airflow-metadata
+    static_configs:
+      - targets: ["airflow-postgres-exporter:9188"]
+
+  - job_name: node
+    static_configs:
+      - targets: ["node-exporter:9100"]
+
+  - job_name: cadvisor
+    static_configs:
+      - targets: ["cadvisor:8080"]

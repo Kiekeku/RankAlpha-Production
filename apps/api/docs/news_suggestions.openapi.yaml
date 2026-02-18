@@ -1,0 +1,410 @@
+openapi: 3.1.0
+info:
+  title: RankAlpha Partner News Suggestions API
+  version: 1.0.0
+  description: |
+    Partner-facing endpoints for submitting news items, monitoring their processing status,
+    and performing duplicate checks prior to submission. These routes require an admin bearer
+    token or trusted service token. Responses include queue metadata so partners can track the
+    processing lifecycle inside RankAlpha.
+servers:
+  - url: https://api.rankalpha.example.com
+    description: Production
+  - url: https://api.rankalpha.dev
+    description: Staging / development
+tags:
+  - name: news-suggestions
+    description: Submit and monitor partner news suggestions
+security:
+  - bearerAuth: []
+paths:
+  /api/v1/news/suggestions:
+    post:
+      tags: [news-suggestions]
+      summary: Submit or replay a news suggestion
+      description: >
+        Idempotent submission of a news item. If a suggestion with the same `source_name`
+        and `idempotency_key` already exists, the request updates queue scheduling and
+        returns the existing record.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SuggestionCreateRequest'
+      responses:
+        '201':
+          description: Suggestion created or replayed
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Suggestion'
+        '400':
+          description: Invalid payload
+        '401':
+          description: Missing or invalid bearer token
+        '403':
+          description: Caller lacks admin/service privileges
+        '409':
+          description: Duplicate idempotency key without updated payload
+    get:
+      tags: [news-suggestions]
+      summary: List suggestions
+      parameters:
+        - in: query
+          name: status
+          schema:
+            type: string
+            enum: [pending, in_progress, accepted, rejected, merged]
+        - in: query
+          name: source
+          schema:
+            type: string
+        - in: query
+          name: page
+          schema:
+            type: integer
+            minimum: 1
+            default: 1
+        - in: query
+          name: page_size
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 200
+            default: 50
+      responses:
+        '200':
+          description: Paginated suggestion list
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuggestionListResponse'
+        '401':
+          description: Missing or invalid bearer token
+        '403':
+          description: Caller lacks admin/service privileges
+  /api/v1/news/suggestions/{suggestion_id}:
+    parameters:
+      - in: path
+        name: suggestion_id
+        required: true
+        schema:
+          type: string
+          format: uuid
+    get:
+      tags: [news-suggestions]
+      summary: Fetch suggestion details
+      responses:
+        '200':
+          description: Suggestion details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Suggestion'
+        '401':
+          description: Missing or invalid bearer token
+        '403':
+          description: Caller lacks admin/service privileges
+        '404':
+          description: Suggestion not found
+    put:
+      tags: [news-suggestions]
+      summary: Update suggestion metadata
+      description: Update snippet/body/status details prior to or after processing.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SuggestionUpdateRequest'
+      responses:
+        '200':
+          description: Updated suggestion
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Suggestion'
+        '401':
+          description: Missing or invalid bearer token
+        '403':
+          description: Caller lacks admin/service privileges
+        '404':
+          description: Suggestion not found
+  /api/v1/news/suggestions/dedupe-check:
+    post:
+      tags: [news-suggestions]
+      summary: Preflight duplicate check
+      description: >
+        Returns matching raw articles, events, or existing suggestions that share the same
+        canonical URL or text fingerprint. Useful before ingesting large batches.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DedupeCheckRequest'
+      responses:
+        '200':
+          description: Duplicate matches (if any)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DedupeCheckResponse'
+        '401':
+          description: Missing or invalid bearer token
+        '403':
+          description: Caller lacks admin/service privileges
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+  schemas:
+    SuggestionCreateRequest:
+      type: object
+      required:
+        - source_name
+        - url
+        - title
+      properties:
+        source_name:
+          type: string
+          description: Partner/source identifier (e.g., ibkr, finviz)
+        url:
+          type: string
+          format: uri
+        title:
+          type: string
+        idempotency_key:
+          type: string
+          description: Reuse to replay/update a submission
+        submitter_reference:
+          type: string
+          description: Partner-side correlation identifier
+        snippet:
+          type: string
+        body_text:
+          type: string
+        published_at:
+          type: string
+          format: date-time
+        language:
+          type: string
+          description: ISO 639-1 language code (lowercase)
+          example: en
+        country:
+          type: string
+          description: ISO 3166-1 alpha-2 country code (uppercase)
+          example: US
+        raw_payload:
+          type: object
+          description: Optional structured payload for audit/debug
+        priority:
+          type: integer
+          minimum: -20
+          maximum: 20
+          default: 0
+          description: Higher values are processed sooner
+        run_after_ts:
+          type: string
+          format: date-time
+          description: Defer processing until this timestamp (UTC recommended)
+    SuggestionUpdateRequest:
+      type: object
+      properties:
+        snippet:
+          type: string
+        body_text:
+          type: string
+        status:
+          type: string
+          enum: [pending, in_progress, accepted, rejected, merged]
+        status_reason:
+          type: string
+        language:
+          type: string
+        country:
+          type: string
+        raw_payload:
+          type: object
+    QueueEntry:
+      type: object
+      properties:
+        queue_id:
+          type: string
+          format: uuid
+        status:
+          type: string
+          enum: [pending, in_progress, done, failed]
+        priority:
+          type: integer
+        enqueue_ts:
+          type: string
+          format: date-time
+        run_after_ts:
+          type: string
+          format: date-time
+        started_ts:
+          type: string
+          format: date-time
+          nullable: true
+        completed_ts:
+          type: string
+          format: date-time
+          nullable: true
+        attempts:
+          type: integer
+        last_error:
+          type: string
+          nullable: true
+        locked_by:
+          type: string
+          nullable: true
+        locked_ts:
+          type: string
+          format: date-time
+          nullable: true
+    Suggestion:
+      type: object
+      properties:
+        suggestion_id:
+          type: string
+          format: uuid
+        source_name:
+          type: string
+        submitter_reference:
+          type: string
+          nullable: true
+        idempotency_key:
+          type: string
+          nullable: true
+        status:
+          type: string
+          enum: [pending, in_progress, accepted, rejected, merged]
+        status_reason:
+          type: string
+          nullable: true
+        submitted_at:
+          type: string
+          format: date-time
+        updated_at:
+          type: string
+          format: date-time
+        processed_at:
+          type: string
+          format: date-time
+          nullable: true
+        url:
+          type: string
+        url_canonical:
+          type: string
+        title:
+          type: string
+        snippet:
+          type: string
+          nullable: true
+        body_text:
+          type: string
+          nullable: true
+        body_bytes:
+          type: integer
+          nullable: true
+        published_at:
+          type: string
+          format: date-time
+          nullable: true
+        language:
+          type: string
+          nullable: true
+        country:
+          type: string
+          nullable: true
+        raw_payload:
+          type: object
+          nullable: true
+        cluster_id:
+          type: string
+          format: uuid
+          nullable: true
+        event_id:
+          type: string
+          format: uuid
+          nullable: true
+        queue:
+          type: array
+          items:
+            $ref: '#/components/schemas/QueueEntry'
+    SuggestionListResponse:
+      type: object
+      properties:
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/Suggestion'
+        total:
+          type: integer
+        page:
+          type: integer
+        page_size:
+          type: integer
+    DedupeCheckRequest:
+      type: object
+      properties:
+        url:
+          type: string
+        title:
+          type: string
+        snippet:
+          type: string
+        body_text:
+          type: string
+        text_fingerprint:
+          type: integer
+        limit:
+          type: integer
+          minimum: 1
+          maximum: 50
+          default: 10
+    DedupeMatch:
+      type: object
+      properties:
+        match_type:
+          type: string
+          description: url | text_fingerprint | suggestion
+        url:
+          type: string
+          nullable: true
+        published_at:
+          type: string
+          format: date-time
+          nullable: true
+        source_domain:
+          type: string
+          nullable: true
+        raw_id:
+          type: string
+          format: uuid
+          nullable: true
+        event_id:
+          type: string
+          format: uuid
+          nullable: true
+        suggestion_id:
+          type: string
+          format: uuid
+          nullable: true
+        status:
+          type: string
+          nullable: true
+        source_name:
+          type: string
+          nullable: true
+    DedupeCheckResponse:
+      type: object
+      properties:
+        matches:
+          type: array
+          items:
+            $ref: '#/components/schemas/DedupeMatch'

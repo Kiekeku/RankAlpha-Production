@@ -1,0 +1,67 @@
+services:
+  api:
+    ports:
+      - "127.0.0.1:${API_PORT:-6080}:${API_PORT:-6080}"
+
+  database:
+    ports:
+      - "127.0.0.1:${DB_PORT_HOST:-6543}:${DB_PORT_CONTAINER:-5432}"
+
+  cache:
+    ports:
+      - "127.0.0.1:${REDIS_PORT_HOST:-6379}:${REDIS_PORT_HOST:-6379}"
+
+  rabbitmq:
+    ports:
+      - "127.0.0.1:${RABBITMQ_PORT_HOST:-5672}:${RABBITMQ_PORT_HOST:-5672}"
+      - "127.0.0.1:${RABBITMQ_MGMT_PORT_HOST:-15672}:${RABBITMQ_MGMT_PORT_HOST:-15672}"
+
+  airflow-web:
+    ports:
+      - "127.0.0.1:${AIRFLOW_WEB_PORT:-8080}:${AIRFLOW_WEB_PORT:-8080}"
+
+  airflow-scheduler:
+    ports:
+      - "127.0.0.1:${AIRFLOW_SCHEDULER_HEALTH_PORT:-8974}:${AIRFLOW_SCHEDULER_HEALTH_PORT_INTERNAL:-8974}"
+
+  sftp:
+    ports:
+      - "127.0.0.1:${SFTP_PORT_HOST:-2222}:${SFTP_PORT_HOST:-2222}"
+
+  frontend:
+    ports:
+      - "127.0.0.1:${FRONTEND_PORT:-3000}:${FRONTEND_PORT:-3000}"
+
+  broker:
+    ports:
+      - "127.0.0.1:${BROKER_PORT:-8000}:${BROKER_PORT:-8000}"
+
+  broker-runner:
+    ports:
+      - "127.0.0.1:${BROKER_RUNNER_HEALTH_PORT_HOST:-8795}:${BROKER_RUNNER_HEALTH_PORT:-8795}"
+
+  otel-collector:
+    ports:
+      - "127.0.0.1:${OTEL_COLLECTOR_GRPC_PORT:-4317}:${OTEL_COLLECTOR_GRPC_PORT:-4317}"
+      - "127.0.0.1:${OTEL_COLLECTOR_HTTP_PORT:-4318}:${OTEL_COLLECTOR_HTTP_PORT:-4318}"
+      - "127.0.0.1:${OTEL_COLLECTOR_PROM_PORT:-9464}:${OTEL_COLLECTOR_PROM_PORT:-9464}"
+
+  loki:
+    ports:
+      - "127.0.0.1:${LOKI_PORT:-3100}:3100"
+
+  cadvisor:
+    ports:
+      - "127.0.0.1:${CADVISOR_PORT:-8085}:8080"
+
+  prometheus:
+    ports:
+      - "127.0.0.1:${PROMETHEUS_PORT:-9090}:9090"
+
+  grafana:
+    ports:
+      - "127.0.0.1:${GRAFANA_PORT:-3101}:3000"
+
+networks:
+  rankalpha_backend_network: {}
+  airflow_net: {}

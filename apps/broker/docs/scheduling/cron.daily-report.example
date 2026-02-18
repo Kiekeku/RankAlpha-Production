@@ -1,0 +1,14 @@
+# Daily Report (Mon–Fri at 07:00 local time)
+# Copy to your crontab with:  crontab docs/scheduling/cron.daily-report.example
+
+SHELL=/bin/bash
+PATH=/usr/local/bin:/usr/bin:/bin
+
+# Repo root
+REPO=/path/to/ibkrwebapi
+
+# Option A: run Python module directly (uses .env in repo root)
+0 7 * * 1-5 cd "$REPO" && uv run -m tradeexec.reports.daily >> "$REPO"/logs/daily-report.log 2>&1
+
+# Option B: call the service API (if tradeexec.service is running) for a specific account
+# 0 7 * * 1-5 BROKER_SERVICE_TOKEN=<token> curl -sf -X POST http://localhost:8000/report/DU-changeme -H "X-RA-Service-Token: $BROKER_SERVICE_TOKEN" >> "$REPO"/logs/daily-report.log 2>&1

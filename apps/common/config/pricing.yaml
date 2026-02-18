@@ -1,0 +1,20 @@
+models:
+  # Examples; replace with your real negotiated or public rates.
+  '^gpt-4o.*':
+    input_per_1k: 0.00
+    output_per_1k: 0.00
+  '^gpt-4o-mini.*':
+    input_per_1k: 0.00
+    output_per_1k: 0.00
+  '^gpt-5.*':
+    input_per_1k: 0.00
+    output_per_1k: 0.00
+  '^claude-3.*':
+    input_per_1k: 0.00
+    output_per_1k: 0.00
+  'text-embedding.*':
+    input_per_1k: 0.00
+    output_per_1k: 0.00
+  'fallback':
+    input_per_1k: 0.00
+    output_per_1k: 0.00

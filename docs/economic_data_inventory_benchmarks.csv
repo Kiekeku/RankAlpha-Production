@@ -1,0 +1,62 @@
+benchmark_name,currency_code,description
+$BCOM,USD,Bloomberg Commodity Index
+$BCOMAG,USD,Bloomberg Agriculture Sub-Index
+$BCOMEN,USD,Bloomberg Energy Sub-Index
+$BCOMGR,USD,Bloomberg Grains Sub-Index
+$BCOMIN,USD,Bloomberg Industrial Metals Sub-Index
+$BCOMLI,USD,Bloomberg Livestock Sub-Index
+$BCOMPE,USD,Bloomberg Petroleum Sub-Index
+$BCOMPR,USD,Bloomberg Precious Metals Sub-Index
+$BCOMSO,USD,Bloomberg Softs Sub-Index
+$BCOMTR,USD,Bloomberg Commodity Total Return Index
+$BCOMXE,USD,Bloomberg Ex-Energy Sub-Index
+$CRB,USD,FTSE/CoreCommodity CRB Index
+$DJCBT,USD,DJ Equal Weight US Corporate Bond TR
+$GVZ,USD,CBOE GVZ Index
+$MOVE,USD,ICE BofAML MOVE Index
+$OVX,USD,CBOE OVX Index
+$RVX,USD,CBOE RVX Index
+$SDEX,USD,CBOE SDEX Index
+$SKEW,USD,CBOE SKEW Index
+$SP5IGBIT,USD,S&P 500 Investment Grade Corp Bond TR
+$SPBDU10T,USD,S&P US Treasury Bond TR 10Y+
+$SPBDU20T,USD,S&P US Treasury Bond TR 20Y+
+$SPBDUB3T,USD,S&P US Treasury Bill TR 0-3M
+$SPBDUB6T,USD,S&P US Treasury Bill TR 3-6M
+$SPBDUB9T,USD,S&P US Treasury Bill TR 6-9M
+$SPBDUBIT,USD,S&P US Treasury Bill TR 9-12M
+$SPBDUBYT,USD,S&P US Treasury Bond TR <1Y
+$SPBDUS1T,USD,S&P US Treasury Bond TR 1-3Y
+$SPBDUS3T,USD,S&P US Treasury Bond TR 3-5Y
+$SPBDUS5T,USD,S&P US Treasury Bond TR 5-7Y
+$SPBDUS7T,USD,S&P US Treasury Bond TR 7-10Y
+$SPBDUSBT,USD,S&P US Treasury Bond TR 10-20Y
+$SPBDUSLT,USD,S&P US Treasury Bond TR Long
+$SPGSCI,USD,S&P GSCI Spot Index
+$SPUSAGGT,USD,S&P US Aggregate Bond TR
+$TDEX,USD,CBOE TDEX Index
+$USDX,USD,US Dollar Index
+$VIX,USD,CBOE VIX Index
+$VIX1D,USD,CBOE VIX1D Index
+$VIX1Y,USD,CBOE VIX1Y Index
+$VIX3M,USD,CBOE VIX3M Index
+$VIX6M,USD,CBOE VIX6M Index
+$VIX9D,USD,CBOE VIX9D Index
+$VOLI,USD,CBOE VOLI Index
+$VVIX,USD,CBOE VVIX Index
+$VXEEM,USD,CBOE VXEEM Index
+$VXEFA,USD,CBOE VXEFA Index
+$VXEWZ,USD,CBOE VXEWZ Index
+$VXN,USD,CBOE VXN Index
+$VXTLT,USD,CBOE VXTLT Index
+%30MTG,USD,US 30Y Fixed Mortgage Avg Rate
+%CCCHYS,USD,ICE BofA CCC & Lower HY OAS
+%COAAA,USD,Moody's AAA Corporate Bond Yield
+%COBAA,USD,Moody's BAA Corporate Bond Yield
+%FVX,USD,US 5-Year T. Note Yield
+%TNX,USD,US 10-Year T. Note Yield
+%TYX,USD,US 30-Year T. Bond Yield
+%USPRIME,USD,US Bank Prime Loan Rate
+@WTI,USD,West Texas Intermediate Crude Oil Spot
+XAGUSD,USD,Silver / US Dollar Spot
+XAUUSD,USD,Gold / US Dollar Spot

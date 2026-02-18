@@ -1,0 +1,45 @@
+pg_stat_statements:
+  query: |
+    SELECT
+      d.datname AS datname,
+      r.rolname AS "user",
+      s.queryid::text AS queryid,
+      SUM(s.calls)::double precision AS calls_total,
+      (SUM(s.total_exec_time) / 1000.0)::double precision AS seconds_total,
+      SUM(s.rows)::double precision AS rows_total,
+      (
+        SUM(s.shared_blk_read_time + s.local_blk_read_time + s.temp_blk_read_time) / 1000.0
+      )::double precision AS block_read_seconds_total,
+      (
+        SUM(s.shared_blk_write_time + s.local_blk_write_time + s.temp_blk_write_time) / 1000.0
+      )::double precision AS block_write_seconds_total
+    FROM pg_stat_statements s
+    JOIN pg_database d ON d.oid = s.dbid
+    JOIN pg_roles r ON r.oid = s.userid
+    GROUP BY d.datname, r.rolname, s.queryid
+    ;
+  metrics:
+    - datname:
+        usage: "LABEL"
+        description: "Database name"
+    - user:
+        usage: "LABEL"
+        description: "Role name"
+    - queryid:
+        usage: "LABEL"
+        description: "pg_stat_statements queryid"
+    - calls_total:
+        usage: "COUNTER"
+        description: "Total calls for the statement."
+    - seconds_total:
+        usage: "COUNTER"
+        description: "Total execution time (seconds) for the statement."
+    - rows_total:
+        usage: "COUNTER"
+        description: "Total rows returned/affected for the statement."
+    - block_read_seconds_total:
+        usage: "COUNTER"
+        description: "Total block read time (seconds) for the statement."
+    - block_write_seconds_total:
+        usage: "COUNTER"
+        description: "Total block write time (seconds) for the statement."

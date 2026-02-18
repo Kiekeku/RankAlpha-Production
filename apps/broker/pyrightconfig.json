@@ -1,0 +1,24 @@
+{
+  "include": [
+    "tradeexec"
+  ],
+  "exclude": [
+    "**/node_modules",
+    "**/__pycache__",
+    "*.pyc"
+  ],
+  "reportMissingImports": "warning",
+  "reportMissingTypeStubs": "none",
+  "pythonVersion": "3.12",
+  "typeCheckingMode": "basic",
+  "reportOptionalMemberAccess": "error",
+  "reportOptionalSubscript": "error",
+  "reportOptionalCall": "error",
+  "reportArgumentType": "error",
+  "reportAssignmentType": "error",
+  "reportAttributeAccessIssue": "error",
+  "reportCallIssue": "error",
+  "reportGeneralTypeIssues": "error",
+  "reportReturnType": "error",
+  "reportUndefinedVariable": "error"
+}

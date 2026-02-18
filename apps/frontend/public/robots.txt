@@ -1,0 +1,21 @@
+
+#    ____             __       ___    __       __         
+#   / __ \____ _____  / /__    /   |  / /____  / /_  ____ _
+#  / /_/ / __ `/ __ \/ //_/   / /| | / / __ \ / __ \/ __ `/
+# / _, _/ /_/ / / / / ,<     / ___ |/ / /_/ / / / / / /_/ / 
+#/_/ |_|\__,_/_/ /_/_/|_|   /_/  |_/_/ .___/_/ /_/\__,_/  
+#                                   /_/                   
+#                                                                            
+#   
+# Quant Smarter. Trade Sharper.
+# 
+# Brewed by Boosted & KeiKeKu: Long α, Short 💤 · May your curves trend up!
+#
+
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /portfolio
+
+# Sitemap
+Sitemap: /sitemap.xml

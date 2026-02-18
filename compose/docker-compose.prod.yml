@@ -1,0 +1,80 @@
+services:
+  # Internal services: remove published ports; keep network-only access.
+  api:
+    # Do not publish the API to the host; frontend reaches it via Docker network
+    ports: []
+    environment:
+      # Disable mutation endpoints (POST/PUT/DELETE) globally in prod
+      - API_READ_ONLY=${API_READ_ONLY:-true}
+      # Optional: require Bearer token for admin endpoints when set
+      - ADMIN_BEARER_TOKEN=${ADMIN_BEARER_TOKEN:-}
+      # Restrict CORS to your Cloudflare hostname (JSON array string)
+      - CORS_ORIGINS=${CORS_ORIGINS:-["https://change-me.yourdomain.com"]}
+
+  database:
+    ports: []
+
+  cache:
+    ports: []
+
+  rabbitmq:
+    ports: []
+
+  airflow-web:
+    ports: []
+
+  airflow-scheduler:
+    ports: []
+
+  airflow-worker:
+    ports: []
+
+  airflow-triggerer:
+    ports: []
+
+  airflow-init-dag:
+    ports: []
+
+  broker:
+    ports: []
+
+  broker-runner:
+    ports: []
+
+  ingestion:
+    ports: []
+
+  scorer:
+    ports: []
+
+  sentiment:
+    ports: []
+
+  otel-collector:
+    ports: []
+
+  loki:
+    ports: []
+
+  cadvisor:
+    ports: []
+
+  prometheus:
+    ports: []
+
+  grafana:
+    ports: []
+
+  sftp:
+    # Keep SFTP strictly internal; if needed, bind loopback only in a site override
+    ports: []
+
+  frontend:
+    # Bind the public UI only on loopback; cloudflared should target http://localhost:3000
+    ports:
+      - "127.0.0.1:${FRONTEND_PORT:-3000}:${FRONTEND_PORT:-3000}"
+
+networks:
+  # Reuse the same networks from base compose; definitions remain unchanged
+  rankalpha_backend_network: {}
+  airflow_net: {}

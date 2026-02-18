@@ -1,0 +1,45 @@
+$schema: schema/mcp-agent.config.schema.json
+
+execution_engine: asyncio
+
+mcp:
+  servers:
+    fetch:
+      command: "uvx"
+      args: ["mcp-server-fetch", "--ignore-robots-txt"]
+
+    # Production-preferred search provider (Serper)
+    # Requires SERPER_API_KEY in the environment; see sentiment.env.example
+    # If unavailable, the app will fall back to `g-search` if configured.
+    serper:
+      command: "uvx"
+      args: ["serper-mcp-server"]
+      env:
+        SERPER_API_KEY: "${SERPER_API_KEY:-}"
+
+    g-search:
+      command: "npx"
+      args: ["-y", "g-search-mcp"]
+
+    filesystem:
+      command: "npx"
+      args: ["-y", "@modelcontextprotocol/server-filesystem","/data/company_reports", "/app/apps/sentiment"]
+
+    # Yahoo Finance (yfinance) MCP server
+    # Expect the repo to be present at apps/sentiment/ext/yahoo-finance-mcp (see README and Dockerfile)
+    yfinance:
+      command: "uv"
+      args: ["--directory", "ext/yahoo-finance-mcp", "run", "server.py"]
+
+    # SEC EDGAR MCP server (filings, XBRL facts, insider transactions)
+    edgar:
+      command: "uv"
+      args: ["--directory", "ext/sec-edgar-mcp", "run", "-m", "sec_edgar_mcp.server"]
+      # IMPORTANT: Provide your SEC-compliant user agent via SEC_EDGAR_USER_AGENT
+      # in the format: "Your Name your-email@example.com"
+      env:
+        SEC_EDGAR_USER_AGENT: "${SEC_EDGAR_USER_AGENT:-}"
+
+
+openai:
+  default_model: gpt-5-mini

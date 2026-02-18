@@ -1,0 +1,18 @@
+rankalpha_airflow_task_failures_last_hour:
+  query: |
+    SELECT
+      'rankalpha_pipeline'::varchar(250) AS dag_id,
+      COUNT(*)::double precision AS value
+    FROM task_instance
+    WHERE dag_id = 'rankalpha_pipeline'
+      AND state IN ('failed', 'upstream_failed')
+      AND end_date IS NOT NULL
+      AND end_date > NOW() - INTERVAL '1 hour'
+    ;
+  metrics:
+    - dag_id:
+        usage: "LABEL"
+        description: "Airflow DAG ID"
+    - value:
+        usage: "GAUGE"
+        description: "Failed task instances for rankalpha_pipeline in the last hour."

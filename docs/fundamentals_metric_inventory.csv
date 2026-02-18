@@ -1,0 +1,155 @@
+metric_code,metric_name,stmt_code,default_unit,row_count,symbol_count,first_as_of_date,last_as_of_date,row_count_ttm,row_count_restated
+a1fcf,Free Cash Flow,Cash Flow,Millions,5134,4821,2023-12-31,2025-11-28,0,0
+aastturn,Asset turnover,Efficiency Ratios,Actual Values,4771,4478,2023-12-31,2025-11-30,0,0
+abepsxclxo,EPS Basic excluding extraordinary items,Per Share Ratios,Actual Values,5131,4824,2023-12-31,2025-11-30,0,0
+abvps,Book value (total equity) per Share,Per Share Ratios,Actual Values,5127,4818,2023-12-31,2025-11-30,0,0
+acfshr,Cash Flow per Share,Per Share Ratios,Actual Values,5030,4724,2023-12-31,2025-11-30,0,0
+acshps,Cash per Share,Per Share Ratios,Actual Values,5122,4813,2023-12-31,2025-11-30,0,0
+acurratio,Current ratio,Financial Strength,Actual Values,4307,4030,2023-12-31,2025-11-30,0,0
+adiv5yavg,"Ordinary Dividend Per Share, 5 year average",Dividend,Percentage,1885,1766,2024-06-30,2025-11-30,0,0
+adivshr,Ordinary Dividend per Share,Dividend,Actual Values,1992,1866,2024-06-30,2025-11-30,0,0
+aebitd,EBITDA,Income Statement,Millions,5135,4825,2023-12-31,2025-11-30,0,0
+aebt,Earnings before taxes,Income Statement,Millions,5131,4824,2023-12-31,2025-11-30,0,0
+aebtnorm,Earnings before taxes Normalized,Income Statement,Millions,5131,4824,2023-12-31,2025-11-30,0,0
+aepsinclxo,EPS including extraordinary items,Per Share Ratios,Actual Values,5131,4824,2023-12-31,2025-11-30,0,0
+aepsnorm,EPS Normalized,Per Share Ratios,Actual Values,5131,4824,2023-12-31,2025-11-30,0,0
+aepsxclxor,EPS excluding extraordinary items,Per Share Ratios,Actual Values,5131,4824,2023-12-31,2025-11-30,0,0
+agrosmgn,Gross Margin,Profitability Ratios,Percentage,3892,3642,2023-12-31,2025-11-30,0,0
+aintcov,Net Interest coverage,Financial Strength,Actual Values,2978,2822,2023-12-31,2025-11-30,0,0
+ainvturn,Inventory turnover,Efficiency Ratios,Actual Values,2736,2534,2023-12-31,2025-11-30,0,0
+altd2eq,LT debt/equity,Financial Strength,Percentage,4724,4432,2023-12-31,2025-11-30,0,0
+aniac,Net Income available to common,Income Statement,Millions,5132,4824,2023-12-31,2025-11-30,0,0
+aniacnorm,"Net Income Available to Common, Normalized",Income Statement,Millions,5132,4824,2023-12-31,2025-11-30,0,0
+aniperemp,Net Income/employee,Efficiency Ratios,Actual Values,4838,4545,2023-12-31,2025-11-02,0,0
+anpmgnpct,Net Profit Margin %,Profitability Ratios,Percentage,4751,4468,2023-12-31,2025-11-30,0,0
+aopmgnpct,Operating margin,Profitability Ratios,Percentage,4745,4462,2023-12-31,2025-11-30,0,0
+apayratio,Payout ratio,Financial Strength,Percentage,2754,2595,2023-12-31,2025-11-30,0,0
+apr2rev,"Price to sales, most recent fiscal year",Price Related,Actual Values,317467,4509,2024-05-24,2026-01-05,0,0
+apr2tanbk,"Price to Tangible Book, most recent fiscal year",Price Related,Actual Values,256973,3675,2024-05-24,2026-01-05,0,0
+aprfcfps,"Price to Free Cash Flow per Share, most recent fiscal year",Price Related,Actual Values,180044,2553,2024-05-24,2026-01-05,0,0
+aprice2bk,"Price to Book, most recent fiscal year",Price Related,Actual Values,311143,4434,2024-05-24,2026-01-05,0,0
+aptmgnpct,Pretax margin,Profitability Ratios,Percentage,4751,4468,2023-12-31,2025-11-30,0,0
+aquickrati,Quick ratio,Financial Strength,Actual Values,2751,2551,2023-12-31,2025-11-30,0,0
+arecturn,Receivables turnover,Efficiency Ratios,Actual Values,4127,3862,2023-12-31,2025-11-30,0,0
+arev,Revenue,Income Statement,Millions,5134,4825,2023-12-31,2025-11-30,0,0
+arevperemp,Revenue/employee,Efficiency Ratios,Actual Values,4519,4242,2023-12-31,2025-11-02,0,0
+arevps,Revenue per Share,Per Share Ratios,Actual Values,5132,4825,2023-12-31,2025-11-30,0,0
+aroa5yavg,"Return on average assets, 5 year average",Management Effectiveness,Percentage,4635,4359,2023-12-31,2025-11-30,0,0
+aroapct,Return on average assets,Management Effectiveness,Percentage,5133,4824,2023-12-31,2025-11-30,0,0
+aroe5yavg,"Return on average equity, 5 year average",Management Effectiveness,Percentage,4395,4132,2023-12-31,2025-11-30,0,0
+aroepct,Return on average equity,Management Effectiveness,Percentage,4733,4447,2023-12-31,2025-11-30,0,0
+aroipct,Return on investment,Management Effectiveness,Percentage,4576,4290,2023-12-31,2025-11-30,0,0
+atanbvps,Book value (tangible) per Share,Per Share Ratios,Actual Values,5127,4818,2023-12-31,2025-11-30,0,0
+atotd2eq,Total debt/total equity,Financial Strength,Percentage,4723,4432,2023-12-31,2025-11-30,0,0
+beta,"Beta, compared to major market index",Price Related,Actual Values,323398,4633,2024-05-24,2026-01-05,0,0
+bvtrendgr,"Book value per Share growth rate, 5 year CAGR",Growth Rates,Percentage,4011,3768,2023-12-31,2025-11-30,0,0
+csptrendgr,"Capital Spending growth rate, 5 year CAGR",Growth Rates,Percentage,4189,3948,2023-12-31,2025-11-28,0,0
+divgrpct,"Ordinary Dividend growth rate, 3 year CAGR",Growth Rates,Percentage,1617,1510,2024-05-31,2025-11-30,0,0
+divyield_curttm,"Current Dividend Yield, trailing 12 months",Dividend,Percentage,282031,5740,2018-09-06,2026-01-16,0,0
+ebitda_ayr5cagr,"Earnings Before Interest, Taxes, Depreciation & Amortization, 5 Year CAGR",Growth Rates,Percentage,3028,2835,2024-06-30,2025-11-30,0,0
+ebitda_ttmy5cagr,"Earnings Before Interest, Taxes, Depreciation & Amortization, 5 Year TTM CAGR",Growth Rates,Percentage,2851,2664,2024-06-30,2025-11-30,0,0
+epsactual,Previous Actual Annual EPS,Other,USD,63859,4023,2024-06-03,2026-01-05,0,0
+epsactualq,Previous Actual Quarterly EPS,Other,USD,37180,3819,2024-05-13,2026-01-05,0,0
+epschngyr,"EPS Change %, most recent quarter 1 year ago",Growth Rates,Percentage,9538,4862,2022-03-31,2025-11-30,0,0
+epsgrpct,"EPS growth rate, 3 year CAGR",Growth Rates,Percentage,2226,2085,2024-05-31,2025-11-30,0,0
+epssurprise,Previous Annual Surprise,Other,USD,63373,3939,2024-06-03,2026-01-05,0,0
+epssurpriseprc,Previous Annual Surprise as a Percentage,Other,USD,62987,3979,2024-05-13,2026-01-05,0,0
+epssurpriseq,Previous Quarter Surprise,Other,USD,36986,3785,2024-05-13,2026-01-05,0,0
+epssurpriseqprc,Previous Quarter Surprise as a Percentage,Other,USD,35793,3801,2024-05-13,2026-01-05,0,0
+epstrendgr,"EPS growth rate, 5 year CAGR",Growth Rates,Percentage,2186,2056,2024-06-30,2025-11-30,0,0
+ev2fcf_cura,"Current Enterprise Value/Free Cash Flow, most recent fiscal year",Financial Strength,Actual Values,132355,1883,2025-09-12,2026-01-05,0,0
+ev2fcf_curttm,"Current Enterprise value/Free Cash Flow, trailing 12 months",Financial Strength,Actual Values,130366,1992,2025-09-12,2026-01-05,0,0
+focf2rev_aavg5,"Free Operating Cash Flow/Revenue, 5 Year Average",Profitability Ratios,Percentage,4477,4214,2023-12-31,2025-11-28,0,0
+focf2rev_ttm,Free Operating Cash Flow/Revenue,Profitability Ratios,Percentage,8645,4435,2022-03-31,2025-11-30,0,0
+focf_ayr5cagr,"Free Operating Cash Flow growth rate, 5 Year CAGR",Growth Rates,Percentage,1938,1827,2024-06-30,2025-11-28,0,0
+grosmgn5yr,"Gross Margin, 5 year average",Profitability Ratios,Percentage,3430,3207,2023-12-31,2025-11-30,0,0
+margin5yr,"Net Profit Margin, 5 year average",Profitability Ratios,Percentage,4487,4221,2023-12-31,2025-11-30,0,0
+mktcap,"Market capitalization, includes all classes of securities/listings",Share Related Items,Millions,343071,4894,2018-07-10,2026-01-05,0,0
+netdebt_a,Net Debt,Balance Sheet,Millions,5140,4828,2023-12-31,2025-11-30,0,0
+netdebt_i,Net Debt,Balance Sheet,Millions,9571,4875,2022-03-31,2025-11-30,0,0
+npmtrendgr,"Net Profit Margin growth rate, 5 year CAGR",Growth Rates,Percentage,2219,2089,2024-06-30,2025-11-30,0,0
+opmgn5yr,"Operating Margin, 5 year average",Profitability Ratios,Percentage,4358,4097,2023-12-31,2025-11-30,0,0
+pebexclxor,"P/E Basic excluding extraordinary items, trailing 12 months",Price Related,Actual Values,188893,2774,2025-08-12,2026-01-05,0,0
+peexclxor,"Price-to-Earnings Ratio (P/E) excluding extraordinary items, trailing 12 months",Price Related,Actual Values,189237,2779,2025-08-12,2026-01-05,0,0
+peinclxor,"P/E including extraordinary items, trailing 12 months",Price Related,Actual Values,189152,2781,2025-08-12,2026-01-05,0,0
+pr2tanbk,"Price to Tangible Book, most recent quarter",Price Related,Actual Values,249671,3746,2024-05-24,2026-01-05,0,0
+price2bk,"Price to Book, most recent quarter",Price Related,Actual Values,300440,4476,2024-05-24,2026-01-05,0,0
+projdps,Current Consensus for Annual Total Dividend Per Share,Other,USD,54378,2969,2024-05-27,2026-01-05,0,0
+projdpsh,High Estimate,Other,USD,54378,2969,2024-05-27,2026-01-05,0,0
+projdpsl,Low Estimate,Other,USD,54378,2969,2024-05-27,2026-01-05,0,0
+projdpsnumofest,Number of Estimates,Other,USD,52960,2996,2024-05-21,2026-01-05,0,0
+projeps,Current Consensus for Annual EPS,Other,USD,64277,4029,2024-05-27,2026-01-05,0,0
+projepsh,High Estimate,Other,USD,64277,4029,2024-05-27,2026-01-05,0,0
+projepsl,Low Estimate,Other,USD,64277,4029,2024-05-27,2026-01-05,0,0
+projepsnumofest,Number of Estimates,Other,USD,63663,4058,2024-05-27,2026-01-05,0,0
+projepsq,Current Consensus for Quarterly EPS,Other,USD,57370,3886,2024-05-13,2026-01-05,0,0
+projepsqh,High Estimate,Other,USD,57370,3886,2024-05-13,2026-01-05,0,0
+projepsql,Low Estimate,Other,USD,57370,3886,2024-05-13,2026-01-05,0,0
+projepsqnumofest,Number of Estimates,Other,USD,56792,3884,2024-05-13,2026-01-05,0,0
+projltgrowthrate,Current Consensus for long term (5 year) growth rate of EPS,Other,USD,19828,1890,2024-05-13,2026-01-05,0,0
+projprofit,Current Consensus for Profit,Other,USD,63795,3977,2024-05-27,2026-01-05,0,0
+projprofith,High Estimate,Other,USD,63796,3977,2024-05-27,2026-01-05,0,0
+projprofitl,Low Estimate,Other,USD,63796,3977,2024-05-27,2026-01-05,0,0
+projprofitnumofest,Number of Estimates,Other,USD,63237,4018,2024-05-27,2026-01-05,0,0
+projsalesh,High Estimate,Other,USD,64492,4033,2024-05-27,2026-01-05,0,0
+projsalesl,Low Estimate,Other,USD,64492,4033,2024-05-27,2026-01-05,0,0
+projsalesnumofest,Number of Estimates,Other,USD,63773,4062,2024-05-27,2026-01-05,0,0
+projsalesps,Current Consensus for Annual Revenue Per Share,Other,USD,64492,4033,2024-05-27,2026-01-05,0,0
+projsalesq,Current Consensus for Quarterly Revenue,Other,USD,57027,3865,2024-05-13,2026-01-05,0,0
+projsalesqh,High Estimate,Other,USD,57027,3865,2024-05-13,2026-01-05,0,0
+projsalesql,Low Estimate,Other,USD,57027,3865,2024-05-13,2026-01-05,0,0
+projsalesqnumofest,Number of Estimates,Other,USD,56281,3866,2024-05-13,2026-01-05,0,0
+ptmgn5yr,"Pretax Margin, 5 year average",Profitability Ratios,Percentage,4487,4221,2023-12-31,2025-11-30,0,0
+qbvps,Book value (total equity) per Share,Per Share Ratios,Actual Values,9546,4865,2022-03-31,2025-11-30,0,0
+qcshps,Cash per Share,Per Share Ratios,Actual Values,9534,4859,2022-03-31,2025-11-30,0,0
+qcurratio,Current ratio,Financial Strength,Actual Values,7944,4063,2023-12-31,2025-11-30,0,0
+qltd2eq,Long Term debt/equity ratio,Financial Strength,Percentage,8741,4493,2022-03-31,2025-11-30,0,0
+qquickrati,Quick ratio,Financial Strength,Actual Values,4963,2542,2023-12-31,2025-11-30,0,0
+qtanbvps,Book value (tangible) per Share,Per Share Ratios,Actual Values,9546,4865,2022-03-31,2025-11-30,0,0
+qtotd2eq,Total debt/total equity ratio,Financial Strength,Percentage,8745,4493,2022-03-31,2025-11-30,0,0
+revchngyr,"Revenue Change %, most recent quarter vs 1 year ago",Growth Rates,Percentage,8790,4524,2022-03-31,2025-11-30,0,0
+revgrpct,"Revenue growth rate, 3 year CAGR",Growth Rates,Percentage,4372,4107,2023-12-31,2025-11-30,0,0
+revps5ygr,"Revenue per Share growth rate, 5 yr CAGR",Growth Rates,Percentage,4199,3949,2023-12-31,2025-11-30,0,0
+revtrendgr,"Revenue growth rate, 5 year CAGR",Growth Rates,Percentage,4203,3953,2023-12-31,2025-11-30,0,0
+sharesfloat,Shares Float,Security Information - Numeric,USD,7767,5395,2015-05-22,2026-01-05,0,0
+sharesoutstanding,Shares Outstanding,Security Information - Numeric,USD,7599,5410,2017-11-09,2026-01-05,0,0
+stld_ayr5cagr,"Total Debt growth rate, 5 Year CAGR",Growth Rates,Percentage,3442,3251,2023-12-31,2025-11-30,0,0
+tanbv_ayr5cagr,"Tangible Book Value (Total Equity) growth rate, 5 Year CAGR",Growth Rates,Percentage,3086,2917,2024-06-30,2025-11-30,0,0
+targetprice,Current 12 month Consensus Target Price,Other,USD,36423,3945,2024-05-13,2026-01-05,0,0
+ttmastturn,Asset turnover,Efficiency Ratios,Actual Values,8817,4510,2023-12-31,2025-11-30,0,0
+ttmbepsxcl,EPS Basic excluding extraordinary items,Per Share Ratios,Actual Values,9550,4866,2022-03-31,2025-11-30,0,0
+ttmcfshr,Cash Flow per Share,Per Share Ratios,Actual Values,9100,4650,2022-03-31,2025-11-30,0,0
+ttmdivshr,Ordinary Dividends per share,Dividend,Actual Values,282029,5740,2018-09-06,2026-01-16,0,0
+ttmdivshradj,Ordinary Dividends per Share (fully adjusted),Dividend,Actual Values,282031,5740,2018-09-06,2026-01-16,0,0
+ttmebitd,"Earnings Before Interest, Taxes, Depreciation (EBITD)",Income Statement,Millions,9538,4861,2022-03-31,2025-11-30,0,0
+ttmebitdps,EBITD per Share,Per Share Ratios,Actual Values,9537,4860,2022-03-31,2025-11-30,0,0
+ttmebt,Earnings before taxes,Income Statement,Millions,9550,4866,2022-03-31,2025-11-30,0,0
+ttmepschg,"EPS Change %, TTM over TTM",Growth Rates,Percentage,9457,4836,2023-12-31,2025-11-30,0,0
+ttmepsincx,EPS including extraordinary items,Per Share Ratios,Actual Values,9550,4866,2022-03-31,2025-11-30,0,0
+ttmepsxclx,EPS excluding extraordinary items,Per Share Ratios,Actual Values,9550,4866,2022-03-31,2025-11-30,0,0
+ttmfcf,Free Cash Flow,Cash Flow,Millions,9272,4734,2022-03-31,2025-11-30,0,0
+ttmfcfshr,Free Cash Flow per Share,Per Share Ratios,Actual Values,9227,4695,2022-03-31,2025-11-30,0,0
+ttmgrosmgn,Gross Margin,Profitability Ratios,Percentage,7341,3753,2023-12-31,2025-11-30,0,0
+ttmintcov,Net Interest coverage,Financial Strength,Actual Values,5514,2938,2023-12-31,2025-11-30,0,0
+ttminvturn,Inventory turnover,Efficiency Ratios,Actual Values Efficiency Ratios,4950,2555,2023-12-31,2025-11-30,0,0
+ttmniac,Net Income accruing to common shares for dividends and retained earnings,Income Statement,Millions,9550,4866,2022-03-31,2025-11-30,0,0
+ttmniperem,Net Income/employee,Efficiency Ratios,Actual Values Efficiency Ratios,8498,4348,2023-12-31,2025-11-30,0,0
+ttmnpmgn,Net Profit Margin %,Profitability Ratios,Percentage,8918,4563,2022-03-31,2025-11-30,0,0
+ttmopmgn,Operating margin,Profitability Ratios,Percentage,8905,4558,2022-03-31,2025-11-30,0,0
+ttmpayrat,Payout ratio,Financial Strength,Percentage,5652,3106,2022-03-31,2025-11-30,0,0
+ttmpehigh,"P/E excluding extraordinary items high, trailing 12 months",Price Related,Actual Values,240288,3443,2024-05-24,2026-01-05,0,0
+ttmpelow,"P/E excluding extraordinary items low, trailing 12 months",Price Related,Actual Values,240290,3443,2024-05-24,2026-01-05,0,0
+ttmpr2rev,"Price to sales, trailing 12 month",Price Related,Actual Values,316724,4521,2024-05-24,2026-01-05,0,0
+ttmprcfps,"Price to Cash Flow per Share, trailing 12 month",Price Related,Actual Values,206662,3009,2025-09-12,2026-01-05,0,0
+ttmprfcfps,"Price to Free Cash Flow per Share, trailing 12 months",Price Related,Actual Values,171199,2614,2024-05-24,2026-01-05,0,0
+ttmptmgn,Pretax margin,Profitability Ratios,Percentage,8918,4563,2022-03-31,2025-11-30,0,0
+ttmrecturn,Receivables turnover,Efficiency Ratios,Actual Values Efficiency Ratios,7610,3927,2023-12-31,2025-11-30,0,0
+ttmrev,Revenue,Income Statement,Millions,9548,4865,2022-03-31,2025-11-30,0,0
+ttmrevchg,"Revenue Change %, TTM over TTM",Growth Rates,Percentage,8779,4498,2023-12-31,2025-11-30,0,0
+ttmrevpere,Revenue/employee,Efficiency Ratios,Actual Values Efficiency Ratios,8498,4348,2023-12-31,2025-11-30,0,0
+ttmrevps,Revenue per share,Per Share Ratios,Actual Values,9547,4864,2022-03-31,2025-11-30,0,0
+ttmroapct,Return on average assets,Management Effectiveness,Percentage,9516,4859,2022-03-31,2025-11-30,0,0
+ttmroepct,Return on average equity,Management Effectiveness,Percentage,8870,4592,2022-03-31,2025-11-30,0,0
+ttmroipct,Return on investment,Management Effectiveness,Percentage,8495,4367,2023-12-31,2025-11-30,0,0
+vdes_ttm,"Earnings per Share (EPS), Normalized, Excluding Extraordinary Items, Avg. Diluted Shares Outstanding",Income Statement,Actual Values,9550,4866,2022-03-31,2025-11-30,0,0
+yld5yavg,"Ordinary Dividend Yield, 5 Year Average",Dividend,Percentage,1603,1494,2024-06-30,2025-11-30,0,0

@@ -1,0 +1,620 @@
+series_code,series_name,category,frequency,units,is_active,description
+#CFNAI,Chicago Fed National Activity Index,activity,M,index,t,Chicago Fed National Activity Index
+#DURSA,US Durable Goods New Orders,activity,M,billions_usd,t,US Durable Goods New Orders
+#DURSA1,US Durable Goods New Orders (#DURSA1),activity,M,billions_usd,t,US Durable Goods New Orders
+#DURSA2,US Durable Goods New Orders (#DURSA2),activity,M,billions_usd,t,US Durable Goods New Orders
+#DURSA3,US Durable Goods New Orders (#DURSA3),activity,M,billions_usd,t,US Durable Goods New Orders
+#GDPSA,US Gross Domestic Product,activity,Q,billions_usd,t,US Gross Domestic Product
+#GDPSA1,US Gross Domestic Product (#GDPSA1),activity,Q,billions_usd,t,US Gross Domestic Product
+#GDPSA2,US Gross Domestic Product (#GDPSA2),activity,Q,billions_usd,t,US Gross Domestic Product
+#GDPSA3,US Gross Domestic Product (#GDPSA3),activity,Q,billions_usd,t,US Gross Domestic Product
+#GDPSA4,US Gross Domestic Product (#GDPSA4),activity,Q,billions_usd,t,US Gross Domestic Product
+#INDSA,US Industrial Production Index,activity,M,index,t,US Industrial Production Index
+#INDSA2,US Industrial Production Index (#INDSA2),activity,M,index,t,US Industrial Production Index
+#INDSA3,US Industrial Production Index (#INDSA3),activity,M,index,t,US Industrial Production Index
+#NAPMI,ISM Purchasing Managers Index,activity,M,index,t,ISM Purchasing Managers Index
+#NAPMI2,ISM Purchasing Managers Index (#NAPMI2),activity,M,index,t,ISM Purchasing Managers Index
+#NAPMI3,ISM Purchasing Managers Index (#NAPMI3),activity,M,index,t,ISM Purchasing Managers Index
+#RETSA,US Retail & Food Services Sales,activity,M,billions_usd,t,US Retail & Food Services Sales
+#RETSA1,US Retail & Food Services Sales (#RETSA1),activity,M,billions_usd,t,US Retail & Food Services Sales
+#RETSA2,US Retail & Food Services Sales (#RETSA2),activity,M,billions_usd,t,US Retail & Food Services Sales
+#RETSA3,US Retail & Food Services Sales (#RETSA3),activity,M,billions_usd,t,US Retail & Food Services Sales
+#RETXSA,US Retail Sales,activity,M,billions_usd,t,US Retail Sales
+#RETXSA1,US Retail Sales (#RETXSA1),activity,M,billions_usd,t,US Retail Sales
+#RETXSA2,US Retail Sales (#RETXSA2),activity,M,billions_usd,t,US Retail Sales
+#RETXSA3,US Retail Sales (#RETXSA3),activity,M,billions_usd,t,US Retail Sales
+#TCSSA,US Total Construction Spending,activity,M,billions_usd,t,US Total Construction Spending
+#TCSSA1,US Total Construction Spending (#TCSSA1),activity,M,billions_usd,t,US Total Construction Spending
+#TCSSA2,US Total Construction Spending (#TCSSA2),activity,M,billions_usd,t,US Total Construction Spending
+#TCSSA3,US Total Construction Spending (#TCSSA3),activity,M,billions_usd,t,US Total Construction Spending
+#NASAD,Nasdaq Composite Advancing Issues,breadth,,count,t,Nasdaq Composite Advancing Issues
+#NASADR,Nasdaq Composite Advance/Decline Ratio,breadth,,ratio,t,Nasdaq Composite Advance/Decline Ratio
+#NASADV,Nasdaq Composite Advancing Issues,breadth,,count,t,Nasdaq Composite Advancing Issues
+#NASADVR,Nasdaq Composite Advance/Decline Ratio,breadth,,ratio,t,Nasdaq Composite Advance/Decline Ratio
+#NASDEC,Nasdaq Composite Declining Issues,breadth,,count,t,Nasdaq Composite Declining Issues
+#NASTRIN,Nasdaq Composite Arms Index (TRIN),breadth,,ratio,t,Nasdaq Composite Arms Index (TRIN)
+#NASUNC,Nasdaq Composite Unchanged Issues,breadth,,count,t,Nasdaq Composite Unchanged Issues
+#NYSEAD,NYSE Advancing Issues,breadth,,count,t,NYSE Advancing Issues
+#NYSEADR,NYSE Advance/Decline Ratio,breadth,,ratio,t,NYSE Advance/Decline Ratio
+#NYSEADV,NYSE Advancing Issues,breadth,,count,t,NYSE Advancing Issues
+#NYSEADVR,NYSE Advance/Decline Ratio,breadth,,ratio,t,NYSE Advance/Decline Ratio
+#NYSEDEC,NYSE Declining Issues,breadth,,count,t,NYSE Declining Issues
+#NYSETRIN,NYSE Arms Index (TRIN),breadth,,ratio,t,NYSE Arms Index (TRIN)
+#NYSEUNC,NYSE Unchanged Issues,breadth,,count,t,NYSE Unchanged Issues
+US_NDX_AD_BEARISH_DIVERGENCE_FLAG,Nasdaq-100 A/D Line Bearish Divergence,breadth,D,flag,t,
+US_NDX_BAM10_DOWN_FLAG,Nasdaq-100 Deemer Breakaway Momentum 10D Down,breadth,D,flag,t,
+US_NDX_BAM10_UP_FLAG,Nasdaq-100 Deemer Breakaway Momentum 10D Up,breadth,D,flag,t,
+US_NDX_BREADTH_FRAG_SCORE,Nasdaq-100 Breadth Fragility Score,breadth,D,index,t,
+US_NDX_BREADTH_NET_SCORE,Nasdaq-100 Breadth Net Score,breadth,D,index,t,
+US_NDX_BREADTH_REGIME_STATE,Nasdaq-100 Breadth Regime State,breadth,D,index,t,
+US_NDX_BREADTH_TARGET_EXPOSURE,Nasdaq-100 Breadth Target Exposure,breadth,D,index,t,
+US_NDX_BREADTH_THRUST_SCORE,Nasdaq-100 Breadth Thrust Score,breadth,D,index,t,
+US_NDX_MCCLELLAN_SUM_BREAKDOWN_FLAG,Nasdaq-100 McClellan Summation Breakdown,breadth,D,flag,t,
+US_NDX_MCCLELLAN_THRUST_FLAG,"Nasdaq-100 McClellan Thrust (10d, -100/+100)",breadth,D,flag,t,
+US_NDX_NET_NEW_HIGHS,Nasdaq-100 Net New Highs (ratio),breadth,D,ratio,t,
+US_NDX_PCT_ABOVE_200D_THRUST_FLAG,Nasdaq-100 %>200D Thrust (+20pp/10d),breadth,D,flag,t,
+US_NDX_PCT_BELOW_200D_COLLAPSE_FLAG,Nasdaq-100 %<200D Collapse (+20pp/10d),breadth,D,flag,t,
+US_NDX_PERSISTENT_NEW_LOWS_FLAG,Nasdaq-100 Persistent New Lows (>=5% for 3d),breadth,D,flag,t,
+US_NDX_TRIN_STRESS_FLAG,Nasdaq-100 TRIN Stress,breadth,D,flag,t,
+US_NDX_WHALEY_ADT5,Nasdaq-100 Whaley ADT-5,breadth,D,ratio,t,
+US_NDX_WHALEY_ADT5_BULL_FLAG,Nasdaq-100 Whaley ADT-5 Bull Flag,breadth,D,flag,t,
+US_NDX_WHALEY_ADT5_CAPITULATION_FLAG,Nasdaq-100 Whaley ADT-5 Capitulation Flag,breadth,D,flag,t,
+US_NYA_HINDENBURG_OMEN_CONFIRMED,NYSE Hindenburg Omen (confirmed cluster),breadth,D,flag,t,
+US_NYA_HINDENBURG_OMEN_RAW,NYSE Hindenburg Omen (raw),breadth,D,flag,t,
+US_NYSE_HLLI,NYSE Fosback High-Low Logic Index,breadth,D,index,t,
+US_NYSE_PERSISTENT_NEW_LOWS_FLAG,NYSE Persistent New Lows (>=5% for 3d),breadth,D,flag,t,
+US_NYSE_TRIN_STRESS_FLAG,NYSE TRIN Stress,breadth,D,flag,t,
+US_SPX_AD_BEARISH_DIVERGENCE_FLAG,S&P 500 A/D Line Bearish Divergence,breadth,D,flag,t,
+US_SPX_BAM10_DOWN_FLAG,S&P 500 Deemer Breakaway Momentum 10D Down,breadth,D,flag,t,
+US_SPX_BAM10_UP_FLAG,S&P 500 Deemer Breakaway Momentum 10D Up,breadth,D,flag,t,
+US_SPX_BREADTH_FRAG_SCORE,S&P 500 Breadth Fragility Score,breadth,D,index,t,
+US_SPX_BREADTH_NET_SCORE,S&P 500 Breadth Net Score,breadth,D,index,t,
+US_SPX_BREADTH_REGIME_STATE,S&P 500 Breadth Regime State,breadth,D,index,t,
+US_SPX_BREADTH_TARGET_EXPOSURE,S&P 500 Breadth Target Exposure,breadth,D,index,t,
+US_SPX_BREADTH_THRUST_SCORE,S&P 500 Breadth Thrust Score,breadth,D,index,t,
+US_SPX_MCCLELLAN_SUM_BREAKDOWN_FLAG,S&P 500 McClellan Summation Breakdown,breadth,D,flag,t,
+US_SPX_MCCLELLAN_THRUST_FLAG,"S&P 500 McClellan Thrust (10d, -100/+100)",breadth,D,flag,t,
+US_SPX_NET_NEW_HIGHS,S&P 500 Net New Highs (ratio),breadth,D,ratio,t,
+US_SPX_PCT_ABOVE_200D_THRUST_FLAG,S&P 500 %>200D Thrust (+20pp/10d),breadth,D,flag,t,
+US_SPX_PCT_BELOW_200D_COLLAPSE_FLAG,S&P 500 %<200D Collapse (+20pp/10d),breadth,D,flag,t,
+US_SPX_PERSISTENT_NEW_LOWS_FLAG,S&P 500 Persistent New Lows (>=5% for 3d),breadth,D,flag,t,
+US_SPX_TRIN_STRESS_FLAG,S&P 500 TRIN Stress,breadth,D,flag,t,
+US_SPX_WHALEY_ADT5,S&P 500 Whaley ADT-5,breadth,D,ratio,t,
+US_SPX_WHALEY_ADT5_BULL_FLAG,S&P 500 Whaley ADT-5 Bull Flag,breadth,D,flag,t,
+US_SPX_WHALEY_ADT5_CAPITULATION_FLAG,S&P 500 Whaley ADT-5 Capitulation Flag,breadth,D,flag,t,
+#NFCI,Chicago Fed National Financial Conditions Index,conditions,W,index,t,Chicago Fed National Financial Conditions Index
+#NFCIC,Chicago Fed NFCI Credit SubIndex,conditions,W,index,t,Chicago Fed NFCI Credit SubIndex
+#NFCIL,Chicago Fed NFCI Leverage SubIndex,conditions,W,index,t,Chicago Fed NFCI Leverage SubIndex
+#NFCIR,Chicago Fed NFCI Risk SubIndex,conditions,W,index,t,Chicago Fed NFCI Risk SubIndex
+#BOPSA,US Trade Balance of Payments,external,M,billions_usd,t,US Trade Balance of Payments
+#BOPSA1,US Trade Balance of Payments (#BOPSA1),external,M,billions_usd,t,US Trade Balance of Payments
+#BOPSA2,US Trade Balance of Payments (#BOPSA2),external,M,billions_usd,t,US Trade Balance of Payments
+#BOPSA3,US Trade Balance of Payments (#BOPSA3),external,M,billions_usd,t,US Trade Balance of Payments
+#CURSA,US Current Account Balance,external,Q,billions_usd,t,US Current Account Balance
+#CURSA1,US Current Account Balance (#CURSA1),external,Q,billions_usd,t,US Current Account Balance
+#CURSA2,US Current Account Balance (#CURSA2),external,Q,billions_usd,t,US Current Account Balance
+#CURSA3,US Current Account Balance (#CURSA3),external,Q,billions_usd,t,US Current Account Balance
+US_DXY_LEVEL,US Dollar Index level,fx,D,index_level,t,
+US_DXY_MA100,US Dollar Index 100d MA,fx,D,index_level,t,
+US_DXY_MA200,US Dollar Index 200d MA,fx,D,index_level,t,
+US_DXY_MA50,US Dollar Index 50d MA,fx,D,index_level,t,
+US_DXY_PCTL_5Y,US Dollar Index 5Y percentile,fx,D,percentile,t,
+US_DXY_ROC_1M,US Dollar Index 1M ROC,fx,D,percent,t,
+US_DXY_ROC_3M,US Dollar Index 3M ROC,fx,D,percent,t,
+US_DXY_ROC_6M,US Dollar Index 6M ROC,fx,D,percent,t,
+US_DXY_Z_3Y,US Dollar Index 3Y z-score,fx,D,z_score,t,
+#HOCSA,US Housing Completions,housing,M,thousands,t,US Housing Completions
+#HOCSA1,US Housing Completions (#HOCSA1),housing,M,thousands,t,US Housing Completions
+#HOCSA2,US Housing Completions (#HOCSA2),housing,M,thousands,t,US Housing Completions
+#HOCSA3,US Housing Completions (#HOCSA3),housing,M,thousands,t,US Housing Completions
+#HOMPR,US Existing Home Median Price,housing,M,usd,t,US Existing Home Median Price
+#HOMPR1,US Existing Home Median Price (#HOMPR1),housing,M,usd,t,US Existing Home Median Price
+#HOMPR2,US Existing Home Median Price (#HOMPR2),housing,M,usd,t,US Existing Home Median Price
+#HOMPR3,US Existing Home Median Price (#HOMPR3),housing,M,usd,t,US Existing Home Median Price
+#HOSSA,US Housing Starts,housing,M,thousands,t,US Housing Starts
+#HOSSA1,US Housing Starts (#HOSSA1),housing,M,thousands,t,US Housing Starts
+#HOSSA2,US Housing Starts (#HOSSA2),housing,M,thousands,t,US Housing Starts
+#HOSSA3,US Housing Starts (#HOSSA3),housing,M,thousands,t,US Housing Starts
+#SPCS20,S&P/Case-Shiller Composite-20 HPI,housing,M,index,t,S&P/Case-Shiller Composite-20 HPI
+#CO$SA,US Corporate Before Tax Profits,income,Q,billions_usd,t,US Corporate Before Tax Profits
+#CO$SA1,US Corporate Before Tax Profits (#CO$SA1),income,Q,billions_usd,t,US Corporate Before Tax Profits
+#CO$SA2,US Corporate Before Tax Profits (#CO$SA2),income,Q,billions_usd,t,US Corporate Before Tax Profits
+#CO$SA3,US Corporate Before Tax Profits (#CO$SA3),income,Q,billions_usd,t,US Corporate Before Tax Profits
+#CO$SA4,US Corporate Before Tax Profits (#CO$SA4),income,Q,billions_usd,t,US Corporate Before Tax Profits
+#PCESA,US Real Personal Consumption Spending,income,M,index,t,US Real Personal Consumption Spending
+#PCESA1,US Real Personal Consumption Spending (#PCESA1),income,M,index,t,US Real Personal Consumption Spending
+#PCESA2,US Real Personal Consumption Spending (#PCESA2),income,M,index,t,US Real Personal Consumption Spending
+#PCESA3,US Real Personal Consumption Spending (#PCESA3),income,M,index,t,US Real Personal Consumption Spending
+#PCESA4,US Real Personal Consumption Spending (#PCESA4),income,M,index,t,US Real Personal Consumption Spending
+#INJOB,US Initial Jobless Claims,labor,W,thousands,t,US Initial Jobless Claims
+#INJOB1,US Initial Jobless Claims (#INJOB1),labor,W,thousands,t,US Initial Jobless Claims
+#INJOB2,US Initial Jobless Claims (#INJOB2),labor,W,thousands,t,US Initial Jobless Claims
+#INJOB3,US Initial Jobless Claims (#INJOB3),labor,W,thousands,t,US Initial Jobless Claims
+#NFPAY,US Non-Farm Payrolls,labor,M,thousands,t,US Non-Farm Payrolls
+#NFPAY1,US Non-Farm Payrolls (#NFPAY1),labor,M,thousands,t,US Non-Farm Payrolls
+#NFPAY2,US Non-Farm Payrolls (#NFPAY2),labor,M,thousands,t,US Non-Farm Payrolls
+#NFPAY3,US Non-Farm Payrolls (#NFPAY3),labor,M,thousands,t,US Non-Farm Payrolls
+#UNEMP,US Unemployment Rate,labor,M,percent,t,US Unemployment Rate
+#UNEMP2,US Unemployment Rate (#UNEMP2),labor,M,percent,t,US Unemployment Rate
+#UNEMP3,US Unemployment Rate (#UNEMP3),labor,M,percent,t,US Unemployment Rate
+US_FED_MBST,SOMA Mortgage-Backed Securities Held Outright (MBST),liquidity,W,millions_usd,t,FRED MBST (Mortgage-Backed Securities Held Outright: System Open Market Account)
+US_FED_TREAST,SOMA Treasury Securities Held Outright (TREAST),liquidity,W,millions_usd,t,FRED TREAST (Treasury Securities Held Outright: System Open Market Account)
+US_FED_WALCL,Federal Reserve Total Assets (WALCL),liquidity,W,millions_usd,t,"FRED WALCL (Total Assets, Less Eliminations from Consolidation)"
+US_FED_WSHOSHO,SOMA Securities Held Outright (WSHOSHO),liquidity,W,millions_usd,t,FRED WSHOSHO (Securities Held Outright: System Open Market Account) used as a SOMA proxy
+#M1FED,US M1 Money Stock,money,M,billions_usd,t,US M1 Money Stock
+#M1FED1,US M1 Money Stock (#M1FED1),money,M,billions_usd,t,US M1 Money Stock
+#M1FED2,US M1 Money Stock (#M1FED2),money,M,billions_usd,t,US M1 Money Stock
+#M1FED3,US M1 Money Stock (#M1FED3),money,M,billions_usd,t,US M1 Money Stock
+#M2FED,US M2 Money Stock,money,M,billions_usd,t,US M2 Money Stock
+#M2FED1,US M2 Money Stock (#M2FED1),money,M,billions_usd,t,US M2 Money Stock
+#M2FED2,US M2 Money Stock (#M2FED2),money,M,billions_usd,t,US M2 Money Stock
+#M2FED3,US M2 Money Stock (#M2FED3),money,M,billions_usd,t,US M2 Money Stock
+US_ON_RRP,Overnight Reverse Repo Facility Usage,money,D,millions_usd,t,FRED RRPONTSYD (ON RRP total)
+US_TGA_BAL,Treasury General Account Balance,money,D,millions_usd,t,FRED WTREGEN (Treasury General Account)
+#CPICH,US Chained Consumer Price Index,prices,M,index,t,US Chained Consumer Price Index
+#CPICH2,US Chained Consumer Price Index (#CPICH2),prices,M,index,t,US Chained Consumer Price Index
+#CPICH3,US Chained Consumer Price Index (#CPICH3),prices,M,index,t,US Chained Consumer Price Index
+#CPISA,US Consumer Price Index,prices,M,index,t,US Consumer Price Index
+#CPISA2,US Consumer Price Index (#CPISA2),prices,M,index,t,US Consumer Price Index
+#CPISA3,US Consumer Price Index (#CPISA3),prices,M,index,t,US Consumer Price Index
+#CPIXSA,US Core Consumer Price Index,prices,M,index,t,US Core Consumer Price Index
+#CPIXSA2,US Core Consumer Price Index (#CPIXSA2),prices,M,index,t,US Core Consumer Price Index
+#CPIXSA3,US Core Consumer Price Index (#CPIXSA3),prices,M,index,t,US Core Consumer Price Index
+#PPISA,US Producer Price Index,prices,M,index,t,US Producer Price Index
+#PPISA2,US Producer Price Index (#PPISA2),prices,M,index,t,US Producer Price Index
+#PPISA3,US Producer Price Index (#PPISA3),prices,M,index,t,US Producer Price Index
+US_TIPS_10Y_REAL_YIELD,10-Year TIPS Real Yield,rates,D,pct,t,"FRED DFII10 (Market Yield on U.S. Treasury Securities at 10-Year Constant Maturity, Inflation-Indexed)"
+US_DXY_REGIME_STATE,US Dollar Index regime state (-1/0/+1),regime,D,index,t,
+US_DXY_RISK_SCORE,US Dollar Index regime risk score (0-1),regime,D,index,t,
+US_DXY_SHOCK_DOWN_FLAG,US Dollar Index downside shock flag,regime,D,flag,t,
+US_DXY_SHOCK_UP_FLAG,US Dollar Index upside shock flag,regime,D,flag,t,
+#CBOEPC,CBOE Put/Call Ratio,sentiment,,ratio,t,CBOE Put/Call Ratio
+#CBOEPCE,CBOE Equity Put/Call Ratio,sentiment,,ratio,t,CBOE Equity Put/Call Ratio
+#CBOEPCI,CBOE Index Put/Call Ratio,sentiment,,ratio,t,CBOE Index Put/Call Ratio
+#CBOEPCSPX,CBOE SPX Put/Call Ratio,sentiment,,ratio,t,CBOE SPX Put/Call Ratio
+#AMEXAD,AMEX Cumulative Advance-Decline Line,,,,t,AMEX Cumulative Advance-Decline Line
+#AMEXADR,AMEX Advance/Decline Ratio,,,,t,AMEX Advance/Decline Ratio
+#AMEXADV,AMEX Advancing Issues,,,,t,AMEX Advancing Issues
+#AMEXADVR,AMEX Advance/Decline Volume Ratio,,,,t,AMEX Advance/Decline Volume Ratio
+#AMEXDEC,AMEX Declining Issues,,,,t,AMEX Declining Issues
+#AMEXHI,AMEX New Highs,,,,t,AMEX New Highs
+#AMEXHL,AMEX Cumulative New Highs - New Lows Line,,,,t,AMEX Cumulative New Highs - New Lows Line
+#AMEXLO,AMEX New Lows,,,,t,AMEX New Lows
+#AMEXTRIN,AMEX Arms Index,,,,t,AMEX Arms Index
+#AMEXUNC,AMEX Unchanged Issues,,,,t,AMEX Unchanged Issues
+#COMP%MA100,Nasdaq Composite % Stocks Above MA100,,,,t,Nasdaq Composite % Stocks Above MA100
+#COMP%MA150,Nasdaq Composite % Stocks Above MA150,,,,t,Nasdaq Composite % Stocks Above MA150
+#COMP%MA20,Nasdaq Composite % Stocks Above MA20,,,,t,Nasdaq Composite % Stocks Above MA20
+#COMP%MA200,Nasdaq Composite % Stocks Above MA200,,,,t,Nasdaq Composite % Stocks Above MA200
+#COMP%MA50,Nasdaq Composite % Stocks Above MA50,,,,t,Nasdaq Composite % Stocks Above MA50
+#COMP13WHI,Nasdaq Composite 13W New Highs,,,,t,Nasdaq Composite 13W New Highs
+#COMP13WHL,Nasdaq Composite Cumulative 13W New Highs-New Lows Line,,,,t,Nasdaq Composite Cumulative 13W New Highs-New Lows Line
+#COMP13WLO,Nasdaq Composite 13W New Lows,,,,t,Nasdaq Composite 13W New Lows
+#COMP26WHI,Nasdaq Composite 26W New Highs,,,,t,Nasdaq Composite 26W New Highs
+#COMP26WHL,Nasdaq Composite Cumulative 26W New Highs-New Lows Line,,,,t,Nasdaq Composite Cumulative 26W New Highs-New Lows Line
+#COMP26WLO,Nasdaq Composite 26W New Lows,,,,t,Nasdaq Composite 26W New Lows
+#COMP4WHI,Nasdaq Composite 4W New Highs,,,,t,Nasdaq Composite 4W New Highs
+#COMP4WHL,Nasdaq Composite Cumulative 4W New Highs-New Lows Line,,,,t,Nasdaq Composite Cumulative 4W New Highs-New Lows Line
+#COMP4WLO,Nasdaq Composite 4W New Lows,,,,t,Nasdaq Composite 4W New Lows
+#COMP52WHI,Nasdaq Composite 52W New Highs,,,,t,Nasdaq Composite 52W New Highs
+#COMP52WHL,Nasdaq Composite Cumulative 52W New Highs-New Lows Line,,,,t,Nasdaq Composite Cumulative 52W New Highs-New Lows Line
+#COMP52WLO,Nasdaq Composite 52W New Lows,,,,t,Nasdaq Composite 52W New Lows
+#COMPAD,Nasdaq Composite Cumulative Advance-Decline Line,,,,t,Nasdaq Composite Cumulative Advance-Decline Line
+#COMPADR,Nasdaq Composite Advance/Decline Ratio,,,,t,Nasdaq Composite Advance/Decline Ratio
+#COMPADV,Nasdaq Composite Advancing Issues,,,,t,Nasdaq Composite Advancing Issues
+#COMPAVGBB%B,Nasdaq Composite Average Bollinger Band %B,,,,t,Nasdaq Composite Average Bollinger Band %B
+#COMPAVGW%R,Nasdaq Composite Average Williams %R,,,,t,Nasdaq Composite Average Williams %R
+#COMPBB%B,Nasdaq Composite Cumulative Bollinger Band %B Line,,,,t,Nasdaq Composite Cumulative Bollinger Band %B Line
+#COMPCOPP,Nasdaq Composite Coppock Indicator,,,,t,Nasdaq Composite Coppock Indicator
+#COMPDEC,Nasdaq Composite Declining Issues,,,,t,Nasdaq Composite Declining Issues
+#COMPITBM,Nasdaq Composite Intermediate-Term Breadth Momentum Oscillator,,,,t,Nasdaq Composite Intermediate-Term Breadth Momentum Oscillator
+#COMPITVM,Nasdaq Composite Intermediate-Term Volume Momentum Oscillator,,,,t,Nasdaq Composite Intermediate-Term Volume Momentum Oscillator
+#COMPMCOSC,Nasdaq Composite McClellan Oscillator,,,,t,Nasdaq Composite McClellan Oscillator
+#COMPMCOSCV,Nasdaq Composite McClellan Volume Oscillator,,,,t,Nasdaq Composite McClellan Volume Oscillator
+#COMPMCSUM,Nasdaq Composite McClellan Summation,,,,t,Nasdaq Composite McClellan Summation
+#COMPSWTR,Nasdaq Composite Swenlin Trading Oscillator,,,,t,Nasdaq Composite Swenlin Trading Oscillator
+#COMPTRIN,Nasdaq Composite Arms Index,,,,t,Nasdaq Composite Arms Index
+#COMPUNC,Nasdaq Composite Unchanged Issues,,,,t,Nasdaq Composite Unchanged Issues
+#COMPW%R,Nasdaq Composite Cumulative Williams Line,,,,t,Nasdaq Composite Cumulative Williams Line
+#COMPZWBT,Nasdaq Composite Zweig Breadth Thrust,,,,t,Nasdaq Composite Zweig Breadth Thrust
+#CPIUN,US Consumer Price Index,,,,t,US Consumer Price Index
+#CPIUN2,US Consumer Price Index (%Change vs Previous),,,,t,US Consumer Price Index (%Change vs Previous)
+#CPIUN3,US Consumer Price Index (%Change vs 12 Months Previous),,,,t,US Consumer Price Index (%Change vs 12 Months Previous)
+#CPIXCH,US Chained Core Consumer Price Index (SA),,,,t,US Chained Core Consumer Price Index (SA)
+#CPIXCH2,"US Chained Core Consumer Price Index (SA, %Change vs Previous)",,,,t,"US Chained Core Consumer Price Index (SA, %Change vs Previous)"
+#CPIXCH3,"US Chained Core Consumer Price Index (SA, %Change vs 12 Months Previous)",,,,t,"US Chained Core Consumer Price Index (SA, %Change vs 12 Months Previous)"
+#CPIXUN,US Core Consumer Price Index,,,,t,US Core Consumer Price Index
+#CPIXUN2,US Core Consumer Price Index (%Change vs Previous),,,,t,US Core Consumer Price Index (%Change vs Previous)
+#CPIXUN3,US Core Consumer Price Index (%Change vs 12 Months Previous),,,,t,US Core Consumer Price Index (%Change vs 12 Months Previous)
+#CPIXUN4,US Core Consumer Price Index (Annualized Rate),,,,t,US Core Consumer Price Index (Annualized Rate)
+#DJI%MA100,DJIA % Stocks above MA100,,,,t,DJIA % Stocks above MA100
+#DJI%MA150,DJIA % Stocks above MA150,,,,t,DJIA % Stocks above MA150
+#DJI%MA20,DJIA % Stocks above MA20,,,,t,DJIA % Stocks above MA20
+#DJI%MA200,DJIA % Stocks above MA200,,,,t,DJIA % Stocks above MA200
+#DJI%MA50,DJIA % Stocks above MA50,,,,t,DJIA % Stocks above MA50
+#DJI13WHI,Dow Jones Industrial 13W New Highs,,,,t,Dow Jones Industrial 13W New Highs
+#DJI13WHL,DJIA 13W New Highs-New Lows Line,,,,t,DJIA 13W New Highs-New Lows Line
+#DJI13WLO,Dow Jones Industrial 13W New Lows,,,,t,Dow Jones Industrial 13W New Lows
+#DJI26WHI,Dow Jones Industrial 26W New Highs,,,,t,Dow Jones Industrial 26W New Highs
+#DJI26WHL,DJIA Cumulative 26W New Highs-New Lows Line,,,,t,DJIA Cumulative 26W New Highs-New Lows Line
+#DJI26WLO,Dow Jones Industrial 26W New Lows,,,,t,Dow Jones Industrial 26W New Lows
+#DJI4WHI,Dow Jones Industrial 4W New Highs,,,,t,Dow Jones Industrial 4W New Highs
+#DJI4WHL,DJIA Cumulative 4W New Highs-New Lows Line,,,,t,DJIA Cumulative 4W New Highs-New Lows Line
+#DJI4WLO,Dow Jones Industrial 4W New Lows,,,,t,Dow Jones Industrial 4W New Lows
+#DJI52WHI,Dow Jones Industrial 52W New Highs,,,,t,Dow Jones Industrial 52W New Highs
+#DJI52WHL,DJIA Cumulative 52W New Highs-New Lows Line,,,,t,DJIA Cumulative 52W New Highs-New Lows Line
+#DJI52WLO,Dow Jones Industrial 52W New Lows,,,,t,Dow Jones Industrial 52W New Lows
+#DJIAD,DJIA Cumulative Advance-Decline Line,,,,t,DJIA Cumulative Advance-Decline Line
+#DJIADR,DJIA Advance/Decline Ratio,,,,t,DJIA Advance/Decline Ratio
+#DJIADV,DJIA Advancing Issues,,,,t,DJIA Advancing Issues
+#DJIAVGBB%B,DJIA Average Bollinger Band %B,,,,t,DJIA Average Bollinger Band %B
+#DJIAVGW%R,DJIA Average Williams %R,,,,t,DJIA Average Williams %R
+#DJIBB%B,DJIA Cumulative Bollinger Band %B Line,,,,t,DJIA Cumulative Bollinger Band %B Line
+#DJIDEC,DJIA Declining Issues,,,,t,DJIA Declining Issues
+#DJIITBM,DJIA Intermediate-Term Breadth Momentum Oscillator,,,,t,DJIA Intermediate-Term Breadth Momentum Oscillator
+#DJIITVM,DJIA Intermediate-Term Volume Momentum Oscillator,,,,t,DJIA Intermediate-Term Volume Momentum Oscillator
+#DJIMCOSC,DJIA McClellan Oscillator,,,,t,DJIA McClellan Oscillator
+#DJIMCOSCV,Dow Jones Industrial McClellan Volume Oscillator,,,,t,Dow Jones Industrial McClellan Volume Oscillator
+#DJIMCSUM,DJIA McClellan Summation,,,,t,DJIA McClellan Summation
+#DJISWTR,DJIA Swenlin Trading Oscillator,,,,t,DJIA Swenlin Trading Oscillator
+#DJITRIN,DJIA Arms Index,,,,t,DJIA Arms Index
+#DJIUNC,DJIA Unchanged Issues,,,,t,DJIA Unchanged Issues
+#DJIW%R,DJIA Cumulative Williams %R Line,,,,t,DJIA Cumulative Williams %R Line
+#DJIZWBT,DJIA Zweig Breadth Thrust,,,,t,DJIA Zweig Breadth Thrust
+#LVSAAT,"US Light Weight Vehicle Sales (SA, Annualized Total)",,,,t,"US Light Weight Vehicle Sales (SA, Annualized Total)"
+#LVSAAT1,"US Light Weight Vehicle Sales (SA, Change vs Previous)",,,,t,"US Light Weight Vehicle Sales (SA, Change vs Previous)"
+#LVSAAT2,"US Light Weight Vehicle Sales (SA, %Change vs Previous)",,,,t,"US Light Weight Vehicle Sales (SA, %Change vs Previous)"
+#LVSAAT3,"US Light Weight Vehicle Sales (SA, %Change vs 12 Months Previous)",,,,t,"US Light Weight Vehicle Sales (SA, %Change vs 12 Months Previous)"
+#MID%MA100,S&P Midcap 400 % Stocks above MA100,,,,t,S&P Midcap 400 % Stocks above MA100
+#MID%MA150,S&P Midcap 400 % Stocks above MA150,,,,t,S&P Midcap 400 % Stocks above MA150
+#MID%MA20,S&P Midcap 400 % Stocks above MA20,,,,t,S&P Midcap 400 % Stocks above MA20
+#MID%MA200,S&P Midcap 400 % Stocks above MA200,,,,t,S&P Midcap 400 % Stocks above MA200
+#MID%MA50,S&P Midcap 400 % Stocks above MA50,,,,t,S&P Midcap 400 % Stocks above MA50
+#MID13WHI,S&P Midcap 400 13W New Highs,,,,t,S&P Midcap 400 13W New Highs
+#MID13WHL,S&P Midcap 400 Cumulative 13W New Highs-New Lows Line,,,,t,S&P Midcap 400 Cumulative 13W New Highs-New Lows Line
+#MID13WLO,S&P Midcap 400 13W New Lows,,,,t,S&P Midcap 400 13W New Lows
+#MID26WHI,S&P Midcap 400 26W New Highs,,,,t,S&P Midcap 400 26W New Highs
+#MID26WHL,S&P Midcap 400 Cumulative 26W New Highs-New Lows Line,,,,t,S&P Midcap 400 Cumulative 26W New Highs-New Lows Line
+#MID26WLO,S&P Midcap 400 26W New Lows,,,,t,S&P Midcap 400 26W New Lows
+#MID4WHI,S&P Midcap 400 4W New Highs,,,,t,S&P Midcap 400 4W New Highs
+#MID4WHL,S&P Midcap 400 Cumulative 4W New Highs-New Lows Line,,,,t,S&P Midcap 400 Cumulative 4W New Highs-New Lows Line
+#MID4WLO,S&P Midcap 400 4W New Lows,,,,t,S&P Midcap 400 4W New Lows
+#MID52WHI,S&P Midcap 400 52W New Highs,,,,t,S&P Midcap 400 52W New Highs
+#MID52WHL,S&P Midcap 400 Cumulative 52W New Highs-New Lows Line,,,,t,S&P Midcap 400 Cumulative 52W New Highs-New Lows Line
+#MID52WLO,S&P Midcap 400 52W New Lows,,,,t,S&P Midcap 400 52W New Lows
+#MIDAD,S&P Midcap 400 Cumulative Advance-Decline Line,,,,t,S&P Midcap 400 Cumulative Advance-Decline Line
+#MIDADR,S&P Midcap 400 Advance/Decline Ratio,,,,t,S&P Midcap 400 Advance/Decline Ratio
+#MIDADV,S&P Midcap 400 Advancing Issues,,,,t,S&P Midcap 400 Advancing Issues
+#MIDAVGBB%B,S&P Midcap 400 Avg Bollinger Band %B,,,,t,S&P Midcap 400 Avg Bollinger Band %B
+#MIDAVGW%R,S&P Midcap 400 Avg Williams %R,,,,t,S&P Midcap 400 Avg Williams %R
+#MIDBB%B,S&P Midcap 400 Cumulative Bollinger Band %B Line,,,,t,S&P Midcap 400 Cumulative Bollinger Band %B Line
+#MIDDEC,S&P Midcap 400 Declining Issues,,,,t,S&P Midcap 400 Declining Issues
+#MIDITBM,S&P Midcap 400 Intermediate-Term Breadth Momentum Oscillator,,,,t,S&P Midcap 400 Intermediate-Term Breadth Momentum Oscillator
+#MIDITVM,S&P Midcap 400 Intermediate-Term Volume Momentum Oscillator,,,,t,S&P Midcap 400 Intermediate-Term Volume Momentum Oscillator
+#MIDMCOSC,S&P Midcap 400 McClellan Oscillator,,,,t,S&P Midcap 400 McClellan Oscillator
+#MIDMCOSCV,S&P Midcap 400 McClellan Volume Oscillator,,,,t,S&P Midcap 400 McClellan Volume Oscillator
+#MIDMCSUM,S&P Midcap 400 McClellan Summation,,,,t,S&P Midcap 400 McClellan Summation
+#MIDSWTR,S&P Midcap 400 Swenlin Trading Oscillator,,,,t,S&P Midcap 400 Swenlin Trading Oscillator
+#MIDTRIN,S&P Midcap 400 Arms Index,,,,t,S&P Midcap 400 Arms Index
+#MIDUNC,S&P Midcap 400 Unchanged Issues,,,,t,S&P Midcap 400 Unchanged Issues
+#MIDW%R,S&P Midcap 400 Cumulative Williams %R Line,,,,t,S&P Midcap 400 Cumulative Williams %R Line
+#MIDZWBT,S&P Midcap 400 Zweig Breadth Thrust,,,,t,S&P Midcap 400 Zweig Breadth Thrust
+#NASHI,Nasdaq 52W New Highs,,,,t,Nasdaq 52W New Highs
+#NASHL,Nasdaq Cumulative 52W  New Highs - New Lows Line,,,,t,Nasdaq Cumulative 52W  New Highs - New Lows Line
+#NASLO,Nasdaq 52W New Lows,,,,t,Nasdaq 52W New Lows
+#NDX%MA100,Nasdaq-100 % Stocks above MA100,,,,t,Nasdaq-100 % Stocks above MA100
+#NDX%MA150,Nasdaq-100 % Stocks above MA150,,,,t,Nasdaq-100 % Stocks above MA150
+#NDX%MA20,Nasdaq-100 % Stocks above MA20,,,,t,Nasdaq-100 % Stocks above MA20
+#NDX%MA200,Nasdaq-100 % Stocks above MA200,,,,t,Nasdaq-100 % Stocks above MA200
+#NDX%MA50,Nasdaq-100 % Stocks above MA50,,,,t,Nasdaq-100 % Stocks above MA50
+#NDX13WHI,Nasdaq-100 13W New Highs,,,,t,Nasdaq-100 13W New Highs
+#NDX13WHL,Nasdaq-100 Cumulative 13W New Highs-New Lows Line,,,,t,Nasdaq-100 Cumulative 13W New Highs-New Lows Line
+#NDX13WLO,Nasdaq-100 13W New Lows,,,,t,Nasdaq-100 13W New Lows
+#NDX26WHI,Nasdaq-100 26W New Highs,,,,t,Nasdaq-100 26W New Highs
+#NDX26WHL,Nasdaq-100 Cumulative 26W New Highs-New Lows Line,,,,t,Nasdaq-100 Cumulative 26W New Highs-New Lows Line
+#NDX26WLO,Nasdaq-100 26W New Lows,,,,t,Nasdaq-100 26W New Lows
+#NDX4WHI,Nasdaq-100 4W New Highs,,,,t,Nasdaq-100 4W New Highs
+#NDX4WHL,Nasdaq-100 Cumulative 4W New Highs-New Lows Line,,,,t,Nasdaq-100 Cumulative 4W New Highs-New Lows Line
+#NDX4WLO,Nasdaq-100 4W New Lows,,,,t,Nasdaq-100 4W New Lows
+#NDX52WHI,Nasdaq-100 52W New Highs,,,,t,Nasdaq-100 52W New Highs
+#NDX52WHL,Nasdaq-100 Cumulative 52W New Highs-New Lows Line,,,,t,Nasdaq-100 Cumulative 52W New Highs-New Lows Line
+#NDX52WLO,Nasdaq-100 52W New Lows,,,,t,Nasdaq-100 52W New Lows
+#NDXAD,Nasdaq-100 Cumulative Advance-Decline Line,,,,t,Nasdaq-100 Cumulative Advance-Decline Line
+#NDXADR,Nasdaq-100 Advance/Decline Ratio,,,,t,Nasdaq-100 Advance/Decline Ratio
+#NDXADV,Nasdaq-100 Advancing Issues,,,,t,Nasdaq-100 Advancing Issues
+#NDXAVGBB%B,Nasdaq-100 Avg Bollinger Band %B,,,,t,Nasdaq-100 Avg Bollinger Band %B
+#NDXAVGW%R,Nasdaq-100 Avg Williams %R,,,,t,Nasdaq-100 Avg Williams %R
+#NDXBB%B,Nasdaq-100 Cumulative Bollinger Band %B Line,,,,t,Nasdaq-100 Cumulative Bollinger Band %B Line
+#NDXDEC,Nasdaq-100 Declining Issues,,,,t,Nasdaq-100 Declining Issues
+#NDXITBM,Nasdaq-100 Intermediate-Term Breadth Momentum Oscillator,,,,t,Nasdaq-100 Intermediate-Term Breadth Momentum Oscillator
+#NDXITVM,Nasdaq-100 Intermediate-Term Volume Momentum Oscillator,,,,t,Nasdaq-100 Intermediate-Term Volume Momentum Oscillator
+#NDXMCOSC,Nasdaq-100 McClellan Oscillator,,,,t,Nasdaq-100 McClellan Oscillator
+#NDXMCOSCV,Nasdaq-100 McClellan Volume Oscillator,,,,t,Nasdaq-100 McClellan Volume Oscillator
+#NDXMCSUM,Nasdaq-100 McClellan Summation,,,,t,Nasdaq-100 McClellan Summation
+#NDXSWTR,Nasdaq-100 Swenlin Trading Oscillator,,,,t,Nasdaq-100 Swenlin Trading Oscillator
+#NDXTRIN,Nasdaq-100 Arms Index,,,,t,Nasdaq-100 Arms Index
+#NDXUNC,Nasdaq-100 Unchanged Issues,,,,t,Nasdaq-100 Unchanged Issues
+#NDXW%R,Nasdaq-100 Cumulative Williams %R Line,,,,t,Nasdaq-100 Cumulative Williams %R Line
+#NDXZWBT,Nasdaq-100 Zweig Breadth Thrust,,,,t,Nasdaq-100 Zweig Breadth Thrust
+#NYA%MA100,NYSE Composite % Stocks Above MA100,,,,t,NYSE Composite % Stocks Above MA100
+#NYA%MA150,NYSE Composite % Stocks Above MA150,,,,t,NYSE Composite % Stocks Above MA150
+#NYA%MA20,NYSE Composite % Stocks Above MA20,,,,t,NYSE Composite % Stocks Above MA20
+#NYA%MA200,NYSE Composite % Stocks Above MA200,,,,t,NYSE Composite % Stocks Above MA200
+#NYA%MA50,NYSE Composite % Stocks Above MA50,,,,t,NYSE Composite % Stocks Above MA50
+#NYA13WHI,NYSE Composite 13W New Highs,,,,t,NYSE Composite 13W New Highs
+#NYA13WHL,NYSE Composite Cumulative 13W New Highs-New Lows Line,,,,t,NYSE Composite Cumulative 13W New Highs-New Lows Line
+#NYA13WLO,NYSE Composite 13W New Lows,,,,t,NYSE Composite 13W New Lows
+#NYA26WHI,NYSE Composite 26W New Highs,,,,t,NYSE Composite 26W New Highs
+#NYA26WHL,NYSE Composite Cumulative 26W New Highs-New Lows Line,,,,t,NYSE Composite Cumulative 26W New Highs-New Lows Line
+#NYA26WLO,NYSE Composite 26W New Lows,,,,t,NYSE Composite 26W New Lows
+#NYA4WHI,NYSE Composite 4W New Highs,,,,t,NYSE Composite 4W New Highs
+#NYA4WHL,NYSE Composite Cumulative 4W New Highs-New Lows Line,,,,t,NYSE Composite Cumulative 4W New Highs-New Lows Line
+#NYA4WLO,NYSE Composite 4W New Lows,,,,t,NYSE Composite 4W New Lows
+#NYA52WHI,NYSE Composite 52W New Highs,,,,t,NYSE Composite 52W New Highs
+#NYA52WHL,NYSE Composite Cumulative 52W New Highs-New Lows Line,,,,t,NYSE Composite Cumulative 52W New Highs-New Lows Line
+#NYA52WLO,NYSE Composite 52W New Lows,,,,t,NYSE Composite 52W New Lows
+#NYAAD,NYSE Composite Cumulative Advance-Decline Line,,,,t,NYSE Composite Cumulative Advance-Decline Line
+#NYAADR,NYSE Composite Advance/Decline Ratio,,,,t,NYSE Composite Advance/Decline Ratio
+#NYAADV,NYSE Composite Advancing Issues,,,,t,NYSE Composite Advancing Issues
+#NYAAVGBB%B,NYSE Composite Average Bollinger Band %B,,,,t,NYSE Composite Average Bollinger Band %B
+#NYAAVGW%R,NYSE Composite Average Williams %R,,,,t,NYSE Composite Average Williams %R
+#NYABB%B,NYSE Composite Cumulative Bollinger Band %B Line,,,,t,NYSE Composite Cumulative Bollinger Band %B Line
+#NYACOPP,NYSE Composite Coppock Indicator,,,,t,NYSE Composite Coppock Indicator
+#NYADEC,NYSE Composite Declining Issues,,,,t,NYSE Composite Declining Issues
+#NYAITBM,NYSE Composite Intermediate-Term Breadth Momentum Oscillator,,,,t,NYSE Composite Intermediate-Term Breadth Momentum Oscillator
+#NYAITVM,NYSE Composite Intermediate-Term Volume Momentum Oscillator,,,,t,NYSE Composite Intermediate-Term Volume Momentum Oscillator
+#NYAMCOSC,NYSE Composite McClellan Oscillator,,,,t,NYSE Composite McClellan Oscillator
+#NYAMCOSCV,NYSE Composite McClellan Volume Oscillator,,,,t,NYSE Composite McClellan Volume Oscillator
+#NYAMCSUM,NYSE Composite McClellan Summation,,,,t,NYSE Composite McClellan Summation
+#NYASWTR,NYSE Composite Swenlin Trading Oscillator,,,,t,NYSE Composite Swenlin Trading Oscillator
+#NYATRIN,NYSE Composite Arms Index,,,,t,NYSE Composite Arms Index
+#NYAUNC,NYSE Composite Unchanged Issues,,,,t,NYSE Composite Unchanged Issues
+#NYAW%R,NYSE Composite Cumulative Williams Line,,,,t,NYSE Composite Cumulative Williams Line
+#NYAZWBT,NYSE Composite Zweig Breadth Thrust,,,,t,NYSE Composite Zweig Breadth Thrust
+#NYSEHI,NYSE 52W New Highs,,,,t,NYSE 52W New Highs
+#NYSEHL,NYSE 52W Cumulative New Highs - New Lows Line,,,,t,NYSE 52W Cumulative New Highs - New Lows Line
+#NYSELO,NYSE 52W New Lows,,,,t,NYSE 52W New Lows
+#OEX%MA100,S&P 100 % Stocks above MA100,,,,t,S&P 100 % Stocks above MA100
+#OEX%MA150,S&P 100 % Stocks above MA150,,,,t,S&P 100 % Stocks above MA150
+#OEX%MA20,S&P 100 % Stocks above MA20,,,,t,S&P 100 % Stocks above MA20
+#OEX%MA200,S&P 100 % Stocks above MA200,,,,t,S&P 100 % Stocks above MA200
+#OEX%MA50,S&P 100 % Stocks above MA50,,,,t,S&P 100 % Stocks above MA50
+#OEX13WHI,S&P 100 13W New Highs,,,,t,S&P 100 13W New Highs
+#OEX13WHL,S&P 100 Cumulative 13W New Highs-New Lows Line,,,,t,S&P 100 Cumulative 13W New Highs-New Lows Line
+#OEX13WLO,S&P 100 13W New Lows,,,,t,S&P 100 13W New Lows
+#OEX26WHI,S&P 100 26W New Highs,,,,t,S&P 100 26W New Highs
+#OEX26WHL,S&P 100 Cumulative 26W New Highs-New Lows Line,,,,t,S&P 100 Cumulative 26W New Highs-New Lows Line
+#OEX26WLO,S&P 100 26W New Lows,,,,t,S&P 100 26W New Lows
+#OEX4WHI,S&P 100 4W New Highs,,,,t,S&P 100 4W New Highs
+#OEX4WHL,S&P 100 Cumulative 4W New Highs-New Lows Line,,,,t,S&P 100 Cumulative 4W New Highs-New Lows Line
+#OEX4WLO,S&P 100 4W New Lows,,,,t,S&P 100 4W New Lows
+#OEX52WHI,S&P 100 52W New Highs,,,,t,S&P 100 52W New Highs
+#OEX52WHL,S&P 100 Cumulative 52W New Highs-New Lows Line,,,,t,S&P 100 Cumulative 52W New Highs-New Lows Line
+#OEX52WLO,S&P 100 52W New Lows,,,,t,S&P 100 52W New Lows
+#OEXAD,S&P 100 Cumulative Advance-Decline Line,,,,t,S&P 100 Cumulative Advance-Decline Line
+#OEXADR,S&P 100 Advance/Decline Ratio,,,,t,S&P 100 Advance/Decline Ratio
+#OEXADV,S&P 100 Advancing Issues,,,,t,S&P 100 Advancing Issues
+#OEXAVGBB%B,S&P 100 Avg Bollinger Band %B,,,,t,S&P 100 Avg Bollinger Band %B
+#OEXAVGW%R,S&P 100 Avg Williams %R,,,,t,S&P 100 Avg Williams %R
+#OEXBB%B,S&P 100 Cumulative Bollinger Band %B Line,,,,t,S&P 100 Cumulative Bollinger Band %B Line
+#OEXDEC,S&P 100 Declining Issues,,,,t,S&P 100 Declining Issues
+#OEXITBM,S&P 100 Intermediate-Term Breadth Momentum Oscillator,,,,t,S&P 100 Intermediate-Term Breadth Momentum Oscillator
+#OEXITVM,S&P 100 Intermediate-Term Volume Momentum Oscillator,,,,t,S&P 100 Intermediate-Term Volume Momentum Oscillator
+#OEXMCOSC,S&P 100 McClellan Oscillator,,,,t,S&P 100 McClellan Oscillator
+#OEXMCOSCV,S&P 100 McClellan Volume Oscillator,,,,t,S&P 100 McClellan Volume Oscillator
+#OEXMCSUM,S&P 100 McClellan Summation,,,,t,S&P 100 McClellan Summation
+#OEXSWTR,S&P 100 Swenlin Trading Oscillator,,,,t,S&P 100 Swenlin Trading Oscillator
+#OEXTRIN,S&P 100 Arms Index,,,,t,S&P 100 Arms Index
+#OEXUNC,S&P 100 Unchanged Issues,,,,t,S&P 100 Unchanged Issues
+#OEXW%R,S&P 100 Cumulative Williams %R Line,,,,t,S&P 100 Cumulative Williams %R Line
+#OEXZWBT,S&P 100 Zweig Breadth Thrust,,,,t,S&P 100 Zweig Breadth Thrust
+#PPIXSA,US Core Producer Price Index (SA),,,,t,US Core Producer Price Index (SA)
+#PPIXSA2,"US Core Producer Price Index (SA, %Change vs Previous)",,,,t,"US Core Producer Price Index (SA, %Change vs Previous)"
+#PPIXSA3,"US Core Producer Price Index (SA, %Change vs 12 Months Previous)",,,,t,"US Core Producer Price Index (SA, %Change vs 12 Months Previous)"
+#PPIXSA4,"US Core Producer Price Index (SA, Annualized Rate)",,,,t,"US Core Producer Price Index (SA, Annualized Rate)"
+#RUA%MA100,Russell 3000 % Stocks above MA100,,,,t,Russell 3000 % Stocks above MA100
+#RUA%MA150,Russell 3000 % Stocks above MA150,,,,t,Russell 3000 % Stocks above MA150
+#RUA%MA20,Russell 3000 % Stocks above MA20,,,,t,Russell 3000 % Stocks above MA20
+#RUA%MA200,Russell 3000 % Stocks above MA200,,,,t,Russell 3000 % Stocks above MA200
+#RUA%MA50,Russell 3000 % Stocks above MA50,,,,t,Russell 3000 % Stocks above MA50
+#RUA13WHI,Russell 3000 13W New Highs,,,,t,Russell 3000 13W New Highs
+#RUA13WHL,Russell 3000 Cumulative 13W New Highs-New Lows Line,,,,t,Russell 3000 Cumulative 13W New Highs-New Lows Line
+#RUA13WLO,Russell 3000 13W New Lows,,,,t,Russell 3000 13W New Lows
+#RUA26WHI,Russell 3000 26W New Highs,,,,t,Russell 3000 26W New Highs
+#RUA26WHL,Russell 3000 Cumulative 26W New Highs-New Lows Line,,,,t,Russell 3000 Cumulative 26W New Highs-New Lows Line
+#RUA26WLO,Russell 3000 26W New Lows,,,,t,Russell 3000 26W New Lows
+#RUA4WHI,Russell 3000 4W New Highs,,,,t,Russell 3000 4W New Highs
+#RUA4WHL,Russell 3000 Cumulative 4W New Highs-New Lows Line,,,,t,Russell 3000 Cumulative 4W New Highs-New Lows Line
+#RUA4WLO,Russell 3000 4W New Lows,,,,t,Russell 3000 4W New Lows
+#RUA52WHI,Russell 3000 52W New Highs,,,,t,Russell 3000 52W New Highs
+#RUA52WHL,Russell 3000 Cumulative 52W New Highs-New Lows Line,,,,t,Russell 3000 Cumulative 52W New Highs-New Lows Line
+#RUA52WLO,Russell 3000 52W New Lows,,,,t,Russell 3000 52W New Lows
+#RUAAD,Russell 3000 Cumulative Advance-Decline Line,,,,t,Russell 3000 Cumulative Advance-Decline Line
+#RUAADR,Russell 3000 Advance/Decline Ratio,,,,t,Russell 3000 Advance/Decline Ratio
+#RUAADV,Russell 3000 Advancing Issues,,,,t,Russell 3000 Advancing Issues
+#RUAAVGBB%B,Russell 3000 Avergage Bollinger Band %B,,,,t,Russell 3000 Avergage Bollinger Band %B
+#RUAAVGW%R,Russell 3000 Average Williams %R,,,,t,Russell 3000 Average Williams %R
+#RUABB%B,Russell 3000 Cumulative Bollinger Band %B Line,,,,t,Russell 3000 Cumulative Bollinger Band %B Line
+#RUADEC,Russell 3000 Declining Issues,,,,t,Russell 3000 Declining Issues
+#RUAITBM,Russell 3000 Intermediate-Term Breadth Momentum Oscillator,,,,t,Russell 3000 Intermediate-Term Breadth Momentum Oscillator
+#RUAITVM,Russell 3000 Intermediate-Term Volume Momentum Oscillator,,,,t,Russell 3000 Intermediate-Term Volume Momentum Oscillator
+#RUAMCOSC,Russell 3000 McClellan Oscillator,,,,t,Russell 3000 McClellan Oscillator
+#RUAMCOSCV,Russell 3000 McClellan Volume Oscillator,,,,t,Russell 3000 McClellan Volume Oscillator
+#RUAMCSUM,Russell 3000 McClellan Summation,,,,t,Russell 3000 McClellan Summation
+#RUASWTR,Russell 3000 Swenlin Trading Oscillator,,,,t,Russell 3000 Swenlin Trading Oscillator
+#RUATRIN,Russell 3000 Arms Index,,,,t,Russell 3000 Arms Index
+#RUAUNC,Russell 3000 Unchanged Issues,,,,t,Russell 3000 Unchanged Issues
+#RUAW%R,Russell 3000 Cumulative Williams %R Line,,,,t,Russell 3000 Cumulative Williams %R Line
+#RUAZWBT,Russell 3000 Zweig Breadth Thrust,,,,t,Russell 3000 Zweig Breadth Thrust
+#RUI%MA100,Russell 1000 % Stocks above MA100,,,,t,Russell 1000 % Stocks above MA100
+#RUI%MA150,Russell 1000 % Stocks above MA150,,,,t,Russell 1000 % Stocks above MA150
+#RUI%MA20,Russell 1000 % Stocks above MA20,,,,t,Russell 1000 % Stocks above MA20
+#RUI%MA200,Russell 1000 % Stocks above MA200,,,,t,Russell 1000 % Stocks above MA200
+#RUI%MA50,Russell 1000 % Stocks above MA50,,,,t,Russell 1000 % Stocks above MA50
+#RUI13WHI,Russell 1000 13W New Highs,,,,t,Russell 1000 13W New Highs
+#RUI13WHL,Russell 1000 Cumulative 13W New Highs-New Lows Line,,,,t,Russell 1000 Cumulative 13W New Highs-New Lows Line
+#RUI13WLO,Russell 1000 13W New Lows,,,,t,Russell 1000 13W New Lows
+#RUI26WHI,Russell 1000 26W New Highs,,,,t,Russell 1000 26W New Highs
+#RUI26WHL,Russell 1000 Cumulative 26W New Highs-New Lows Line,,,,t,Russell 1000 Cumulative 26W New Highs-New Lows Line
+#RUI26WLO,Russell 1000 26W New Lows,,,,t,Russell 1000 26W New Lows
+#RUI4WHI,Russell 1000 4W New Highs,,,,t,Russell 1000 4W New Highs
+#RUI4WHL,Russell 1000 Cumulative 4W New Highs-New Lows Line,,,,t,Russell 1000 Cumulative 4W New Highs-New Lows Line
+#RUI4WLO,Russell 1000 4W New Lows,,,,t,Russell 1000 4W New Lows
+#RUI52WHI,Russell 1000 52W New Highs,,,,t,Russell 1000 52W New Highs
+#RUI52WHL,Russell 1000 Cumulative 52W New Highs-New Lows Line,,,,t,Russell 1000 Cumulative 52W New Highs-New Lows Line
+#RUI52WLO,Russell 1000 52W New Lows,,,,t,Russell 1000 52W New Lows
+#RUIAD,Russell 1000 Cumulative Advance-Decline Line,,,,t,Russell 1000 Cumulative Advance-Decline Line
+#RUIADR,Russell 1000 Advance/Decline Ratio,,,,t,Russell 1000 Advance/Decline Ratio
+#RUIADV,Russell 1000 Advancing Issues,,,,t,Russell 1000 Advancing Issues
+#RUIAVGBB%B,Russell 1000 Avergage Bollinger Band %B,,,,t,Russell 1000 Avergage Bollinger Band %B
+#RUIAVGW%R,Russell 1000 Average Williams %R,,,,t,Russell 1000 Average Williams %R
+#RUIBB%B,Russell 1000 Cumulative Bollinger Band %B Line,,,,t,Russell 1000 Cumulative Bollinger Band %B Line
+#RUIDEC,Russell 1000 Declining Issues,,,,t,Russell 1000 Declining Issues
+#RUIITBM,Russell 1000 Intermediate-Term Breadth Momentum Oscillator,,,,t,Russell 1000 Intermediate-Term Breadth Momentum Oscillator
+#RUIITVM,Russell 1000 Intermediate-Term Volume Momentum Oscillator,,,,t,Russell 1000 Intermediate-Term Volume Momentum Oscillator
+#RUIMCOSC,Russell 1000 McClellan Oscillator,,,,t,Russell 1000 McClellan Oscillator
+#RUIMCOSCV,Russell 1000 McClellan Volume Oscillator,,,,t,Russell 1000 McClellan Volume Oscillator
+#RUIMCSUM,Russell 1000 McClellan Summation,,,,t,Russell 1000 McClellan Summation
+#RUISWTR,Russell 1000 Swenlin Trading Oscillator,,,,t,Russell 1000 Swenlin Trading Oscillator
+#RUITRIN,Russell 1000 Arms Index,,,,t,Russell 1000 Arms Index
+#RUIUNC,Russell 1000 Unchanged Issues,,,,t,Russell 1000 Unchanged Issues
+#RUIW%R,Russell 1000 Cumulative Williams %R Line,,,,t,Russell 1000 Cumulative Williams %R Line
+#RUIZWBT,Russell 1000 Zweig Breadth Thrust,,,,t,Russell 1000 Zweig Breadth Thrust
+#RUT%MA100,Russell 2000 % Stocks above MA100,,,,t,Russell 2000 % Stocks above MA100
+#RUT%MA150,Russell 2000 % Stocks above MA150,,,,t,Russell 2000 % Stocks above MA150
+#RUT%MA20,Russell 2000 % Stocks above MA20,,,,t,Russell 2000 % Stocks above MA20
+#RUT%MA200,Russell 2000 % Stocks above MA200,,,,t,Russell 2000 % Stocks above MA200
+#RUT%MA50,Russell 2000 % Stocks above MA50,,,,t,Russell 2000 % Stocks above MA50
+#RUT13WHI,Russell 2000 13W New Highs,,,,t,Russell 2000 13W New Highs
+#RUT13WHL,Russell 2000 Cumulative 13W New Highs-New Lows Line,,,,t,Russell 2000 Cumulative 13W New Highs-New Lows Line
+#RUT13WLO,Russell 2000 13W New Lows,,,,t,Russell 2000 13W New Lows
+#RUT26WHI,Russell 2000 26W New Highs,,,,t,Russell 2000 26W New Highs
+#RUT26WHL,Russell 2000 Cumulative 26W New Highs-New Lows Line,,,,t,Russell 2000 Cumulative 26W New Highs-New Lows Line
+#RUT26WLO,Russell 2000 26W New Lows,,,,t,Russell 2000 26W New Lows
+#RUT4WHI,Russell 2000 4W New Highs,,,,t,Russell 2000 4W New Highs
+#RUT4WHL,Russell 2000 Cumulative 4W New Highs-New Lows Line,,,,t,Russell 2000 Cumulative 4W New Highs-New Lows Line
+#RUT4WLO,Russell 2000 4W New Lows,,,,t,Russell 2000 4W New Lows
+#RUT52WHI,Russell 2000 52W New Highs,,,,t,Russell 2000 52W New Highs
+#RUT52WHL,Russell 2000 Cumulative 52W New Highs-New Lows Line,,,,t,Russell 2000 Cumulative 52W New Highs-New Lows Line
+#RUT52WLO,Russell 2000 52W New Lows,,,,t,Russell 2000 52W New Lows
+#RUTAD,Russell 2000 Cumulative Advance-Decline Line,,,,t,Russell 2000 Cumulative Advance-Decline Line
+#RUTADR,Russell 2000 Advance/Decline Ratio,,,,t,Russell 2000 Advance/Decline Ratio
+#RUTADV,Russell 2000 Advancing Issues,,,,t,Russell 2000 Advancing Issues
+#RUTAVGBB%B,Russell 2000 Avg Bollinger Band %B,,,,t,Russell 2000 Avg Bollinger Band %B
+#RUTAVGW%R,Russell 2000 Avg Williams %R,,,,t,Russell 2000 Avg Williams %R
+#RUTBB%B,Russell 2000 Cumulative Bollinger Band %B Line,,,,t,Russell 2000 Cumulative Bollinger Band %B Line
+#RUTDEC,Russell 2000 Declining Issues,,,,t,Russell 2000 Declining Issues
+#RUTITBM,Russell 2000 Intermediate-Term Breadth Momentum Oscillator,,,,t,Russell 2000 Intermediate-Term Breadth Momentum Oscillator
+#RUTITVM,Russell 2000 Intermediate-Term Volume Momentum Oscillator,,,,t,Russell 2000 Intermediate-Term Volume Momentum Oscillator
+#RUTMCOSC,Russell 2000 McClellan Oscillator,,,,t,Russell 2000 McClellan Oscillator
+#RUTMCOSCV,Russell 2000 McClellan Volume Oscillator,,,,t,Russell 2000 McClellan Volume Oscillator
+#RUTMCSUM,Russell 2000 McClellan Summation,,,,t,Russell 2000 McClellan Summation
+#RUTSWTR,Russell 2000 Swenlin Trading Oscillator,,,,t,Russell 2000 Swenlin Trading Oscillator
+#RUTTRIN,Russell 2000 Arms Index,,,,t,Russell 2000 Arms Index
+#RUTUNC,Russell 2000 Unchanged Issues,,,,t,Russell 2000 Unchanged Issues
+#RUTW%R,Russell 2000 Cumulative Williams %R Line,,,,t,Russell 2000 Cumulative Williams %R Line
+#RUTZWBT,Russell 2000 Zweig Breadth Thrust,,,,t,Russell 2000 Zweig Breadth Thrust
+#SML%MA100,S&P SmallCap 600 % Stocks above MA100,,,,t,S&P SmallCap 600 % Stocks above MA100
+#SML%MA150,S&P SmallCap 600 % Stocks above MA150,,,,t,S&P SmallCap 600 % Stocks above MA150
+#SML%MA20,S&P SmallCap 600 % Stocks above MA20,,,,t,S&P SmallCap 600 % Stocks above MA20
+#SML%MA200,S&P SmallCap 600 % Stocks above MA200,,,,t,S&P SmallCap 600 % Stocks above MA200
+#SML%MA50,S&P SmallCap 600 % Stocks above MA50,,,,t,S&P SmallCap 600 % Stocks above MA50
+#SML13WHI,S&P SmallCap 600 13W New Highs,,,,t,S&P SmallCap 600 13W New Highs
+#SML13WHL,S&P SmallCap 600 Cumulative 13W New Highs-New Lows Line,,,,t,S&P SmallCap 600 Cumulative 13W New Highs-New Lows Line
+#SML13WLO,S&P SmallCap 600 13W New Lows,,,,t,S&P SmallCap 600 13W New Lows
+#SML26WHI,S&P SmallCap 600 26W New Highs,,,,t,S&P SmallCap 600 26W New Highs
+#SML26WHL,S&P SmallCap 600 Cumulative 26W New Highs-New Lows Line,,,,t,S&P SmallCap 600 Cumulative 26W New Highs-New Lows Line
+#SML26WLO,S&P SmallCap 600 26W New Lows,,,,t,S&P SmallCap 600 26W New Lows
+#SML4WHI,S&P SmallCap 600 4W New Highs,,,,t,S&P SmallCap 600 4W New Highs
+#SML4WHL,S&P SmallCap 600 Cumulative 4W New Highs-New Lows Line,,,,t,S&P SmallCap 600 Cumulative 4W New Highs-New Lows Line
+#SML4WLO,S&P SmallCap 600 4W New Lows,,,,t,S&P SmallCap 600 4W New Lows
+#SML52WHI,S&P SmallCap 600 52W New Highs,,,,t,S&P SmallCap 600 52W New Highs
+#SML52WHL,S&P SmallCap 600 Cumulative 52W New Highs-New Lows Line,,,,t,S&P SmallCap 600 Cumulative 52W New Highs-New Lows Line
+#SML52WLO,S&P SmallCap 600 52W New Lows,,,,t,S&P SmallCap 600 52W New Lows
+#SMLAD,S&P SmallCap 600 Cumulative Advance-Decline Line,,,,t,S&P SmallCap 600 Cumulative Advance-Decline Line
+#SMLADR,S&P SmallCap 600 Advance/Decline Ratio,,,,t,S&P SmallCap 600 Advance/Decline Ratio
+#SMLADV,S&P SmallCap 600 Advancing Issues,,,,t,S&P SmallCap 600 Advancing Issues
+#SMLAVGBB%B,S&P SmallCap 600 Avg Bollinger Band %B,,,,t,S&P SmallCap 600 Avg Bollinger Band %B
+#SMLAVGW%R,S&P SmallCap 600 Avg Williams %R,,,,t,S&P SmallCap 600 Avg Williams %R
+#SMLBB%B,S&P SmallCap 600 Cumulative Bollinger Band %B Line,,,,t,S&P SmallCap 600 Cumulative Bollinger Band %B Line
+#SMLDEC,S&P SmallCap 600 Declining Issues,,,,t,S&P SmallCap 600 Declining Issues
+#SMLITBM,S&P SmallCap 600 Intermediate-Term Breadth Momentum Oscillator,,,,t,S&P SmallCap 600 Intermediate-Term Breadth Momentum Oscillator
+#SMLITVM,S&P SmallCap 600 Intermediate-Term Volume Momentum Oscillator,,,,t,S&P SmallCap 600 Intermediate-Term Volume Momentum Oscillator
+#SMLMCOSC,S&P SmallCap 600 McClellan Oscillator,,,,t,S&P SmallCap 600 McClellan Oscillator
+#SMLMCOSCV,S&P SmallCap 600 McClellan Volume Oscillator,,,,t,S&P SmallCap 600 McClellan Volume Oscillator
+#SMLMCSUM,S&P SmallCap 600 McClellan Summation,,,,t,S&P SmallCap 600 McClellan Summation
+#SMLSWTR,S&P SmallCap 600 Swenlin Trading Oscillator,,,,t,S&P SmallCap 600 Swenlin Trading Oscillator
+#SMLTRIN,S&P SmallCap 600 Arms Index,,,,t,S&P SmallCap 600 Arms Index
+#SMLUNC,S&P SmallCap 600 Unchanged Issues,,,,t,S&P SmallCap 600 Unchanged Issues
+#SMLW%R,S&P SmallCap 600 Cumulative Williams %R Line,,,,t,S&P SmallCap 600 Cumulative Williams %R Line
+#SMLZWBT,S&P SmallCap 600 Zweig Breadth Thrust,,,,t,S&P SmallCap 600 Zweig Breadth Thrust
+#SP1500%MA100,S&P 1500 % Stocks above MA100,,,,t,S&P 1500 % Stocks above MA100
+#SP1500%MA150,S&P 1500 % Stocks above MA150,,,,t,S&P 1500 % Stocks above MA150
+#SP1500%MA20,S&P 1500 % Stocks above MA20,,,,t,S&P 1500 % Stocks above MA20
+#SP1500%MA200,S&P 1500 % Stocks above MA200,,,,t,S&P 1500 % Stocks above MA200
+#SP1500%MA50,S&P 1500 % Stocks above MA50,,,,t,S&P 1500 % Stocks above MA50
+#SP150013WHI,S&P 1500 13W New Highs,,,,t,S&P 1500 13W New Highs
+#SP150013WHL,S&P 1500 Cumulative 13W New Highs-New Lows Line,,,,t,S&P 1500 Cumulative 13W New Highs-New Lows Line
+#SP150013WLO,S&P 1500 13W New Lows,,,,t,S&P 1500 13W New Lows
+#SP150026WHI,S&P 1500 26W New Highs,,,,t,S&P 1500 26W New Highs
+#SP150026WHL,S&P 1500 Cumulative 26W New Highs-New Lows Line,,,,t,S&P 1500 Cumulative 26W New Highs-New Lows Line
+#SP150026WLO,S&P 1500 26W New Lows,,,,t,S&P 1500 26W New Lows
+#SP15004WHI,S&P 1500 4W New Highs,,,,t,S&P 1500 4W New Highs
+#SP15004WHL,S&P 1500 Cumulative 4W New Highs-New Lows Line,,,,t,S&P 1500 Cumulative 4W New Highs-New Lows Line
+#SP15004WLO,S&P 1500 4W New Lows,,,,t,S&P 1500 4W New Lows
+#SP150052WHI,S&P 1500 52W New Highs,,,,t,S&P 1500 52W New Highs
+#SP150052WHL,S&P 1500 Cumulative 52W New Highs-New Lows Line,,,,t,S&P 1500 Cumulative 52W New Highs-New Lows Line
+#SP150052WLO,S&P 1500 52W New Lows,,,,t,S&P 1500 52W New Lows
+#SP1500AD,S&P 1500 Cumulative Advance-Decline Line,,,,t,S&P 1500 Cumulative Advance-Decline Line
+#SP1500ADR,S&P 1500 Advance/Decline Ratio,,,,t,S&P 1500 Advance/Decline Ratio
+#SP1500ADV,S&P 1500 Advancing Issues,,,,t,S&P 1500 Advancing Issues
+#SP1500AVGBB%B,S&P 1500 Avg Bollinger Band %B,,,,t,S&P 1500 Avg Bollinger Band %B
+#SP1500AVGW%R,S&P 1500 Avg Williams %R,,,,t,S&P 1500 Avg Williams %R
+#SP1500BB%B,S&P 1500 Cumulative Bollinger Band %B Line,,,,t,S&P 1500 Cumulative Bollinger Band %B Line
+#SP1500DEC,S&P 1500 Declining Issues,,,,t,S&P 1500 Declining Issues
+#SP1500ITBM,S&P 1500 Intermediate-Term Breadth Momentum Oscillator,,,,t,S&P 1500 Intermediate-Term Breadth Momentum Oscillator
+#SP1500ITVM,S&P 1500 Intermediate-Term Volume Momentum Oscillator,,,,t,S&P 1500 Intermediate-Term Volume Momentum Oscillator
+#SP1500MCOSC,S&P 1500 McClellan Oscillator,,,,t,S&P 1500 McClellan Oscillator
+#SP1500MCOSCV,S&P 1500 McClellan Volume Oscillator,,,,t,S&P 1500 McClellan Volume Oscillator
+#SP1500MCSUM,S&P 1500 McClellan Summation,,,,t,S&P 1500 McClellan Summation
+#SP1500SWTR,S&P 1500 Swenlin Trading Oscillator,,,,t,S&P 1500 Swenlin Trading Oscillator
+#SP1500TRIN,S&P 1500 Arms Index,,,,t,S&P 1500 Arms Index
+#SP1500UNC,S&P 1500 Unchanged Issues,,,,t,S&P 1500 Unchanged Issues
+#SP1500W%R,S&P 1500 Cumulative Williams %R Line,,,,t,S&P 1500 Cumulative Williams %R Line
+#SP1500ZWBT,S&P 1500 Zweig Breadth Thrust,,,,t,S&P 1500 Zweig Breadth Thrust
+#SPCS202,S&P/Case-Shiller Composite-20 Home Price Index (%Change vs Previous),,,,t,S&P/Case-Shiller Composite-20 Home Price Index (%Change vs Previous)
+#SPCS203,S&P/Case-Shiller Composite-20 Home Price Index (%Change vs 12 Months Previous),,,,t,S&P/Case-Shiller Composite-20 Home Price Index (%Change vs 12 Months Previous)
+#SPX%MA100,S&P 500 % Stocks above MA100,,,,t,S&P 500 % Stocks above MA100
+#SPX%MA150,S&P 500 % Stocks above MA150,,,,t,S&P 500 % Stocks above MA150
+#SPX%MA20,S&P 500 % Stocks above MA20,,,,t,S&P 500 % Stocks above MA20
+#SPX%MA200,S&P 500 % Stocks above MA200,,,,t,S&P 500 % Stocks above MA200
+#SPX%MA50,S&P 500 % Stocks above MA50,,,,t,S&P 500 % Stocks above MA50
+#SPX13WHI,S&P 500 13W New Highs,,,,t,S&P 500 13W New Highs
+#SPX13WHL,S&P 500 Cumulative 13W New Highs-New Lows Line,,,,t,S&P 500 Cumulative 13W New Highs-New Lows Line
+#SPX13WLO,S&P 500 13W New Lows,,,,t,S&P 500 13W New Lows
+#SPX26WHI,S&P 500 26W New Highs,,,,t,S&P 500 26W New Highs
+#SPX26WHL,S&P 500 Cumulative 26W New Highs-New Lows Line,,,,t,S&P 500 Cumulative 26W New Highs-New Lows Line
+#SPX26WLO,S&P 500 26W New Lows,,,,t,S&P 500 26W New Lows
+#SPX4WHI,S&P 500 4W New Highs,,,,t,S&P 500 4W New Highs
+#SPX4WHL,S&P 500 Cumulative 4W New Highs-New Lows Line,,,,t,S&P 500 Cumulative 4W New Highs-New Lows Line
+#SPX4WLO,S&P 500 4W New Lows,,,,t,S&P 500 4W New Lows
+#SPX52WHI,S&P 500 52W New Highs,,,,t,S&P 500 52W New Highs
+#SPX52WHL,S&P 500 Cumulative 52W New Highs-New Lows Line,,,,t,S&P 500 Cumulative 52W New Highs-New Lows Line
+#SPX52WLO,S&P 500 52W New Lows,,,,t,S&P 500 52W New Lows
+#SPXAD,S&P 500 Cumulative Advance-Decline Line,,,,t,S&P 500 Cumulative Advance-Decline Line
+#SPXADR,S&P 500 Advance/Decline Ratio,,,,t,S&P 500 Advance/Decline Ratio
+#SPXADV,S&P 500 Advancing Issues,,,,t,S&P 500 Advancing Issues
+#SPXAVGBB%B,S&P 500 Avg Bollinger Band %B,,,,t,S&P 500 Avg Bollinger Band %B
+#SPXAVGW%R,S&P 500 Avg Williams %R,,,,t,S&P 500 Avg Williams %R
+#SPXBB%B,S&P 500 Cumulative Bollinger Band %B Line,,,,t,S&P 500 Cumulative Bollinger Band %B Line
+#SPXDEC,S&P 500 Declining Issues,,,,t,S&P 500 Declining Issues
+#SPXITBM,S&P 500 Intermediate-Term Breadth Momentum Oscillator,,,,t,S&P 500 Intermediate-Term Breadth Momentum Oscillator
+#SPXITVM,S&P 500 Intermediate-Term Volume Momentum Oscillator,,,,t,S&P 500 Intermediate-Term Volume Momentum Oscillator
+#SPXMCOSC,S&P 500 McClellan Oscillator,,,,t,S&P 500 McClellan Oscillator
+#SPXMCOSCV,S&P 500 McClellan Volume Oscillator,,,,t,S&P 500 McClellan Volume Oscillator
+#SPXMCSUM,S&P 500 McClellan Summation,,,,t,S&P 500 McClellan Summation
+#SPXSWTR,S&P 500 Swenlin Trading Oscillator,,,,t,S&P 500 Swenlin Trading Oscillator
+#SPXTRIN,S&P 500 Arms Index,,,,t,S&P 500 Arms Index
+#SPXUNC,S&P 500 Unchanged Issues,,,,t,S&P 500 Unchanged Issues
+#SPXW%R,S&P 500 Cumulative Williams %R Line,,,,t,S&P 500 Cumulative Williams %R Line
+#SPXZWBT,S&P 500 Zweig Breadth Thrust,,,,t,S&P 500 Zweig Breadth Thrust

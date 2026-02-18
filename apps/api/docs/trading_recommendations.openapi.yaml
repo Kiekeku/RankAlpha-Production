@@ -1,0 +1,175 @@
+openapi: 3.1.0
+info:
+  title: RankAlpha Trade Recommendation Ingestion API
+  version: 1.0.0
+  description: |
+    Authenticated endpoint for partners to submit structured trade recommendations.
+    Requests require the shared trading bearer token configured via `TRADING_BEARER_TOKEN`.
+servers:
+  - url: https://api.rankalpha.example.com
+    description: Production
+  - url: https://api.rankalpha.dev
+    description: Staging / development
+tags:
+  - name: trading
+    description: Trade recommendation ingestion
+paths:
+  /api/v1/trading/signals:
+    post:
+      tags: [trading]
+      summary: Submit a trade recommendation
+      security:
+        - tradingBearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TradeRecommendationRequest'
+      responses:
+        '201':
+          description: Recommendation accepted
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TradeRecommendationResponse'
+        '401':
+          description: Missing or invalid bearer token
+        '503':
+          description: Trading ingestion disabled (token not configured)
+components:
+  securitySchemes:
+    tradingBearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: Token
+  schemas:
+    TradeRecommendationRequest:
+      type: object
+      required:
+        - symbol
+        - action
+        - as_of_date
+        - recommended_price
+      properties:
+        symbol:
+          type: string
+          maxLength: 20
+          example: AAPL
+        action:
+          type: string
+          enum: [BUY, SELL, SHORT, COVER]
+        as_of_date:
+          type: string
+          format: date
+          example: 2025-10-07
+        recommended_price:
+          type: string
+          pattern: '^[0-9]+(\.[0-9]{1,4})?$'
+          example: "182.4500"
+        source_name:
+          type: string
+          maxLength: 50
+          default: External-Trader
+        source_version:
+          type: string
+          maxLength: 20
+          default: "1"
+        asset_type:
+          type: string
+          maxLength: 20
+          nullable: true
+        order_type:
+          type: string
+          maxLength: 16
+          default: MARKET
+        time_in_force:
+          type: string
+          maxLength: 12
+          default: DAY
+        valid_from_ts:
+          type: string
+          format: date-time
+          nullable: true
+        expiry_ts:
+          type: string
+          format: date-time
+          nullable: true
+        stop_loss_price:
+          type: string
+          pattern: '^[0-9]+(\.[0-9]{1,4})?$'
+          nullable: true
+        take_profit_price:
+          type: string
+          pattern: '^[0-9]+(\.[0-9]{1,4})?$'
+          nullable: true
+        limit_price:
+          type: string
+          pattern: '^[0-9]+(\.[0-9]{1,4})?$'
+          nullable: true
+        stop_trigger_price:
+          type: string
+          pattern: '^[0-9]+(\.[0-9]{1,4})?$'
+          nullable: true
+        size_shares:
+          type: integer
+          format: int64
+          minimum: 0
+          nullable: true
+        size_percent:
+          type: string
+          pattern: '^[0-9]+(\.[0-9]{1,4})?$'
+          nullable: true
+        confidence_label:
+          type: string
+          maxLength: 25
+          nullable: true
+        timeframe_label:
+          type: string
+          maxLength: 25
+          nullable: true
+        strategy_name:
+          type: string
+          maxLength: 50
+          nullable: true
+        description:
+          type: string
+          maxLength: 1000
+          nullable: true
+        portfolio_id:
+          type: string
+          format: uuid
+          nullable: true
+        routing_hint:
+          type: string
+          maxLength: 32
+          nullable: true
+        risk_budget_bps:
+          type: string
+          pattern: '^[0-9]+(\.[0-9]{1,4})?$'
+          nullable: true
+        signal_version:
+          type: string
+          maxLength: 20
+          nullable: true
+        model_run_id:
+          type: string
+          format: uuid
+          nullable: true
+        preconditions:
+          type: object
+          additionalProperties: {}
+          nullable: true
+        auto_hedge:
+          type: boolean
+          default: false
+    TradeRecommendationResponse:
+      type: object
+      properties:
+        recommendation_id:
+          type: string
+          format: uuid
+          description: Upserted recommendation identifier
+        status:
+          type: string
+          enum: [accepted]
