@@ -11,12 +11,25 @@ I’m Justin Hoang (@Kiekeku). I helped build the stock scoring, data pipeline, 
 - **Rankings and grading.** I built the first [Next.js rankings page](apps/frontend/src/app/rankings/page.tsx) and [FastAPI grading endpoints](apps/api/src/routers/grading.py) for viewing stock rankings and individual grades.
 - **Automated research.** I added scheduling for company sentiment analysis and implemented an [LLM planner](apps/sentiment/src/llm/gpt5_responses_planner_llm.py) that produces structured outputs for the research workflow.
 
-## Explore the code
+## Start here
 
-- [Architecture overview](docs/architecture.md) explains how the services fit together.
-- [Market-data ingestion](apps/ingestion) and [scoring methodology](docs/SCORING.md) cover how price data becomes stock scores.
-- The [Next.js frontend](apps/frontend) uses the [FastAPI backend](apps/api) to display stock rankings and company research.
-- The [Airflow pipeline](infra/airflow/dags/pipeline.py) coordinates data ingestion and scoring. The [sentiment service](apps/sentiment) runs automated company research.
+| To see | Start with |
+| --- | --- |
+| How a price series becomes a momentum input | [Momentum calculator](apps/scorer/src/services/momentum.py) and [scorer tests](tests/scorer/test_utils.py) |
+| Why ingestion runs before scoring | [Airflow pipeline](infra/airflow/dags/pipeline.py) |
+| How rankings and grades are exposed | [FastAPI grading endpoints](apps/api/src/routers/grading.py) |
+| How the services fit together | [Architecture overview](docs/architecture.md) |
+
+## Run the scoring demo
+
+From the repository root, use Python 3.12 and uv. The demo generates 200 synthetic closing prices and calls the same moving-average and log-price regression code used by the scorer. It runs without a database, market data feed, or credentials.
+
+```bash
+uv run --no-project --python 3.12 --with pandas --with numpy python -m examples.momentum_demo
+uv run --no-project --python 3.12 --with pandas --with numpy --with pytest python -m pytest -q tests/scorer/test_utils.py
+```
+
+The synthetic series rises from 100 to 199.50, with a 200-session average of 149.75. The 30-session regression reports a positive trend. The calculator withholds a regression estimate when too few observations in the window have valid prices. The example also shows that case.
 
 ## Snapshot limitations
 
